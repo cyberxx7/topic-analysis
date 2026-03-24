@@ -1,0 +1,83 @@
+name: Editorial Topic Analysis Pipeline
+
+on:
+  schedule:
+    # Runs on the 1st of every month at 06:00 UTC (~30 days)
+    - cron: "0 6 1 * *"
+  workflow_dispatch:  # Manual trigger from GitHub UI
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y \
+            fonts-liberation \
+            fonts-dejavu-core \
+            libpango-1.0-0 \
+            libpangoft2-1.0-0 \
+            libgdk-pixbuf2.0-0 \
+            libffi-dev \
+            libcairo2 \
+            libcairo2-dev \
+            python3-dev
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: python -m playwright install chromium --with-deps
+
+      - name: Download NLTK data
+        run: python -c "import nltk; nltk.download('stopwords', quiet=True)"
+
+      - name: Write Google OAuth credentials
+        env:
+          GOOGLE_OAUTH_CREDENTIALS: ${{ secrets.GOOGLE_OAUTH_CREDENTIALS }}
+          GOOGLE_OAUTH_TOKEN: ${{ secrets.GOOGLE_OAUTH_TOKEN }}
+        run: |
+          echo "$GOOGLE_OAUTH_CREDENTIALS" > credentials.json
+          echo "$GOOGLE_OAUTH_TOKEN" > token.json
+
+      - name: Run pipeline
+        env:
+          GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
+          GOOGLE_OAUTH_CREDENTIALS_FILE: credentials.json
+          GOOGLE_OAUTH_TOKEN_FILE: token.json
+        run: python run.py
+
+      - name: Upload outputs as artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-report-${{ github.run_number }}
+          path: |
+            outputs/articles.csv
+            outputs/thegrio_com.csv
+            outputs/theroot_com.csv
+            outputs/newsone_com.csv
+            outputs/capitalbnews_org.csv
+            outputs/ebony_com.csv
+            outputs/essence_com.csv
+            outputs/blavity_com.csv
+            outputs/editorial_report.html
+            outputs/editorial_report.pdf
+          retention-days: 90
+
+      - name: Clean up credentials
+        if: always()
+        run: |
+          rm -f credentials.json token.json

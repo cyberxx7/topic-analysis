@@ -1,0 +1,230 @@
+"""
+delivery/upload_drive.py — Google Drive Uploader (OAuth 2.0)
+
+Works with personal Google accounts. Uses a saved OAuth token so
+GitHub Actions can upload silently with no browser interaction.
+
+── One-time setup (~5 minutes) ───────────────────────────────────────────────
+1. Go to https://console.cloud.google.com
+2. Create a project → enable the "Google Drive API"
+3. APIs & Services → Credentials → Create Credentials → OAuth client ID
+   → Application type: Desktop app
+   → Download the JSON → save it as  credentials.json  in the project root
+4. Run the auth command once locally:
+      python delivery/upload_drive.py --auth
+   A browser window opens → sign in with your Google account → approve access
+   → token.json is saved automatically
+5. Copy the folder ID from your Google Drive URL:
+      https://drive.google.com/drive/folders/<FOLDER_ID>
+6. Add to .env:
+      GOOGLE_DRIVE_FOLDER_ID=<your_folder_id>
+
+── GitHub Actions setup ──────────────────────────────────────────────────────
+After completing the steps above, add three secrets to your GitHub repo
+(Settings → Secrets and variables → Actions → New repository secret):
+
+  GOOGLE_DRIVE_FOLDER_ID   ← your Drive folder ID
+  GOOGLE_OAUTH_CREDENTIALS ← full contents of credentials.json
+  GOOGLE_OAUTH_TOKEN       ← full contents of token.json
+
+The workflow will write these files before running and delete them after.
+──────────────────────────────────────────────────────────────────────────────
+"""
+
+import os
+import sys
+import argparse
+from dotenv import load_dotenv
+
+try:
+    from googleapiclient.discovery import build
+    from googleapiclient.http import MediaFileUpload
+    from google.oauth2.credentials import Credentials
+    from google.auth.transport.requests import Request
+except ImportError:
+    build = MediaFileUpload = Credentials = Request = None
+
+load_dotenv()
+
+FOLDER_ID        = os.getenv("GOOGLE_DRIVE_FOLDER_ID", "")
+CREDENTIALS_PATH = os.getenv("GOOGLE_OAUTH_CREDENTIALS_FILE", "credentials.json")
+TOKEN_PATH       = os.getenv("GOOGLE_OAUTH_TOKEN_FILE", "token.json")
+
+SCOPES = ["https://www.googleapis.com/auth/drive"]
+
+UPLOAD_FILES = [
+    # Combined dataset
+    ("outputs/articles.csv",          "text/csv"),
+    # Per-source CSVs
+    ("outputs/thegrio_com.csv",        "text/csv"),
+    ("outputs/theroot_com.csv",        "text/csv"),
+    ("outputs/newsone_com.csv",        "text/csv"),
+    ("outputs/capitalbnews_org.csv",   "text/csv"),
+    ("outputs/ebony_com.csv",          "text/csv"),
+    ("outputs/essence_com.csv",        "text/csv"),
+    ("outputs/blavity_com.csv",        "text/csv"),
+    # Reports
+    ("outputs/editorial_report.html", "text/html"),
+    ("outputs/editorial_report.pdf",  "application/pdf"),
+]
+
+
+def run_auth() -> None:
+    """
+    One-time OAuth browser flow. Run this locally once to generate token.json.
+    After this you never need to authenticate again — the token auto-refreshes.
+    """
+    try:
+        from google_auth_oauthlib.flow import InstalledAppFlow
+    except ImportError:
+        print("Missing dependency. Run:  pip install google-auth-oauthlib")
+        sys.exit(1)
+
+    if not os.path.exists(CREDENTIALS_PATH):
+        print(f"\n[drive] ✗ credentials.json not found at: {CREDENTIALS_PATH}")
+        print("  Download it from Google Cloud Console:")
+        print("  APIs & Services → Credentials → OAuth 2.0 Client IDs → ⬇ Download JSON")
+        print("  Save the file as credentials.json in the project root.")
+        sys.exit(1)
+
+    print("\n[drive] Opening browser for Google sign-in...")
+    flow = InstalledAppFlow.from_client_secrets_file(CREDENTIALS_PATH, SCOPES)
+    creds = flow.run_local_server(port=0)
+
+    with open(TOKEN_PATH, "w") as f:
+        f.write(creds.to_json())
+
+    print(f"\n[drive] ✓ Authenticated successfully!")
+    print(f"[drive] ✓ Token saved → {TOKEN_PATH}")
+    print()
+    print("── GitHub Actions: add these 3 repo secrets ──────────────────────")
+    print("  GOOGLE_DRIVE_FOLDER_ID   ← your Drive folder ID (from the URL)")
+    print(f"  GOOGLE_OAUTH_CREDENTIALS ← paste full contents of {CREDENTIALS_PATH}")
+    print(f"  GOOGLE_OAUTH_TOKEN       ← paste full contents of {TOKEN_PATH}")
+    print("──────────────────────────────────────────────────────────────────")
+
+
+def run_upload() -> None:
+    print("\n[drive] ── Starting Drive Upload ──")
+
+    # ── Pre-flight checks ─────────────────────────────────────────────
+    if not FOLDER_ID:
+        _abort(
+            "GOOGLE_DRIVE_FOLDER_ID is not set.\n"
+            "  Add it to your .env file:  GOOGLE_DRIVE_FOLDER_ID=<folder_id>\n"
+            "  Copy the ID from your Drive folder URL."
+        )
+        return
+
+    if not os.path.exists(TOKEN_PATH):
+        _abort(
+            f"No OAuth token found at {TOKEN_PATH}.\n"
+            "  Run this once locally to authenticate:\n"
+            "    python delivery/upload_drive.py --auth"
+        )
+        return
+
+    # ── Import Google libraries ───────────────────────────────────────
+    if build is None:
+        _abort(
+            "Google API libraries not installed.\n"
+            "  Run: pip install google-api-python-client google-auth google-auth-oauthlib"
+        )
+        return
+
+    # ── Load and refresh credentials ─────────────────────────────────
+    creds = Credentials.from_authorized_user_file(TOKEN_PATH, SCOPES)
+
+    if not creds.valid:
+        if creds.expired and creds.refresh_token:
+            try:
+                creds.refresh(Request())
+                with open(TOKEN_PATH, "w") as f:
+                    f.write(creds.to_json())
+                print("[drive] ✓ Token refreshed")
+            except Exception as exc:
+                _abort(
+                    f"Token refresh failed: {exc}\n"
+                    "  Re-run locally:  python delivery/upload_drive.py --auth"
+                )
+                return
+        else:
+            _abort(
+                "OAuth token is expired and has no refresh token.\n"
+                "  Re-run locally:  python delivery/upload_drive.py --auth"
+            )
+            return
+
+    service = build("drive", "v3", credentials=creds)
+
+    # ── Verify folder is accessible ───────────────────────────────────
+    try:
+        folder = service.files().get(fileId=FOLDER_ID, fields="id,name").execute()
+        print(f"[drive] ✓ Connected to folder: {folder.get('name', FOLDER_ID)}")
+    except Exception:
+        _abort(
+            f"Cannot access Drive folder: {FOLDER_ID}\n"
+            "  Check the folder ID and make sure it exists in your Drive."
+        )
+        return
+
+    # ── Upload each file ──────────────────────────────────────────────
+    uploaded, skipped = 0, 0
+    for file_path, mime_type in UPLOAD_FILES:
+        if not os.path.exists(file_path):
+            print(f"[drive]   ⚠ Skipped (not found): {file_path}")
+            skipped += 1
+            continue
+        _upload_or_update(service, file_path, mime_type, FOLDER_ID)
+        uploaded += 1
+
+    print(f"\n[drive] ✓ Uploaded {uploaded} file(s), skipped {skipped}")
+    print("[drive] ── Upload Complete ──\n")
+
+
+def _upload_or_update(
+    service, local_path: str, mime_type: str, folder_id: str
+) -> None:
+    """Upload a file, overwriting if it already exists in the folder."""
+    filename = os.path.basename(local_path)
+
+    results = service.files().list(
+        q=f"name='{filename}' and '{folder_id}' in parents and trashed=false",
+        fields="files(id,name)",
+    ).execute()
+    existing = results.get("files", [])
+
+    size_kb = round(os.path.getsize(local_path) / 1024, 1)
+    media   = MediaFileUpload(local_path, mimetype=mime_type, resumable=True)
+
+    if existing:
+        service.files().update(
+            fileId=existing[0]["id"],
+            media_body=media,
+        ).execute()
+        print(f"[drive]   ↻ Updated:  {filename}  ({size_kb} KB)")
+    else:
+        service.files().create(
+            body={"name": filename, "parents": [folder_id]},
+            media_body=media,
+            fields="id",
+        ).execute()
+        print(f"[drive]   ↑ Uploaded: {filename}  ({size_kb} KB)")
+
+
+def _abort(message: str) -> None:
+    print(f"\n[drive] ✗ {message}\n[drive] Skipping upload.\n")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Google Drive uploader")
+    parser.add_argument(
+        "--auth", action="store_true",
+        help="Run one-time browser login to generate token.json"
+    )
+    args = parser.parse_args()
+
+    if args.auth:
+        run_auth()
+    else:
+        run_upload()

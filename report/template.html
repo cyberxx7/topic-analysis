@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editorial Topic Analysis Report — {{ generated_date }}</title>
+  <link rel="stylesheet" href="{{ css_path }}" />
+</head>
+<body>
+<div class="report-shell">
+
+  <!-- ══════════════════════════════════════════════════════════
+       COVER
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="cover">
+    <div class="cover-org">Black Media Intelligence Pipeline &nbsp;·&nbsp; Research Brief</div>
+    <h1 class="cover-title">Editorial Topic Analysis:<br>Black Media Coverage of Social Conflict</h1>
+    <p class="cover-subtitle">
+      A systematic analysis of social justice and social conflict topic coverage across
+      seven major Black media publications over a rolling 30-day window, using
+      TF-IDF keyword scoring and seed-phrase topic matching.
+    </p>
+    <div class="cover-meta-row">
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Report Date</div>
+        <div class="cover-meta-value">{{ generated_date }}</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Analysis Window</div>
+        <div class="cover-meta-value">{{ window_start }} – {{ window_end }}</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Total Articles</div>
+        <div class="cover-meta-value">{{ total_articles }}</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Publications</div>
+        <div class="cover-meta-value">{{ num_sources }}</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Topics Tracked</div>
+        <div class="cover-meta-value">12</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       TABLE OF CONTENTS
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="toc no-print">
+    <div class="toc-title">Contents</div>
+    <ul class="toc-list">
+      <li><a href="#s1"><span>01 &nbsp;Executive Summary</span><span class="toc-num">§1</span></a></li>
+      <li><a href="#s2"><span>02 &nbsp;Publication Overview</span><span class="toc-num">§2</span></a></li>
+      <li><a href="#s3"><span>03 &nbsp;Topic Frequency Analysis</span><span class="toc-num">§3</span></a></li>
+      <li><a href="#s4"><span>04 &nbsp;Coverage Matrix</span><span class="toc-num">§4</span></a></li>
+      <li><a href="#s5"><span>05 &nbsp;Publication Timeline</span><span class="toc-num">§5</span></a></li>
+      <li><a href="#s6"><span>06 &nbsp;TF-IDF Keyword Analysis</span><span class="toc-num">§6</span></a></li>
+      <li><a href="#s7"><span>07 &nbsp;Topic Deep Dive &amp; Article Index</span><span class="toc-num">§7</span></a></li>
+      <li><a href="#s8"><span>08 &nbsp;Word Clouds</span><span class="toc-num">§8</span></a></li>
+      <li><a href="#s9"><span>09 &nbsp;Methodology</span><span class="toc-num">§9</span></a></li>
+    </ul>
+  </div>
+
+  <div class="report-body">
+
+    <!-- ══════════════════════════════════════════════════════
+         §1  EXECUTIVE SUMMARY
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s1">
+      <div class="section-label">Section 01</div>
+      <h2 class="section-title">Executive Summary</h2>
+      <p class="section-desc">Key findings from this analysis period.</p>
+      <hr class="section-rule">
+
+      <div class="stat-strip">
+        <div class="stat-cell">
+          <div class="stat-cell-label">Total Articles</div>
+          <div class="stat-cell-value">{{ total_articles }}</div>
+          <div class="stat-cell-sub">Across {{ num_sources }} publications</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-cell-label">Articles Tagged</div>
+          <div class="stat-cell-value">{{ tagged_articles }}</div>
+          <div class="stat-cell-sub">Matched ≥1 topic</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-cell-label">Coverage Rate</div>
+          <div class="stat-cell-value">{{ coverage_rate }}%</div>
+          <div class="stat-cell-sub">Of total corpus</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-cell-label">Most Covered Topic</div>
+          <div class="stat-cell-value sans" style="font-size:13pt; padding-top:3px;">{{ dominant_topic_short }}</div>
+          <div class="stat-cell-sub">{{ dominant_topic_count }} articles</div>
+        </div>
+      </div>
+
+      <div class="finding">
+        <strong>Key Finding — </strong>{{ key_finding }}
+      </div>
+
+      <div class="chart-grid-2 mt-md">
+        {% if chart_paths.get('topic_coverage_rate') %}
+        <div class="chart-wrap">
+          <img class="chart-img" src="{{ chart_paths.topic_coverage_rate }}" alt="Coverage Rate Gauge" />
+          <p class="chart-caption">Figure 1.1 — Topic coverage rate for this reporting period</p>
+        </div>
+        {% endif %}
+        {% if chart_paths.get('source_breakdown') %}
+        <div class="chart-wrap">
+          <img class="chart-img" src="{{ chart_paths.source_breakdown }}" alt="Source Breakdown" />
+          <p class="chart-caption">Figure 1.2 — Article distribution by publication</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §2  PUBLICATION OVERVIEW
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s2">
+      <div class="section-label">Section 02</div>
+      <h2 class="section-title">Publication Overview</h2>
+      <p class="section-desc">
+        Per-publication article counts, topic coverage rates, and dominant topics
+        for this reporting period.
+      </p>
+      <hr class="section-rule">
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Publication</th>
+            <th class="num">Articles</th>
+            <th class="num">Topics Covered</th>
+            <th class="num">Tagged</th>
+            <th>Coverage Rate</th>
+            <th>Dominant Topic</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in source_stats %}
+          <tr>
+            <td><strong>{{ row.source }}</strong></td>
+            <td class="num">{{ row.total }}</td>
+            <td class="num">{{ row.topics_covered }}</td>
+            <td class="num">{{ row.tagged }}</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:{{ row.rate }}%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">{{ row.rate }}%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">{{ row.top_topic }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §3  TOPIC FREQUENCY ANALYSIS
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s3">
+      <div class="section-label">Section 03</div>
+      <h2 class="section-title">Topic Frequency Analysis</h2>
+      <p class="section-desc">
+        Frequency of each social conflict topic across all publications during this period,
+        ranked by article count.
+      </p>
+      <hr class="section-rule">
+
+      {% if chart_paths.get('topic_frequency') %}
+      <div class="chart-wrap">
+        <img class="chart-img" src="{{ chart_paths.topic_frequency }}" alt="Topic Frequency" />
+        <p class="chart-caption">Figure 3.1 — Article count by social conflict topic (all publications)</p>
+      </div>
+      {% endif %}
+
+      {% if chart_paths.get('multi_topic_articles') %}
+      <div class="chart-wrap mt-md">
+        <img class="chart-img" src="{{ chart_paths.multi_topic_articles }}" alt="Multi-Topic Distribution" />
+        <p class="chart-caption">Figure 3.2 — Number of distinct topics matched per article</p>
+      </div>
+      {% endif %}
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §4  PUBLICATION × TOPIC COVERAGE MATRIX
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s4">
+      <div class="section-label">Section 04</div>
+      <h2 class="section-title">Publication × Topic Coverage Matrix</h2>
+      <p class="section-desc">
+        Cross-tabulation of topic coverage by publication. Cell values represent
+        the number of articles in which each topic was detected.
+      </p>
+      <hr class="section-rule">
+
+      {% if chart_paths.get('source_topic_heatmap') %}
+      <div class="chart-wrap">
+        <img class="chart-img" src="{{ chart_paths.source_topic_heatmap }}" alt="Coverage Heatmap" />
+        <p class="chart-caption">Figure 4.1 — Topic coverage heatmap (publications × topics)</p>
+      </div>
+      {% endif %}
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §5  PUBLICATION TIMELINE
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s5">
+      <div class="section-label">Section 05</div>
+      <h2 class="section-title">Publication Timeline</h2>
+      <p class="section-desc">
+        Daily article volume across all publications over the 30-day analysis window,
+        with per-publication breakdowns.
+      </p>
+      <hr class="section-rule">
+
+      {% if chart_paths.get('articles_over_time') %}
+      <div class="chart-wrap">
+        <img class="chart-img" src="{{ chart_paths.articles_over_time }}" alt="Articles Over Time" />
+        <p class="chart-caption">Figure 5.1 — Daily article volume by publication ({{ window_start }} – {{ window_end }})</p>
+      </div>
+      {% endif %}
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §6  TF-IDF KEYWORD ANALYSIS
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s6">
+      <div class="section-label">Section 06</div>
+      <h2 class="section-title">TF-IDF Keyword Analysis</h2>
+      <p class="section-desc">
+        Terms and phrases with the highest TF-IDF scores across the full article corpus,
+        representing language that is distinctively prominent in this reporting period.
+      </p>
+      <hr class="section-rule">
+
+      {% if chart_paths.get('top_keywords') %}
+      <div class="chart-wrap">
+        <img class="chart-img" src="{{ chart_paths.top_keywords }}" alt="Top Keywords" />
+        <p class="chart-caption">Figure 6.1 — Top 20 TF-IDF keywords (n-grams 1–3, all publications)</p>
+      </div>
+      {% endif %}
+
+      <div class="kw-grid mt-md">
+        {% for kw in top_keywords %}
+        <div class="kw-item">
+          <span class="kw-term">{{ kw.keyword }}</span>
+          <span class="kw-score">{{ "%.4f"|format(kw.score) }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §7  TOPIC DEEP DIVE & ARTICLE INDEX
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s7">
+      <div class="section-label">Section 07</div>
+      <h2 class="section-title">Topic Deep Dive &amp; Article Index</h2>
+      <p class="section-desc">
+        For each detected social conflict topic: all matched articles with title,
+        publication, date, category, URL, and the specific phrases that triggered the match.
+      </p>
+      <hr class="section-rule">
+
+      {% for topic in topic_details %}
+      {% if topic.articles %}
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:{{ topic.color }};"></span>
+        <span class="topic-heading-name">{{ topic.name }}</span>
+        <span class="topic-heading-count">{{ topic.count }} article{{ 's' if topic.count != 1 else '' }}</span>
+      </div>
+      <p class="topic-desc-line">{{ topic.description }}</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for article in topic.articles %}
+          <tr>
+            <td>
+              <a class="article-title-link" href="{{ article.link }}" target="_blank">
+                {{ article.title }}
+              </a>
+              <a class="article-url" href="{{ article.link }}" target="_blank">
+                {{ article.link }}
+              </a>
+            </td>
+            <td><span class="source-badge">{{ article.source }}</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              {{ article.author or '—' }}
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              {{ article.date }}
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              {{ article.category }}
+            </td>
+            <td>
+              {% if article.matched_phrases %}
+              <div class="phrase-list">
+                {% for phrase in article.matched_phrases %}
+                <span class="phrase-tag">{{ phrase }}</span>
+                {% endfor %}
+              </div>
+              {% else %}
+              <span style="color:var(--text-light); font-size:8pt;">—</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      {% endif %}
+      {% endfor %}
+
+      {% if not topic_details|selectattr('articles')|list %}
+      <div class="finding finding-warn">
+        No social conflict topics were matched during this analysis period.
+        Consider reviewing the seed phrase dictionary or expanding the rolling window.
+      </div>
+      {% endif %}
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §8  WORD CLOUDS
+    ═══════════════════════════════════════════════════════ -->
+    {% if wordcloud_paths %}
+    <div class="section" id="s8">
+      <div class="section-label">Section 08</div>
+      <h2 class="section-title">Topic Word Clouds</h2>
+      <p class="section-desc">
+        Visual frequency maps of headline language in articles matched to each topic.
+        Term size reflects relative frequency across matched article titles.
+      </p>
+      <hr class="section-rule">
+
+      <div class="chart-grid-2">
+        {% for topic_name, wc_path in wordcloud_paths.items() %}
+        <div class="chart-wrap">
+          <img class="chart-img" src="{{ wc_path }}" alt="Word Cloud: {{ topic_name }}" />
+          <p class="chart-caption">{{ topic_name }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §9  METHODOLOGY
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s9">
+      <div class="section-label">Section 09</div>
+      <h2 class="section-title">Methodology</h2>
+      <p class="section-desc">Data collection, analysis approach, and known limitations.</p>
+      <hr class="section-rule">
+
+      <div class="method-block">
+        <strong>Data Collection.</strong> Articles were scraped from 7 Black media
+        publications (The Grio, The Root, NewsOne, Capital B News, Blavity, Essence, Ebony)
+        using RSS feeds as the primary method and HTML scraping as a fallback.
+        Only articles with a publication date within the 30-day window ending
+        <strong>{{ window_end }}</strong> were included. Each article record captures:
+        title, snippet/description, publication, date, category, and URL.
+      </div>
+
+      <div class="method-block">
+        <strong>Topic Matching.</strong> Each article's title, description, and category
+        were matched against a curated dictionary of 12 social conflict topics. Each topic
+        contains 20–35 seed phrases. Matching uses whole-word regular expression search
+        (case-insensitive) with optional suffix flexibility (plurals, verb forms).
+        Articles can match multiple topics simultaneously.
+      </div>
+
+      <div class="method-block">
+        <strong>TF-IDF Keyword Extraction.</strong> Term Frequency–Inverse Document
+        Frequency (TF-IDF) scoring was applied to the full corpus using scikit-learn's
+        <code>TfidfVectorizer</code> (n-grams 1–3, min_df=2, max_df=0.85, sublinear
+        TF normalization). Scores represent a term's relative prominence in this
+        period compared to its overall distribution across the corpus.
+      </div>
+
+      <div class="method-block">
+        <strong>Limitations.</strong>
+        (1) Topic matching is constrained by the seed phrase dictionary — articles using
+        different terminology for the same issue may not be captured.
+        (2) RSS feed snippets vary in length and completeness by publication; full article
+        body text is not analyzed.
+        (3) The 30-day rolling window does not capture longer-term trends.
+        (4) Coverage rates reflect the share of articles that explicitly reference
+        tracked topics, not the total editorial attention given to those topics.
+      </div>
+
+      <div class="method-block">
+        <strong>Tracked Topics (12).</strong>
+        Policing &amp; Public Safety · Voter Suppression · Book Bans &amp; Anti-DEI ·
+        Housing &amp; Displacement · Maternal Health · Redlining &amp; Fair Housing ·
+        Anti-Black Surveillance · Reparations · School Funding ·
+        Criminal Justice Reform · Environmental Justice · Economic Equity &amp; Wealth Gap.
+      </div>
+    </div>
+
+  </div><!-- /.report-body -->
+
+  <!-- ── Footer ──────────────────────────────────────────────── -->
+  <div class="report-footer">
+    <span>Black Media Intelligence Pipeline &nbsp;·&nbsp; Editorial Topic Analysis Report</span>
+    <span>{{ generated_date }} &nbsp;·&nbsp; {{ total_articles }} articles analyzed</span>
+  </div>
+
+</div><!-- /.report-shell -->
+</body>
+</html>
