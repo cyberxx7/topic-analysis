@@ -28,7 +28,8 @@ SITEMAP_URL = f"{BASE_URL}/sitemap_index.xml"
 SITEMAP_HEADERS = {**HEADERS, "Accept": "application/xml, text/xml, */*"}
 
 SPONSORED_KEYWORDS = ["sponsored", "paid content", "partner content", "presented by", "advertorial"]
-MAX_CATEGORY_PAGES = 20
+MAX_CATEGORY_PAGES = 3   # Capital B publishes ~28 articles/month — 3 pages per category is sufficient
+MAX_SCRAPE_CANDIDATES = 200  # Hard cap on individual page fetches
 
 
 # ── Public entry point ────────────────────────────────────────────────────────
@@ -66,7 +67,11 @@ def scrape_capitalb(source_name: str, days: int = 30) -> list[dict]:
             seen.add(loc)
             candidates.append((loc, None))
 
-    print(f"  [capitalb] Total candidates: {len(candidates)}")
+    # Prioritise sitemap candidates (have lastmod) — put them first, then others
+    with_date = [(l, m) for l, m in candidates if m is not None]
+    without_date = [(l, m) for l, m in candidates if m is None]
+    candidates = with_date + without_date[:max(0, MAX_SCRAPE_CANDIDATES - len(with_date))]
+    print(f"  [capitalb] Scraping {len(candidates)} candidates (capped at {MAX_SCRAPE_CANDIDATES})")
 
     # Scrape each, filter by publish date
     articles = []
