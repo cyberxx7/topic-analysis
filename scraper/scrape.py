@@ -14,11 +14,13 @@ Writes outputs/articles.csv and prints a per-source data quality report.
 import os
 import pandas as pd
 
-from scraper.rss_scraper       import scrape_rss
-from scraper.wp_scraper        import scrape_wp
-from scraper.html_scraper      import scrape_html
+from scraper.rss_scraper        import scrape_rss
+from scraper.wp_scraper         import scrape_wp
+from scraper.html_scraper       import scrape_html
 from scraper.playwright_scraper import scrape_playwright
-from scraper.utils             import deduplicate
+from scraper.blavity_scraper    import scrape_blavity
+from scraper.capitalb_scraper   import scrape_capitalb
+from scraper.utils              import deduplicate
 
 os.makedirs("outputs", exist_ok=True)
 
@@ -51,8 +53,7 @@ PUBLICATIONS = [
     },
     {
         "name":     "capitalbnews.org",
-        "method":   "wp",
-        "base_url": "https://capitalbnews.org",
+        "method":   "capitalb",
         "rss_url":  "https://capitalbnews.org/feed/",
     },
     {
@@ -69,7 +70,7 @@ PUBLICATIONS = [
     },
     {
         "name":     "blavity.com",
-        "method":   "playwright",
+        "method":   "blavity",
         "rss_url":  "https://blavity.com/rss",
     },
 ]
@@ -112,6 +113,12 @@ def run_scraper(days: int = 30) -> pd.DataFrame:
 
         elif method == "playwright":
             articles = scrape_playwright(name, days=days)
+
+        elif method == "blavity":
+            articles = scrape_blavity(name, days=days)
+
+        elif method == "capitalb":
+            articles = scrape_capitalb(name, days=days)
 
         # ── RSS fallback ──────────────────────────────────────────────
         # Fall back if primary returned 0, or suspiciously few (< 5) articles
