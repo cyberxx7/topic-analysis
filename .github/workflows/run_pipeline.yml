@@ -48,10 +48,19 @@ jobs:
       - name: Download NLTK data
         run: python -c "import nltk; nltk.download('stopwords', quiet=True)"
 
+      - name: Write Google OAuth credentials
+        env:
+          GOOGLE_OAUTH_CREDENTIALS: ${{ secrets.GOOGLE_OAUTH_CREDENTIALS }}
+          GOOGLE_OAUTH_TOKEN: ${{ secrets.GOOGLE_OAUTH_TOKEN }}
+        run: |
+          echo "$GOOGLE_OAUTH_CREDENTIALS" > credentials.json
+          echo "$GOOGLE_OAUTH_TOKEN" > token.json
+
       - name: Run pipeline
         env:
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
-          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          GOOGLE_OAUTH_CREDENTIALS_FILE: credentials.json
+          GOOGLE_OAUTH_TOKEN_FILE: token.json
         run: python run.py
 
       - name: Commit dated outputs and tag run
