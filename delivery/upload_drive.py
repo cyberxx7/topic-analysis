@@ -1,54 +1,47 @@
 """
-delivery/upload_drive.py — Google Drive Uploader (OAuth 2.0)
+delivery/upload_drive.py — Google Drive Uploader (Service Account)
 
-Works with personal Google accounts. Uses a saved OAuth token so
-GitHub Actions can upload silently with no browser interaction.
+Uses a Google Service Account for authentication — no tokens that expire,
+no browser login required. Works reliably in GitHub Actions every time.
 
-── One-time setup (~5 minutes) ───────────────────────────────────────────────
+── One-time setup ────────────────────────────────────────────────────────────
 1. Go to https://console.cloud.google.com
-2. Create a project → enable the "Google Drive API"
-3. APIs & Services → Credentials → Create Credentials → OAuth client ID
-   → Application type: Desktop app
-   → Download the JSON → save it as  credentials.json  in the project root
-4. Run the auth command once locally:
-      python delivery/upload_drive.py --auth
-   A browser window opens → sign in with your Google account → approve access
-   → token.json is saved automatically
-5. Copy the folder ID from your Google Drive URL:
-      https://drive.google.com/drive/folders/<FOLDER_ID>
+2. Enable the Google Drive API
+3. IAM & Admin → Service Accounts → Create Service Account
+4. Keys tab → Add Key → Create new key → JSON → download the file
+5. Share your Google Drive folder with the service account email
+   (e.g. name@project.iam.gserviceaccount.com) as Editor
 6. Add to .env:
       GOOGLE_DRIVE_FOLDER_ID=<your_folder_id>
+      GOOGLE_SERVICE_ACCOUNT_KEY=<full contents of the JSON key file>
 
 ── GitHub Actions setup ──────────────────────────────────────────────────────
-After completing the steps above, add three secrets to your GitHub repo
+Add two secrets to your GitHub repo
 (Settings → Secrets and variables → Actions → New repository secret):
 
-  GOOGLE_DRIVE_FOLDER_ID   ← your Drive folder ID
-  GOOGLE_OAUTH_CREDENTIALS ← full contents of credentials.json
-  GOOGLE_OAUTH_TOKEN       ← full contents of token.json
-
-The workflow will write these files before running and delete them after.
+  GOOGLE_DRIVE_FOLDER_ID      ← your Drive folder ID
+  GOOGLE_SERVICE_ACCOUNT_KEY  ← full contents of the service account JSON key
 ──────────────────────────────────────────────────────────────────────────────
 """
 
 import os
 import sys
+import json
 import argparse
 from dotenv import load_dotenv
 
 try:
     from googleapiclient.discovery import build
     from googleapiclient.http import MediaFileUpload
-    from google.oauth2.credentials import Credentials
-    from google.auth.transport.requests import Request
+    from google.oauth2 import service_account
 except ImportError:
-    build = MediaFileUpload = Credentials = Request = None
+    build = MediaFileUpload = service_account = None
 
 load_dotenv()
 
-FOLDER_ID        = os.getenv("GOOGLE_DRIVE_FOLDER_ID", "")
-CREDENTIALS_PATH = os.getenv("GOOGLE_OAUTH_CREDENTIALS_FILE", "credentials.json")
-TOKEN_PATH       = os.getenv("GOOGLE_OAUTH_TOKEN_FILE", "token.json")
+FOLDER_ID  = os.getenv("GOOGLE_DRIVE_FOLDER_ID", "")
+SA_KEY_ENV = os.getenv("GOOGLE_SERVICE_ACCOUNT_KEY", "")  # full JSON as env var
+SA_KEY_FILE = os.getenv("GOOGLE_SERVICE_ACCOUNT_FILE", "service_account.json")  # or file path
 
 SCOPES = ["https://www.googleapis.com/auth/drive"]
 
@@ -67,39 +60,44 @@ UPLOAD_FILENAMES = [
 ]
 
 
-def run_auth() -> None:
+def _load_credentials():
     """
-    One-time OAuth browser flow. Run this locally once to generate token.json.
-    After this you never need to authenticate again — the token auto-refreshes.
+    Load service account credentials from environment variable or file.
+    Prefers GOOGLE_SERVICE_ACCOUNT_KEY env var (used in GitHub Actions),
+    falls back to a local service_account.json file.
     """
-    try:
-        from google_auth_oauthlib.flow import InstalledAppFlow
-    except ImportError:
-        print("Missing dependency. Run:  pip install google-auth-oauthlib")
-        sys.exit(1)
+    if service_account is None:
+        _abort("Google API libraries not installed.\n"
+               "  Run: pip install google-api-python-client google-auth")
+        return None
 
-    if not os.path.exists(CREDENTIALS_PATH):
-        print(f"\n[drive] ✗ credentials.json not found at: {CREDENTIALS_PATH}")
-        print("  Download it from Google Cloud Console:")
-        print("  APIs & Services → Credentials → OAuth 2.0 Client IDs → ⬇ Download JSON")
-        print("  Save the file as credentials.json in the project root.")
-        sys.exit(1)
+    # Try env var first (GitHub Actions)
+    if SA_KEY_ENV:
+        try:
+            key_data = json.loads(SA_KEY_ENV)
+            return service_account.Credentials.from_service_account_info(
+                key_data, scopes=SCOPES
+            )
+        except Exception as e:
+            _abort(f"Failed to load service account from env var: {e}")
+            return None
 
-    print("\n[drive] Opening browser for Google sign-in...")
-    flow = InstalledAppFlow.from_client_secrets_file(CREDENTIALS_PATH, SCOPES)
-    creds = flow.run_local_server(port=0)
+    # Fall back to local file
+    if os.path.exists(SA_KEY_FILE):
+        try:
+            return service_account.Credentials.from_service_account_file(
+                SA_KEY_FILE, scopes=SCOPES
+            )
+        except Exception as e:
+            _abort(f"Failed to load service account from {SA_KEY_FILE}: {e}")
+            return None
 
-    with open(TOKEN_PATH, "w") as f:
-        f.write(creds.to_json())
-
-    print(f"\n[drive] ✓ Authenticated successfully!")
-    print(f"[drive] ✓ Token saved → {TOKEN_PATH}")
-    print()
-    print("── GitHub Actions: add these 3 repo secrets ──────────────────────")
-    print("  GOOGLE_DRIVE_FOLDER_ID   ← your Drive folder ID (from the URL)")
-    print(f"  GOOGLE_OAUTH_CREDENTIALS ← paste full contents of {CREDENTIALS_PATH}")
-    print(f"  GOOGLE_OAUTH_TOKEN       ← paste full contents of {TOKEN_PATH}")
-    print("──────────────────────────────────────────────────────────────────")
+    _abort(
+        "No service account credentials found.\n"
+        "  Set GOOGLE_SERVICE_ACCOUNT_KEY env var, or place service_account.json\n"
+        "  in the project root."
+    )
+    return None
 
 
 def run_upload(output_dir: str = "outputs", run_date: str = None) -> None:
@@ -125,44 +123,10 @@ def run_upload(output_dir: str = "outputs", run_date: str = None) -> None:
         )
         return
 
-    if not os.path.exists(TOKEN_PATH):
-        _abort(
-            f"No OAuth token found at {TOKEN_PATH}.\n"
-            "  Run this once locally to authenticate:\n"
-            "    python delivery/upload_drive.py --auth"
-        )
+    # ── Load service account credentials ─────────────────────────────
+    creds = _load_credentials()
+    if creds is None:
         return
-
-    # ── Import Google libraries ───────────────────────────────────────
-    if build is None:
-        _abort(
-            "Google API libraries not installed.\n"
-            "  Run: pip install google-api-python-client google-auth google-auth-oauthlib"
-        )
-        return
-
-    # ── Load and refresh credentials ─────────────────────────────────
-    creds = Credentials.from_authorized_user_file(TOKEN_PATH, SCOPES)
-
-    if not creds.valid:
-        if creds.expired and creds.refresh_token:
-            try:
-                creds.refresh(Request())
-                with open(TOKEN_PATH, "w") as f:
-                    f.write(creds.to_json())
-                print("[drive] ✓ Token refreshed")
-            except Exception as exc:
-                _abort(
-                    f"Token refresh failed: {exc}\n"
-                    "  Re-run locally:  python delivery/upload_drive.py --auth"
-                )
-                return
-        else:
-            _abort(
-                "OAuth token is expired and has no refresh token.\n"
-                "  Re-run locally:  python delivery/upload_drive.py --auth"
-            )
-            return
 
     service = build("drive", "v3", credentials=creds)
 
@@ -173,7 +137,7 @@ def run_upload(output_dir: str = "outputs", run_date: str = None) -> None:
     except Exception:
         _abort(
             f"Cannot access Drive folder: {FOLDER_ID}\n"
-            "  Check the folder ID and make sure it exists in your Drive."
+            "  Make sure the folder is shared with the service account email as Editor."
         )
         return
 
@@ -251,13 +215,7 @@ def _abort(message: str) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Google Drive uploader")
-    parser.add_argument(
-        "--auth", action="store_true",
-        help="Run one-time browser login to generate token.json"
-    )
+    parser.add_argument("--output-dir", default="outputs", help="Output directory to upload")
+    parser.add_argument("--run-date",   default=None,      help="Subfolder name in Drive (YYYY-MM-DD)")
     args = parser.parse_args()
-
-    if args.auth:
-        run_auth()
-    else:
-        run_upload()
+    run_upload(output_dir=args.output_dir, run_date=args.run_date)
