@@ -1,0 +1,1199 @@
+{
+  "topic_counts": {
+    "Policing & Public Safety": 12,
+    "School Funding": 31,
+    "Maternal Health": 12,
+    "Criminal Justice Reform": 16,
+    "Housing & Displacement": 8,
+    "Voter Suppression": 14,
+    "Economic Equity & Wealth Gap": 4,
+    "Book Bans & Anti-DEI": 13,
+    "Anti-Black Surveillance": 2,
+    "Reparations": 4,
+    "Environmental Justice": 1
+  },
+  "source_topic_matrix": {
+    "thegrio.com": {
+      "Policing & Public Safety": 4,
+      "Criminal Justice Reform": 6,
+      "Housing & Displacement": 6,
+      "Maternal Health": 6,
+      "School Funding": 16,
+      "Voter Suppression": 4,
+      "Economic Equity & Wealth Gap": 1,
+      "Book Bans & Anti-DEI": 7,
+      "Reparations": 3,
+      "Anti-Black Surveillance": 1
+    },
+    "ebony.com": {
+      "School Funding": 4,
+      "Maternal Health": 4,
+      "Book Bans & Anti-DEI": 2
+    },
+    "newsone.com": {
+      "Maternal Health": 2,
+      "Policing & Public Safety": 8,
+      "Voter Suppression": 7,
+      "Housing & Displacement": 2,
+      "Criminal Justice Reform": 8,
+      "Economic Equity & Wealth Gap": 1,
+      "School Funding": 6,
+      "Anti-Black Surveillance": 1,
+      "Book Bans & Anti-DEI": 3
+    },
+    "capitalbnews.org": {
+      "Voter Suppression": 1,
+      "Criminal Justice Reform": 2,
+      "Environmental Justice": 1,
+      "School Funding": 2,
+      "Reparations": 1
+    },
+    "blavity.com": {
+      "Voter Suppression": 1,
+      "Economic Equity & Wealth Gap": 1
+    },
+    "afrotech.com": {
+      "Book Bans & Anti-DEI": 1,
+      "School Funding": 2
+    },
+    "essence.com": {
+      "Economic Equity & Wealth Gap": 1,
+      "School Funding": 1,
+      "Voter Suppression": 1
+    }
+  },
+  "top_articles_per_topic": {
+    "Policing & Public Safety": [
+      {
+        "title": "Ex-cop arrested for plotting mass shooting at New Orleans Jazz Festival to \u2018harm Black people\u2019",
+        "link": "https://thegrio.com/2026/04/24/christopher-gillum-ex-cop-arrested-mass-shooting-plot/",
+        "source": "thegrio.com",
+        "date": "2026-04-24",
+        "matched_phrases": [
+          "police officer"
+        ]
+      },
+      {
+        "title": "Racist Houston Cop Relieved Of Duties After Viral N-Word-Laced Rant",
+        "link": "https://newsone.com/6857088/racist-cop-ashley-gonzalez-houston-texas/",
+        "source": "newsone.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "police officer"
+        ]
+      },
+      {
+        "title": "Houston officer Ashley Gonzalez removed from position following viral racist rant",
+        "link": "https://thegrio.com/2026/04/23/houston-officer-ashley-gonzalez-removed-from-position-following-viral-racist-rant/",
+        "source": "thegrio.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "police department"
+        ]
+      },
+      {
+        "title": "Ben Crump Representing Charles Adair\u2019s Family In Civil Lawsuit",
+        "link": "https://newsone.com/6856562/ben-crump-charles-adair-civil-lawsuit/",
+        "source": "newsone.com",
+        "date": "2026-04-17",
+        "matched_phrases": [
+          "sheriff"
+        ]
+      },
+      {
+        "title": "Black Teen Sues California Cop Accused Of Slamming Her On The Ground, Causing Concussion And Other Injuries",
+        "link": "https://newsone.com/6856201/black-teen-erin-cowser-sues-california-cop-accused-of-slamming-her-on-the-ground/",
+        "source": "newsone.com",
+        "date": "2026-04-16",
+        "matched_phrases": [
+          "police officer"
+        ]
+      },
+      {
+        "title": "Bodycam Shows St. Louis Police Lied About Fatal Shooting Of Black Teen",
+        "link": "https://newsone.com/6856079/st-louis-police-lied-about-fatal-shooting-emeshyon-wilkins/",
+        "source": "newsone.com",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "body camera",
+          "police officer"
+        ]
+      },
+      {
+        "title": "ICE Agents Who Detained Elderly US Citizen In Freezing Cold May Be Charged",
+        "link": "https://newsone.com/6856117/ice-agents-minnesota-chongly-thao-criminal-charges/",
+        "source": "newsone.com",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "law enforcement"
+        ]
+      },
+      {
+        "title": "Police brutality swings back into full view in after NYPD brutally assaults man in case of mistaken identity",
+        "link": "https://thegrio.com/2026/04/15/brooklyn-man-assaulted-nypd-viral-video/",
+        "source": "thegrio.com",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "police brutality"
+        ]
+      },
+      {
+        "title": "Bodycam footage challenges police narrative in killing of 17-year-old Emeshyon Wilkins",
+        "link": "https://thegrio.com/2026/04/14/st-louis-bodycam-footage-teen-shooting-contradiction/",
+        "source": "thegrio.com",
+        "date": "2026-04-14",
+        "matched_phrases": [
+          "police killing"
+        ]
+      },
+      {
+        "title": "Pete Hegseth Is Getting Ripped On Social Media By A Trump Official",
+        "link": "https://newsone.com/6855062/pete-hegseth-gets-ripped-social-media-trump-official/",
+        "source": "newsone.com",
+        "date": "2026-04-04",
+        "matched_phrases": [
+          "homeland security"
+        ]
+      },
+      {
+        "title": "Le[e]gal Brief: The Disturbing Rise Of \u2018Comply Or Die\u2019 Policing",
+        "link": "https://newsone.com/6854459/legal-brief-disturbing-rise-comply-or-die-policing-lee-merritt/",
+        "source": "newsone.com",
+        "date": "2026-03-30",
+        "matched_phrases": [
+          "excessive force",
+          "police officer"
+        ]
+      },
+      {
+        "title": "Phoenix Cops Won't Be Disciplined For Inventing Fake Gang",
+        "link": "https://newsone.com/6854093/phoenix-cops-wont-be-disciplined-inventing-fake-gang/",
+        "source": "newsone.com",
+        "date": "2026-03-26",
+        "matched_phrases": [
+          "won't be disciplined",
+          "fake gang"
+        ]
+      }
+    ],
+    "School Funding": [
+      {
+        "title": "Reality Check: AI Brain Fry Is Here",
+        "link": "https://www.ebony.com/reality-check-ai-brain-fry-is-here/",
+        "source": "ebony.com",
+        "date": "2026-04-24",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "House Bill 3416 Proposes Allocation Of Gambling Proceeds In Missouri To Support State\u2019s HBCUs",
+        "link": "https://afrotech.com/house-bill-3416-gambling-proceeds-in-missouri-to-support-state-hbcus",
+        "source": "afrotech.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "hbcu",
+          "university"
+        ]
+      },
+      {
+        "title": "J.R. Smith proves it\u2019s never too late with upcoming HBCU graduation",
+        "link": "https://thegrio.com/2026/04/23/j-r-smith-proves-its-never-too-late-with-upcoming-hbcu-graduation/",
+        "source": "thegrio.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "hbcu",
+          "university"
+        ]
+      },
+      {
+        "title": "Spelman College makes history with first-ever co-campus homecoming queens, ignites online debate",
+        "link": "https://thegrio.com/2026/04/23/spelman-college-makes-history-with-first-ever-co-campus-homecoming-queens-ignites-online-debate/",
+        "source": "thegrio.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "Spelman"
+        ]
+      },
+      {
+        "title": "An HBCU Student Goes To Class And Then The Gun Range: Here\u2019s Why",
+        "link": "https://newsone.com/6855454/howard-student-goes-class-gun-range/",
+        "source": "newsone.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "hbcu"
+        ]
+      },
+      {
+        "title": "J.R. Smith Is Set To Obtain Bachelor\u2019s Degree From North Carolina A&T",
+        "link": "https://afrotech.com/jr-smith-is-set-to-obtain-degree",
+        "source": "afrotech.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Spelman College names Symone Sanders Townsend as 2026 commencement speaker",
+        "link": "https://thegrio.com/2026/04/21/spelman-2026-commencement-speaker-symone-sanders-townsend/",
+        "source": "thegrio.com",
+        "date": "2026-04-21",
+        "matched_phrases": [
+          "Spelman"
+        ]
+      },
+      {
+        "title": "Sunny Hostin\u2019s daughter Paloma follows in her footsteps, joins AKA at Cornell University",
+        "link": "https://thegrio.com/2026/04/21/sunny-hostins-daughter-paloma-follows-in-her-footsteps-joins-aka-at-cornell-university/",
+        "source": "thegrio.com",
+        "date": "2026-04-21",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Jackson State University names Denise Jones Gregory as first alumna president to lead the institution in permanent role",
+        "link": "https://thegrio.com/2026/04/18/dr-denise-jones-gregory-jackson-state-university-president/",
+        "source": "thegrio.com",
+        "date": "2026-04-18",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Debbie Allen set to deliver commencement speech for Clark Atlanta University\u2019s Class of 2026",
+        "link": "https://thegrio.com/2026/04/13/debbie-allen-commencement-address-clark-atlanta-university/",
+        "source": "thegrio.com",
+        "date": "2026-04-13",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "HBCUs Say They Stand to Lose Out if College Athlete Pay Rules Don\u2019t Change",
+        "link": "https://capitalbnews.org/hbcus-say-they-stand-to-lose-out-if-college-athlete-pay-rules-dont-change/",
+        "source": "capitalbnews.org",
+        "date": "2026-04-13",
+        "matched_phrases": [
+          "hbcu",
+          "university"
+        ]
+      },
+      {
+        "title": "Craig Melvin continues to embrace the \u2018hard lessons\u2019 as he prepares for massive moment outside of \u2018TODAY\u2019 show",
+        "link": "https://thegrio.com/2026/04/11/craig-melvin-hard-lessons-villanova-university-commencement-speaker/",
+        "source": "thegrio.com",
+        "date": "2026-04-11",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "The 24: Each HBCU MacKenzie Scott has donated to, and how the $1 billion in total donations represents \u2018trust-based\u2019 faith in higher education",
+        "link": "https://thegrio.com/2026/04/10/hbcus-mackenzie-scott-has-donated-to-1-billion/",
+        "source": "thegrio.com",
+        "date": "2026-04-10",
+        "matched_phrases": [
+          "hbcu"
+        ]
+      },
+      {
+        "title": "Alcorn State University 1st HBCU To Fully Integrate AI",
+        "link": "https://newsone.com/6855551/alcorn-state-university-hbcu-fully-integrate-ai/",
+        "source": "newsone.com",
+        "date": "2026-04-09",
+        "matched_phrases": [
+          "hbcu",
+          "university"
+        ]
+      },
+      {
+        "title": "Black student orgs fight back as universities shut down DEI organizations\u2019 funding under Trump\u2019s crackdown",
+        "link": "https://thegrio.com/2026/04/08/black-student-orgs-fight-back-as-universities-shut-down-dei-organizations-funding-under-trumps-crackdown/",
+        "source": "thegrio.com",
+        "date": "2026-04-08",
+        "matched_phrases": [
+          "black student",
+          "university"
+        ]
+      },
+      {
+        "title": "Victoria Mon\u00e9t, Angel Reese Highlight The Life-Changing Impact Of HBCUs | Essence",
+        "link": "https://www.essence.com/op-ed/hbcu-mental-health-culture-benefits/",
+        "source": "essence.com",
+        "date": "2026-04-07",
+        "matched_phrases": [
+          "hbcu"
+        ]
+      },
+      {
+        "title": "How Universities Are Quietly Killing Black Student Life Without Saying DEI",
+        "link": "https://newsone.com/6855369/universities-quietly-killing-black-student-life/",
+        "source": "newsone.com",
+        "date": "2026-04-07",
+        "matched_phrases": [
+          "black student"
+        ]
+      },
+      {
+        "title": "Mizzou Pulls Funding From Black Student Organizations",
+        "link": "https://newsone.com/6855335/mizzou-pulls-funding-from-black-student-organizations/",
+        "source": "newsone.com",
+        "date": "2026-04-07",
+        "matched_phrases": [
+          "black student",
+          "university"
+        ]
+      },
+      {
+        "title": "Grambling State Secures Trademark for its \u201cG\u201d Logo After Almost 30 Years",
+        "link": "https://www.ebony.com/grambling-state-logo-federal-trademark/",
+        "source": "ebony.com",
+        "date": "2026-04-07",
+        "matched_phrases": [
+          "hbcu",
+          "university"
+        ]
+      },
+      {
+        "title": "UCLA storms past South Carolina to claim historic first women\u2019s NCAA title",
+        "link": "https://thegrio.com/2026/04/06/ucla-storms-past-south-carolina-to-claim-historic-first-womens-ncaa-title/",
+        "source": "thegrio.com",
+        "date": "2026-04-06",
+        "matched_phrases": [
+          "NCAA"
+        ]
+      },
+      {
+        "title": "Black Professor Sews Quilt Honoring Civil Rights Activist Fannie Lou Hamer",
+        "link": "https://newsone.com/6855006/black-professor-sews-quilt-honoring-civil-rights-activist-fannie-lou-hamer/",
+        "source": "newsone.com",
+        "date": "2026-04-03",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "NFL Says It Wants HBCU Talent But Overlooks These Players",
+        "link": "https://newsone.com/6854927/nfl-overlooks-hbcu-talent-football-players/",
+        "source": "newsone.com",
+        "date": "2026-04-02",
+        "matched_phrases": [
+          "hbcu"
+        ]
+      },
+      {
+        "title": "A Financial Crisis Could Upend Kentucky\u2019s Only Public HBCU",
+        "link": "https://capitalbnews.org/kentucky-state-university-state-takeover-senate-bill-185/",
+        "source": "capitalbnews.org",
+        "date": "2026-04-01",
+        "matched_phrases": [
+          "hbcu"
+        ]
+      },
+      {
+        "title": "As future of Kentucky State University seems secure, students are pushing back on potential changes",
+        "link": "https://thegrio.com/2026/03/31/kentucky-state-university-senate-bill-185-reaction/",
+        "source": "thegrio.com",
+        "date": "2026-03-31",
+        "matched_phrases": [
+          "hbcu",
+          "university"
+        ]
+      },
+      {
+        "title": "Angel Reese is having a week: Vogue cover, WNBA praise and an HBCU conversation that won\u2019t go away",
+        "link": "https://thegrio.com/2026/03/30/angel-reese-vogue-cover-wnba-hbcu-howard/",
+        "source": "thegrio.com",
+        "date": "2026-03-30",
+        "matched_phrases": [
+          "hbcu",
+          "university",
+          "Howard University"
+        ]
+      },
+      {
+        "title": "Morehouse student Chad Pitts balances 4.0 GPA with rising boxing career",
+        "link": "https://thegrio.com/2026/03/30/chad-pitts-morehouse-boxing-4-0-gpa/",
+        "source": "thegrio.com",
+        "date": "2026-03-30",
+        "matched_phrases": [
+          "Morehouse"
+        ]
+      },
+      {
+        "title": "Jill Scott honors HBCU culture in upcycled \u2018Patched Gal\u2019 look at inaugural Aware Fest",
+        "link": "https://thegrio.com/2026/03/28/jill-scott-hbcu-aware-fest-atlanta-fashion/",
+        "source": "thegrio.com",
+        "date": "2026-03-28",
+        "matched_phrases": [
+          "hbcu"
+        ]
+      },
+      {
+        "title": "Main Character Energy: 8 of the Top Players in the NCAA Tournament",
+        "link": "https://www.ebony.com/sports-march-madness-players-to-watch-2026/",
+        "source": "ebony.com",
+        "date": "2026-03-27",
+        "matched_phrases": [
+          "NCAA"
+        ]
+      },
+      {
+        "title": "Alaina Hoskins started over at 54\u2014now she\u2019s bottling affirmation for women of all ages",
+        "link": "https://thegrio.com/2026/03/27/alaina-hoskins-started-over-at-54-now-shes-bottling-affirmation-for-women-of-all-ages/",
+        "source": "thegrio.com",
+        "date": "2026-03-27",
+        "matched_phrases": [
+          "hbcu"
+        ]
+      },
+      {
+        "title": "Culture meets curriculum at Howard University\u2019s new Cardi B-centered course",
+        "link": "https://thegrio.com/2026/03/26/culture-meets-curriculum-at-howard-universitys-new-cardi-b-centered-course/",
+        "source": "thegrio.com",
+        "date": "2026-03-26",
+        "matched_phrases": [
+          "university",
+          "Howard University"
+        ]
+      },
+      {
+        "title": "Inside LVMH\u2019s Paris Playbook, Where HBCU Students Learn Luxury at the Source",
+        "link": "https://www.ebony.com/lvmh-spelman-hbcu-luxury-branding-program/",
+        "source": "ebony.com",
+        "date": "2026-03-26",
+        "matched_phrases": [
+          "hbcu",
+          "university",
+          "Morehouse",
+          "Spelman"
+        ]
+      }
+    ],
+    "Maternal Health": [
+      {
+        "title": "Rep. Summer Lee Presses RFK Jr. About Black Maternal Health Research",
+        "link": "https://newsone.com/6858182/rep-summer-lee-rfk-jr-black-maternal-health/",
+        "source": "newsone.com",
+        "date": "2026-04-24",
+        "matched_phrases": [
+          "maternal health",
+          "black maternal"
+        ]
+      },
+      {
+        "title": "White Grievance And The Direct Attack On Black Maternal Health",
+        "link": "https://newsone.com/6858280/silvia-lopez-navarro-black-maternal-health-lawsuit/",
+        "source": "newsone.com",
+        "date": "2026-04-24",
+        "matched_phrases": [
+          "maternal health",
+          "black maternal"
+        ]
+      },
+      {
+        "title": "Kiara Brokenbrough, bride who went viral for $500 wedding in 2022, dies during childbirth",
+        "link": "https://thegrio.com/2026/04/23/kiara-brokenbrough-500-wedding-bride-dies-childbirth/",
+        "source": "thegrio.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "childbirth"
+        ]
+      },
+      {
+        "title": "How can we solve the Black maternal health crisis if we can\u2019t say \u2018Black\u2019?",
+        "link": "https://thegrio.com/2026/04/21/how-can-we-solve-the-black-maternal-health-crisis-if-we-cant-say-black/",
+        "source": "thegrio.com",
+        "date": "2026-04-21",
+        "matched_phrases": [
+          "maternal health",
+          "black maternal"
+        ]
+      },
+      {
+        "title": "Dr. Lisa Saul on how she stays encouraged to fight to end the Black maternal health crisis",
+        "link": "https://thegrio.com/2026/04/17/dr-lisa-saul-doulas-life-saving-care-black-maternal-health/",
+        "source": "thegrio.com",
+        "date": "2026-04-17",
+        "matched_phrases": [
+          "maternal health",
+          "black maternal",
+          "doula"
+        ]
+      },
+      {
+        "title": "I Almost Didn\u2019t Make It \u2014 A Black Mother Shares How Her Delivery Turned Into an Emergency",
+        "link": "https://www.ebony.com/black-mother-delivery-emergency/",
+        "source": "ebony.com",
+        "date": "2026-04-17",
+        "matched_phrases": [
+          "maternal mortality"
+        ]
+      },
+      {
+        "title": "Young Black mothers deserve a seat at the maternal health table, too",
+        "link": "https://thegrio.com/2026/04/17/black-maternal-health-week-young-mothers/",
+        "source": "thegrio.com",
+        "date": "2026-04-17",
+        "matched_phrases": [
+          "maternal health",
+          "black maternal"
+        ]
+      },
+      {
+        "title": "Unlocking Insights: Leseliey Welch is Pushing for Financial Equity for Black Maternal Health",
+        "link": "https://www.ebony.com/unlocking-insights-financial-equity-black-maternal-health/",
+        "source": "ebony.com",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "maternal health",
+          "black maternal",
+          "birth equity"
+        ]
+      },
+      {
+        "title": "Black Maternal Health Week 2026 has kicked off, \u2018rooted in justice and joy\u2019",
+        "link": "https://thegrio.com/2026/04/13/black-maternal-health-week-2026-has-kicked-off-rooted-in-justice-and-joy/",
+        "source": "thegrio.com",
+        "date": "2026-04-13",
+        "matched_phrases": [
+          "maternal health",
+          "black maternal"
+        ]
+      },
+      {
+        "title": "10 Celebrities Who Have Been Vocal About Maternal Health",
+        "link": "https://www.ebony.com/10-celebrities-black-maternal-health/",
+        "source": "ebony.com",
+        "date": "2026-04-13",
+        "matched_phrases": [
+          "maternal health"
+        ]
+      },
+      {
+        "title": "Charles Johnson Lost His Wife 10 Years Ago and Turned Loss into Advocacy",
+        "link": "https://www.ebony.com/charles-johnson-lost-his-wife-10-years-ago-and-turned-loss-into-advocacy/",
+        "source": "ebony.com",
+        "date": "2026-04-13",
+        "matched_phrases": [
+          "maternal health",
+          "black maternal",
+          "c-section"
+        ]
+      },
+      {
+        "title": "Black midwives file landmark lawsuit against Georgia over some of the nation\u2019s most restrictive birth laws",
+        "link": "https://thegrio.com/2026/04/06/black-midwives-file-landmark-lawsuit-against-georgia-over-some-of-the-nations-most-restrictive-birth-laws/",
+        "source": "thegrio.com",
+        "date": "2026-04-06",
+        "matched_phrases": [
+          "maternal health"
+        ]
+      }
+    ],
+    "Criminal Justice Reform": [
+      {
+        "title": "Texas death row case raises debate over use of rap lyrics in court",
+        "link": "https://thegrio.com/2026/04/24/texas-death-row-rap-lyrics-evidence-broadnax-case/",
+        "source": "thegrio.com",
+        "date": "2026-04-24",
+        "matched_phrases": [
+          "death row"
+        ]
+      },
+      {
+        "title": "Southern Poverty Law Center Indicted By DOJ For Using Paid Informants",
+        "link": "https://newsone.com/6856935/southern-poverty-law-center-indicted-trump-doj/",
+        "source": "newsone.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "charged with",
+          "indicted"
+        ]
+      },
+      {
+        "title": "Trump Admin\u2019s Attack On Civil Rights Groups Is A Call To Action",
+        "link": "https://newsone.com/6857061/trump-admin-attack-civil-rights-groups-splc/",
+        "source": "newsone.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "prosecution"
+        ]
+      },
+      {
+        "title": "Singer D4vd charged with first-degree murder as LA County D.A. reveals suggested timeline of 14-year-old girl\u2019s death",
+        "link": "https://thegrio.com/2026/04/20/d4vd-charged-first-degree-murder-felonies/",
+        "source": "thegrio.com",
+        "date": "2026-04-20",
+        "matched_phrases": [
+          "charged with murder",
+          "charged with"
+        ]
+      },
+      {
+        "title": "420 Laws: US Cannabis Legalization Through The Decades",
+        "link": "https://newsone.com/6856771/420-cannabis-law-legalization-united-states/",
+        "source": "newsone.com",
+        "date": "2026-04-20",
+        "matched_phrases": [
+          "mandatory minimum"
+        ]
+      },
+      {
+        "title": "2 White Men Charged With Attempted Murder And Hate Crimes In Illinois",
+        "link": "https://newsone.com/6856179/white-men-charged-hate-crime-attemped-murder/",
+        "source": "newsone.com",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "charged with murder",
+          "charged with"
+        ]
+      },
+      {
+        "title": "ICE Agents Who Detained Elderly US Citizen In Freezing Cold May Be Charged",
+        "link": "https://newsone.com/6856117/ice-agents-minnesota-chongly-thao-criminal-charges/",
+        "source": "newsone.com",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "criminal charges"
+        ]
+      },
+      {
+        "title": "Residents Say Musk\u2019s AI Supercomputer Is a \u2018Death Sentence\u2019 for Memphis Communities",
+        "link": "https://capitalbnews.org/elon-musk-xai-naacp-black-neighborhoods-pollution/",
+        "source": "capitalbnews.org",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "death sentence"
+        ]
+      },
+      {
+        "title": "Louisiana Might Eliminate This Black Elected Official\u2019s Job Before He Can Start It",
+        "link": "https://capitalbnews.org/calvin-duncan-new-orleans-criminal-district-clerk/",
+        "source": "capitalbnews.org",
+        "date": "2026-04-14",
+        "matched_phrases": [
+          "criminal justice reform",
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "Appeals Court Weighing Length Of Sean \u2018Diddy\u2019 Combs Sentence",
+        "link": "https://newsone.com/6855700/sean-combs-appeal-court-weighs-length-sentence/",
+        "source": "newsone.com",
+        "date": "2026-04-10",
+        "matched_phrases": [
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "Sean \u2018Diddy\u2019 Combs\u2019 prison sentence faces scrutiny as appeals court questions length of punishment",
+        "link": "https://thegrio.com/2026/04/09/sean-diddy-combs-appeal-conviction-first-amendment-case/",
+        "source": "thegrio.com",
+        "date": "2026-04-09",
+        "matched_phrases": [
+          "convicted",
+          "prison sentence"
+        ]
+      },
+      {
+        "title": "Jan. 6 Rioter Sentenced Over 100K Child Sex Abuse Images",
+        "link": "https://newsone.com/6854565/jan-6-rioter-sentenced-child-sex-abuse-images/",
+        "source": "newsone.com",
+        "date": "2026-03-31",
+        "matched_phrases": [
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "Supreme Court revisits Mississippi death row case tied to disputed removal of Black jurors",
+        "link": "https://thegrio.com/2026/03/30/supreme-court-mississippi-terry-pitchford-jury-selection/",
+        "source": "thegrio.com",
+        "date": "2026-03-30",
+        "matched_phrases": [
+          "death row"
+        ]
+      },
+      {
+        "title": "A Hottie Home for Tyger: Megan Thee Stallion pulls pup from death row in heartwarming rescue",
+        "link": "https://thegrio.com/2026/03/28/megan-thee-stallion-rescues-dog-kill-shelter/",
+        "source": "thegrio.com",
+        "date": "2026-03-28",
+        "matched_phrases": [
+          "death row"
+        ]
+      },
+      {
+        "title": "Aliyah Henderson Pleads Not Guilty To Murdering Her 2 Daugthers",
+        "link": "https://newsone.com/6854281/aliyah-henderson-pleads-not-guilty-murdering-daughters/",
+        "source": "newsone.com",
+        "date": "2026-03-27",
+        "matched_phrases": [
+          "not guilty"
+        ]
+      },
+      {
+        "title": "Detroit man convicted of killing 13-year-old Na\u2019Ziyah Harris dies in prison after sentencing",
+        "link": "https://thegrio.com/2026/03/26/detroit-man-convicted-of-killing-13-year-old-naziyah-harris-dies-in-prison-after-sentencing/",
+        "source": "thegrio.com",
+        "date": "2026-03-26",
+        "matched_phrases": [
+          "convicted"
+        ]
+      }
+    ],
+    "Housing & Displacement": [
+      {
+        "title": "DC teen fatally shot at food truck was sheltered, rarely allowed out, says family",
+        "link": "https://thegrio.com/2026/04/24/teen-rarely-allowed-outside-shot-dead-dc-food-truck/",
+        "source": "thegrio.com",
+        "date": "2026-04-24",
+        "matched_phrases": [
+          "shelter"
+        ]
+      },
+      {
+        "title": "New York City Council Member Chi Oss\u00e9 Arrested For Protesting Eviction",
+        "link": "https://newsone.com/6857053/chi-osse-arrested-protesting-eviction-deed-theft/",
+        "source": "newsone.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "eviction"
+        ]
+      },
+      {
+        "title": "NYC council member Chi Oss\u00e9 arrested during Brooklyn anti-eviction protest",
+        "link": "https://thegrio.com/2026/04/22/nyc-council-member-chi-osse-arrested-during-brooklyn-anti-eviction-protest/",
+        "source": "thegrio.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "eviction"
+        ]
+      },
+      {
+        "title": "Altadena residents warn: More than a year after the fires, most have not returned and displacement is already here",
+        "link": "https://thegrio.com/2026/04/10/altadena-residents-warn-more-than-a-year-after-the-fires-most-have-not-returned-and-displacement-is-already-here/",
+        "source": "thegrio.com",
+        "date": "2026-04-10",
+        "matched_phrases": [
+          "displacement"
+        ]
+      },
+      {
+        "title": "Virginia church donates $1M to wipe out rent debt for public housing residents",
+        "link": "https://thegrio.com/2026/04/07/virginia-church-1m-public-housing-rent-debt-relief/",
+        "source": "thegrio.com",
+        "date": "2026-04-07",
+        "matched_phrases": [
+          "public housing"
+        ]
+      },
+      {
+        "title": "A Hottie Home for Tyger: Megan Thee Stallion pulls pup from death row in heartwarming rescue",
+        "link": "https://thegrio.com/2026/03/28/megan-thee-stallion-rescues-dog-kill-shelter/",
+        "source": "thegrio.com",
+        "date": "2026-03-28",
+        "matched_phrases": [
+          "shelter"
+        ]
+      },
+      {
+        "title": "The Merchant's House Museum, Home To Underground Railroad History, Under Threat",
+        "link": "https://newsone.com/6854291/the-merchants-house-museum-underground-railroad-under-threat/",
+        "source": "newsone.com",
+        "date": "2026-03-27",
+        "matched_phrases": [
+          "shelter"
+        ]
+      },
+      {
+        "title": "Black farmers shut out of Trump White House farmers event: \u2018Why can\u2019t we be at the table?\u2019",
+        "link": "https://thegrio.com/2026/03/27/black-farmers-shut-out-of-trump-white-house-farmers-event-why-cant-we-be-at-the-table/",
+        "source": "thegrio.com",
+        "date": "2026-03-27",
+        "matched_phrases": [
+          "foreclosure"
+        ]
+      }
+    ],
+    "Voter Suppression": [
+      {
+        "title": "Virginia\u2019s Redistricting Vote Was About Representation, Power, and History",
+        "link": "https://capitalbnews.org/virginia-redistricting-vote-black-political-power/",
+        "source": "capitalbnews.org",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Everything To Know About Virginia Voters Approving New Democratic Redistricting Ahead Of 2026 Midterms",
+        "link": "https://blavity.com/virginia-voters-democratic-redistricting-approved-ahead-midterms",
+        "source": "blavity.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "gerrymandering",
+          "redistricting",
+          "midterm"
+        ]
+      },
+      {
+        "title": "Republican Pressure Grows For Florida To Undergo Redistricting Effort",
+        "link": "https://newsone.com/6858181/republican-pressure-grows-florida-redistricting-effort/",
+        "source": "newsone.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Virginia Voters Narrowly Pass Redistricting Referendum",
+        "link": "https://newsone.com/6856954/virginia-voters-narrowly-pass-redistricting-referendum/",
+        "source": "newsone.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "redistricting",
+          "midterm"
+        ]
+      },
+      {
+        "title": "\u2018Fight fire with fire\u2019: The Black lawmakers behind Virginia\u2019s vote \u2018Yes\u2019 push",
+        "link": "https://thegrio.com/2026/04/22/fight-fire-with-fire-the-black-lawmakers-behind-virginias-vote-yes-push/",
+        "source": "thegrio.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Harris, Obama and Black leaders celebrate Virginia redistricting win as sending \u2018clear message\u2019 to Trump",
+        "link": "https://thegrio.com/2026/04/22/harris-obama-black-leaders-virginia-redistricting-win-clear-message-to-trump/",
+        "source": "thegrio.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Virginia Voters Set To Decide Whether Redistricting Measure Passes",
+        "link": "https://newsone.com/6856888/virginia-redistricting-vote-tuesday-voters-decide/",
+        "source": "newsone.com",
+        "date": "2026-04-21",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Black voters and their historical disenfranchisement take center stage in Virginia\u2019s redistricting referendum",
+        "link": "https://thegrio.com/2026/04/21/black-voters-historical-disenfranchisement-virginia-redistricting-referendum/",
+        "source": "thegrio.com",
+        "date": "2026-04-21",
+        "matched_phrases": [
+          "disenfranchisement",
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Maryland\u2019s Redistricting Effort Officially Fails",
+        "link": "https://newsone.com/6856188/maryland-redistricting-effort-officially-fails/",
+        "source": "newsone.com",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Clay Fuller Narrowly Wins Runoff To Replace Marjorie Taylor Greene",
+        "link": "https://newsone.com/6855466/clay-fuller-wins-runoff-replace-marjorie-taylor-greene/",
+        "source": "newsone.com",
+        "date": "2026-04-08",
+        "matched_phrases": [
+          "midterm"
+        ]
+      },
+      {
+        "title": "Freedom Table With Rashad Robinson: Pushing Back Against Voter Suppression",
+        "link": "https://newsone.com/6855307/freedom-table-pushing-back-against-voter-suppression/",
+        "source": "newsone.com",
+        "date": "2026-04-07",
+        "matched_phrases": [
+          "voter suppression",
+          "voting rights",
+          "democracy"
+        ]
+      },
+      {
+        "title": "Gov. Ron DeSantis Signs Florida's Version Of SAVE Act Into Law",
+        "link": "https://newsone.com/6855024/ron-desantis-signs-florida-version-save-act-into-law/",
+        "source": "newsone.com",
+        "date": "2026-04-03",
+        "matched_phrases": [
+          "save act",
+          "voter rolls"
+        ]
+      },
+      {
+        "title": "As the only Black woman on the Supreme Court, Ketanji Brown Jackson\u2019s lone dissent in conversion therapy ruling stands out",
+        "link": "https://thegrio.com/2026/04/01/ketanji-brown-jackson-lone-black-woman-dissent-conversion-therapy/",
+        "source": "thegrio.com",
+        "date": "2026-04-01",
+        "matched_phrases": [
+          "democracy"
+        ]
+      },
+      {
+        "title": "Lisa Blunt Rochester Sounds Alarm On SAVE Act | Essence",
+        "link": "https://www.essence.com/news/politics/lisa-blunt-rochester-save-act-voting-rights-2026/",
+        "source": "essence.com",
+        "date": "2026-03-31",
+        "matched_phrases": [
+          "voting access",
+          "save act",
+          "jim crow"
+        ]
+      }
+    ],
+    "Economic Equity & Wealth Gap": [
+      {
+        "title": "Trump\u2019s DOJ Charges Southern Poverty Law Center With Fraud In Shocking, Controversial Move",
+        "link": "https://blavity.com/trumps-doj-charges-southern-poverty-law-center-with-fraud",
+        "source": "blavity.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "poverty"
+        ]
+      },
+      {
+        "title": "Southern Poverty Law Center Indicted By DOJ For Using Paid Informants",
+        "link": "https://newsone.com/6856935/southern-poverty-law-center-indicted-trump-doj/",
+        "source": "newsone.com",
+        "date": "2026-04-22",
+        "matched_phrases": [
+          "poverty"
+        ]
+      },
+      {
+        "title": "FBI charges Southern Poverty Law Center with defrauding donors by paying extremist informants",
+        "link": "https://thegrio.com/2026/04/21/southern-poverty-law-center-indicted-fraud/",
+        "source": "thegrio.com",
+        "date": "2026-04-21",
+        "matched_phrases": [
+          "poverty"
+        ]
+      },
+      {
+        "title": "Before 'Community' Was A Business Model, Dr. Cameka Smith Was Building One For Black Women | Essence",
+        "link": "https://www.essence.com/news/money-career/cameka-smith-boss-network/",
+        "source": "essence.com",
+        "date": "2026-04-09",
+        "matched_phrases": [
+          "black business"
+        ]
+      }
+    ],
+    "Book Bans & Anti-DEI": [
+      {
+        "title": "Florida Gov. Ron DeSantis Signs Bill Eliminating DEI Programs In Local Governments And Establishing Penalties For Violations",
+        "link": "https://afrotech.com/florida-gov-ron-desantis-signs-bill-eliminating-dei-programs",
+        "source": "afrotech.com",
+        "date": "2026-04-23",
+        "matched_phrases": [
+          "diversity equity inclusion",
+          "dei"
+        ]
+      },
+      {
+        "title": "Trump, attacking DEI, promised to restore merit and hire the \u2018best and brightest.\u2019 His cabinet tests that theory",
+        "link": "https://thegrio.com/2026/04/21/trump-dei-cabinet-best-and-brightest/",
+        "source": "thegrio.com",
+        "date": "2026-04-21",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "How can we solve the Black maternal health crisis if we can\u2019t say \u2018Black\u2019?",
+        "link": "https://thegrio.com/2026/04/21/how-can-we-solve-the-black-maternal-health-crisis-if-we-cant-say-black/",
+        "source": "thegrio.com",
+        "date": "2026-04-21",
+        "matched_phrases": [
+          "dei",
+          "anti-dei"
+        ]
+      },
+      {
+        "title": "Jackie Robinson Day Is About More Than Being First",
+        "link": "https://www.ebony.com/sports-jackie-robinson-day-42-mlb/",
+        "source": "ebony.com",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "black history month"
+        ]
+      },
+      {
+        "title": "Not Just Hype: The Beauty Brands Turning Momentum Into Longevity",
+        "link": "https://www.ebony.com/not-just-hype-beauty-brands/",
+        "source": "ebony.com",
+        "date": "2026-04-10",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "Black student orgs fight back as universities shut down DEI organizations\u2019 funding under Trump\u2019s crackdown",
+        "link": "https://thegrio.com/2026/04/08/black-student-orgs-fight-back-as-universities-shut-down-dei-organizations-funding-under-trumps-crackdown/",
+        "source": "thegrio.com",
+        "date": "2026-04-08",
+        "matched_phrases": [
+          "dei",
+          "anti-dei"
+        ]
+      },
+      {
+        "title": "How Universities Are Quietly Killing Black Student Life Without Saying DEI",
+        "link": "https://newsone.com/6855369/universities-quietly-killing-black-student-life/",
+        "source": "newsone.com",
+        "date": "2026-04-07",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "Black unemployment rate slightly dips, but Trump\u2019s new 2027 \u2018woke\u2019 budget cuts threaten Black economy",
+        "link": "https://thegrio.com/2026/04/03/black-unemployment-rate-slightly-dips-but-trumps-new-2027-woke-budget-cuts-threaten-black-economy/",
+        "source": "thegrio.com",
+        "date": "2026-04-03",
+        "matched_phrases": [
+          "woke"
+        ]
+      },
+      {
+        "title": "Black Professor Sews Quilt Honoring Civil Rights Activist Fannie Lou Hamer",
+        "link": "https://newsone.com/6855006/black-professor-sews-quilt-honoring-civil-rights-activist-fannie-lou-hamer/",
+        "source": "newsone.com",
+        "date": "2026-04-03",
+        "matched_phrases": [
+          "black history month"
+        ]
+      },
+      {
+        "title": "As DEI backpedaling continues, Solidcore CEO wants it to be the \u2018de facto landing spot for Black women\u2019",
+        "link": "https://thegrio.com/2026/04/01/solidcore-ceo-wants-it-to-be-the-de-facto-landing-spot-for-black-women/",
+        "source": "thegrio.com",
+        "date": "2026-04-01",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "\u2018Biggest, Blackest, and Loudest\u2019: Baltimore Mayor Brandon Scott\u2019s unapologetic battle against digital terror",
+        "link": "https://thegrio.com/2026/03/28/brandon-scott-instagram-racism-response/",
+        "source": "thegrio.com",
+        "date": "2026-03-28",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "The United States Is Crumbling. Bring the \u2018DEIs\u2019 Back",
+        "link": "https://newsone.com/6854276/united-states-crumbling-bring-back-dei/",
+        "source": "newsone.com",
+        "date": "2026-03-27",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "Trump signs executive order targeting \u2018DEI discrimination\u2019 in federal contracting",
+        "link": "https://thegrio.com/2026/03/27/trump-signs-executive-order-targeting-dei-discrimination-in-federal-contracting/",
+        "source": "thegrio.com",
+        "date": "2026-03-27",
+        "matched_phrases": [
+          "dei"
+        ]
+      }
+    ],
+    "Anti-Black Surveillance": [
+      {
+        "title": "The FISA Warrantless Surveillance Loophole Threatens Black Communities",
+        "link": "https://newsone.com/6856472/warrantless-surveillance-loophole-threatens-black-communities/",
+        "source": "newsone.com",
+        "date": "2026-04-17",
+        "matched_phrases": [
+          "surveillance"
+        ]
+      },
+      {
+        "title": "ICE\u2019s use of spyware raises concerns for Black and brown citizens\u2019 privacy rights",
+        "link": "https://thegrio.com/2026/04/09/ices-use-of-spyware-raises-concerns-for-black-and-brown-citizens-privacy-rights/",
+        "source": "thegrio.com",
+        "date": "2026-04-09",
+        "matched_phrases": [
+          "privacy rights"
+        ]
+      }
+    ],
+    "Reparations": [
+      {
+        "title": "Law signed by Trump for Holocaust survivors proves reparations is possible, just not for Black Americans, say advocates",
+        "link": "https://thegrio.com/2026/04/15/law-for-holocaust-survivors-proves-reparations-is-possible-just-not-for-black-americans/",
+        "source": "thegrio.com",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "reparations",
+          "descendants of enslaved"
+        ]
+      },
+      {
+        "title": "U.S. Votes No as UN Calls Slave Trade \u2018Gravest Crime\u2019 and Backs Reparations",
+        "link": "https://capitalbnews.org/us-votes-against-un-resolution-slavery-gravest-crime/",
+        "source": "capitalbnews.org",
+        "date": "2026-03-26",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "Iran rejects Trump ceasefire proposal, outlines its own conditions as conflict escalates",
+        "link": "https://thegrio.com/2026/03/26/iran-rejects-trump-ceasefire-conditions-strait-of-hormuz-conflict/",
+        "source": "thegrio.com",
+        "date": "2026-03-26",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "Trump admin called out for \u2018NO\u2019 vote against UN slavery resolution: \u2018Slap in the face to Black Americans\u2019",
+        "link": "https://thegrio.com/2026/03/26/trump-no-vote-un-slavery-resolution-black-americans/",
+        "source": "thegrio.com",
+        "date": "2026-03-26",
+        "matched_phrases": [
+          "reparations"
+        ]
+      }
+    ],
+    "Environmental Justice": [
+      {
+        "title": "Residents Say Musk\u2019s AI Supercomputer Is a \u2018Death Sentence\u2019 for Memphis Communities",
+        "link": "https://capitalbnews.org/elon-musk-xai-naacp-black-neighborhoods-pollution/",
+        "source": "capitalbnews.org",
+        "date": "2026-04-15",
+        "matched_phrases": [
+          "environmental justice"
+        ]
+      }
+    ]
+  },
+  "topic_co_occurrence": {
+    "('Criminal Justice Reform', 'Economic Equity & Wealth Gap')": 1,
+    "('Book Bans & Anti-DEI', 'Maternal Health')": 1,
+    "('Criminal Justice Reform', 'Policing & Public Safety')": 1,
+    "('Criminal Justice Reform', 'Environmental Justice')": 1,
+    "('Book Bans & Anti-DEI', 'School Funding')": 3,
+    "('Criminal Justice Reform', 'Housing & Displacement')": 1
+  },
+  "total_articles": 792,
+  "tagged_articles": 109,
+  "coverage_rate": 13.8
+}
