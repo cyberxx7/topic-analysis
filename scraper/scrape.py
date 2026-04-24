@@ -20,8 +20,8 @@ from scraper.rss_scraper        import scrape_rss
 from scraper.wp_scraper         import scrape_wp
 from scraper.html_scraper       import scrape_html
 from scraper.playwright_scraper import scrape_playwright
-from scraper.blavity_scraper    import scrape_blavity
 from scraper.capitalb_scraper   import scrape_capitalb
+from scraper.synapse_scraper    import scrape_synapse
 from scraper.utils              import deduplicate
 
 # ── Publication registry ──────────────────────────────────────────────────────
@@ -68,10 +68,11 @@ PUBLICATIONS = [
         "html_domain": "essence.com",
         "rss_url":  "https://www.essence.com/feed/",
     },
+    # Blavity Inc. publications — all fetched together via Synapse
+    # (blavity.com, 21ninety.com, travelnoire.com, afrotech.com)
     {
-        "name":     "blavity.com",
-        "method":   "blavity",
-        "rss_url":  "https://blavity.com/rss",
+        "name":   "synapse",
+        "method": "synapse",
     },
 ]
 
@@ -115,18 +116,21 @@ def run_scraper(days: int = 30, output_dir: str = "outputs") -> pd.DataFrame:
         elif method == "playwright":
             articles = scrape_playwright(name, days=days)
 
-        elif method == "blavity":
-            articles = scrape_blavity(name, days=days)
-
         elif method == "capitalb":
             articles = scrape_capitalb(name, days=days)
 
+        elif method == "synapse":
+            # Fetches blavity.com, 21ninety.com, travelnoire.com, afrotech.com
+            # in one request — articles already have correct source set per URL
+            articles = scrape_synapse(days=days)
+
         # ── RSS fallback ──────────────────────────────────────────────
-        # Fall back if primary returned 0, or suspiciously few (< 5) articles
-        if (not articles or len(articles) < 5) and pub.get("rss_url"):
-            reason = "0 articles" if not articles else f"only {len(articles)} article(s)"
-            print(f"  [scraper] ⚠ Primary method returned {reason} for {name} — falling back to RSS")
-            articles = scrape_rss(name, pub["rss_url"], days=days)
+        # Synapse handles its own sources — skip RSS fallback for it
+        if method != "synapse":
+            if (not articles or len(articles) < 5) and pub.get("rss_url"):
+                reason = "0 articles" if not articles else f"only {len(articles)} article(s)"
+                print(f"  [scraper] ⚠ Primary method returned {reason} for {name} — falling back to RSS")
+                articles = scrape_rss(name, pub["rss_url"], days=days)
 
         if not articles:
             print(f"  [scraper] ✗ No articles retrieved for {name}")

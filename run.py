@@ -159,7 +159,8 @@ def run_pipeline():
     for fname in [
         "articles.csv",
         "thegrio_com.csv", "theroot_com.csv", "newsone_com.csv",
-        "capitalbnews_org.csv", "ebony_com.csv", "essence_com.csv", "blavity_com.csv",
+        "capitalbnews_org.csv", "ebony_com.csv", "essence_com.csv",
+        "blavity_com.csv", "21ninety_com.csv", "travelnoire_com.csv", "afrotech_com.csv",
         "editorial_report.html",
         "editorial_report.pdf",
     ]:
