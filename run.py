@@ -147,6 +147,8 @@ def run_pipeline():
             print(f"\n✓ Stage 4 complete — Files uploaded to Drive/{run_date}/")
         except Exception as e:
             print(f"\n✗ Stage 4 FAILED: {e}")
+            import traceback; traceback.print_exc()
+            sys.exit(1)
     else:
         print("\n[Stage 4 skipped — Drive upload disabled]")
 
