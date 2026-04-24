@@ -134,9 +134,11 @@ def chart_source_breakdown(df: pd.DataFrame) -> str:
     values  = counts.values.tolist()
     palette = [
         "#1d4ed8", "#0891b2", "#059669", "#d97706",
-        "#dc2626", "#7c3aed", "#db2777", "#374151"
+        "#dc2626", "#7c3aed", "#db2777", "#374151",
+        "#065f46", "#92400e", "#1e3a5f", "#6b21a8",
     ]
-    colors  = palette[: len(labels)]
+    # If more sources than palette entries, cycle through palette
+    colors = [palette[i % len(palette)] for i in range(len(labels))]
 
     fig, ax = plt.subplots(figsize=(8, 7))
     wedges, _, autotexts = ax.pie(
