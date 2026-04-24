@@ -1,6 +1,6 @@
 # Black Media Intelligence Pipeline
 
-An automated media intelligence pipeline that scrapes, analyzes, and reports on article coverage across seven prominent Black media publications. Every 30 days it collects articles, runs topic analysis using TF-IDF and seed-phrase matching across 12 social conflict topics, generates a styled PDF research report, and uploads everything to Google Drive — all without manual intervention.
+An automated media intelligence pipeline that scrapes, analyzes, and reports on article coverage across ten prominent Black media publications. On the 1st of every month it collects all articles from the previous month, runs topic analysis using TF-IDF and seed-phrase matching across 12 social conflict topics, generates a styled PDF research report, and uploads everything to Google Drive — all without manual intervention.
 
 ---
 
@@ -10,8 +10,8 @@ An automated media intelligence pipeline that scrapes, analyzes, and reports on 
 ┌─────────────┐    ┌──────────────┐    ┌───────────────┐    ┌──────────────┐
 │  Stage 1    │    │   Stage 2    │    │   Stage 3     │    │   Stage 4    │
 │  Scrape     │───▶│   Analyze    │───▶│   Report      │───▶│   Deliver    │
-│  7 sources  │    │  TF-IDF +    │    │  HTML + PDF   │    │  Google      │
-│  ~1,200 art │    │  12 topics   │    │  with charts  │    │  Drive       │
+│  10 sources │    │  TF-IDF +    │    │  HTML + PDF   │    │  Google      │
+│  ~1,500 art │    │  12 topics   │    │  with charts  │    │  Drive       │
 └─────────────┘    └──────────────┘    └───────────────┘    └──────────────┘
 ```
 
@@ -25,7 +25,10 @@ An automated media intelligence pipeline that scrapes, analyzes, and reports on 
 | Ebony | ebony.com | WordPress REST API |
 | Capital B News | capitalbnews.org | Sitemap + HTML |
 | Essence | essence.com | Paginated HTML |
-| Blavity | blavity.com | Playwright (headless browser) |
+| Blavity | blavity.com | Synapse RSS Feed |
+| 21Ninety | 21ninety.com | Synapse RSS Feed |
+| Travel Noire | travelnoire.com | Synapse RSS Feed |
+| AfroTech | afrotech.com | Synapse RSS Feed |
 
 **Topics tracked (12):**
 
@@ -62,6 +65,9 @@ outputs/
 │   ├── ebony_com.csv
 │   ├── essence_com.csv
 │   ├── blavity_com.csv
+│   ├── 21ninety_com.csv
+│   ├── travelnoire_com.csv
+│   ├── afrotech_com.csv
 │   ├── articles_tagged.csv        ← with topic annotations
 │   ├── editorial_report.html
 │   └── editorial_report.pdf
@@ -109,7 +115,7 @@ topic-analysis/
 ├── scraper/
 │   ├── scrape.py                 ← Scraper dispatcher + deduplication
 │   ├── wp_scraper.py             ← WordPress REST API scraper
-│   ├── blavity_scraper.py        ← Playwright + requests scraper for Blavity
+│   ├── synapse_scraper.py        ← Blavity Inc. Synapse RSS feed (4 publications)
 │   ├── capitalb_scraper.py       ← Sitemap + category scraper for Capital B
 │   ├── html_scraper.py           ← Paginated HTML scraper (Essence)
 │   ├── rss_scraper.py            ← Generic RSS fallback scraper
@@ -148,7 +154,6 @@ topic-analysis/
 
 ```bash
 pip install -r requirements.txt
-python -m playwright install chromium --with-deps
 python -c "import nltk; nltk.download('stopwords')"
 ```
 
@@ -217,7 +222,7 @@ gh secret set GOOGLE_DRIVE_FOLDER_ID --body "your_folder_id"
 
 ### What happens on each run
 
-1. Scrapes all 7 publications for the past 30 days
+1. Scrapes all 10 publications for the full current calendar month (30 or 31 days automatically)
 2. Runs TF-IDF analysis and topic matching
 3. Generates HTML + PDF editorial report
 4. Uploads all files to `GoogleDrive/YourFolder/YYYY-MM-DD/`
@@ -262,7 +267,7 @@ Each topic entry looks like:
 },
 ```
 
-2. If the site needs a custom scraper, create `scraper/newsite_scraper.py` following the pattern of `blavity_scraper.py`, then add a method handler in `scrape.py`.
+2. If the site needs a custom scraper, create `scraper/newsite_scraper.py` following the pattern of existing scrapers, then add a method handler in `scrape.py`.
 
 3. Add the output CSV filename to `UPLOAD_FILENAMES` in `delivery/upload_drive.py` and to the artifacts list in `.github/workflows/run_pipeline.yml`.
 
@@ -283,11 +288,32 @@ Each topic entry looks like:
 
 ---
 
+## Annotation Validation
+
+To validate the pipeline's topic annotations against human judgment, use the scripts in `validation/`:
+
+**Step 1 — Generate a sample for labeling:**
+```bash
+python -m validation.sample_articles
+```
+This draws 200 articles stratified by source and exports `validation/validation_sample.csv` with the pipeline's predictions pre-filled.
+
+**Step 2 — Label the sample:**
+Open the CSV in Excel or Google Sheets. For each article, review the title and description, then correct the `label_<topic>` columns (1 = covers this topic, 0 = does not).
+
+**Step 3 — Evaluate:**
+```bash
+python -m validation.evaluate
+```
+Outputs per-topic precision, recall, and F1 scores to the terminal and saves `validation/validation_metrics.json` and `validation/confusion_matrix.csv`.
+
+---
+
 ## Common Issues
 
 | Issue | Fix |
 |---|---|
-| Blavity returns 0 articles | Playwright may be blocked — RSS fallback fires automatically when yield < 5 |
+| Blavity/Synapse returns 0 articles | Check that `synapse.blavityinc.com` is accessible and the date range is correct for the current month |
 | PDF not generated | Ensure `cairocffi==1.3.0` and `pydyf==0.3.0` are installed (pinned in `requirements.txt`) |
 | Drive auth fails | Re-run `python delivery/upload_drive.py --auth` locally and update the `GOOGLE_OAUTH_TOKEN` secret |
 | GitHub Actions timeout | Increase `timeout-minutes` in `run_pipeline.yml` (current: 60 min) |
