@@ -49,32 +49,47 @@ def sample_articles(
 
     samples = []
     sources = df["source"].unique()
+    total   = len(df)
 
-    # Proportional allocation: each source gets ~n * (source_size / total) rows,
-    # capped by what's actually available.
-    total = len(df)
+    # Strategy:
+    # - Every source gets a guaranteed minimum of MIN_PER_SOURCE articles
+    #   (or all its articles if it has fewer than the minimum)
+    # - Remaining slots are distributed proportionally among larger sources
+    MIN_PER_SOURCE = 15
+    guaranteed     = {src: min(MIN_PER_SOURCE, len(df[df["source"] == src]))
+                      for src in sources}
+    guaranteed_total = sum(guaranteed.values())
+    remaining_slots  = max(0, n - guaranteed_total)
+
     for source in sources:
-        src_df = df[df["source"] == source]
-        allocation = max(1, round(n * len(src_df) / total))
+        src_df    = df[df["source"] == source]
+        base      = guaranteed[source]
 
-        tagged = src_df[src_df["_tagged"]].sample(
-            n=min(allocation // 2, len(src_df[src_df["_tagged"]])),
-            random_state=seed,
+        # Extra proportional slots for larger sources
+        extra = round(remaining_slots * len(src_df) / total) if remaining_slots > 0 else 0
+        allocation = min(base + extra, len(src_df))
+
+        # Split allocation 50/50 between tagged and untagged
+        half = allocation // 2
+        tagged_pool   = src_df[src_df["_tagged"]]
+        untagged_pool = src_df[~src_df["_tagged"]]
+
+        tagged = tagged_pool.sample(
+            n=min(half, len(tagged_pool)), random_state=seed
         )
-        untagged = src_df[~src_df["_tagged"]].sample(
-            n=min(allocation - len(tagged), len(src_df[~src_df["_tagged"]])),
-            random_state=seed,
+        untagged = untagged_pool.sample(
+            n=min(allocation - len(tagged), len(untagged_pool)), random_state=seed
         )
         samples.append(pd.concat([tagged, untagged]))
 
     sample = (
         pd.concat(samples)
         .drop_duplicates()
-        .sample(frac=1, random_state=seed)  # shuffle
+        .sample(frac=1, random_state=seed)
         .reset_index(drop=True)
     )
 
-    # Trim or top-up to exactly n (rounding can leave us off by a few)
+    # Trim to exactly n if over
     if len(sample) > n:
         sample = sample.head(n)
 
