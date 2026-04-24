@@ -16,22 +16,22 @@ from jinja2 import Environment, FileSystemLoader
 
 from analysis.topics import TOPICS
 
-OUTPUTS_DIR = "outputs"
 REPORT_DIR = os.path.dirname(__file__)
 TEMPLATE_FILE = "template.html"
 CSS_PATH = os.path.join(REPORT_DIR, "assets", "styles.css")
-OUTPUT_PDF = os.path.join(OUTPUTS_DIR, "editorial_report.pdf")
-OUTPUT_HTML = os.path.join(OUTPUTS_DIR, "editorial_report.html")
 
 
-def run_report() -> str:
+def run_report(output_dir: str = "outputs") -> str:
     print("\n[report] ── Generating Report ──")
 
+    output_pdf  = os.path.join(output_dir, "editorial_report.pdf")
+    output_html = os.path.join(output_dir, "editorial_report.html")
+
     # --- Load data ---
-    df = _load_csv("outputs/articles_tagged.csv")
-    topic_summary = _load_json("outputs/topic_summary.json")
-    tfidf_results = _load_json("outputs/tfidf_keywords.json")
-    chart_paths = _load_json("outputs/chart_paths.json")
+    df = _load_csv(os.path.join(output_dir, "articles_tagged.csv"))
+    topic_summary = _load_json(os.path.join(output_dir, "topic_summary.json"))
+    tfidf_results = _load_json(os.path.join(output_dir, "tfidf_keywords.json"))
+    chart_paths = _load_json(os.path.join(output_dir, "chart_paths.json"))
 
     # Make chart paths absolute for weasyprint
     chart_paths = {k: _abs_path(v) if isinstance(v, str) else v
@@ -52,25 +52,25 @@ def run_report() -> str:
     template = env.get_template(TEMPLATE_FILE)
     html_content = template.render(**context)
 
-    os.makedirs(OUTPUTS_DIR, exist_ok=True)
-    with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+    os.makedirs(output_dir, exist_ok=True)
+    with open(output_html, "w", encoding="utf-8") as f:
         f.write(html_content)
-    print(f"[report] HTML rendered → {OUTPUT_HTML}")
+    print(f"[report] HTML rendered → {output_html}")
 
     # --- Convert to PDF ---
     try:
         from weasyprint import HTML
-        HTML(filename=os.path.abspath(OUTPUT_HTML),
-             base_url=os.path.abspath(OUTPUTS_DIR)).write_pdf(OUTPUT_PDF)
-        print(f"[report] PDF saved → {OUTPUT_PDF}")
+        HTML(filename=os.path.abspath(output_html),
+             base_url=os.path.abspath(output_dir)).write_pdf(output_pdf)
+        print(f"[report] PDF saved → {output_pdf}")
     except ImportError:
         print("[report] WARNING: WeasyPrint not installed. HTML report saved only.")
     except Exception as e:
         print(f"[report] PDF generation error: {e}")
-        print(f"[report] HTML report available at: {OUTPUT_HTML}")
+        print(f"[report] HTML report available at: {output_html}")
 
     print("[report] ── Report Complete ──\n")
-    return OUTPUT_PDF
+    return output_pdf
 
 
 def _build_context(df, topic_summary, tfidf_results, chart_paths, wordcloud_paths) -> dict:
@@ -217,4 +217,8 @@ def _abs_path(path: str) -> str:
 
 
 if __name__ == "__main__":
-    run_report()
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--output-dir", default="outputs", help="Output directory")
+    a = p.parse_args()
+    run_report(output_dir=a.output_dir)

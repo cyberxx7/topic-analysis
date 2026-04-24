@@ -15,12 +15,15 @@ from analysis.tfidf import extract_tfidf_keywords, save_tfidf
 from analysis.topic_matcher import match_topics, build_topic_summary, save_topic_summary
 from analysis.visualizations import generate_all_charts
 
-os.makedirs("outputs", exist_ok=True)
-os.makedirs("outputs/charts", exist_ok=True)
-
-
-def run_analysis(articles_path: str = "outputs/articles.csv") -> dict:
+def run_analysis(articles_path: str = None, output_dir: str = "outputs") -> dict:
     print("\n[analyze] ── Starting Analysis Pipeline ──")
+
+    if articles_path is None:
+        articles_path = os.path.join(output_dir, "articles.csv")
+
+    charts_dir = os.path.join(output_dir, "charts")
+    os.makedirs(output_dir, exist_ok=True)
+    os.makedirs(charts_dir, exist_ok=True)
 
     # --- Load articles ---
     if not os.path.exists(articles_path):
@@ -36,13 +39,14 @@ def run_analysis(articles_path: str = "outputs/articles.csv") -> dict:
     # --- Stage 1: TF-IDF ---
     print("[analyze] Running TF-IDF keyword extraction...")
     tfidf_results = extract_tfidf_keywords(df, top_n=50)
-    save_tfidf(tfidf_results)
+    save_tfidf(tfidf_results, path=os.path.join(output_dir, "tfidf_keywords.json"))
 
     # --- Stage 2: Topic Matching ---
     print("[analyze] Matching articles to social conflict topics...")
     df_tagged = match_topics(df)
-    df_tagged.to_csv("outputs/articles_tagged.csv", index=False)
-    print(f"[analyze] Tagged CSV saved → outputs/articles_tagged.csv")
+    tagged_path = os.path.join(output_dir, "articles_tagged.csv")
+    df_tagged.to_csv(tagged_path, index=False)
+    print(f"[analyze] Tagged CSV saved → {tagged_path}")
 
     # Print quick stats
     tagged_count = (df_tagged["topics"].str.strip() != "").sum()
@@ -51,7 +55,7 @@ def run_analysis(articles_path: str = "outputs/articles.csv") -> dict:
     # --- Stage 3: Build Topic Summary ---
     print("[analyze] Building topic summary...")
     topic_summary = build_topic_summary(df_tagged)
-    save_topic_summary(topic_summary)
+    save_topic_summary(topic_summary, path=os.path.join(output_dir, "topic_summary.json"))
 
     # Print topic breakdown
     counts = topic_summary.get("topic_counts", {})
@@ -60,11 +64,12 @@ def run_analysis(articles_path: str = "outputs/articles.csv") -> dict:
 
     # --- Stage 4: Generate Visualizations ---
     print("[analyze] Generating charts and visualizations...")
-    chart_paths = generate_all_charts(df_tagged, topic_summary, tfidf_results)
+    chart_paths = generate_all_charts(df_tagged, topic_summary, tfidf_results, output_dir=charts_dir)
     print(f"[analyze] Generated {len(chart_paths)} chart(s)")
 
     # Save chart paths manifest
-    with open("outputs/chart_paths.json", "w") as f:
+    chart_paths_file = os.path.join(output_dir, "chart_paths.json")
+    with open(chart_paths_file, "w") as f:
         json.dump(chart_paths, f, indent=2)
 
     print("[analyze] ── Analysis Complete ──\n")
@@ -78,4 +83,8 @@ def run_analysis(articles_path: str = "outputs/articles.csv") -> dict:
 
 
 if __name__ == "__main__":
-    run_analysis()
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--output-dir", default="outputs", help="Output directory")
+    a = p.parse_args()
+    run_analysis(output_dir=a.output_dir)

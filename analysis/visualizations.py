@@ -25,8 +25,7 @@ from analysis.topics import TOPICS, TOPIC_COLORS
 
 warnings.filterwarnings("ignore")
 
-OUTPUT_DIR = "outputs/charts"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+OUTPUT_DIR = "outputs/charts"  # overridden at runtime by generate_all_charts()
 
 # ── Shared light-theme style ──────────────────────────────────────────────────
 
@@ -67,8 +66,13 @@ def generate_all_charts(
     df: pd.DataFrame,
     topic_summary: dict,
     tfidf_results: dict,
+    output_dir: str = "outputs/charts",
 ) -> dict:
     """Generate all charts and return {chart_name: file_path}."""
+    global OUTPUT_DIR
+    OUTPUT_DIR = output_dir
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
     paths = {}
     paths["topic_frequency"]       = chart_topic_frequency(topic_summary)
     paths["source_breakdown"]      = chart_source_breakdown(df)

@@ -10,6 +10,8 @@ jobs:
   run-pipeline:
     runs-on: ubuntu-22.04
     timeout-minutes: 60
+    permissions:
+      contents: write   # needed to commit outputs and push tags
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -61,22 +63,29 @@ jobs:
           GOOGLE_OAUTH_TOKEN_FILE: token.json
         run: python run.py
 
+      - name: Commit dated outputs and tag run
+        if: success()
+        run: |
+          RUN_DATE=$(date +%Y-%m-%d)
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage the dated output folder (CSVs + reports; charts excluded by .gitignore)
+          git add "outputs/$RUN_DATE/" || true
+          # Only commit if there's something new
+          if ! git diff --staged --quiet; then
+            git commit -m "data: pipeline run $RUN_DATE [skip ci]"
+          fi
+          # Create/update a tag for this run (force-update if same day re-run)
+          git tag -f "run-$RUN_DATE"
+          git push --follow-tags --force-with-lease origin HEAD || \
+            git push --follow-tags --force origin HEAD
+
       - name: Upload outputs as artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: editorial-report-${{ github.run_number }}
-          path: |
-            outputs/articles.csv
-            outputs/thegrio_com.csv
-            outputs/theroot_com.csv
-            outputs/newsone_com.csv
-            outputs/capitalbnews_org.csv
-            outputs/ebony_com.csv
-            outputs/essence_com.csv
-            outputs/blavity_com.csv
-            outputs/editorial_report.html
-            outputs/editorial_report.pdf
+          path: outputs/*/
           retention-days: 90
 
       - name: Clean up credentials

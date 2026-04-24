@@ -2,7 +2,9 @@
 scrape.py — Main Scraper Orchestrator
 
 Fetches ALL articles published within the rolling window from 7 Black media
-publications. Uses the best available method per source:
+publications. The window defaults to the number of days in the current calendar
+month (30 or 31), so coverage always spans the full month. Uses the best
+available method per source:
 
   WordPress REST API  → thegrio, theroot, newsone, capitalbnews, ebony
   Paginated HTML      → essence, blavity
@@ -21,8 +23,6 @@ from scraper.playwright_scraper import scrape_playwright
 from scraper.blavity_scraper    import scrape_blavity
 from scraper.capitalb_scraper   import scrape_capitalb
 from scraper.utils              import deduplicate
-
-os.makedirs("outputs", exist_ok=True)
 
 # ── Publication registry ──────────────────────────────────────────────────────
 #
@@ -86,7 +86,7 @@ SCHEMA_COLUMNS = [
 ]
 
 
-def run_scraper(days: int = 30) -> pd.DataFrame:
+def run_scraper(days: int = 30, output_dir: str = "outputs") -> pd.DataFrame:
     """
     Run all scrapers and return the consolidated, deduplicated DataFrame.
 
@@ -96,6 +96,7 @@ def run_scraper(days: int = 30) -> pd.DataFrame:
     Returns:
         pd.DataFrame written to outputs/articles.csv
     """
+    os.makedirs(output_dir, exist_ok=True)
     print(f"\n[scraper] ── Starting Scrape  (window: {days} days) ──")
     all_articles: list[dict] = []
 
@@ -161,7 +162,7 @@ def run_scraper(days: int = 30) -> pd.DataFrame:
     _print_quality_report(df)
 
     # Save combined CSV
-    output_path = "outputs/articles.csv"
+    output_path = os.path.join(output_dir, "articles.csv")
     df.to_csv(output_path, index=False, encoding="utf-8")
     print(f"\n[scraper] ✓ Saved {len(df)} articles → {output_path}")
 
@@ -169,7 +170,7 @@ def run_scraper(days: int = 30) -> pd.DataFrame:
     for source in df["source"].unique():
         src_df = df[df["source"] == source].reset_index(drop=True)
         src_filename = source.replace(".", "_").replace("/", "_")
-        src_path = f"outputs/{src_filename}.csv"
+        src_path = os.path.join(output_dir, f"{src_filename}.csv")
         src_df.to_csv(src_path, index=False, encoding="utf-8")
         print(f"[scraper] ✓ Saved {len(src_df)} articles → {src_path}")
 

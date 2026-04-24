@@ -52,20 +52,18 @@ TOKEN_PATH       = os.getenv("GOOGLE_OAUTH_TOKEN_FILE", "token.json")
 
 SCOPES = ["https://www.googleapis.com/auth/drive"]
 
-UPLOAD_FILES = [
-    # Combined dataset
-    ("outputs/articles.csv",          "text/csv"),
-    # Per-source CSVs
-    ("outputs/thegrio_com.csv",        "text/csv"),
-    ("outputs/theroot_com.csv",        "text/csv"),
-    ("outputs/newsone_com.csv",        "text/csv"),
-    ("outputs/capitalbnews_org.csv",   "text/csv"),
-    ("outputs/ebony_com.csv",          "text/csv"),
-    ("outputs/essence_com.csv",        "text/csv"),
-    ("outputs/blavity_com.csv",        "text/csv"),
-    # Reports
-    ("outputs/editorial_report.html", "text/html"),
-    ("outputs/editorial_report.pdf",  "application/pdf"),
+# Filenames (relative to the run's output_dir) and their MIME types
+UPLOAD_FILENAMES = [
+    ("articles.csv",          "text/csv"),
+    ("thegrio_com.csv",       "text/csv"),
+    ("theroot_com.csv",       "text/csv"),
+    ("newsone_com.csv",       "text/csv"),
+    ("capitalbnews_org.csv",  "text/csv"),
+    ("ebony_com.csv",         "text/csv"),
+    ("essence_com.csv",       "text/csv"),
+    ("blavity_com.csv",       "text/csv"),
+    ("editorial_report.html", "text/html"),
+    ("editorial_report.pdf",  "application/pdf"),
 ]
 
 
@@ -104,8 +102,19 @@ def run_auth() -> None:
     print("──────────────────────────────────────────────────────────────────")
 
 
-def run_upload() -> None:
-    print("\n[drive] ── Starting Drive Upload ──")
+def run_upload(output_dir: str = "outputs", run_date: str = None) -> None:
+    """
+    Upload all files from output_dir to a dated subfolder in Google Drive.
+
+    Args:
+        output_dir: local path to the run's output directory (e.g. outputs/2026-03-27)
+        run_date:   label for the Drive subfolder (defaults to today's YYYY-MM-DD)
+    """
+    from datetime import datetime as _dt
+    if run_date is None:
+        run_date = _dt.now().strftime("%Y-%m-%d")
+
+    print(f"\n[drive] ── Starting Drive Upload ({run_date}) ──")
 
     # ── Pre-flight checks ─────────────────────────────────────────────
     if not FOLDER_ID:
@@ -157,7 +166,7 @@ def run_upload() -> None:
 
     service = build("drive", "v3", credentials=creds)
 
-    # ── Verify folder is accessible ───────────────────────────────────
+    # ── Verify root folder is accessible ─────────────────────────────
     try:
         folder = service.files().get(fileId=FOLDER_ID, fields="id,name").execute()
         print(f"[drive] ✓ Connected to folder: {folder.get('name', FOLDER_ID)}")
@@ -168,18 +177,42 @@ def run_upload() -> None:
         )
         return
 
+    # ── Get or create the dated subfolder ────────────────────────────
+    subfolder_id = _get_or_create_subfolder(service, FOLDER_ID, run_date)
+    print(f"[drive] ✓ Uploading into subfolder: {run_date}")
+
     # ── Upload each file ──────────────────────────────────────────────
     uploaded, skipped = 0, 0
-    for file_path, mime_type in UPLOAD_FILES:
+    for filename, mime_type in UPLOAD_FILENAMES:
+        file_path = os.path.join(output_dir, filename)
         if not os.path.exists(file_path):
             print(f"[drive]   ⚠ Skipped (not found): {file_path}")
             skipped += 1
             continue
-        _upload_or_update(service, file_path, mime_type, FOLDER_ID)
+        _upload_or_update(service, file_path, mime_type, subfolder_id)
         uploaded += 1
 
     print(f"\n[drive] ✓ Uploaded {uploaded} file(s), skipped {skipped}")
     print("[drive] ── Upload Complete ──\n")
+
+
+def _get_or_create_subfolder(service, parent_id: str, name: str) -> str:
+    """Return the ID of a subfolder named `name` inside `parent_id`, creating it if needed."""
+    q = (
+        f"name='{name}' and '{parent_id}' in parents "
+        f"and mimeType='application/vnd.google-apps.folder' and trashed=false"
+    )
+    results = service.files().list(q=q, fields="files(id,name)").execute()
+    existing = results.get("files", [])
+    if existing:
+        return existing[0]["id"]
+    folder_meta = {
+        "name": name,
+        "mimeType": "application/vnd.google-apps.folder",
+        "parents": [parent_id],
+    }
+    folder = service.files().create(body=folder_meta, fields="id").execute()
+    return folder["id"]
 
 
 def _upload_or_update(

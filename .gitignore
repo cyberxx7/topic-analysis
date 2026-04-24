@@ -6,8 +6,21 @@ __pycache__/
 venv/
 env/
 
-# Outputs (generated at runtime)
-outputs/
+# Outputs — track dated run folders, but not chart images or the latest symlink
+outputs/latest
+outputs/**/charts/
+outputs/**/*.png
+outputs/**/*.jpg
+# top-level loose outputs from old runs (before versioning)
+outputs/articles.csv
+outputs/articles_tagged.csv
+outputs/tfidf_keywords.json
+outputs/topic_summary.json
+outputs/chart_paths.json
+outputs/editorial_report.html
+outputs/editorial_report.pdf
+outputs/*_com.csv
+outputs/*_org.csv
 
 # Credentials — never commit these
 .env
