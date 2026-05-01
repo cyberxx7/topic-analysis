@@ -1,0 +1,20 @@
+{
+  "topic_frequency": "outputs/2026-05-01/charts/topic_frequency.png",
+  "source_breakdown": "outputs/2026-05-01/charts/source_breakdown.png",
+  "source_topic_heatmap": "outputs/2026-05-01/charts/source_topic_heatmap.png",
+  "articles_over_time": "outputs/2026-05-01/charts/articles_over_time.png",
+  "top_keywords": "outputs/2026-05-01/charts/top_keywords.png",
+  "topic_coverage_rate": "outputs/2026-05-01/charts/coverage_rate.png",
+  "multi_topic_articles": "outputs/2026-05-01/charts/multi_topic_distribution.png",
+  "wordclouds": {
+    "Policing & Public Safety": "outputs/2026-05-01/charts/wordcloud_policing.png",
+    "Voter Suppression": "outputs/2026-05-01/charts/wordcloud_voter_suppression.png",
+    "Book Bans & Anti-DEI": "outputs/2026-05-01/charts/wordcloud_book_bans_dei.png",
+    "Housing & Displacement": "outputs/2026-05-01/charts/wordcloud_housing.png",
+    "Maternal Health": "outputs/2026-05-01/charts/wordcloud_maternal_health.png",
+    "Anti-Black Surveillance": "outputs/2026-05-01/charts/wordcloud_surveillance.png",
+    "School Funding": "outputs/2026-05-01/charts/wordcloud_school_funding.png",
+    "Criminal Justice Reform": "outputs/2026-05-01/charts/wordcloud_criminal_justice.png",
+    "Economic Equity & Wealth Gap": "outputs/2026-05-01/charts/wordcloud_economic_equity.png"
+  }
+}
