@@ -1,0 +1,850 @@
+{
+  "global": [
+    {
+      "keyword": "trump",
+      "score": 20.2926
+    },
+    {
+      "keyword": "2026",
+      "score": 12.8194
+    },
+    {
+      "keyword": "continue",
+      "score": 10.2431
+    },
+    {
+      "keyword": "women",
+      "score": 9.9583
+    },
+    {
+      "keyword": "state",
+      "score": 9.8196
+    },
+    {
+      "keyword": "reading",
+      "score": 9.6025
+    },
+    {
+      "keyword": "rights",
+      "score": 9.5871
+    },
+    {
+      "keyword": "continue reading",
+      "score": 9.5152
+    },
+    {
+      "keyword": "voting",
+      "score": 9.3025
+    },
+    {
+      "keyword": "health",
+      "score": 9.2689
+    },
+    {
+      "keyword": "court",
+      "score": 9.0702
+    },
+    {
+      "keyword": "music",
+      "score": 8.1923
+    },
+    {
+      "keyword": "met",
+      "score": 8.1617
+    },
+    {
+      "keyword": "love",
+      "score": 7.9992
+    },
+    {
+      "keyword": "family",
+      "score": 7.8251
+    },
+    {
+      "keyword": "gala",
+      "score": 7.8046
+    },
+    {
+      "keyword": "school",
+      "score": 7.8037
+    },
+    {
+      "keyword": "know",
+      "score": 7.7592
+    },
+    {
+      "keyword": "house",
+      "score": 7.6976
+    },
+    {
+      "keyword": "president",
+      "score": 7.6449
+    },
+    {
+      "keyword": "woman",
+      "score": 7.5597
+    },
+    {
+      "keyword": "best",
+      "score": 7.511
+    },
+    {
+      "keyword": "history",
+      "score": 7.4792
+    },
+    {
+      "keyword": "met gala",
+      "score": 7.4718
+    },
+    {
+      "keyword": "voting rights",
+      "score": 7.3781
+    },
+    {
+      "keyword": "life",
+      "score": 7.2533
+    },
+    {
+      "keyword": "world",
+      "score": 7.2123
+    },
+    {
+      "keyword": "ai",
+      "score": 7.1334
+    },
+    {
+      "keyword": "fans",
+      "score": 6.862
+    },
+    {
+      "keyword": "look",
+      "score": 6.8345
+    },
+    {
+      "keyword": "supreme court",
+      "score": 6.7447
+    },
+    {
+      "keyword": "supreme",
+      "score": 6.7447
+    },
+    {
+      "keyword": "essence",
+      "score": 6.4854
+    },
+    {
+      "keyword": "star",
+      "score": 6.4777
+    },
+    {
+      "keyword": "media",
+      "score": 6.4776
+    },
+    {
+      "keyword": "behind",
+      "score": 6.4616
+    },
+    {
+      "keyword": "mother",
+      "score": 6.4381
+    },
+    {
+      "keyword": "high",
+      "score": 6.3396
+    },
+    {
+      "keyword": "south",
+      "score": 6.2908
+    },
+    {
+      "keyword": "still",
+      "score": 6.2079
+    },
+    {
+      "keyword": "university",
+      "score": 6.1025
+    },
+    {
+      "keyword": "death",
+      "score": 6.0768
+    },
+    {
+      "keyword": "old",
+      "score": 6.0698
+    },
+    {
+      "keyword": "home",
+      "score": 6.027
+    },
+    {
+      "keyword": "need",
+      "score": 6.0255
+    },
+    {
+      "keyword": "way",
+      "score": 5.9214
+    },
+    {
+      "keyword": "long",
+      "score": 5.888
+    },
+    {
+      "keyword": "us",
+      "score": 5.841
+    },
+    {
+      "keyword": "man",
+      "score": 5.7202
+    },
+    {
+      "keyword": "fashion",
+      "score": 5.717
+    }
+  ],
+  "by_source": {
+    "afrotech.com": [
+      {
+        "keyword": "ai",
+        "score": 4.9136
+      },
+      {
+        "keyword": "university",
+        "score": 3.6778
+      },
+      {
+        "keyword": "school",
+        "score": 2.2766
+      },
+      {
+        "keyword": "previously",
+        "score": 2.1044
+      },
+      {
+        "keyword": "college",
+        "score": 2.0971
+      },
+      {
+        "keyword": "state",
+        "score": 2.0496
+      },
+      {
+        "keyword": "company",
+        "score": 1.9448
+      },
+      {
+        "keyword": "funding",
+        "score": 1.9073
+      },
+      {
+        "keyword": "reported",
+        "score": 1.7826
+      },
+      {
+        "keyword": "afrotech",
+        "score": 1.7214
+      },
+      {
+        "keyword": "based",
+        "score": 1.7142
+      },
+      {
+        "keyword": "lawsuit",
+        "score": 1.6751
+      },
+      {
+        "keyword": "previously reported",
+        "score": 1.619
+      },
+      {
+        "keyword": "program",
+        "score": 1.6007
+      },
+      {
+        "keyword": "ceo",
+        "score": 1.581
+      },
+      {
+        "keyword": "founder",
+        "score": 1.5664
+      },
+      {
+        "keyword": "2026",
+        "score": 1.5232
+      },
+      {
+        "keyword": "million",
+        "score": 1.5143
+      },
+      {
+        "keyword": "state university",
+        "score": 1.5038
+      },
+      {
+        "keyword": "students",
+        "score": 1.5026
+      }
+    ],
+    "blavity.com": [
+      {
+        "keyword": "trump",
+        "score": 5.672
+      },
+      {
+        "keyword": "health",
+        "score": 4.2493
+      },
+      {
+        "keyword": "continue",
+        "score": 4.0432
+      },
+      {
+        "keyword": "continue reading",
+        "score": 4.0432
+      },
+      {
+        "keyword": "reading",
+        "score": 4.0432
+      },
+      {
+        "keyword": "learn",
+        "score": 2.6376
+      },
+      {
+        "keyword": "house",
+        "score": 2.5799
+      },
+      {
+        "keyword": "discover",
+        "score": 2.5615
+      },
+      {
+        "keyword": "know",
+        "score": 2.4877
+      },
+      {
+        "keyword": "court",
+        "score": 2.4536
+      },
+      {
+        "keyword": "president",
+        "score": 2.4284
+      },
+      {
+        "keyword": "state",
+        "score": 2.1346
+      },
+      {
+        "keyword": "administration",
+        "score": 2.106
+      },
+      {
+        "keyword": "congressional",
+        "score": 2.0235
+      },
+      {
+        "keyword": "donald",
+        "score": 1.9943
+      },
+      {
+        "keyword": "donald trump",
+        "score": 1.9943
+      },
+      {
+        "keyword": "voting",
+        "score": 1.8858
+      },
+      {
+        "keyword": "cancer",
+        "score": 1.8828
+      },
+      {
+        "keyword": "trump administration",
+        "score": 1.8355
+      },
+      {
+        "keyword": "need",
+        "score": 1.809
+      }
+    ],
+    "capitalbnews.org": [
+      {
+        "keyword": "urban",
+        "score": 1.7071
+      },
+      {
+        "keyword": "say",
+        "score": 1.3824
+      },
+      {
+        "keyword": "farmers",
+        "score": 1.3335
+      },
+      {
+        "keyword": "fight",
+        "score": 1.2897
+      },
+      {
+        "keyword": "state",
+        "score": 1.2407
+      },
+      {
+        "keyword": "voting",
+        "score": 1.2007
+      },
+      {
+        "keyword": "residents",
+        "score": 1.1088
+      },
+      {
+        "keyword": "south",
+        "score": 1.0461
+      },
+      {
+        "keyword": "map",
+        "score": 1.0263
+      },
+      {
+        "keyword": "voters",
+        "score": 1.0246
+      },
+      {
+        "keyword": "power",
+        "score": 0.9662
+      },
+      {
+        "keyword": "rights",
+        "score": 0.9191
+      },
+      {
+        "keyword": "district",
+        "score": 0.8909
+      },
+      {
+        "keyword": "louisiana",
+        "score": 0.8735
+      },
+      {
+        "keyword": "lawmakers",
+        "score": 0.8551
+      },
+      {
+        "keyword": "still",
+        "score": 0.8256
+      },
+      {
+        "keyword": "descendants",
+        "score": 0.7597
+      },
+      {
+        "keyword": "gullah",
+        "score": 0.7597
+      },
+      {
+        "keyword": "gullah geechee",
+        "score": 0.7597
+      },
+      {
+        "keyword": "geechee",
+        "score": 0.7597
+      }
+    ],
+    "ebony.com": [
+      {
+        "keyword": "2026",
+        "score": 4.2749
+      },
+      {
+        "keyword": "love",
+        "score": 2.7462
+      },
+      {
+        "keyword": "music",
+        "score": 2.6202
+      },
+      {
+        "keyword": "gala",
+        "score": 2.4811
+      },
+      {
+        "keyword": "met",
+        "score": 2.1452
+      },
+      {
+        "keyword": "met gala",
+        "score": 2.1452
+      },
+      {
+        "keyword": "ebony",
+        "score": 2.1361
+      },
+      {
+        "keyword": "still",
+        "score": 2.1228
+      },
+      {
+        "keyword": "us",
+        "score": 2.0972
+      },
+      {
+        "keyword": "season",
+        "score": 2.0963
+      },
+      {
+        "keyword": "life",
+        "score": 2.0622
+      },
+      {
+        "keyword": "fashion",
+        "score": 2.0369
+      },
+      {
+        "keyword": "world",
+        "score": 2.0215
+      },
+      {
+        "keyword": "even",
+        "score": 1.9766
+      },
+      {
+        "keyword": "best",
+        "score": 1.9572
+      },
+      {
+        "keyword": "power",
+        "score": 1.9339
+      },
+      {
+        "keyword": "art",
+        "score": 1.8583
+      },
+      {
+        "keyword": "always",
+        "score": 1.7832
+      },
+      {
+        "keyword": "moment",
+        "score": 1.7501
+      },
+      {
+        "keyword": "celebrity",
+        "score": 1.7182
+      }
+    ],
+    "essence.com": [
+      {
+        "keyword": "archives",
+        "score": 4.9497
+      },
+      {
+        "keyword": "archives essence",
+        "score": 4.9497
+      },
+      {
+        "keyword": "summer",
+        "score": 1.8916
+      },
+      {
+        "keyword": "op",
+        "score": 1.5825
+      },
+      {
+        "keyword": "op ed",
+        "score": 1.5825
+      },
+      {
+        "keyword": "ed",
+        "score": 1.5825
+      },
+      {
+        "keyword": "world",
+        "score": 1.4749
+      },
+      {
+        "keyword": "health",
+        "score": 1.4395
+      },
+      {
+        "keyword": "wellness",
+        "score": 1.1823
+      },
+      {
+        "keyword": "getting",
+        "score": 1.1262
+      },
+      {
+        "keyword": "ready",
+        "score": 0.9616
+      },
+      {
+        "keyword": "look",
+        "score": 0.928
+      },
+      {
+        "keyword": "looks",
+        "score": 0.9221
+      },
+      {
+        "keyword": "hot",
+        "score": 0.864
+      },
+      {
+        "keyword": "favorite",
+        "score": 0.8304
+      },
+      {
+        "keyword": "best",
+        "score": 0.8304
+      },
+      {
+        "keyword": "check",
+        "score": 0.8304
+      }
+    ],
+    "newsone.com": [
+      {
+        "keyword": "trump",
+        "score": 7.6325
+      },
+      {
+        "keyword": "court",
+        "score": 3.3238
+      },
+      {
+        "keyword": "house",
+        "score": 3.2406
+      },
+      {
+        "keyword": "rights",
+        "score": 3.2234
+      },
+      {
+        "keyword": "wnba",
+        "score": 3.0292
+      },
+      {
+        "keyword": "president",
+        "score": 2.6183
+      },
+      {
+        "keyword": "supreme",
+        "score": 2.618
+      },
+      {
+        "keyword": "supreme court",
+        "score": 2.618
+      },
+      {
+        "keyword": "state",
+        "score": 2.4573
+      },
+      {
+        "keyword": "racist",
+        "score": 2.3261
+      },
+      {
+        "keyword": "federal",
+        "score": 2.2986
+      },
+      {
+        "keyword": "redistricting",
+        "score": 2.132
+      },
+      {
+        "keyword": "voting rights",
+        "score": 2.1287
+      },
+      {
+        "keyword": "voting",
+        "score": 2.1287
+      },
+      {
+        "keyword": "newsone",
+        "score": 2.0874
+      },
+      {
+        "keyword": "women",
+        "score": 2.0366
+      },
+      {
+        "keyword": "family",
+        "score": 1.9898
+      },
+      {
+        "keyword": "effort",
+        "score": 1.9825
+      },
+      {
+        "keyword": "america",
+        "score": 1.9759
+      },
+      {
+        "keyword": "donald",
+        "score": 1.9592
+      }
+    ],
+    "thegrio.com": [
+      {
+        "keyword": "trump",
+        "score": 6.8106
+      },
+      {
+        "keyword": "women",
+        "score": 5.6475
+      },
+      {
+        "keyword": "woman",
+        "score": 3.9662
+      },
+      {
+        "keyword": "school",
+        "score": 3.8121
+      },
+      {
+        "keyword": "met",
+        "score": 3.6919
+      },
+      {
+        "keyword": "mother",
+        "score": 3.6909
+      },
+      {
+        "keyword": "star",
+        "score": 3.5305
+      },
+      {
+        "keyword": "love",
+        "score": 3.4435
+      },
+      {
+        "keyword": "family",
+        "score": 3.4299
+      },
+      {
+        "keyword": "gala",
+        "score": 3.404
+      },
+      {
+        "keyword": "met gala",
+        "score": 3.3367
+      },
+      {
+        "keyword": "2026",
+        "score": 3.1739
+      },
+      {
+        "keyword": "music",
+        "score": 3.1554
+      },
+      {
+        "keyword": "obama",
+        "score": 3.1426
+      },
+      {
+        "keyword": "media",
+        "score": 3.1388
+      },
+      {
+        "keyword": "death",
+        "score": 3.051
+      },
+      {
+        "keyword": "moment",
+        "score": 3.0182
+      },
+      {
+        "keyword": "house",
+        "score": 3.011
+      },
+      {
+        "keyword": "old",
+        "score": 2.9741
+      },
+      {
+        "keyword": "state",
+        "score": 2.9492
+      }
+    ],
+    "theroot.com": [
+      {
+        "keyword": "2026",
+        "score": 5.8214
+      },
+      {
+        "keyword": "trump",
+        "score": 5.2826
+      },
+      {
+        "keyword": "look",
+        "score": 4.9268
+      },
+      {
+        "keyword": "best",
+        "score": 4.6025
+      },
+      {
+        "keyword": "let",
+        "score": 4.3494
+      },
+      {
+        "keyword": "fans",
+        "score": 4.2184
+      },
+      {
+        "keyword": "voting",
+        "score": 4.1742
+      },
+      {
+        "keyword": "met",
+        "score": 3.8814
+      },
+      {
+        "keyword": "rights",
+        "score": 3.8383
+      },
+      {
+        "keyword": "jackson",
+        "score": 3.7037
+      },
+      {
+        "keyword": "inside",
+        "score": 3.6958
+      },
+      {
+        "keyword": "know",
+        "score": 3.6404
+      },
+      {
+        "keyword": "history",
+        "score": 3.6226
+      },
+      {
+        "keyword": "gala",
+        "score": 3.592
+      },
+      {
+        "keyword": "met gala",
+        "score": 3.592
+      },
+      {
+        "keyword": "behind",
+        "score": 3.5454
+      },
+      {
+        "keyword": "michael",
+        "score": 3.4956
+      },
+      {
+        "keyword": "world",
+        "score": 3.4636
+      },
+      {
+        "keyword": "man",
+        "score": 3.4425
+      },
+      {
+        "keyword": "state",
+        "score": 3.3775
+      }
+    ]
+  }
+}
