@@ -1,0 +1,944 @@
+{
+  "global": [
+    {
+      "keyword": "essence",
+      "score": 26.1367
+    },
+    {
+      "keyword": "trump",
+      "score": 20.7105
+    },
+    {
+      "keyword": "2026",
+      "score": 13.8862
+    },
+    {
+      "keyword": "family",
+      "score": 12.5646
+    },
+    {
+      "keyword": "music",
+      "score": 12.5545
+    },
+    {
+      "keyword": "continue",
+      "score": 11.558
+    },
+    {
+      "keyword": "world",
+      "score": 11.2672
+    },
+    {
+      "keyword": "reading",
+      "score": 11.1648
+    },
+    {
+      "keyword": "best",
+      "score": 11.1458
+    },
+    {
+      "keyword": "know",
+      "score": 10.8687
+    },
+    {
+      "keyword": "knicks",
+      "score": 10.8445
+    },
+    {
+      "keyword": "continue reading",
+      "score": 10.5038
+    },
+    {
+      "keyword": "obama",
+      "score": 10.3937
+    },
+    {
+      "keyword": "history",
+      "score": 10.2943
+    },
+    {
+      "keyword": "court",
+      "score": 10.2917
+    },
+    {
+      "keyword": "life",
+      "score": 10.2133
+    },
+    {
+      "keyword": "ai",
+      "score": 9.9112
+    },
+    {
+      "keyword": "nba",
+      "score": 9.8255
+    },
+    {
+      "keyword": "look",
+      "score": 9.8002
+    },
+    {
+      "keyword": "women",
+      "score": 9.6637
+    },
+    {
+      "keyword": "summer",
+      "score": 9.344
+    },
+    {
+      "keyword": "city",
+      "score": 9.1421
+    },
+    {
+      "keyword": "awards",
+      "score": 9.1397
+    },
+    {
+      "keyword": "anthony",
+      "score": 8.9283
+    },
+    {
+      "keyword": "old",
+      "score": 8.7375
+    },
+    {
+      "keyword": "york",
+      "score": 8.7366
+    },
+    {
+      "keyword": "fans",
+      "score": 8.5696
+    },
+    {
+      "keyword": "former",
+      "score": 8.2956
+    },
+    {
+      "keyword": "bet",
+      "score": 8.1385
+    },
+    {
+      "keyword": "star",
+      "score": 8.0778
+    },
+    {
+      "keyword": "us",
+      "score": 8.0562
+    },
+    {
+      "keyword": "president",
+      "score": 8.0543
+    },
+    {
+      "keyword": "love",
+      "score": 8.0538
+    },
+    {
+      "keyword": "health",
+      "score": 8.0537
+    },
+    {
+      "keyword": "man",
+      "score": 8.0022
+    },
+    {
+      "keyword": "season",
+      "score": 7.8043
+    },
+    {
+      "keyword": "cup",
+      "score": 7.7748
+    },
+    {
+      "keyword": "still",
+      "score": 7.691
+    },
+    {
+      "keyword": "travel",
+      "score": 7.6598
+    },
+    {
+      "keyword": "june",
+      "score": 7.6501
+    },
+    {
+      "keyword": "death",
+      "score": 7.6344
+    },
+    {
+      "keyword": "father",
+      "score": 7.6194
+    },
+    {
+      "keyword": "america",
+      "score": 7.6082
+    },
+    {
+      "keyword": "karmelo",
+      "score": 7.4106
+    },
+    {
+      "keyword": "karmelo anthony",
+      "score": 7.4106
+    },
+    {
+      "keyword": "state",
+      "score": 7.3386
+    },
+    {
+      "keyword": "center",
+      "score": 7.2814
+    },
+    {
+      "keyword": "media",
+      "score": 7.0993
+    },
+    {
+      "keyword": "world cup",
+      "score": 7.0552
+    },
+    {
+      "keyword": "juneteenth",
+      "score": 6.9818
+    }
+  ],
+  "by_source": {
+    "afrotech.com": [
+      {
+        "keyword": "ai",
+        "score": 4.9053
+      },
+      {
+        "keyword": "company",
+        "score": 3.042
+      },
+      {
+        "keyword": "university",
+        "score": 2.8174
+      },
+      {
+        "keyword": "tech",
+        "score": 2.2518
+      },
+      {
+        "keyword": "founder",
+        "score": 2.0561
+      },
+      {
+        "keyword": "afrotech",
+        "score": 1.9769
+      },
+      {
+        "keyword": "release",
+        "score": 1.9621
+      },
+      {
+        "keyword": "previously",
+        "score": 1.6688
+      },
+      {
+        "keyword": "technology",
+        "score": 1.6409
+      },
+      {
+        "keyword": "ceo",
+        "score": 1.6123
+      },
+      {
+        "keyword": "media",
+        "score": 1.5648
+      },
+      {
+        "keyword": "million",
+        "score": 1.5468
+      },
+      {
+        "keyword": "reported",
+        "score": 1.533
+      },
+      {
+        "keyword": "music",
+        "score": 1.5035
+      },
+      {
+        "keyword": "2026",
+        "score": 1.4986
+      },
+      {
+        "keyword": "billion",
+        "score": 1.4842
+      },
+      {
+        "keyword": "school",
+        "score": 1.4824
+      },
+      {
+        "keyword": "press",
+        "score": 1.4814
+      },
+      {
+        "keyword": "business",
+        "score": 1.4772
+      },
+      {
+        "keyword": "platform",
+        "score": 1.4457
+      }
+    ],
+    "blavity.com": [
+      {
+        "keyword": "trump",
+        "score": 4.9261
+      },
+      {
+        "keyword": "continue",
+        "score": 4.0096
+      },
+      {
+        "keyword": "reading",
+        "score": 3.8756
+      },
+      {
+        "keyword": "continue reading",
+        "score": 3.8756
+      },
+      {
+        "keyword": "know",
+        "score": 2.9754
+      },
+      {
+        "keyword": "court",
+        "score": 2.7521
+      },
+      {
+        "keyword": "health",
+        "score": 2.6706
+      },
+      {
+        "keyword": "president",
+        "score": 2.052
+      },
+      {
+        "keyword": "ai",
+        "score": 2.0374
+      },
+      {
+        "keyword": "supreme",
+        "score": 1.9977
+      },
+      {
+        "keyword": "supreme court",
+        "score": 1.9977
+      },
+      {
+        "keyword": "judge",
+        "score": 1.9691
+      },
+      {
+        "keyword": "lawsuit",
+        "score": 1.9038
+      },
+      {
+        "keyword": "donald",
+        "score": 1.8755
+      },
+      {
+        "keyword": "donald trump",
+        "score": 1.8755
+      },
+      {
+        "keyword": "vaccine",
+        "score": 1.7705
+      },
+      {
+        "keyword": "center",
+        "score": 1.7026
+      },
+      {
+        "keyword": "democratic",
+        "score": 1.6717
+      },
+      {
+        "keyword": "man",
+        "score": 1.6363
+      },
+      {
+        "keyword": "case",
+        "score": 1.5813
+      }
+    ],
+    "capitalbnews.org": [
+      {
+        "keyword": "america",
+        "score": 2.2548
+      },
+      {
+        "keyword": "future",
+        "score": 1.61
+      },
+      {
+        "keyword": "story",
+        "score": 1.5353
+      },
+      {
+        "keyword": "fast",
+        "score": 1.5
+      },
+      {
+        "keyword": "historic",
+        "score": 1.4997
+      },
+      {
+        "keyword": "world",
+        "score": 1.4282
+      },
+      {
+        "keyword": "building",
+        "score": 1.2278
+      },
+      {
+        "keyword": "meet",
+        "score": 1.2071
+      },
+      {
+        "keyword": "texas",
+        "score": 1.163
+      },
+      {
+        "keyword": "young",
+        "score": 1.1297
+      },
+      {
+        "keyword": "louisiana",
+        "score": 1.1233
+      },
+      {
+        "keyword": "residents",
+        "score": 1.111
+      },
+      {
+        "keyword": "florida",
+        "score": 1.0353
+      },
+      {
+        "keyword": "climate",
+        "score": 1.0122
+      },
+      {
+        "keyword": "city",
+        "score": 1.0122
+      },
+      {
+        "keyword": "affects",
+        "score": 1.0122
+      },
+      {
+        "keyword": "world cup",
+        "score": 0.9681
+      },
+      {
+        "keyword": "cup",
+        "score": 0.9681
+      },
+      {
+        "keyword": "secure",
+        "score": 0.9681
+      },
+      {
+        "keyword": "secure future",
+        "score": 0.9681
+      }
+    ],
+    "ebony.com": [
+      {
+        "keyword": "summer",
+        "score": 3.7003
+      },
+      {
+        "keyword": "2026",
+        "score": 3.1675
+      },
+      {
+        "keyword": "june",
+        "score": 2.6497
+      },
+      {
+        "keyword": "world",
+        "score": 2.6234
+      },
+      {
+        "keyword": "best",
+        "score": 2.6192
+      },
+      {
+        "keyword": "love",
+        "score": 2.5915
+      },
+      {
+        "keyword": "season",
+        "score": 2.311
+      },
+      {
+        "keyword": "music",
+        "score": 2.3038
+      },
+      {
+        "keyword": "awards",
+        "score": 2.298
+      },
+      {
+        "keyword": "fashion",
+        "score": 2.2974
+      },
+      {
+        "keyword": "long",
+        "score": 2.2413
+      },
+      {
+        "keyword": "father",
+        "score": 2.1558
+      },
+      {
+        "keyword": "york",
+        "score": 2.1297
+      },
+      {
+        "keyword": "beauty",
+        "score": 2.0553
+      },
+      {
+        "keyword": "us",
+        "score": 2.0427
+      },
+      {
+        "keyword": "women",
+        "score": 2.0235
+      },
+      {
+        "keyword": "life",
+        "score": 2.0079
+      },
+      {
+        "keyword": "festival",
+        "score": 1.9587
+      },
+      {
+        "keyword": "still",
+        "score": 1.8641
+      },
+      {
+        "keyword": "story",
+        "score": 1.8318
+      }
+    ],
+    "essence.com": [
+      {
+        "keyword": "essence",
+        "score": 23.2033
+      },
+      {
+        "keyword": "best",
+        "score": 2.8741
+      },
+      {
+        "keyword": "subscribe",
+        "score": 2.7043
+      },
+      {
+        "keyword": "essence subscribe",
+        "score": 2.7043
+      },
+      {
+        "keyword": "2026",
+        "score": 2.65
+      },
+      {
+        "keyword": "family",
+        "score": 2.4957
+      },
+      {
+        "keyword": "summer",
+        "score": 2.4215
+      },
+      {
+        "keyword": "history",
+        "score": 2.3173
+      },
+      {
+        "keyword": "beauty",
+        "score": 2.2328
+      },
+      {
+        "keyword": "season",
+        "score": 2.2026
+      },
+      {
+        "keyword": "festival",
+        "score": 2.1357
+      },
+      {
+        "keyword": "awards",
+        "score": 2.1154
+      },
+      {
+        "keyword": "looks",
+        "score": 2.0809
+      },
+      {
+        "keyword": "together",
+        "score": 1.8859
+      },
+      {
+        "keyword": "fashion",
+        "score": 1.8761
+      },
+      {
+        "keyword": "bet",
+        "score": 1.85
+      },
+      {
+        "keyword": "texas",
+        "score": 1.8296
+      },
+      {
+        "keyword": "meet",
+        "score": 1.806
+      },
+      {
+        "keyword": "women",
+        "score": 1.7405
+      },
+      {
+        "keyword": "music",
+        "score": 1.7148
+      }
+    ],
+    "newsone.com": [
+      {
+        "keyword": "trump",
+        "score": 8.1235
+      },
+      {
+        "keyword": "music",
+        "score": 3.6504
+      },
+      {
+        "keyword": "old",
+        "score": 3.3848
+      },
+      {
+        "keyword": "court",
+        "score": 3.3154
+      },
+      {
+        "keyword": "wnba",
+        "score": 2.8813
+      },
+      {
+        "keyword": "state",
+        "score": 2.6976
+      },
+      {
+        "keyword": "iran",
+        "score": 2.669
+      },
+      {
+        "keyword": "family",
+        "score": 2.6431
+      },
+      {
+        "keyword": "man",
+        "score": 2.6206
+      },
+      {
+        "keyword": "us",
+        "score": 2.497
+      },
+      {
+        "keyword": "federal",
+        "score": 2.4526
+      },
+      {
+        "keyword": "found",
+        "score": 2.2481
+      },
+      {
+        "keyword": "women",
+        "score": 2.1882
+      },
+      {
+        "keyword": "judge",
+        "score": 2.1878
+      },
+      {
+        "keyword": "shot",
+        "score": 2.1582
+      },
+      {
+        "keyword": "knicks",
+        "score": 2.1217
+      },
+      {
+        "keyword": "whether",
+        "score": 2.1201
+      },
+      {
+        "keyword": "obama",
+        "score": 2.098
+      },
+      {
+        "keyword": "house",
+        "score": 2.0382
+      },
+      {
+        "keyword": "supreme",
+        "score": 2.0258
+      }
+    ],
+    "thegrio.com": [
+      {
+        "keyword": "trump",
+        "score": 7.3579
+      },
+      {
+        "keyword": "family",
+        "score": 6.1216
+      },
+      {
+        "keyword": "obama",
+        "score": 4.8818
+      },
+      {
+        "keyword": "world",
+        "score": 4.4227
+      },
+      {
+        "keyword": "knicks",
+        "score": 4.314
+      },
+      {
+        "keyword": "awards",
+        "score": 4.1359
+      },
+      {
+        "keyword": "nba",
+        "score": 4.1144
+      },
+      {
+        "keyword": "bet",
+        "score": 4.1006
+      },
+      {
+        "keyword": "death",
+        "score": 3.9632
+      },
+      {
+        "keyword": "anthony",
+        "score": 3.9072
+      },
+      {
+        "keyword": "president",
+        "score": 3.8623
+      },
+      {
+        "keyword": "2026",
+        "score": 3.8484
+      },
+      {
+        "keyword": "life",
+        "score": 3.76
+      },
+      {
+        "keyword": "former",
+        "score": 3.7539
+      },
+      {
+        "keyword": "opens",
+        "score": 3.6368
+      },
+      {
+        "keyword": "star",
+        "score": 3.5314
+      },
+      {
+        "keyword": "son",
+        "score": 3.5308
+      },
+      {
+        "keyword": "fans",
+        "score": 3.5251
+      },
+      {
+        "keyword": "children",
+        "score": 3.4877
+      },
+      {
+        "keyword": "karmelo anthony",
+        "score": 3.3819
+      }
+    ],
+    "theroot.com": [
+      {
+        "keyword": "look",
+        "score": 5.5154
+      },
+      {
+        "keyword": "music",
+        "score": 4.8403
+      },
+      {
+        "keyword": "let",
+        "score": 4.838
+      },
+      {
+        "keyword": "knicks",
+        "score": 4.5764
+      },
+      {
+        "keyword": "nba",
+        "score": 4.4404
+      },
+      {
+        "keyword": "best",
+        "score": 4.3364
+      },
+      {
+        "keyword": "life",
+        "score": 4.289
+      },
+      {
+        "keyword": "fans",
+        "score": 4.0891
+      },
+      {
+        "keyword": "york",
+        "score": 3.9677
+      },
+      {
+        "keyword": "trump",
+        "score": 3.8835
+      },
+      {
+        "keyword": "inside",
+        "score": 3.8274
+      },
+      {
+        "keyword": "star",
+        "score": 3.7063
+      },
+      {
+        "keyword": "2026",
+        "score": 3.599
+      },
+      {
+        "keyword": "take",
+        "score": 3.5606
+      },
+      {
+        "keyword": "know",
+        "score": 3.4919
+      },
+      {
+        "keyword": "history",
+        "score": 3.305
+      },
+      {
+        "keyword": "mother",
+        "score": 3.1778
+      },
+      {
+        "keyword": "fashion",
+        "score": 3.0585
+      },
+      {
+        "keyword": "death",
+        "score": 3.0534
+      },
+      {
+        "keyword": "women",
+        "score": 2.9949
+      }
+    ],
+    "travelnoire.com": [
+      {
+        "keyword": "travel",
+        "score": 5.248
+      },
+      {
+        "keyword": "know",
+        "score": 3.569
+      },
+      {
+        "keyword": "travelers",
+        "score": 3.3629
+      },
+      {
+        "keyword": "filming",
+        "score": 3.3014
+      },
+      {
+        "keyword": "trip",
+        "score": 3.1881
+      },
+      {
+        "keyword": "2026",
+        "score": 2.9468
+      },
+      {
+        "keyword": "every",
+        "score": 2.8379
+      },
+      {
+        "keyword": "world",
+        "score": 2.7115
+      },
+      {
+        "keyword": "locations",
+        "score": 2.4382
+      },
+      {
+        "keyword": "visit",
+        "score": 2.3616
+      },
+      {
+        "keyword": "location",
+        "score": 2.1816
+      },
+      {
+        "keyword": "real",
+        "score": 2.1801
+      },
+      {
+        "keyword": "city",
+        "score": 2.1706
+      },
+      {
+        "keyword": "june",
+        "score": 2.1601
+      },
+      {
+        "keyword": "caribbean",
+        "score": 2.1391
+      },
+      {
+        "keyword": "guide",
+        "score": 2.1014
+      },
+      {
+        "keyword": "summer",
+        "score": 2.0897
+      },
+      {
+        "keyword": "need",
+        "score": 2.0839
+      },
+      {
+        "keyword": "filmed",
+        "score": 2.0369
+      },
+      {
+        "keyword": "us",
+        "score": 2.0337
+      }
+    ]
+  }
+}

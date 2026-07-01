@@ -1,0 +1,1988 @@
+{
+  "topic_counts": {
+    "Criminal Justice Reform": 52,
+    "Voter Suppression": 36,
+    "Book Bans & Anti-DEI": 14,
+    "Policing & Public Safety": 26,
+    "School Funding": 45,
+    "Anti-Black Surveillance": 6,
+    "Housing & Displacement": 5,
+    "Reparations": 8,
+    "Maternal Health": 3,
+    "Environmental Justice": 2,
+    "Economic Equity & Wealth Gap": 3
+  },
+  "source_topic_matrix": {
+    "newsone.com": {
+      "Criminal Justice Reform": 14,
+      "Voter Suppression": 12,
+      "Policing & Public Safety": 9,
+      "Housing & Displacement": 2,
+      "School Funding": 1,
+      "Anti-Black Surveillance": 1,
+      "Reparations": 3,
+      "Book Bans & Anti-DEI": 1
+    },
+    "theroot.com": {
+      "Voter Suppression": 8,
+      "Anti-Black Surveillance": 1,
+      "Criminal Justice Reform": 10,
+      "School Funding": 5,
+      "Book Bans & Anti-DEI": 4,
+      "Reparations": 1,
+      "Economic Equity & Wealth Gap": 1,
+      "Policing & Public Safety": 2
+    },
+    "afrotech.com": {
+      "Book Bans & Anti-DEI": 2,
+      "School Funding": 18,
+      "Policing & Public Safety": 1,
+      "Anti-Black Surveillance": 1,
+      "Maternal Health": 1,
+      "Economic Equity & Wealth Gap": 1
+    },
+    "thegrio.com": {
+      "School Funding": 13,
+      "Policing & Public Safety": 10,
+      "Criminal Justice Reform": 15,
+      "Housing & Displacement": 1,
+      "Voter Suppression": 2,
+      "Maternal Health": 1,
+      "Anti-Black Surveillance": 3,
+      "Reparations": 2,
+      "Book Bans & Anti-DEI": 2
+    },
+    "blavity.com": {
+      "School Funding": 5,
+      "Voter Suppression": 9,
+      "Criminal Justice Reform": 9,
+      "Housing & Displacement": 1,
+      "Reparations": 2,
+      "Policing & Public Safety": 3,
+      "Environmental Justice": 1,
+      "Book Bans & Anti-DEI": 1,
+      "Maternal Health": 1
+    },
+    "capitalbnews.org": {
+      "Book Bans & Anti-DEI": 1,
+      "School Funding": 1,
+      "Environmental Justice": 1,
+      "Housing & Displacement": 1,
+      "Economic Equity & Wealth Gap": 1,
+      "Criminal Justice Reform": 1,
+      "Voter Suppression": 1
+    },
+    "ebony.com": {
+      "Criminal Justice Reform": 1,
+      "Voter Suppression": 1,
+      "Book Bans & Anti-DEI": 2,
+      "School Funding": 1
+    },
+    "travelnoire.com": {
+      "Policing & Public Safety": 1
+    },
+    "essence.com": {
+      "Criminal Justice Reform": 2,
+      "Voter Suppression": 3,
+      "School Funding": 1,
+      "Book Bans & Anti-DEI": 1
+    }
+  },
+  "top_articles_per_topic": {
+    "Criminal Justice Reform": [
+      {
+        "title": "10-Year-Old Child Charged With Murder Of 7-Month-Old Baby In St. Louis",
+        "link": "https://newsone.com/6864770/10-year-old-charged-murder-7-month-old-baby/",
+        "source": "newsone.com",
+        "date": "2026-06-30",
+        "matched_phrases": [
+          "charged with murder",
+          "charged with",
+          "facing charges"
+        ]
+      },
+      {
+        "title": "Roger Fortson: Mother Says Cop Keeps Delaying Criminal Trial",
+        "link": "https://newsone.com/6864698/roger-fortson-eddie-duran-manslaughter-trial-delays/",
+        "source": "newsone.com",
+        "date": "2026-06-30",
+        "matched_phrases": [
+          "criminal trial",
+          "manslaughter"
+        ]
+      },
+      {
+        "title": "Officer Resigned After Footage Shows Alleged Assault Against Pregnant Black Woman",
+        "link": "https://www.theroot.com/officer-resigned-after-footage-shows-alleged-assault-ag-2000113407",
+        "source": "theroot.com",
+        "date": "2026-06-29",
+        "matched_phrases": [
+          "criminal charges"
+        ]
+      },
+      {
+        "title": "Judge Orders DOJ To Release More Unredacted Jeffrey Epstein Files Or Explain The Secrecy",
+        "link": "https://blavity.com/judge-orders-doj-to-release-more-unredacted-jeffrey-epstein-files-or-explain-the-secrecy",
+        "source": "blavity.com",
+        "date": "2026-06-28",
+        "matched_phrases": [
+          "convicted"
+        ]
+      },
+      {
+        "title": "Twista faces five years in prison after pleading guilty to $440K in tax evasion",
+        "link": "https://thegrio.com/2026/06/27/twista-pleads-guilty-tax-evasion/",
+        "source": "thegrio.com",
+        "date": "2026-06-27",
+        "matched_phrases": [
+          "misdemeanor"
+        ]
+      },
+      {
+        "title": "Jury Deadlock In Palisades Fire Trial Results In Mistrial",
+        "link": "https://newsone.com/6864563/jury-deadlock-palisades-fire-trial-mistrial/",
+        "source": "newsone.com",
+        "date": "2026-06-27",
+        "matched_phrases": [
+          "convicted",
+          "facing charges"
+        ]
+      },
+      {
+        "title": "Ohio mother questions \u2018fairness\u2019 of justice system after son\u2019s killer avoids life sentence",
+        "link": "https://thegrio.com/2026/06/26/ohio-mother-questions-sentence-christopher-manning/",
+        "source": "thegrio.com",
+        "date": "2026-06-26",
+        "matched_phrases": [
+          "sentenced to",
+          "life sentence"
+        ]
+      },
+      {
+        "title": "The Rising Movement to Overturn Karmelo Anthony\u2019s Extreme 35-Year Sentence",
+        "link": "https://www.theroot.com/the-rising-movement-to-overturn-karmelo-anthonys-extrem-2000112836",
+        "source": "theroot.com",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "prison sentence"
+        ]
+      },
+      {
+        "title": "After Serving Out His Long Prison Sentence, One Alabama Man Is Finally Found Innocent",
+        "link": "https://www.theroot.com/after-serving-out-his-long-prison-sentence-one-alabama-2000112567",
+        "source": "theroot.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "prison sentence"
+        ]
+      },
+      {
+        "title": "Julio Foolio\u2019s Convicted Killers Offer Blunt Advice To Troubled Black Men",
+        "link": "https://www.theroot.com/julio-foolios-convicted-killers-offer-blunt-advice-to-t-2000112615",
+        "source": "theroot.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "convicted"
+        ]
+      },
+      {
+        "title": "Karmelo Anthony Gets New Legal Team As Appeal Process Begins",
+        "link": "https://newsone.com/6864055/karmelo-anthony-gets-new-legal-team-as-appeal-process-begins/",
+        "source": "newsone.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "convicted"
+        ]
+      },
+      {
+        "title": "\u2018Hope you get help\u2019: Mystikal\u2019s son speaks on his father\u2019s 20-year prison sentence as trial details come to light",
+        "link": "https://thegrio.com/2026/06/22/mystikal-son-million-tyler-speaks-20-year-prison-sentence/",
+        "source": "thegrio.com",
+        "date": "2026-06-22",
+        "matched_phrases": [
+          "sentenced to",
+          "prison sentence"
+        ]
+      },
+      {
+        "title": "Why Justice Ketanji Brown Jackson Wants The Supreme Court To Revisit Its Landmark Gun Rights Test",
+        "link": "https://blavity.com/ketanji-brown-jackson-court-gun-rights-test",
+        "source": "blavity.com",
+        "date": "2026-06-21",
+        "matched_phrases": [
+          "facing charges"
+        ]
+      },
+      {
+        "title": "Cyrus Carmack-Belton\u2019s family joins Harlem rally after Rick Chow acquittal",
+        "link": "https://thegrio.com/2026/06/20/cyrus-carmack-belton-family-harlem-rally/",
+        "source": "thegrio.com",
+        "date": "2026-06-20",
+        "matched_phrases": [
+          "acquitted"
+        ]
+      },
+      {
+        "title": "Everything To Know About Mystikal\u2019s 20-Year Prison Sentence In 2022 Rape Case",
+        "link": "https://blavity.com/mystikal-20-year-prison-sentence-in-2022-case",
+        "source": "blavity.com",
+        "date": "2026-06-18",
+        "matched_phrases": [
+          "sentenced to",
+          "prison sentence"
+        ]
+      },
+      {
+        "title": "White Illinois Man Accused Of Hurling Slurs At 9-Year-Old Black Boy",
+        "link": "https://newsone.com/6863722/white-man-jeffrey-feigenbaum-hate-crime-black-boy/",
+        "source": "newsone.com",
+        "date": "2026-06-18",
+        "matched_phrases": [
+          "charged with",
+          "misdemeanor"
+        ]
+      },
+      {
+        "title": "Ahead of Juneteenth, KY Gov. Beshear posthumously pardons 43 people wrongly convicted for helping enslaved people to freedom",
+        "link": "https://thegrio.com/2026/06/16/ahead-of-juneteenth-ky-gov-beshear-posthumously-pardons-43-people-wrongly-convicted-for-helping-enslaved-people-to-freedom/",
+        "source": "thegrio.com",
+        "date": "2026-06-16",
+        "matched_phrases": [
+          "convicted"
+        ]
+      },
+      {
+        "title": "Mystikal sentenced to 20 years in prison related to 2022 rape case",
+        "link": "https://thegrio.com/2026/06/16/mystikal-20-year-prison-sentence-rape/",
+        "source": "thegrio.com",
+        "date": "2026-06-16",
+        "matched_phrases": [
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "TDCJ fires parole supervisor Donna Robinson over Facebook comments on Karmelo Anthony case",
+        "link": "https://thegrio.com/2026/06/16/texas-parole-supervisor-fired-karmelo-anthony-comments/",
+        "source": "thegrio.com",
+        "date": "2026-06-16",
+        "matched_phrases": [
+          "parole"
+        ]
+      },
+      {
+        "title": "Supreme Court Blocks Alabama Execution Of Black Man Using Nitrogen Gas",
+        "link": "https://newsone.com/6863139/scotus-blocks-jeffery-lee-execution-nitrogen-gas/",
+        "source": "newsone.com",
+        "date": "2026-06-12",
+        "matched_phrases": [
+          "execution"
+        ]
+      },
+      {
+        "title": "Karmelo Anthony Trial Coverage Draws Backlash After Reporter\u2019s \u2018Gorilla\u2019 Comment",
+        "link": "https://blavity.com/karmelo-anthony-trial-draws-backlash-after-reporters-comment",
+        "source": "blavity.com",
+        "date": "2026-06-12",
+        "matched_phrases": [
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "The State of US: Karmelo Anthony Verdict, Inflation, Fisk Data Center, LA Mayoral Race",
+        "link": "https://www.ebony.com/the-state-of-us-karmelo-anthony-verdict-inflation-fisk-data-center-la-mayoral-race/",
+        "source": "ebony.com",
+        "date": "2026-06-12",
+        "matched_phrases": [
+          "convicted",
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "The Shocking Reasons Why Texas Sentenced Man to 45 Years in Prison Over LEGOs",
+        "link": "https://www.theroot.com/the-shocking-reasons-why-texas-sentenced-man-to-45-year-2000111231",
+        "source": "theroot.com",
+        "date": "2026-06-12",
+        "matched_phrases": [
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "Texas Reporter Makes 'Gorilla' Reference During Karmelo Anthony Trial",
+        "link": "https://newsone.com/6863005/reporter-gorilla-reference-karmelo-anthony-trial/",
+        "source": "newsone.com",
+        "date": "2026-06-11",
+        "matched_phrases": [
+          "convicted",
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "White Man Accused Of Terrorizing Black Family Reunion With AR-15",
+        "link": "https://newsone.com/6863066/white-man-jeffrey-tyler-kinzer-terrorized-black-family/",
+        "source": "newsone.com",
+        "date": "2026-06-11",
+        "matched_phrases": [
+          "charged with assault",
+          "charged with"
+        ]
+      },
+      {
+        "title": "Karmelo Anthony\u2019s Family Reacts to Verdict and 35-year Prison Sentence",
+        "link": "https://www.theroot.com/karmelo-anthonys-family-reacts-to-verdict-and-35-year-p-2000111120",
+        "source": "theroot.com",
+        "date": "2026-06-11",
+        "matched_phrases": [
+          "convicted",
+          "sentenced to",
+          "prison sentence"
+        ]
+      },
+      {
+        "title": "Karmelo Anthony\u2019s case is a reminder of the importance of jury duty in Black communities",
+        "link": "https://thegrio.com/2026/06/10/karmelo-anthonys-case-is-a-reminder-of-the-importance-of-jury-duty-in-black-communities/",
+        "source": "thegrio.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "\u2018We\u2019re going to keep fighting\u2019: Karmelo Anthony\u2019s parents break silence after son receives 35-year prison sentence",
+        "link": "https://thegrio.com/2026/06/10/karmelo-anthony-parents-break-silence-verdict/",
+        "source": "thegrio.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "prison sentence"
+        ]
+      },
+      {
+        "title": "Karmelo Anthony Sentenced To 35 Years In Prison As Many Question Exclusion Of Black Jurors From Trial",
+        "link": "https://blavity.com/karmelo-anthony-sentenced-to-35-years-many-question-exclusion-black-jurors",
+        "source": "blavity.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "Karmelo Anthony sentenced to 35 years in prison after fatally stabbing teen at track meet",
+        "link": "https://thegrio.com/2026/06/09/karmelo-anthony-verdict-guilty-frisco-texas-stabbing/",
+        "source": "thegrio.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "Karmelo Anthony Found Guilty Of Murder After Track Meet Stabbing, Black Jurors Excluded From Jury",
+        "link": "https://blavity.com/karmelo-anthony-found-guilty-track-meet-case-black-jurors-excluded",
+        "source": "blavity.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "convicted"
+        ]
+      },
+      {
+        "title": "Internet Reacts After Teen Karmelo Anthony Is Convicted of Murdering White Athlete in Texas",
+        "link": "https://www.theroot.com/internet-reacts-after-teen-karmelo-anthony-is-convicted-2000110615",
+        "source": "theroot.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "convicted"
+        ]
+      },
+      {
+        "title": "O\u2019Shae Sibley\u2019s killer found guilty of manslaughter as a hate crime",
+        "link": "https://thegrio.com/2026/06/09/oshae-sibley-killing-hate-crime-manslaughter-conviction/",
+        "source": "thegrio.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "manslaughter"
+        ]
+      },
+      {
+        "title": "Track Meet Turns Tragic: Texas Teen Charged as Adult Under Controversial Law",
+        "link": "https://capitalbnews.org/karmelo-anthony-murder-case-texas/",
+        "source": "capitalbnews.org",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "charged under"
+        ]
+      },
+      {
+        "title": "Convictions Reversed For Colorado Paramedics Involved In Death Of Elijah McClain",
+        "link": "https://newsone.com/6862663/elijah-mcclain-death-convictions-reversed-for-paramedics/",
+        "source": "newsone.com",
+        "date": "2026-06-08",
+        "matched_phrases": [
+          "convicted"
+        ]
+      },
+      {
+        "title": "Why Some Immigrant Store Owners Are Facing a Modern Civil Rights Boycott",
+        "link": "https://www.theroot.com/why-some-immigrant-store-owners-are-facing-a-modern-civ-2000110235",
+        "source": "theroot.com",
+        "date": "2026-06-08",
+        "matched_phrases": [
+          "acquitted"
+        ]
+      },
+      {
+        "title": "Court Tosses Homicide Convictions Of Paramedics Who Injected Elijah McClain With Sedative",
+        "link": "https://blavity.com/court-tosses-convictions-of-paramedics-who-injected-elijah-mcclain",
+        "source": "blavity.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "convicted"
+        ]
+      },
+      {
+        "title": "Arrest warrant issued for Brandon Aiyuk following viral high-speed driving video",
+        "link": "https://thegrio.com/2026/06/05/brandon-aiyuk-arrest-warrant-speeding-youtube-video/",
+        "source": "thegrio.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "misdemeanor"
+        ]
+      },
+      {
+        "title": "Vigil Planned At South Carolina Statehouse For Cyrus Carmack-Belton",
+        "link": "https://newsone.com/6862552/cyrus-carmack-belton-vigial-south-carolina-statehouse/",
+        "source": "newsone.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "not guilty"
+        ]
+      },
+      {
+        "title": "TV Bailiff Breaks Silence on Wife\u2019s Shooting Death: \u2018I Treated Her Like My Queen\u2019",
+        "link": "https://www.theroot.com/tv-bailiff-breaks-silence-on-wife-s-shooting-death-i-2000109754",
+        "source": "theroot.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "acquitted"
+        ]
+      },
+      {
+        "title": "Family Of Cyrus Carmack-Belton Reacts To Not Guilty Verdict In Trial: 'We Are Heartbroken!'",
+        "link": "https://newsone.com/6862400/family-of-cyrus-carmack-belton-reacts-to-not-guilty-verdict/",
+        "source": "newsone.com",
+        "date": "2026-06-04",
+        "matched_phrases": [
+          "not guilty"
+        ]
+      },
+      {
+        "title": "Michigan Cop Sentenced To 6 Months For Tasing Black Man For 40 Seconds",
+        "link": "https://newsone.com/6862370/matthew-furman-michigan-cop-sentenced-tasing-black-man/",
+        "source": "newsone.com",
+        "date": "2026-06-04",
+        "matched_phrases": [
+          "probation",
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "A Black Teen Was Falsely Accused of Stealing, Now a South Carolina Jury Just Let His Killer Go",
+        "link": "https://www.theroot.com/a-black-teen-was-falsely-accused-of-stealing-now-a-sou-2000109138",
+        "source": "theroot.com",
+        "date": "2026-06-03",
+        "matched_phrases": [
+          "acquitted"
+        ]
+      },
+      {
+        "title": "Cyrus Carmack-Belton's Killer Found Not Guilty Of Murder",
+        "link": "https://newsone.com/6862151/cyrus-carmack-belton-killer-not-guilty-murder/",
+        "source": "newsone.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "not guilty"
+        ]
+      },
+      {
+        "title": "Judge Rules Protesters Can\u2019t Be Forced To Take Down \u201886 47\u2019 Flag",
+        "link": "https://newsone.com/6862157/protesters-cannot-be-forced-remove-86-47-flag/",
+        "source": "newsone.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "facing charges"
+        ]
+      },
+      {
+        "title": "Former North Carolina officer charged after viral video shows woman punched during arrest",
+        "link": "https://thegrio.com/2026/06/02/former-north-carolina-officer-charged-woman-punched-arrest/",
+        "source": "thegrio.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "criminal charges"
+        ]
+      },
+      {
+        "title": "Jury finds South Carolina convenience store owner not guilty in death of Black teen Cyrus Carmack-Belton",
+        "link": "https://thegrio.com/2026/06/02/jury-finds-south-carolina-convenience-store-owner-not-guilty-in-death-of-black-teen-cyrus-carmack-belton/",
+        "source": "thegrio.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "not guilty"
+        ]
+      },
+      {
+        "title": "What To Know About Business Owner Rick Chow Being Cleared In Teen Cyrus Carmack-Belton\u2019s Death",
+        "link": "https://blavity.com/rick-chow-cleared-cyrus-carmack-belton-case",
+        "source": "blavity.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "charged with",
+          "not guilty"
+        ]
+      },
+      {
+        "title": "Karmelo Anthony Trial Begins In Texas Track Meet Stabbing Case \u2014Why Are Strict Rules In Place?",
+        "link": "https://blavity.com/karmelo-anthony-trial-begins-in-texas-track-meet-case",
+        "source": "blavity.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "indicted",
+          "murder charge"
+        ]
+      },
+      {
+        "title": "Foster Sylvers, singer behind \u2018Misdemeanor\u2019 and member of The Sylvers, dead at 64",
+        "link": "https://thegrio.com/2026/05/31/foster-sylvers-dead-misdemeanor-the-sylvers/",
+        "source": "thegrio.com",
+        "date": "2026-05-31",
+        "matched_phrases": [
+          "misdemeanor"
+        ]
+      },
+      {
+        "title": "Texas Jury Sentences Karmelo Anthony To 35 Years In High-Profile Case",
+        "link": "https://www.essence.com/news/karmelo-anthony-sentenced-35-years/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "sentenced to"
+        ]
+      },
+      {
+        "title": "Family Of Cyrus Carmack-Belton Speaks Out After South Carolina Jury Acquits Store Owner In Fatal Shooting - Essence",
+        "link": "https://www.essence.com/news/cyrus-carmack-belton-family-reacts-chikei-rick-chow-acquittal/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "acquitted"
+        ]
+      }
+    ],
+    "Voter Suppression": [
+      {
+        "title": "Colorado Supreme Court Shuts Down Democratic Redistricting Plan",
+        "link": "https://newsone.com/6864807/colorado-supreme-court-shuts-down-redistricting/",
+        "source": "newsone.com",
+        "date": "2026-06-30",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "They Want Us to Forget How We Saved Democracy the First Two Times. Don\u2019t Let Them",
+        "link": "https://www.theroot.com/they-want-us-to-forget-how-we-saved-democracy-the-first-2000113693",
+        "source": "theroot.com",
+        "date": "2026-06-30",
+        "matched_phrases": [
+          "democracy"
+        ]
+      },
+      {
+        "title": "Supreme Court Narrowly Upholds Allowing Mail-In Ballots Received After Election Day",
+        "link": "https://blavity.com/supreme-court-upholds-allowing-mail-in-ballots-received-after-election-day",
+        "source": "blavity.com",
+        "date": "2026-06-29",
+        "matched_phrases": [
+          "election day",
+          "midterm"
+        ]
+      },
+      {
+        "title": "Supreme Court Upholds Mississippi Law Allowing Late Mail-In Ballots",
+        "link": "https://newsone.com/6864648/mississippi-law-late-mail-in-ballots-upheld/",
+        "source": "newsone.com",
+        "date": "2026-06-29",
+        "matched_phrases": [
+          "election day"
+        ]
+      },
+      {
+        "title": "Maxine Waters Rips Trump For Not Signing Bipartisan Housing Legislation: \u2018He Has Been Racist\u2026Sign The Damn Bill\u2019",
+        "link": "https://blavity.com/maxine-waters-slams-trump-for-not-signing-housing-legislation",
+        "source": "blavity.com",
+        "date": "2026-06-28",
+        "matched_phrases": [
+          "save america act",
+          "save act"
+        ]
+      },
+      {
+        "title": "What These Recent Supreme Court Rulings Could Mean for All Black Americans",
+        "link": "https://www.theroot.com/what-these-recent-supreme-court-rulings-could-mean-for-2000113107",
+        "source": "theroot.com",
+        "date": "2026-06-26",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Trump Refuses To Sign Bipartisan Bill To Fix Housing Crisis",
+        "link": "https://newsone.com/6864340/trump-refuses-sign-housing-bill-save-act/",
+        "source": "newsone.com",
+        "date": "2026-06-25",
+        "matched_phrases": [
+          "save america act",
+          "save act"
+        ]
+      },
+      {
+        "title": "Mamdani-backed challengers defeat NYC political heavyweights in primary shakeup",
+        "link": "https://thegrio.com/2026/06/24/mamdani-backed-candidates-nyc-democratic-primaries/",
+        "source": "thegrio.com",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "midterm"
+        ]
+      },
+      {
+        "title": "Every Supreme Court Ruling That Impacted Black Americans This Week",
+        "link": "https://newsone.com/6864194/supreme-court-rulings-that-impacted-black-americans-this-week/",
+        "source": "newsone.com",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Trump Admin Barred From Using Immigration Database To Check Voter Rolls",
+        "link": "https://newsone.com/6864035/immigration-database-cannot-check-voter-rolls/",
+        "source": "newsone.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "voter rolls"
+        ]
+      },
+      {
+        "title": "Georgia State Legislature Declines To Pursue Redistricting Effort",
+        "link": "https://newsone.com/6863661/georgia-state-legislature-wont-pursue-redistricting/",
+        "source": "newsone.com",
+        "date": "2026-06-17",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Here\u2019s What a Complete Return to Jim Crow Could Look Like",
+        "link": "https://www.theroot.com/heres-what-a-complete-return-to-jim-crow-could-look-lik-2000106122",
+        "source": "theroot.com",
+        "date": "2026-06-12",
+        "matched_phrases": [
+          "jim crow"
+        ]
+      },
+      {
+        "title": "Florida Supreme Court Allows State To Use Newly Drawn Congressional Map",
+        "link": "https://newsone.com/6863077/florida-redistricting-new-congressional-map/",
+        "source": "newsone.com",
+        "date": "2026-06-11",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "4 Republicans Sided With Dems To Reject SAVE America Act, The Restrictive Voter ID Law Pushed By Trump",
+        "link": "https://blavity.com/save-america-act-republicans-side-with-democrats-to-reject",
+        "source": "blavity.com",
+        "date": "2026-06-11",
+        "matched_phrases": [
+          "voter id",
+          "save america act",
+          "save act"
+        ]
+      },
+      {
+        "title": "From Maine To South Carolina: Everything That Happened In Tuesday\u2019s Primaries",
+        "link": "https://newsone.com/6862880/maine-to-south-carolina-everything-that-happened-in-tuesdays-primaries/",
+        "source": "newsone.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "redistricting",
+          "primary election"
+        ]
+      },
+      {
+        "title": "Who Is Nithya Raman, The LA Councilwoman Who Surpassed Spencer Pratt To Face Karen Bass In LA Mayor Runoff?",
+        "link": "https://blavity.com/who-is-nithya-raman-la-mayor-runoff",
+        "source": "blavity.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "primary election"
+        ]
+      },
+      {
+        "title": "Dems Hope Controversial Graham Platner Will Help Them Take Susan Collins\u2019 Senate Seat After Maine Primary Win",
+        "link": "https://blavity.com/graham-platner-dems-main-primary-win",
+        "source": "blavity.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "primary election"
+        ]
+      },
+      {
+        "title": "Kamala Harris To Travel To Louisiana To Fight Redistricting, Fueling 2028 Run Speculations",
+        "link": "https://blavity.com/kamala-harris-to-travel-to-louisiana-to-fight-redistricting",
+        "source": "blavity.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Without The Voting Rights Act, The United States Of America Is An Illusion Of Democracy",
+        "link": "https://newsone.com/6862779/voting-rights-act-illusion-democracy/",
+        "source": "newsone.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "voting rights",
+          "democracy"
+        ]
+      },
+      {
+        "title": "Redistricting In Southern States Has Led To Pronounced Voter Confusion",
+        "link": "https://newsone.com/6862631/redistricting-southern-states-voter-confusion-voting-rights-act/",
+        "source": "newsone.com",
+        "date": "2026-06-08",
+        "matched_phrases": [
+          "gerrymandering",
+          "disenfranchisement",
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Brianna Turner Just Exposed the Deep Hypocrisy Behind the WNBA\u2019s New \u2018USA 250\u2019 All-Star Patches",
+        "link": "https://www.theroot.com/brianna-turner-just-exposed-the-deep-hypocrisy-behind-t-2000110137",
+        "source": "theroot.com",
+        "date": "2026-06-08",
+        "matched_phrases": [
+          "disenfranchisement"
+        ]
+      },
+      {
+        "title": "At the Good Trouble Gala, Leaders Warn of \u2018Jim Crow\u2019 Regressions",
+        "link": "https://www.theroot.com/at-the-good-trouble-gala-leaders-warn-of-jim-crow-re-2000109775",
+        "source": "theroot.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "jim crow"
+        ]
+      },
+      {
+        "title": "The State of US: Legal Battles, Voting Rights, Education Funding, and the Legacy of Clarence B. Jones",
+        "link": "https://www.ebony.com/the-state-of-us-legal-battles-voting-rights-education-funding-and-the-legacy-of-clarence-b-jones/",
+        "source": "ebony.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Supreme Court Allows Alabama To Use Map Previously Deemed Racist, And It Sets A Troubling Precedent",
+        "link": "https://blavity.com/supreme-court-allows-alabama-to-use-map-previously-deemed-racist",
+        "source": "blavity.com",
+        "date": "2026-06-04",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Why Democrats\u2019 New Strategy to Win the House Could Leave Black Voters Behind",
+        "link": "https://www.theroot.com/why-democrats-new-strategy-to-win-the-house-could-leav-2000109433",
+        "source": "theroot.com",
+        "date": "2026-06-04",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Former NBA Star Derrick Coleman Rejects Alabama Honors Over Redistricting",
+        "link": "https://newsone.com/6862398/derrick-coleman-rejects-alabama-honors-redistricting/",
+        "source": "newsone.com",
+        "date": "2026-06-04",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "From California To Iowa, Here\u2019s What Happened In Tuesday\u2019s Primaries",
+        "link": "https://newsone.com/6862241/what-happened-tuesday-primary-election/",
+        "source": "newsone.com",
+        "date": "2026-06-03",
+        "matched_phrases": [
+          "primary election"
+        ]
+      },
+      {
+        "title": "They\u2019re Dismantling Democracy. We Don\u2019t Have Time to Be Weary.",
+        "link": "https://www.theroot.com/theyre-dismantling-democracy-we-dont-have-time-to-be-w-2000109020",
+        "source": "theroot.com",
+        "date": "2026-06-03",
+        "matched_phrases": [
+          "democracy"
+        ]
+      },
+      {
+        "title": "What a New Poll Reveals About Black Women in Mississippi and America\u2019s Future",
+        "link": "https://capitalbnews.org/mississippi-black-women-voters-poll/",
+        "source": "capitalbnews.org",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Why South Carolina\u2019s \u2018Trump in High Heels\u2019 Gov. Candidate Has Voting Rights Advocates Concerned",
+        "link": "https://www.theroot.com/why-south-carolinas-trump-in-high-heels-gov-candidate-2000108835",
+        "source": "theroot.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "voting rights",
+          "election integrity"
+        ]
+      },
+      {
+        "title": "Supreme Court allows Alabama Republicans to use map that eliminates majority-Black district",
+        "link": "https://thegrio.com/2026/06/02/supreme-court-allows-alabama-republicans-to-use-map-that-eliminates-majority-black-district/",
+        "source": "thegrio.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "jim crow"
+        ]
+      },
+      {
+        "title": "How Supreme Court\u2019s Redistricting Ruling Could Actually Reshape Black Political Power At Local Level",
+        "link": "https://blavity.com/supreme-courts-redistricting-ruling-black-political-power",
+        "source": "blavity.com",
+        "date": "2026-06-01",
+        "matched_phrases": [
+          "voting rights",
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Congressional Black Caucus Calls On Corporations To Challenge GOP Redistricting Plans",
+        "link": "https://blavity.com/congressional-black-caucus-calls-on-businesses-challenge-gop-redistricting-plans",
+        "source": "blavity.com",
+        "date": "2026-05-31",
+        "matched_phrases": [
+          "voting rights",
+          "redistricting"
+        ]
+      },
+      {
+        "title": "From Ida B. Wells to Selma: The Ongoing Fight to Protect the Vote",
+        "link": "https://www.essence.com/news/politics/voting-rights-act-supreme-court-south-freedom-summer/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Rev. Dr. Bernice King Is Calling Us To Action To Protect Black Voting Rights",
+        "link": "https://www.essence.com/news/politics/rev-dr-bernice-king-black-voting-rights/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "What Is the SAVE Act? Sen. Lisa Blunt Rochester Says It Could Restrict Millions Of Voters - Essence",
+        "link": "https://www.essence.com/news/politics/lisa-blunt-rochester-save-act-voting-rights-2026/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "voting access",
+          "save act",
+          "jim crow"
+        ]
+      }
+    ],
+    "Book Bans & Anti-DEI": [
+      {
+        "title": "Civil Rights Orgs And Nonprofits Sign Letter Demanding Transparency And Response From The Trump Administration Regarding DEIA Ban",
+        "link": "https://afrotech.com/civil-rights-orgs-demand-transparency-in-administrations-deia-ban",
+        "source": "afrotech.com",
+        "date": "2026-06-30",
+        "matched_phrases": [
+          "diversity equity inclusion"
+        ]
+      },
+      {
+        "title": "Hollywood's Book Adaptation Boom Has a Black Author Problem",
+        "link": "https://capitalbnews.org/black-book-adaptations-hollywood/",
+        "source": "capitalbnews.org",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "black author"
+        ]
+      },
+      {
+        "title": "Privileges and Freedoms Black Young Folks Will Never Experience",
+        "link": "https://www.theroot.com/privileges-and-freedoms-black-young-folks-will-never-ex-2000112557",
+        "source": "theroot.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "Why Black America Isn\u2019t Taking MAGA\u2019s Bait Over These Lies",
+        "link": "https://www.theroot.com/why-black-america-isnt-taking-magas-bait-over-these-lie-2000111543",
+        "source": "theroot.com",
+        "date": "2026-06-16",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "Laverne Cox says Trump\u2019s DEI rollbacks have cost her 90 percent of her income: \u2018I\u2019ve had to dip into savings and my retirement fund\u2019",
+        "link": "https://thegrio.com/2026/06/16/laverne-cox-dei-income-loss-trump-rollbacks-savings/",
+        "source": "thegrio.com",
+        "date": "2026-06-16",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "Florida School Board Candidate Used AI-Generated Black Supporters In Campaign Photo",
+        "link": "https://blavity.com/florida-school-board-candidate-ai-generated-black-supporters",
+        "source": "blavity.com",
+        "date": "2026-06-12",
+        "matched_phrases": [
+          "school board"
+        ]
+      },
+      {
+        "title": "Tennessee School Board Chair Resigns Over 'Get A Rope' Remark Aimed At Black Suspect",
+        "link": "https://newsone.com/6862912/allen-currie-tennessee-school-board-chair-resigns-racist-remarks/",
+        "source": "newsone.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "school board"
+        ]
+      },
+      {
+        "title": "The State of US: Legal Battles, Voting Rights, Education Funding, and the Legacy of Clarence B. Jones",
+        "link": "https://www.ebony.com/the-state-of-us-legal-battles-voting-rights-education-funding-and-the-legacy-of-clarence-b-jones/",
+        "source": "ebony.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "dei",
+          "anti-dei"
+        ]
+      },
+      {
+        "title": "White Mega-Hit Songs You Didn\u2019t Know Were Written By Black People",
+        "link": "https://www.theroot.com/white-mega-hit-songs-you-didnt-know-were-written-by-bla-2000091628",
+        "source": "theroot.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "black history month"
+        ]
+      },
+      {
+        "title": "US Department Of Justice Investigating Arizona State University For Allegedly Upholding DEI Practices",
+        "link": "https://afrotech.com/us-department-of-justice-investigating-arizona-state-university-for-allegedly-upholding-dei-practices",
+        "source": "afrotech.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "diversity equity inclusion",
+          "dei"
+        ]
+      },
+      {
+        "title": "Unlocking Insights: BOMESI is Fighting for the Future of Black Media",
+        "link": "https://www.ebony.com/unlocking-insights-bomesi-is-fighting-for-the-future-of-black-media/",
+        "source": "ebony.com",
+        "date": "2026-06-04",
+        "matched_phrases": [
+          "dei",
+          "anti-dei"
+        ]
+      },
+      {
+        "title": "Trump\u2019s attacks on DEI are dismantling the public health infrastructure, new report finds",
+        "link": "https://thegrio.com/2026/06/01/trumps-dei-dismantling-public-health-infrastructure/",
+        "source": "thegrio.com",
+        "date": "2026-06-01",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "15 Amazing LGBTQ People Whose Groundbreaking Lives Helped Shape Black History",
+        "link": "https://www.theroot.com/15-amazing-lgbtq-people-whose-groundbreaking-lives-help-1851208894",
+        "source": "theroot.com",
+        "date": "2026-06-01",
+        "matched_phrases": [
+          "black history month"
+        ]
+      },
+      {
+        "title": "\u2018A Lot Of Black People Are Wondering, What Are We Getting For Our Loyalty?\u2019 ESSENCE Black Futures Now Honorees Speak Candidly About The Upcoming Election - Essence",
+        "link": "https://www.essence.com/video/black-history-month-black-futures-now-voter-panel-davis-ferrell-zabala/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "black history month"
+        ]
+      }
+    ],
+    "Policing & Public Safety": [
+      {
+        "title": "Roger Fortson: Mother Says Cop Keeps Delaying Criminal Trial",
+        "link": "https://newsone.com/6864698/roger-fortson-eddie-duran-manslaughter-trial-delays/",
+        "source": "newsone.com",
+        "date": "2026-06-30",
+        "matched_phrases": [
+          "sheriff"
+        ]
+      },
+      {
+        "title": "Family and community honor 1-year-old shot and killed by police in Mississippi",
+        "link": "https://thegrio.com/2026/06/29/family-and-community-honor-1-year-old-shot-and-killed-by-police-in-mississippi/",
+        "source": "thegrio.com",
+        "date": "2026-06-29",
+        "matched_phrases": [
+          "shot by police",
+          "killed by police"
+        ]
+      },
+      {
+        "title": "Black Teen Kadir Skinner Shot And Killed By Police",
+        "link": "https://newsone.com/6864599/kadir-skinner-black-teen-shot-killed-by-police/",
+        "source": "newsone.com",
+        "date": "2026-06-28",
+        "matched_phrases": [
+          "shot by police",
+          "killed by police"
+        ]
+      },
+      {
+        "title": "Parents of former NFL player Doug Martin file wrongful death lawsuit against city of Oakland",
+        "link": "https://thegrio.com/2026/06/26/doug-martin-wrongful-death-lawsuit-oakland/",
+        "source": "thegrio.com",
+        "date": "2026-06-26",
+        "matched_phrases": [
+          "wrongful death"
+        ]
+      },
+      {
+        "title": "Family files wrongful death lawsuit alleging hazing ritual led to Wilberforce University freshman\u2019s death",
+        "link": "https://thegrio.com/2026/06/24/wilberforce-university-savanna-jones-hazing-lawsuit/",
+        "source": "thegrio.com",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "wrongful death"
+        ]
+      },
+      {
+        "title": "Vendors Begin Dismantling Florida\u2019s Alligator Alcatraz",
+        "link": "https://newsone.com/6864252/vendors-begin-dismantling-alligator-alcatraz/",
+        "source": "newsone.com",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "homeland security"
+        ]
+      },
+      {
+        "title": "Michigan Cops Handcuff, Detain Black Teen, Claiming He 'Looked' Guilty",
+        "link": "https://newsone.com/6864138/cops-handcuff-detain-black-teen-claiming-looked-guilty/",
+        "source": "newsone.com",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "stop and frisk"
+        ]
+      },
+      {
+        "title": "Citizenship Applicants Could Face $570 Fee Increase Under Trump Plan",
+        "link": "https://blavity.com/citizenship-applicants-could-face-570-fee-increase-under-trump-plan",
+        "source": "blavity.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "homeland security"
+        ]
+      },
+      {
+        "title": "Kohen Wiley GoFundMe Hits Over $10K As Family For 1-Year-Old Demands Justice",
+        "link": "https://newsone.com/6863927/kohen-wiley-gofundme-hits-over-10k-family-demands-justice/",
+        "source": "newsone.com",
+        "date": "2026-06-22",
+        "matched_phrases": [
+          "police accountability",
+          "killed by police"
+        ]
+      },
+      {
+        "title": "Kohen Kartier Wiley: Mother Says No One Drove Toward Cop Who Killed Her Son",
+        "link": "https://newsone.com/6863759/mother-kohen-kartier-wiley-speaks-out/",
+        "source": "newsone.com",
+        "date": "2026-06-18",
+        "matched_phrases": [
+          "cop killed"
+        ]
+      },
+      {
+        "title": "Officer placed on leave after fatal shooting of 1-year-old Kohen Wiley sparks protests in Mississippi",
+        "link": "https://thegrio.com/2026/06/18/officer-placed-on-leave-after-fatal-shooting-of-kohen-wiley/",
+        "source": "thegrio.com",
+        "date": "2026-06-18",
+        "matched_phrases": [
+          "body camera"
+        ]
+      },
+      {
+        "title": "Mississippi officer involved in shooting death of one-year-old Kohen Wiley placed on leave",
+        "link": "https://thegrio.com/2026/06/17/officer-on-leave-kohen-wiley-shooting-mississippi/",
+        "source": "thegrio.com",
+        "date": "2026-06-17",
+        "matched_phrases": [
+          "officer involved shooting"
+        ]
+      },
+      {
+        "title": "US Attorney Says 15 Members Of 'Minneapolis-Based Antifa Group' Have Been Arrested For Anti-ICE Violence",
+        "link": "https://newsone.com/6863489/minnesota-antifa-arrested-for-anti-ice-violence/",
+        "source": "newsone.com",
+        "date": "2026-06-16",
+        "matched_phrases": [
+          "law enforcement",
+          "immigration enforcement"
+        ]
+      },
+      {
+        "title": "Mississippi Cop Fatally Shoots 1-Year-Old Black Boy During Reported Shoplifting Incident",
+        "link": "https://newsone.com/6863500/kohen-kartier-wiley-mississippi-cop-fatally-shoots-black-boy-shoplifting-incident/",
+        "source": "newsone.com",
+        "date": "2026-06-16",
+        "matched_phrases": [
+          "killed by police"
+        ]
+      },
+      {
+        "title": "Mississippi family demands answers after 1-year-old boy killed by police responding to shoplifting call at Walmart",
+        "link": "https://thegrio.com/2026/06/16/mississippi-police-shoot-kill-one-year-old-kohen-wiley/",
+        "source": "thegrio.com",
+        "date": "2026-06-16",
+        "matched_phrases": [
+          "shot by police",
+          "killed by police"
+        ]
+      },
+      {
+        "title": "Long Island man alleges police brutality after traffic stop caught on camera",
+        "link": "https://thegrio.com/2026/06/13/long-island-man-police-brutality-traffic-stop/",
+        "source": "thegrio.com",
+        "date": "2026-06-13",
+        "matched_phrases": [
+          "police brutality"
+        ]
+      },
+      {
+        "title": "Automated Facial Recognition Tech Used By This Florida Sheriff\u2019s Office Led To Wrongful Incarceration Of A Black Father",
+        "link": "https://afrotech.com/automated-facial-recognition-tech-jacksonville-sheriffs-office-wrongfully-leads-father-jailed",
+        "source": "afrotech.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "sheriff"
+        ]
+      },
+      {
+        "title": "Black Man Exonerated After Being Jailed For Months Due To False AI Identification",
+        "link": "https://blavity.com/black-man-exonerated-after-being-jailed-for-months-due-to-false-ai-identification",
+        "source": "blavity.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "racial profiling"
+        ]
+      },
+      {
+        "title": "North Carolina man says AI misidentification led to wrongful arrest that cost him his job and family",
+        "link": "https://thegrio.com/2026/06/09/jalil-richardson-ai-misidentification-wrongful-arrest/",
+        "source": "thegrio.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "wrongful arrest"
+        ]
+      },
+      {
+        "title": "As Minnesota\u2019s GOP Holds Public Prayer For Derek Chauvin, Loved Ones Of Police Brutality Victims Call Them Out",
+        "link": "https://blavity.com/minnesotta-republican-public-prayer-derek-chauvin-backlash",
+        "source": "blavity.com",
+        "date": "2026-06-08",
+        "matched_phrases": [
+          "police brutality",
+          "police officer"
+        ]
+      },
+      {
+        "title": "Estate of \u2018Star Trek\u2019 pioneer Nichelle Nichols awarded millions in wrongful death lawsuit, but family will only see a fraction of it",
+        "link": "https://thegrio.com/2026/06/06/nichelle-nichols-estate-awarded-millions-wrongful-death-lawsuit/",
+        "source": "thegrio.com",
+        "date": "2026-06-06",
+        "matched_phrases": [
+          "wrongful death"
+        ]
+      },
+      {
+        "title": "Y\u2019lan Noel knows exactly why you\u2019re rooting for the bad guy in \u2018Nemesis\u2019",
+        "link": "https://thegrio.com/2026/06/05/ylan-noel-knows-exactly-why-youre-rooting-for-the-bad-guy-in-nemesis/",
+        "source": "thegrio.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "chokehold"
+        ]
+      },
+      {
+        "title": "One TikToker\u2019s Bouncy Church Dresses Are Going Viral\u2014and Giving the Met Gala a Run for Its Money",
+        "link": "https://www.theroot.com/one-tiktoker-s-bouncy-church-dresses-are-going-viral-an-2000109392",
+        "source": "theroot.com",
+        "date": "2026-06-04",
+        "matched_phrases": [
+          "chokehold"
+        ]
+      },
+      {
+        "title": "Trump Administration Drawing Up Plans To Halt Immigration And Customs Processing At Sanctuary City Airports",
+        "link": "https://travelnoire.com/us-sanctuary-city-airports-immigration-customs-processing",
+        "source": "travelnoire.com",
+        "date": "2026-06-03",
+        "matched_phrases": [
+          "immigration enforcement"
+        ]
+      },
+      {
+        "title": "North Carolina Cop Caught On Doorbell Camera Punching Black Woman Fired",
+        "link": "https://newsone.com/6862132/cop-caught-punching-black-woman-fired-karson-hyder/",
+        "source": "newsone.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "police department"
+        ]
+      },
+      {
+        "title": "Ex-Iowa School Chief\u2019s Inspirational Career Ends in Prison, Possible Deportation",
+        "link": "https://www.theroot.com/ex-iowa-school-chiefs-inspirational-career-ends-in-pris-2000108501",
+        "source": "theroot.com",
+        "date": "2026-06-01",
+        "matched_phrases": [
+          "immigration enforcement"
+        ]
+      }
+    ],
+    "School Funding": [
+      {
+        "title": "Howard University alumnus Chequan Lewis named CEO of Crunch Fitness",
+        "link": "https://thegrio.com/2026/06/30/chequan-lewis-ceo-crunch-fitness-howard-university/",
+        "source": "thegrio.com",
+        "date": "2026-06-30",
+        "matched_phrases": [
+          "university",
+          "Howard University"
+        ]
+      },
+      {
+        "title": "Fisk University\u2019s proposed data center sparks heated town hall in Nashville",
+        "link": "https://thegrio.com/2026/06/30/fisk-university-data-center-town-hall-backlash/",
+        "source": "thegrio.com",
+        "date": "2026-06-30",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "What Black borrowers should know about Trump\u2019s July 1 student loan deadline",
+        "link": "https://thegrio.com/2026/06/30/what-black-borrowers-should-know-about-trumps-july-1-student-loan-deadline/",
+        "source": "thegrio.com",
+        "date": "2026-06-30",
+        "matched_phrases": [
+          "student loan"
+        ]
+      },
+      {
+        "title": "HBCU Student Allegedly Hazed By Turtles Group, Family Claims As They File Lawsuit Against Wilberforce",
+        "link": "https://blavity.com/hbcu-student-family-filed-lawsuit-hazing-wilberforce",
+        "source": "blavity.com",
+        "date": "2026-06-29",
+        "matched_phrases": [
+          "hbcu",
+          "university"
+        ]
+      },
+      {
+        "title": "The Rising HBCU Enrollment: 15 Largest Black Schools Ranked by Size",
+        "link": "https://www.theroot.com/the-rising-hbcu-enrollment-15-largest-black-schools-ra-2000113511",
+        "source": "theroot.com",
+        "date": "2026-06-29",
+        "matched_phrases": [
+          "hbcu",
+          "university"
+        ]
+      },
+      {
+        "title": "Howard University Alum Chequan Lewis Appointed CEO Of Crunch Fitness",
+        "link": "https://afrotech.com/chequan-lewis-appointed-ceo-of-crunch-fitness",
+        "source": "afrotech.com",
+        "date": "2026-06-29",
+        "matched_phrases": [
+          "university",
+          "Howard University"
+        ]
+      },
+      {
+        "title": "Ken Paxton, James Talarico Polls: New Survey Shows Tight Texas Senate Race",
+        "link": "https://blavity.com/ken-paxton-james-talarico-polls-june-2026",
+        "source": "blavity.com",
+        "date": "2026-06-28",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Yale Reportedly Looking To Settle With Trump Admin Over Race-Based Admissions Probe",
+        "link": "https://blavity.com/yale-looking-to-settle-with-trump-admin-over-race-in-admissions",
+        "source": "blavity.com",
+        "date": "2026-06-28",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Biomechanical Engineer Yinka Ogunbiyi Raises $7M Seed Round For Patent-Pending Braid Assist Device For Professional Stylists",
+        "link": "https://afrotech.com/yinka-ogunbiyi-raises-7m-seed-round-for-braid-assist-device",
+        "source": "afrotech.com",
+        "date": "2026-06-25",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Indiana University Lecturer Loses Job After Showing \u2018MAGA\u2019 White Supremacy Graphic In Class",
+        "link": "https://blavity.com/indiana-university-lecturer-loses-job-after-maga-white-supremacy-graphic",
+        "source": "blavity.com",
+        "date": "2026-06-25",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Fisk University Faces Backlash Over $1 Billion Data Center Development Project",
+        "link": "https://www.theroot.com/fisk-university-faces-backlash-over-1-billion-data-cen-2000112979",
+        "source": "theroot.com",
+        "date": "2026-06-25",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Family files wrongful death lawsuit alleging hazing ritual led to Wilberforce University freshman\u2019s death",
+        "link": "https://thegrio.com/2026/06/24/wilberforce-university-savanna-jones-hazing-lawsuit/",
+        "source": "thegrio.com",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Thousands Of \u2018Sweet V. McMahon\u2019 Class Members Notified Their Student Loans Will Be Discharged",
+        "link": "https://afrotech.com/sweet-v-mcmahon-class-members-student-loans-discharged",
+        "source": "afrotech.com",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "student loan",
+          "department of education"
+        ]
+      },
+      {
+        "title": "California School District Sued Over Alleged Racial Bullying",
+        "link": "https://newsone.com/6863988/daphne-hawkins-racial-bullying-lawsuit/",
+        "source": "newsone.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "school district"
+        ]
+      },
+      {
+        "title": "AI Screening Tools Being Used By US Employers Are Showing Racial Bias Toward Black And Asian Job Applicants",
+        "link": "https://afrotech.com/ai-screening-tools-show-racial-bias-toward-black-and-asian-job-applicants",
+        "source": "afrotech.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "As Fisk University Moves Forward With Data Center Proposal, Opposition Grows",
+        "link": "https://capitalbnews.org/fisk-data-center-nashville-backlash/",
+        "source": "capitalbnews.org",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "hbcu",
+          "university"
+        ]
+      },
+      {
+        "title": "Mother Sues School District After Sons Targeted by Racist Harassment",
+        "link": "https://www.theroot.com/mother-sues-school-district-after-sons-targeted-by-raci-2000112339",
+        "source": "theroot.com",
+        "date": "2026-06-22",
+        "matched_phrases": [
+          "school district"
+        ]
+      },
+      {
+        "title": "Keke Palmer Brings KeyTV And Industry Expertise To UCLA Film And Theater Students",
+        "link": "https://afrotech.com/keke-keytv-industry-expertise-ucla-students-education-bipoc",
+        "source": "afrotech.com",
+        "date": "2026-06-22",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "AethexAI, A Full-Stack Voice AI Infrastructure Startup, Raises $3M In Pre-Seed Round To Level The Playing Field For Enterprises In Emerging Markets",
+        "link": "https://afrotech.com/aethexai-a-voice-ai-infrastructure-startup-raises-3m-in-pre-seed-round",
+        "source": "afrotech.com",
+        "date": "2026-06-22",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Trump Continues To Gut Department Of Education, Shifting Civil Rights And Special Education Offices",
+        "link": "https://blavity.com/trump-continues-to-gut-department-of-education-shifting-civil-rights-and-special-education-offices",
+        "source": "blavity.com",
+        "date": "2026-06-18",
+        "matched_phrases": [
+          "department of education"
+        ]
+      },
+      {
+        "title": "Search continues for missing Towson student after disappearance in Potomac River near Great Falls",
+        "link": "https://thegrio.com/2026/06/16/missing-towson-student-nazir-bell-potomac-river-search/",
+        "source": "thegrio.com",
+        "date": "2026-06-16",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Keith Lee Applies To Kai Cenat\u2019s Streamer University",
+        "link": "https://afrotech.com/keith-lee-applies-to-streamer-university-as-club-director",
+        "source": "afrotech.com",
+        "date": "2026-06-15",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Why everyone wants a spot at Kai Cenat\u2019s Streamer University",
+        "link": "https://thegrio.com/2026/06/15/why-everyone-wants-a-spot-at-kai-cenats-streamer-university/",
+        "source": "thegrio.com",
+        "date": "2026-06-15",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Tennessee Rep. Justin Jones Speaks Out About Data Center That\u2019s Part Of Fisk University\u2019s Estimated $1B Project",
+        "link": "https://afrotech.com/tennessee-rep-justin-jones-speaks-out-against-fisk-universitys-data-center",
+        "source": "afrotech.com",
+        "date": "2026-06-12",
+        "matched_phrases": [
+          "hbcu",
+          "historically black college",
+          "university"
+        ]
+      },
+      {
+        "title": "US Justice Department Determines UC Davis School Of Medicine Upheld Discriminatory Practices In Admissions Process",
+        "link": "https://afrotech.com/us-justice-department-determines-uc-davis-medical-school-upheld-discriminatory-practices",
+        "source": "afrotech.com",
+        "date": "2026-06-11",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Iowa Supreme Court blocks effort to redirect scholarship created for Black science students",
+        "link": "https://thegrio.com/2026/06/11/totton-scholarship-ruling-iowa-supreme-court-black-students/",
+        "source": "thegrio.com",
+        "date": "2026-06-11",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "How Howard University Became the Ultimate Safe Space for Black Nerds (Blerds)",
+        "link": "https://www.theroot.com/how-howard-university-became-the-ultimate-safe-space-fo-2000110720",
+        "source": "theroot.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "university",
+          "Howard University"
+        ]
+      },
+      {
+        "title": "She helped launch Florida\u2019s Civil Rights Movement. Now Priscilla Stephens Kruize needs our help",
+        "link": "https://thegrio.com/2026/06/10/she-helped-launch-floridas-civil-rights-movement-now-priscilla-stephens-kruize-needs-our-help/",
+        "source": "thegrio.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "FAMU"
+        ]
+      },
+      {
+        "title": "Inspirational Quotes To Motivate Employees And Build Stronger Teams",
+        "link": "https://afrotech.com/inspirational-quotes-for-employees",
+        "source": "afrotech.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Streamer University Is Back \u2014 Here\u2019s How You Can Apply",
+        "link": "https://afrotech.com/streamer-university-apply",
+        "source": "afrotech.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "University Of Iowa\u2019s Request To Modify Scholarship Supporting Black Students Majoring In Physical Sciences Opposed By State Supreme Court",
+        "link": "https://afrotech.com/university-of-iowas-wants-to-modify-terms-ezra-totton-scholarship",
+        "source": "afrotech.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Bryan King Zella Uyanwune Is Building Africa\u2019s Biggest Global IP Franchise Across Comics, Animation, Music, And Gaming",
+        "link": "https://afrotech.com/bryan-king-zella-uyanwune-is-building-africas-biggest-global-ip-franchise",
+        "source": "afrotech.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "These 2 Founders Are Behind Reducify, A Gamified Student Loan Readiness Platform",
+        "link": "https://afrotech.com/reducify-launches",
+        "source": "afrotech.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "student loan"
+        ]
+      },
+      {
+        "title": "Lil Baby pays off $24K in student loans for Spelman College grad, four years after she initially reached out",
+        "link": "https://thegrio.com/2026/06/09/lil-baby-pays-off-24k-student-loans-spelman-grad/",
+        "source": "thegrio.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "hbcu",
+          "Spelman"
+        ]
+      },
+      {
+        "title": "Spelman College Appoints Former NASA Engineer And Roboticist Dr. Ayanna Howard As Its 12th President",
+        "link": "https://afrotech.com/spelman-college-appoints-dr-ayanna-howard-as-its-12th-president",
+        "source": "afrotech.com",
+        "date": "2026-06-08",
+        "matched_phrases": [
+          "hbcu",
+          "historically black college",
+          "university",
+          "Spelman"
+        ]
+      },
+      {
+        "title": "Kirk Franklin to host 2026 Stellar Awards as gospel legends, HBCU choirs and new voices earn nominations",
+        "link": "https://thegrio.com/2026/06/06/2026-stellar-awards-nominations-gospel-music/",
+        "source": "thegrio.com",
+        "date": "2026-06-06",
+        "matched_phrases": [
+          "hbcu"
+        ]
+      },
+      {
+        "title": "Spelman College names renowned roboticist Dr. Ayanna Howard as its 12th president",
+        "link": "https://thegrio.com/2026/06/06/spelman-ayanna-howard-12th-president/",
+        "source": "thegrio.com",
+        "date": "2026-06-06",
+        "matched_phrases": [
+          "hbcu",
+          "Spelman"
+        ]
+      },
+      {
+        "title": "South Carolina\u2019s GOP lawmakers want to withold millions from South Carolina State University after commencement speaker protest",
+        "link": "https://thegrio.com/2026/06/05/south-carolina-gop-lawmakers-sc-state-funding/",
+        "source": "thegrio.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "The State of US: Legal Battles, Voting Rights, Education Funding, and the Legacy of Clarence B. Jones",
+        "link": "https://www.ebony.com/the-state-of-us-legal-battles-voting-rights-education-funding-and-the-legacy-of-clarence-b-jones/",
+        "source": "ebony.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "education funding"
+        ]
+      },
+      {
+        "title": "US Department Of Justice Investigating Arizona State University For Allegedly Upholding DEI Practices",
+        "link": "https://afrotech.com/us-department-of-justice-investigating-arizona-state-university-for-allegedly-upholding-dei-practices",
+        "source": "afrotech.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "J.R. Smith reveals the inspiration behind his decision to earn his degree more than 20 years after entering the NBA",
+        "link": "https://thegrio.com/2026/06/04/jr-smith-graduates-north-carolina-at-promise-years-making/",
+        "source": "thegrio.com",
+        "date": "2026-06-04",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Morehouse School Of Medicine Joins Effort For Proposed $800M Hospital Project In Atlanta",
+        "link": "https://afrotech.com/morehouse-school-of-medicine-partners-with-city-for-hospital",
+        "source": "afrotech.com",
+        "date": "2026-06-01",
+        "matched_phrases": [
+          "Morehouse"
+        ]
+      },
+      {
+        "title": "Ex-Iowa School Chief\u2019s Inspirational Career Ends in Prison, Possible Deportation",
+        "link": "https://www.theroot.com/ex-iowa-school-chiefs-inspirational-career-ends-in-pris-2000108501",
+        "source": "theroot.com",
+        "date": "2026-06-01",
+        "matched_phrases": [
+          "school district"
+        ]
+      },
+      {
+        "title": "Shedeur Sanders Breaks Record With NFLPA Group Licensing Income, Coming In At A Whopping $17.7M",
+        "link": "https://afrotech.com/nfl-player-shedeur-sanders-has-already-made-more-money-off-the-field",
+        "source": "afrotech.com",
+        "date": "2026-06-01",
+        "matched_phrases": [
+          "university"
+        ]
+      },
+      {
+        "title": "Op-Ed: Reverend Jesse Jackson Sr.\u2019s Homegoing Was Bound To Be Political - Essence",
+        "link": "https://www.essence.com/news/politics/jesse-jackson-hbcu-student-leadership-legacy/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "hbcu"
+        ]
+      }
+    ],
+    "Anti-Black Surveillance": [
+      {
+        "title": "Officer Resigned After Footage Shows Alleged Assault Against Pregnant Black Woman",
+        "link": "https://www.theroot.com/officer-resigned-after-footage-shows-alleged-assault-ag-2000113407",
+        "source": "theroot.com",
+        "date": "2026-06-29",
+        "matched_phrases": [
+          "surveillance"
+        ]
+      },
+      {
+        "title": "Body cam footage of Karmelo Anthony\u2019s arrest released as trial evidence made public by Texas judge",
+        "link": "https://thegrio.com/2026/06/20/karmelo-anthony-trial-evidence-released/",
+        "source": "thegrio.com",
+        "date": "2026-06-20",
+        "matched_phrases": [
+          "surveillance"
+        ]
+      },
+      {
+        "title": "Surveillance Of Deservedness: Why Black Women\u2019s Blessings Are Audited",
+        "link": "https://newsone.com/6863857/black-women-blessings-audited-white-people/",
+        "source": "newsone.com",
+        "date": "2026-06-19",
+        "matched_phrases": [
+          "surveillance"
+        ]
+      },
+      {
+        "title": "Officer placed on leave after fatal shooting of 1-year-old Kohen Wiley sparks protests in Mississippi",
+        "link": "https://thegrio.com/2026/06/18/officer-placed-on-leave-after-fatal-shooting-of-kohen-wiley/",
+        "source": "thegrio.com",
+        "date": "2026-06-18",
+        "matched_phrases": [
+          "surveillance"
+        ]
+      },
+      {
+        "title": "Automated Facial Recognition Tech Used By This Florida Sheriff\u2019s Office Led To Wrongful Incarceration Of A Black Father",
+        "link": "https://afrotech.com/automated-facial-recognition-tech-jacksonville-sheriffs-office-wrongfully-leads-father-jailed",
+        "source": "afrotech.com",
+        "date": "2026-06-10",
+        "matched_phrases": [
+          "facial recognition"
+        ]
+      },
+      {
+        "title": "North Carolina man says AI misidentification led to wrongful arrest that cost him his job and family",
+        "link": "https://thegrio.com/2026/06/09/jalil-richardson-ai-misidentification-wrongful-arrest/",
+        "source": "thegrio.com",
+        "date": "2026-06-09",
+        "matched_phrases": [
+          "facial recognition"
+        ]
+      }
+    ],
+    "Housing & Displacement": [
+      {
+        "title": "NYC To Freeze Rent For Nearly 1 Million Apartments In Victory For Mamdani",
+        "link": "https://blavity.com/nyc-to-freeze-rent-for-nearly-1-million-apartments-in-victory-for-mamdani",
+        "source": "blavity.com",
+        "date": "2026-06-26",
+        "matched_phrases": [
+          "landlord"
+        ]
+      },
+      {
+        "title": "Trump Refuses To Sign Bipartisan Bill To Fix Housing Crisis",
+        "link": "https://newsone.com/6864340/trump-refuses-sign-housing-bill-save-act/",
+        "source": "newsone.com",
+        "date": "2026-06-25",
+        "matched_phrases": [
+          "housing crisis"
+        ]
+      },
+      {
+        "title": "Dems demand Trump \u2018sign the damn bill\u2019 as he reverses course on affordable housing legislation",
+        "link": "https://thegrio.com/2026/06/24/democrats-demand-trump-to-sign-the-damn-bill-housing/",
+        "source": "thegrio.com",
+        "date": "2026-06-24",
+        "matched_phrases": [
+          "affordable housing"
+        ]
+      },
+      {
+        "title": "Senate Passes Affordable Housing Reform Bill With Bipartisan Support",
+        "link": "https://newsone.com/6864078/affordable-housing-reform-bill-passes-senate/",
+        "source": "newsone.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "affordable housing"
+        ]
+      },
+      {
+        "title": "New Orleans Teens Are Keeping Jazz Alive Through the Trombone Shorty Academy",
+        "link": "https://capitalbnews.org/jazz-new-orleans-trombone-shorty-academy/",
+        "source": "capitalbnews.org",
+        "date": "2026-06-18",
+        "matched_phrases": [
+          "gentrification",
+          "displacement"
+        ]
+      }
+    ],
+    "Reparations": [
+      {
+        "title": "DOJ Trying To Block Nation\u2019s First Reparations Program As Racist Against Non-Black People",
+        "link": "https://blavity.com/doj-trying-to-block-nations-first-reparations-program-as-racist-against-non-black-people",
+        "source": "blavity.com",
+        "date": "2026-06-25",
+        "matched_phrases": [
+          "reparations",
+          "reparations program"
+        ]
+      },
+      {
+        "title": "African And Caribbean Nations Unveil Reparations Framework As Slave Trade Reenactment Held In Ghana",
+        "link": "https://blavity.com/african-and-caribbean-nations-unveil-reparations-framework",
+        "source": "blavity.com",
+        "date": "2026-06-22",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "Trump DOJ targets Illinois city\u2019s reparations program for Black residents",
+        "link": "https://thegrio.com/2026/06/18/evanston-reparations-doj-trump-illinois-housing-program-2/",
+        "source": "thegrio.com",
+        "date": "2026-06-18",
+        "matched_phrases": [
+          "reparations",
+          "evanston reparations",
+          "reparations program"
+        ]
+      },
+      {
+        "title": "These Cities Are On The Verge of Reparation Success",
+        "link": "https://www.theroot.com/these-cities-are-on-the-verge-of-reparation-success-2000111956",
+        "source": "theroot.com",
+        "date": "2026-06-18",
+        "matched_phrases": [
+          "reparations",
+          "descendants of enslaved"
+        ]
+      },
+      {
+        "title": "Trump Administration Claims Illinois' Reparations Program Is Racist",
+        "link": "https://newsone.com/6863600/trump-administration-sues-evanston-illinois-reparations/",
+        "source": "newsone.com",
+        "date": "2026-06-17",
+        "matched_phrases": [
+          "reparations",
+          "reparations program"
+        ]
+      },
+      {
+        "title": "Trump Wants Todd Blanche To Be US Attorney General. Republicans Unsure",
+        "link": "https://newsone.com/6862495/todd-blanche-attorney-general-donald-trump/",
+        "source": "newsone.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "Trump's Little MAGA Reparations Fund Is Permanently Canceled",
+        "link": "https://newsone.com/6862172/trump-maga-reparations-fund-permanently-canceled/",
+        "source": "newsone.com",
+        "date": "2026-06-03",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "Trump reportedly backing off $1.7B weaponization fund that concerned Black advocates championing reparations",
+        "link": "https://thegrio.com/2026/06/01/trump-to-back-off-weaponization-fund-that-angered-black-advocates-reparations/",
+        "source": "thegrio.com",
+        "date": "2026-06-01",
+        "matched_phrases": [
+          "reparations"
+        ]
+      }
+    ],
+    "Maternal Health": [
+      {
+        "title": "French broadcaster apologizes after remarks about J\u00e9r\u00e9my Doku and childbirth draw outrage",
+        "link": "https://thegrio.com/2026/06/23/france-pierron-apologizes-jeremy-doku-childbirth-comments/",
+        "source": "thegrio.com",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "childbirth"
+        ]
+      },
+      {
+        "title": "AI-Powered Health Startup Aster Has Been Acquired By Elation Health",
+        "link": "https://afrotech.com/black-women-founded-health-tech-startup-aster-has-been-acquired",
+        "source": "afrotech.com",
+        "date": "2026-06-05",
+        "matched_phrases": [
+          "c-section"
+        ]
+      },
+      {
+        "title": "Black Midwives Say Laws Are Limiting Maternal Care, So They Are Suing These Southern States",
+        "link": "https://blavity.com/black-midwives-sue-southern-states-limiting-maternal-care",
+        "source": "blavity.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "maternal care"
+        ]
+      }
+    ],
+    "Environmental Justice": [
+      {
+        "title": "As Fisk University Moves Forward With Data Center Proposal, Opposition Grows",
+        "link": "https://capitalbnews.org/fisk-data-center-nashville-backlash/",
+        "source": "capitalbnews.org",
+        "date": "2026-06-23",
+        "matched_phrases": [
+          "environmental justice"
+        ]
+      },
+      {
+        "title": "NAACP Challenges Elon Musk Data Center Pollution; Trump DOJ Wants Lawsuit Dismissed",
+        "link": "https://blavity.com/naacp-challenges-elon-musk-data-center-pollution",
+        "source": "blavity.com",
+        "date": "2026-06-17",
+        "matched_phrases": [
+          "clean air"
+        ]
+      }
+    ],
+    "Economic Equity & Wealth Gap": [
+      {
+        "title": "In America\u2019s Poorest State, Unhoused People May Soon Be Jailed",
+        "link": "https://capitalbnews.org/louisiana-homelessness-bill-jail-hard-labor/",
+        "source": "capitalbnews.org",
+        "date": "2026-06-15",
+        "matched_phrases": [
+          "poverty"
+        ]
+      },
+      {
+        "title": "Steph and Ayesha Curry\u2019s Brilliant Business Portfolio",
+        "link": "https://www.theroot.com/steph-and-ayesha-currys-brilliant-business-portfolio-2000110013",
+        "source": "theroot.com",
+        "date": "2026-06-07",
+        "matched_phrases": [
+          "black business"
+        ]
+      },
+      {
+        "title": "What To Ask A Financial Advisor Before Letting Them Manage Your Money",
+        "link": "https://afrotech.com/questions-to-ask-a-financial-advisor",
+        "source": "afrotech.com",
+        "date": "2026-06-02",
+        "matched_phrases": [
+          "generational wealth"
+        ]
+      }
+    ]
+  },
+  "topic_co_occurrence": {
+    "('Criminal Justice Reform', 'Policing & Public Safety')": 1,
+    "('Anti-Black Surveillance', 'Criminal Justice Reform')": 1,
+    "('Housing & Displacement', 'Voter Suppression')": 1,
+    "('Policing & Public Safety', 'School Funding')": 2,
+    "('Environmental Justice', 'School Funding')": 1,
+    "('Anti-Black Surveillance', 'Policing & Public Safety')": 3,
+    "('Book Bans & Anti-DEI', 'Voter Suppression')": 1,
+    "('School Funding', 'Voter Suppression')": 1,
+    "('Book Bans & Anti-DEI', 'School Funding')": 2
+  },
+  "total_articles": 1492,
+  "tagged_articles": 188,
+  "coverage_rate": 12.6
+}
