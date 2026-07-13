@@ -1,0 +1,23 @@
+{
+  "topic_frequency": "outputs/annotation-1000-semantic/charts/topic_frequency.png",
+  "source_breakdown": "outputs/annotation-1000-semantic/charts/source_breakdown.png",
+  "source_topic_heatmap": "outputs/annotation-1000-semantic/charts/source_topic_heatmap.png",
+  "articles_over_time": "outputs/annotation-1000-semantic/charts/articles_over_time.png",
+  "top_keywords": "outputs/annotation-1000-semantic/charts/top_keywords.png",
+  "topic_coverage_rate": "outputs/annotation-1000-semantic/charts/coverage_rate.png",
+  "multi_topic_articles": "outputs/annotation-1000-semantic/charts/multi_topic_distribution.png",
+  "wordclouds": {
+    "Policing & Public Safety": "outputs/annotation-1000-semantic/charts/wordcloud_policing.png",
+    "Voter Suppression": "outputs/annotation-1000-semantic/charts/wordcloud_voter_suppression.png",
+    "Book Bans & Anti-DEI": "outputs/annotation-1000-semantic/charts/wordcloud_book_bans_dei.png",
+    "Housing & Displacement": "outputs/annotation-1000-semantic/charts/wordcloud_housing.png",
+    "Maternal Health": "outputs/annotation-1000-semantic/charts/wordcloud_maternal_health.png",
+    "Redlining & Fair Housing": "outputs/annotation-1000-semantic/charts/wordcloud_redlining.png",
+    "Anti-Black Surveillance": "outputs/annotation-1000-semantic/charts/wordcloud_surveillance.png",
+    "Reparations": "outputs/annotation-1000-semantic/charts/wordcloud_reparations.png",
+    "School Funding": "outputs/annotation-1000-semantic/charts/wordcloud_school_funding.png",
+    "Criminal Justice Reform": "outputs/annotation-1000-semantic/charts/wordcloud_criminal_justice.png",
+    "Environmental Justice": "outputs/annotation-1000-semantic/charts/wordcloud_environmental_justice.png",
+    "Economic Equity & Wealth Gap": "outputs/annotation-1000-semantic/charts/wordcloud_economic_equity.png"
+  }
+}

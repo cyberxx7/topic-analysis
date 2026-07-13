@@ -19,7 +19,6 @@ import pandas as pd
 from scraper.rss_scraper        import scrape_rss
 from scraper.wp_scraper         import scrape_wp
 from scraper.html_scraper       import scrape_html
-from scraper.playwright_scraper import scrape_playwright
 from scraper.capitalb_scraper   import scrape_capitalb
 from scraper.utils              import deduplicate
 
@@ -131,9 +130,6 @@ def run_scraper(days: int = 30, output_dir: str = "outputs") -> pd.DataFrame:
 
         elif method == "html":
             articles = scrape_html(name, pub["html_domain"], days=days)
-
-        elif method == "playwright":
-            articles = scrape_playwright(name, days=days)
 
         elif method == "capitalb":
             articles = scrape_capitalb(name, days=days)

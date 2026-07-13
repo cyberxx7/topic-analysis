@@ -1,0 +1,862 @@
+{
+  "global": [
+    {
+      "keyword": "trump",
+      "score": 258.1963
+    },
+    {
+      "keyword": "continue",
+      "score": 117.8694
+    },
+    {
+      "keyword": "reading",
+      "score": 113.2031
+    },
+    {
+      "keyword": "women",
+      "score": 111.704
+    },
+    {
+      "keyword": "continue reading",
+      "score": 110.0705
+    },
+    {
+      "keyword": "president",
+      "score": 107.4566
+    },
+    {
+      "keyword": "know",
+      "score": 93.9087
+    },
+    {
+      "keyword": "history",
+      "score": 93.8643
+    },
+    {
+      "keyword": "us",
+      "score": 92.6273
+    },
+    {
+      "keyword": "2025",
+      "score": 89.2758
+    },
+    {
+      "keyword": "star",
+      "score": 84.6053
+    },
+    {
+      "keyword": "man",
+      "score": 83.3445
+    },
+    {
+      "keyword": "former",
+      "score": 81.6244
+    },
+    {
+      "keyword": "family",
+      "score": 80.4071
+    },
+    {
+      "keyword": "love",
+      "score": 80.3135
+    },
+    {
+      "keyword": "life",
+      "score": 79.7171
+    },
+    {
+      "keyword": "show",
+      "score": 79.2009
+    },
+    {
+      "keyword": "woman",
+      "score": 77.6886
+    },
+    {
+      "keyword": "old",
+      "score": 77.6473
+    },
+    {
+      "keyword": "media",
+      "score": 76.8237
+    },
+    {
+      "keyword": "2026",
+      "score": 76.5692
+    },
+    {
+      "keyword": "federal",
+      "score": 75.3097
+    },
+    {
+      "keyword": "viral",
+      "score": 74.7702
+    },
+    {
+      "keyword": "death",
+      "score": 73.4279
+    },
+    {
+      "keyword": "house",
+      "score": 73.2226
+    },
+    {
+      "keyword": "ai",
+      "score": 72.5264
+    },
+    {
+      "keyword": "health",
+      "score": 71.7936
+    },
+    {
+      "keyword": "state",
+      "score": 71.7613
+    },
+    {
+      "keyword": "diddy",
+      "score": 71.3198
+    },
+    {
+      "keyword": "folks",
+      "score": 70.7832
+    },
+    {
+      "keyword": "season",
+      "score": 70.5144
+    },
+    {
+      "keyword": "social",
+      "score": 68.9845
+    },
+    {
+      "keyword": "say",
+      "score": 68.1428
+    },
+    {
+      "keyword": "ice",
+      "score": 67.9531
+    },
+    {
+      "keyword": "best",
+      "score": 67.7304
+    },
+    {
+      "keyword": "university",
+      "score": 67.2541
+    },
+    {
+      "keyword": "internet",
+      "score": 66.9848
+    },
+    {
+      "keyword": "take",
+      "score": 66.3995
+    },
+    {
+      "keyword": "look",
+      "score": 66.2223
+    },
+    {
+      "keyword": "music",
+      "score": 65.0137
+    },
+    {
+      "keyword": "city",
+      "score": 64.0323
+    },
+    {
+      "keyword": "home",
+      "score": 62.026
+    },
+    {
+      "keyword": "let",
+      "score": 61.4834
+    },
+    {
+      "keyword": "court",
+      "score": 61.3596
+    },
+    {
+      "keyword": "fans",
+      "score": 60.9548
+    },
+    {
+      "keyword": "america",
+      "score": 59.942
+    },
+    {
+      "keyword": "real",
+      "score": 59.5702
+    },
+    {
+      "keyword": "million",
+      "score": 59.0028
+    },
+    {
+      "keyword": "michael",
+      "score": 58.8333
+    },
+    {
+      "keyword": "jackson",
+      "score": 58.1703
+    }
+  ],
+  "by_source": {
+    "afrotech.com": [
+      {
+        "keyword": "ai",
+        "score": 31.5043
+      },
+      {
+        "keyword": "afrotech",
+        "score": 21.9525
+      },
+      {
+        "keyword": "university",
+        "score": 21.6639
+      },
+      {
+        "keyword": "company",
+        "score": 21.2996
+      },
+      {
+        "keyword": "2025",
+        "score": 18.6359
+      },
+      {
+        "keyword": "million",
+        "score": 16.6543
+      },
+      {
+        "keyword": "business",
+        "score": 16.5319
+      },
+      {
+        "keyword": "tech",
+        "score": 15.8566
+      },
+      {
+        "keyword": "college",
+        "score": 15.8525
+      },
+      {
+        "keyword": "founder",
+        "score": 14.4292
+      },
+      {
+        "keyword": "brand",
+        "score": 14.4066
+      },
+      {
+        "keyword": "previously",
+        "score": 14.028
+      },
+      {
+        "keyword": "school",
+        "score": 14.0182
+      },
+      {
+        "keyword": "reports",
+        "score": 13.0453
+      },
+      {
+        "keyword": "afrotech previously",
+        "score": 12.9801
+      },
+      {
+        "keyword": "reported",
+        "score": 12.6651
+      },
+      {
+        "keyword": "launched",
+        "score": 12.6525
+      },
+      {
+        "keyword": "students",
+        "score": 12.6489
+      },
+      {
+        "keyword": "release",
+        "score": 12.1959
+      },
+      {
+        "keyword": "ceo",
+        "score": 12.1594
+      }
+    ],
+    "blavity.com": [
+      {
+        "keyword": "season",
+        "score": 13.3392
+      },
+      {
+        "keyword": "continue",
+        "score": 12.0661
+      },
+      {
+        "keyword": "reading",
+        "score": 11.8023
+      },
+      {
+        "keyword": "continue reading",
+        "score": 11.7629
+      },
+      {
+        "keyword": "series",
+        "score": 9.2042
+      },
+      {
+        "keyword": "trump",
+        "score": 9.0398
+      },
+      {
+        "keyword": "know",
+        "score": 8.3933
+      },
+      {
+        "keyword": "star",
+        "score": 7.0421
+      },
+      {
+        "keyword": "trailer",
+        "score": 6.8874
+      },
+      {
+        "keyword": "women",
+        "score": 6.8097
+      },
+      {
+        "keyword": "film",
+        "score": 6.0912
+      },
+      {
+        "keyword": "stars",
+        "score": 5.3211
+      },
+      {
+        "keyword": "netflix",
+        "score": 5.3122
+      },
+      {
+        "keyword": "blavity",
+        "score": 5.1073
+      },
+      {
+        "keyword": "2026",
+        "score": 5.0657
+      },
+      {
+        "keyword": "show",
+        "score": 4.8721
+      },
+      {
+        "keyword": "cast",
+        "score": 4.8678
+      },
+      {
+        "keyword": "health",
+        "score": 4.621
+      },
+      {
+        "keyword": "love",
+        "score": 4.5943
+      },
+      {
+        "keyword": "worth",
+        "score": 4.5225
+      }
+    ],
+    "capitalbnews.org": [
+      {
+        "keyword": "trump",
+        "score": 7.5582
+      },
+      {
+        "keyword": "federal",
+        "score": 7.0728
+      },
+      {
+        "keyword": "communities",
+        "score": 5.9032
+      },
+      {
+        "keyword": "say",
+        "score": 5.8363
+      },
+      {
+        "keyword": "residents",
+        "score": 5.8226
+      },
+      {
+        "keyword": "family",
+        "score": 5.0718
+      },
+      {
+        "keyword": "history",
+        "score": 5.0187
+      },
+      {
+        "keyword": "city",
+        "score": 4.7923
+      },
+      {
+        "keyword": "state",
+        "score": 4.3478
+      },
+      {
+        "keyword": "health",
+        "score": 3.9905
+      },
+      {
+        "keyword": "court",
+        "score": 3.9205
+      },
+      {
+        "keyword": "rights",
+        "score": 3.8826
+      },
+      {
+        "keyword": "town",
+        "score": 3.6943
+      },
+      {
+        "keyword": "women",
+        "score": 3.6583
+      },
+      {
+        "keyword": "mississippi",
+        "score": 3.6061
+      },
+      {
+        "keyword": "louisiana",
+        "score": 3.5647
+      },
+      {
+        "keyword": "americans",
+        "score": 3.5591
+      },
+      {
+        "keyword": "administration",
+        "score": 3.5581
+      },
+      {
+        "keyword": "still",
+        "score": 3.4754
+      },
+      {
+        "keyword": "power",
+        "score": 3.3924
+      }
+    ],
+    "ebony.com": [
+      {
+        "keyword": "beauty",
+        "score": 17.5209
+      },
+      {
+        "keyword": "us",
+        "score": 17.1301
+      },
+      {
+        "keyword": "love",
+        "score": 16.186
+      },
+      {
+        "keyword": "women",
+        "score": 16.1415
+      },
+      {
+        "keyword": "ebony",
+        "score": 16.0694
+      },
+      {
+        "keyword": "2025",
+        "score": 15.8133
+      },
+      {
+        "keyword": "season",
+        "score": 15.7456
+      },
+      {
+        "keyword": "know",
+        "score": 14.5473
+      },
+      {
+        "keyword": "2026",
+        "score": 14.4447
+      },
+      {
+        "keyword": "best",
+        "score": 13.8293
+      },
+      {
+        "keyword": "fashion",
+        "score": 13.4846
+      },
+      {
+        "keyword": "life",
+        "score": 13.4149
+      },
+      {
+        "keyword": "summer",
+        "score": 12.8212
+      },
+      {
+        "keyword": "culture",
+        "score": 12.7762
+      },
+      {
+        "keyword": "history",
+        "score": 12.4467
+      },
+      {
+        "keyword": "show",
+        "score": 12.1297
+      },
+      {
+        "keyword": "always",
+        "score": 12.1233
+      },
+      {
+        "keyword": "world",
+        "score": 11.9201
+      },
+      {
+        "keyword": "music",
+        "score": 11.7916
+      },
+      {
+        "keyword": "family",
+        "score": 11.5243
+      }
+    ],
+    "essence.com": [
+      {
+        "keyword": "archives",
+        "score": 7.4552
+      },
+      {
+        "keyword": "archives essence",
+        "score": 7.4552
+      },
+      {
+        "keyword": "women",
+        "score": 3.2315
+      },
+      {
+        "keyword": "president",
+        "score": 1.7675
+      },
+      {
+        "keyword": "wealth",
+        "score": 1.7545
+      },
+      {
+        "keyword": "money",
+        "score": 1.5165
+      },
+      {
+        "keyword": "health",
+        "score": 1.4378
+      },
+      {
+        "keyword": "beauty",
+        "score": 1.43
+      },
+      {
+        "keyword": "financial",
+        "score": 1.3547
+      },
+      {
+        "keyword": "away",
+        "score": 1.2837
+      },
+      {
+        "keyword": "victoria",
+        "score": 1.2606
+      },
+      {
+        "keyword": "step",
+        "score": 1.2513
+      },
+      {
+        "keyword": "building",
+        "score": 1.2474
+      },
+      {
+        "keyword": "op",
+        "score": 1.1547
+      },
+      {
+        "keyword": "op ed",
+        "score": 1.1547
+      },
+      {
+        "keyword": "ed",
+        "score": 1.1547
+      },
+      {
+        "keyword": "business",
+        "score": 1.1279
+      },
+      {
+        "keyword": "public",
+        "score": 1.1249
+      },
+      {
+        "keyword": "left",
+        "score": 1.085
+      },
+      {
+        "keyword": "celebrity",
+        "score": 1.0691
+      }
+    ],
+    "newsone.com": [
+      {
+        "keyword": "trump",
+        "score": 20.3872
+      },
+      {
+        "keyword": "ice",
+        "score": 10.2556
+      },
+      {
+        "keyword": "history",
+        "score": 7.8753
+      },
+      {
+        "keyword": "us",
+        "score": 7.7743
+      },
+      {
+        "keyword": "iran",
+        "score": 7.5467
+      },
+      {
+        "keyword": "state",
+        "score": 6.6377
+      },
+      {
+        "keyword": "donald",
+        "score": 6.6181
+      },
+      {
+        "keyword": "donald trump",
+        "score": 6.475
+      },
+      {
+        "keyword": "administration",
+        "score": 6.4665
+      },
+      {
+        "keyword": "agents",
+        "score": 5.9138
+      },
+      {
+        "keyword": "house",
+        "score": 5.8395
+      },
+      {
+        "keyword": "war",
+        "score": 5.7014
+      },
+      {
+        "keyword": "federal",
+        "score": 5.6607
+      },
+      {
+        "keyword": "president",
+        "score": 5.4973
+      },
+      {
+        "keyword": "man",
+        "score": 5.1223
+      },
+      {
+        "keyword": "trump administration",
+        "score": 4.9545
+      },
+      {
+        "keyword": "women",
+        "score": 4.4301
+      },
+      {
+        "keyword": "show",
+        "score": 4.2762
+      },
+      {
+        "keyword": "death",
+        "score": 4.0649
+      },
+      {
+        "keyword": "men",
+        "score": 3.9941
+      }
+    ],
+    "thegrio.com": [
+      {
+        "keyword": "trump",
+        "score": 117.4652
+      },
+      {
+        "keyword": "president",
+        "score": 50.6497
+      },
+      {
+        "keyword": "former",
+        "score": 34.5637
+      },
+      {
+        "keyword": "women",
+        "score": 34.4419
+      },
+      {
+        "keyword": "house",
+        "score": 34.0981
+      },
+      {
+        "keyword": "us",
+        "score": 32.7036
+      },
+      {
+        "keyword": "federal",
+        "score": 31.566
+      },
+      {
+        "keyword": "star",
+        "score": 31.531
+      },
+      {
+        "keyword": "history",
+        "score": 29.9435
+      },
+      {
+        "keyword": "obama",
+        "score": 29.0608
+      },
+      {
+        "keyword": "show",
+        "score": 28.657
+      },
+      {
+        "keyword": "death",
+        "score": 28.2876
+      },
+      {
+        "keyword": "love",
+        "score": 28.1395
+      },
+      {
+        "keyword": "old",
+        "score": 27.8402
+      },
+      {
+        "keyword": "administration",
+        "score": 27.5039
+      },
+      {
+        "keyword": "court",
+        "score": 26.9192
+      },
+      {
+        "keyword": "reveals",
+        "score": 26.9133
+      },
+      {
+        "keyword": "say",
+        "score": 25.7176
+      },
+      {
+        "keyword": "family",
+        "score": 25.574
+      },
+      {
+        "keyword": "trump administration",
+        "score": 24.6491
+      }
+    ],
+    "theroot.com": [
+      {
+        "keyword": "trump",
+        "score": 70.8834
+      },
+      {
+        "keyword": "folks",
+        "score": 48.3913
+      },
+      {
+        "keyword": "internet",
+        "score": 41.9909
+      },
+      {
+        "keyword": "know",
+        "score": 38.8975
+      },
+      {
+        "keyword": "let",
+        "score": 38.2504
+      },
+      {
+        "keyword": "diddy",
+        "score": 37.5851
+      },
+      {
+        "keyword": "viral",
+        "score": 35.8388
+      },
+      {
+        "keyword": "look",
+        "score": 35.0784
+      },
+      {
+        "keyword": "man",
+        "score": 34.587
+      },
+      {
+        "keyword": "women",
+        "score": 34.3597
+      },
+      {
+        "keyword": "woman",
+        "score": 33.9583
+      },
+      {
+        "keyword": "take",
+        "score": 31.1069
+      },
+      {
+        "keyword": "finally",
+        "score": 29.9144
+      },
+      {
+        "keyword": "fans",
+        "score": 29.4669
+      },
+      {
+        "keyword": "best",
+        "score": 28.8137
+      },
+      {
+        "keyword": "president",
+        "score": 28.016
+      },
+      {
+        "keyword": "history",
+        "score": 27.4878
+      },
+      {
+        "keyword": "death",
+        "score": 26.8969
+      },
+      {
+        "keyword": "online",
+        "score": 26.0121
+      },
+      {
+        "keyword": "allegedly",
+        "score": 25.8793
+      }
+    ]
+  }
+}

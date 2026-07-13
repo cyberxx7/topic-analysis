@@ -48,12 +48,11 @@ TOPICS = [
             "black voter", "minority voter", "voting access",
             "help america vote", "john lewis voting rights act",
             "shelby county", "section 5 preclearance", "felony disenfranchisement",
-            "voters turned away", "disenfranchised", "democracy",
-            "save america act", "save act", "civic engagement",
+            "voters turned away", "disenfranchised",
+            "save america act", "save act",
             "jim crow", "election law", "voters suppressed",
             "canvassing", "ballot harvesting", "voter rolls",
-            "voters blocked", "polling place", "poll worker",
-            "election day", "midterm", "primary election"
+            "voters blocked", "polling place", "poll worker"
         ]
     },
     {
@@ -64,14 +63,16 @@ TOPICS = [
         "seed_phrases": [
             "book ban", "banned book", "critical race theory", "crt",
             "diversity equity inclusion", "dei", "anti-dei",
-            "curriculum censorship", "school board", "woke",
+            "curriculum censorship", "school board",
             "cultural erasure", "black history month", "1619 project",
-            "ethnic studies", "inclusive curriculum", "black author",
+            "ethnic studies", "inclusive curriculum",
             "censored book", "educational gag order", "don't say gay",
             "parental rights in education", "indoctrination",
-            "cancel culture", "free speech campus", "academic freedom",
+            "free speech campus", "academic freedom",
             "affirmative action ban", "diversity training",
-            "equity program eliminated", "multicultural education"
+            "equity program eliminated", "multicultural education",
+            "dei ban", "dei rollback", "dei program cut",
+            "remove black history", "erase black history"
         ]
     },
     {
@@ -131,16 +132,17 @@ TOPICS = [
         "description": "Mass surveillance, facial recognition bias, data privacy, government monitoring of Black communities",
         "color": "#1C2833",
         "seed_phrases": [
-            "facial recognition", "surveillance", "data privacy",
-            "predictive policing", "social media monitoring",
+            "facial recognition", "predictive policing", "social media monitoring",
             "fusion center", "stingray", "cell site simulator",
             "license plate reader", "smart city surveillance",
-            "algorithmic bias", "biometric data", "ring doorbell",
-            "neighborhood watch racism", "gang database",
+            "algorithmic bias", "biometric data",
+            "neighborhood watch racism",
             "crime prediction algorithm", "digital redlining",
-            "surveillance capitalism", "privacy rights", "spying",
-            "fbi cointelpro", "government monitoring", "racial surveillance",
-            "geofence warrant", "cell phone tracking"
+            "surveillance capitalism", "fbi cointelpro",
+            "racial surveillance", "geofence warrant", "cell phone tracking",
+            "surveillance of black", "police surveillance", "monitored by police",
+            "targeted surveillance", "black community surveillance",
+            "ai bias policing", "biased algorithm"
         ]
     },
     {
@@ -172,14 +174,11 @@ TOPICS = [
             "title i", "per pupil spending", "property tax school funding",
             "education equity", "school quality", "teacher shortage",
             "school infrastructure", "learning gap", "achievement gap",
-            "opportunity gap", "hbcu funding", "hbcu",
+            "opportunity gap", "hbcu funding", "hbcu budget", "hbcu cuts",
             "historically black college", "education access",
             "special education funding", "gifted program access",
-            "degree program", "university", "college program",
-            "FAMU", "Howard University", "Morehouse", "Spelman",
-            "NCAA", "march madness hbcu", "student loan",
-            "education cut", "department of education", "school choice",
-            "charter school", "public school", "academic program"
+            "student loan", "education cut", "department of education",
+            "school choice", "charter school"
         ]
     },
     {
@@ -193,23 +192,16 @@ TOPICS = [
             "cash bail", "bail reform", "pretrial detention",
             "wrongful conviction", "exoneration", "innocence project",
             "prison condition", "solitary confinement", "reentry",
-            "recidivism", "probation", "parole", "juvenile justice",
+            "recidivism", "juvenile justice",
             "school to prison pipeline", "felony disenfranchisement",
             "prosecutorial misconduct", "plea bargain", "public defender",
             "over-criminalization", "drug war", "crack cocaine disparity",
-            "first step act", "second chance",
-            "charged with murder", "charged with assault", "charged with",
-            "indicted", "convicted", "sentenced to", "acquitted",
-            "not guilty", "criminal charges", "facing charges",
-            "arrested and charged", "prosecution", "criminal trial",
-            "murder charge", "manslaughter", "assault charge",
-            "abortion law charged", "charged under", "felony charge",
-            "misdemeanor", "grand jury",
-            "death sentence", "death row", "execution",
-            "life sentence", "prison sentence", "buy prison",
-            "second chance", "ex-inmate", "formerly incarcerated",
-            "prison reform", "bail fund", "prison to pipeline",
-            "supreme court criminal", "criminal appeal"
+            "first step act", "death row", "execution",
+            "life sentence", "ex-inmate", "formerly incarcerated",
+            "prison reform", "bail fund", "carceral",
+            "sentencing reform", "mandatory sentencing",
+            "criminal justice system", "unjust sentence",
+            "wrongfully convicted", "overturned conviction"
         ]
     },
     {
@@ -238,14 +230,22 @@ TOPICS = [
         "seed_phrases": [
             "racial wealth gap", "economic equity", "wage gap",
             "pay discrimination", "black entrepreneur", "black business",
-            "black-owned business", "economic mobility", "poverty",
+            "black-owned business", "black-owned", "economic mobility",
             "financial inclusion", "banking access", "unbanked",
             "predatory lending", "payday loan", "credit access",
             "investment gap", "venture capital black founder",
             "economic disparity", "income inequality",
             "unemployment black", "job discrimination", "hiring bias",
             "glass ceiling", "black middle class", "economic empowerment",
-            "generational wealth", "asset building", "financial literacy"
+            "generational wealth", "asset building", "financial literacy",
+            "black wealth", "black net worth", "black investor",
+            "black bank", "minority business", "minority entrepreneur",
+            "wealth gap", "income gap", "economic inequality",
+            "snap cut", "snap benefit", "food stamp cut",
+            "benefit cut", "safety net cut", "medicaid cut",
+            "black poverty", "black unemployment", "racial income gap",
+            "black economic", "economic justice", "financial equity",
+            "wage theft", "pay equity"
         ]
     }
 ]

@@ -63,11 +63,12 @@ def match_topics(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def _build_text(row: pd.Series) -> str:
-    """Combine title + description into a single lowercase string."""
-    title = str(row.get("title", "") or "")
-    desc = str(row.get("description", "") or "")
-    category = str(row.get("category", "") or "")
-    return (title + " " + desc + " " + category).lower()
+    """Combine title + description + body (if available) into a single lowercase string."""
+    title    = str(row.get("title",       "") or "")
+    desc     = str(row.get("description", "") or "")
+    category = str(row.get("category",    "") or "")
+    body     = str(row.get("body",        "") or "")
+    return (title + " " + desc + " " + category + " " + body).lower()
 
 
 def _score_topic(text: str, seed_phrases: list) -> tuple[list, float]:
