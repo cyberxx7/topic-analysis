@@ -1,0 +1,29 @@
+set,original_annotator,topic,kappa,percent_agreement,both_positive,only_original,only_adeniyi,both_negative
+set1,annotator_1,Policing/Public Safety,0.5217,0.91,12.0,11.0,7.0,170.0
+set1,annotator_1,Voter Suppression,0.4236,0.95,4.0,9.0,1.0,186.0
+set1,annotator_1,Book Bans/Anti-DEI,-0.0081,0.975,0.0,4.0,1.0,195.0
+set1,annotator_1,Housing/Displacement,0.3989,0.945,4.0,10.0,1.0,185.0
+set1,annotator_1,Maternal Health,0.6591,0.985,3.0,1.0,2.0,194.0
+set1,annotator_1,Redlining/Fair Housing,0.0,0.975,0.0,5.0,0.0,195.0
+set1,annotator_1,Anti-Black Surveillance,0.3232,0.98,1.0,2.0,2.0,195.0
+set1,annotator_1,Reparations,0.0,0.975,0.0,5.0,0.0,195.0
+set1,annotator_1,School Funding,0.347,0.965,2.0,5.0,2.0,191.0
+set1,annotator_1,Criminal Justice Reform,0.4078,0.96,3.0,4.0,4.0,189.0
+set1,annotator_1,Environmental Justice,0.5504,0.955,6.0,8.0,1.0,185.0
+set1,annotator_1,Economic Equity/Wealth Gap,0.2991,0.8,13.0,34.0,6.0,147.0
+set1,annotator_1,MACRO AVG,0.3269,,,,,
+set1,annotator_1,POOLED,0.41,,,,,
+set3,annotator_3,Policing/Public Safety,0.482,0.91,10.0,3.0,15.0,172.0
+set3,annotator_3,Voter Suppression,0.7976,0.995,2.0,1.0,0.0,197.0
+set3,annotator_3,Book Bans/Anti-DEI,0.7449,0.99,3.0,1.0,1.0,195.0
+set3,annotator_3,Housing/Displacement,0.4096,0.96,3.0,6.0,2.0,189.0
+set3,annotator_3,Maternal Health,0.7201,0.985,4.0,0.0,3.0,193.0
+set3,annotator_3,Redlining/Fair Housing,0.0,1.0,0.0,0.0,0.0,200.0
+set3,annotator_3,Anti-Black Surveillance,0.0,1.0,0.0,0.0,0.0,200.0
+set3,annotator_3,Reparations,0.0,1.0,0.0,0.0,0.0,200.0
+set3,annotator_3,School Funding,0.0,0.985,0.0,3.0,0.0,197.0
+set3,annotator_3,Criminal Justice Reform,0.5562,0.97,4.0,4.0,2.0,190.0
+set3,annotator_3,Environmental Justice,0.3714,0.94,4.0,3.0,9.0,184.0
+set3,annotator_3,Economic Equity/Wealth Gap,0.5305,0.9,14.0,16.0,4.0,166.0
+set3,annotator_3,MACRO AVG,0.3844,,,,,
+set3,annotator_3,POOLED,0.5308,,,,,

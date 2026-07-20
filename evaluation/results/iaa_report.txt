@@ -1,0 +1,41 @@
+INTER-ANNOTATOR AGREEMENT — EXPERT RELABEL vs ORIGINAL ANNOTATORS
+
+[set1] Adeniyi vs annotator_1 — 200 articles  (titles aligned: yes)
+================================================================================================
+Topic                              Kappa  Agree%  Both+  OnlyOrig  OnlyAde  Both-
+------------------------------------------------------------------------------------------------
+Policing/Public Safety             0.522   91.0%     12        11        7    170
+Voter Suppression                  0.424   95.0%      4         9        1    186
+Book Bans/Anti-DEI                -0.008   97.5%      0         4        1    195
+Housing/Displacement               0.399   94.5%      4        10        1    185
+Maternal Health                    0.659   98.5%      3         1        2    194
+Redlining/Fair Housing             0.000   97.5%      0         5        0    195
+Anti-Black Surveillance            0.323   98.0%      1         2        2    195
+Reparations                        0.000   97.5%      0         5        0    195
+School Funding                     0.347   96.5%      2         5        2    191
+Criminal Justice Reform            0.408   96.0%      3         4        4    189
+Environmental Justice              0.550   95.5%      6         8        1    185
+Economic Equity/Wealth Gap         0.299   80.0%     13        34        6    147
+------------------------------------------------------------------------------------------------
+MACRO AVG KAPPA                    0.327
+POOLED KAPPA (all decisions)       0.410
+
+[set3] Adeniyi vs annotator_3 — 200 articles  (titles aligned: yes)
+================================================================================================
+Topic                              Kappa  Agree%  Both+  OnlyOrig  OnlyAde  Both-
+------------------------------------------------------------------------------------------------
+Policing/Public Safety             0.482   91.0%     10         3       15    172
+Voter Suppression                  0.798   99.5%      2         1        0    197
+Book Bans/Anti-DEI                 0.745   99.0%      3         1        1    195
+Housing/Displacement               0.410   96.0%      3         6        2    189
+Maternal Health                    0.720   98.5%      4         0        3    193
+Redlining/Fair Housing             0.000  100.0%      0         0        0    200
+Anti-Black Surveillance            0.000  100.0%      0         0        0    200
+Reparations                        0.000  100.0%      0         0        0    200
+School Funding                     0.000   98.5%      0         3        0    197
+Criminal Justice Reform            0.556   97.0%      4         4        2    190
+Environmental Justice              0.371   94.0%      4         3        9    184
+Economic Equity/Wealth Gap         0.531   90.0%     14        16        4    166
+------------------------------------------------------------------------------------------------
+MACRO AVG KAPPA                    0.384
+POOLED KAPPA (all decisions)       0.531

@@ -2,19 +2,23 @@
 hybrid_tagger.py — Hybrid Topic Tagger Evaluation
 
 Combines the keyword pipeline and semantic tagger into three hybrid strategies
-and evaluates all five methods against human annotation:
+and evaluates all methods against human annotation:
 
-  1. Keyword Pipeline      — seed-phrase matching (baseline)
-  2. Semantic Tagger       — sentence embedding cosine similarity (baseline)
-  3. Hybrid OR (Union)     — tag if keyword OR semantic fires
-  4. Hybrid AND (Intersect)— tag only if keyword AND semantic agree
-  5. Hybrid Soft Boost     — keyword always kept; semantic added only when its
-                             raw score >= an optimised per-topic threshold
-                             (grid-searched to maximise macro F1)
+  1. Keyword Pipeline          — seed-phrase matching (baseline)
+  2. Semantic Tagger           — sentence embedding cosine similarity (baseline)
+  3. Hybrid OR (Union)         — tag if keyword OR semantic fires
+  4. Hybrid AND (Intersect)    — tag only if keyword AND semantic agree
+  5. Hybrid Soft Boost         — keyword always kept; semantic added only when its
+                                 raw score >= a per-topic threshold tuned on the
+                                 SAME annotator set (in-sample upper bound —
+                                 optimistic due to tuning leak)
+  6. Hybrid Soft Boost (CV)    — same mechanism, but thresholds are tuned on the
+                                 OTHER annotator's set (cross-annotator
+                                 validation — the honest, leak-free estimate)
 
 Outputs:
   evaluation/results/hybrid_vs_human.txt  — human-readable report
-  evaluation/results/hybrid_vs_human.csv  — per-article predictions for report generation
+  evaluation/results/hybrid_vs_human.csv  — per-topic metrics for report generation
 
 Usage:
     python3.11 evaluation/taggers/hybrid_tagger.py
@@ -60,6 +64,7 @@ TOPIC_LABELS = {
 }
 
 ANNOTATORS = ["annotator_1", "annotator_3"]
+OTHER = {"annotator_1": "annotator_3", "annotator_3": "annotator_1"}
 
 # ── Metrics ────────────────────────────────────────────────────────────────────
 
@@ -122,8 +127,8 @@ def apply_and(df: pd.DataFrame) -> pd.DataFrame:
 
 def find_best_soft_threshold(df: pd.DataFrame) -> dict[str, float]:
     """
-    Grid-search the per-topic semantic score threshold that maximises macro F1
-    for the soft-boost hybrid on this annotator's slice.
+    Grid-search the per-topic semantic score threshold that maximises F1
+    for the soft-boost hybrid on THIS dataframe's articles.
 
     For each topic: tag if pipeline fires OR sem_score >= t.
     Sweep t in [0.05, 0.45] at 0.01 steps.
@@ -155,17 +160,20 @@ def find_best_soft_threshold(df: pd.DataFrame) -> dict[str, float]:
     return best_thresholds
 
 
-def apply_soft_boost(df: pd.DataFrame, thresholds: dict[str, float]) -> pd.DataFrame:
+def apply_soft_boost(df: pd.DataFrame, thresholds: dict[str, float],
+                     col: str = "hybrid_soft") -> pd.DataFrame:
     """
     Soft boost: keyword always kept; semantic contributes only when its raw
-    score >= the per-topic optimised threshold.
+    score >= the per-topic threshold. `col` names the output column prefix
+    ("hybrid_soft" for in-sample thresholds, "hybrid_soft_cv" for thresholds
+    tuned on the other annotator's set).
     """
     df = df.copy()
     for key in TOPIC_KEYS:
         t      = thresholds.get(key, 0.30)
         kw_bin = df[f"pipeline_{key}"].fillna(0).astype(int)
         scores = df[f"sem_score_{key}"].fillna(0).astype(float)
-        df[f"hybrid_soft_{key}"] = (
+        df[f"{col}_{key}"] = (
             (kw_bin == 1) | (scores >= t)
         ).astype(int)
     return df
@@ -174,11 +182,12 @@ def apply_soft_boost(df: pd.DataFrame, thresholds: dict[str, float]) -> pd.DataF
 # ── Pretty-print report ────────────────────────────────────────────────────────
 
 METHOD_META = [
-    ("pipeline",    "Keyword Pipeline"),
-    ("semantic",    "Semantic Tagger"),
-    ("hybrid_or",   "Hybrid OR (Union)"),
-    ("hybrid_and",  "Hybrid AND (Intersect)"),
-    ("hybrid_soft", "Hybrid Soft Boost"),
+    ("pipeline",       "Keyword Pipeline"),
+    ("semantic",       "Semantic Tagger"),
+    ("hybrid_or",      "Hybrid OR (Union)"),
+    ("hybrid_and",     "Hybrid AND (Intersect)"),
+    ("hybrid_soft",    "Hybrid Soft Boost"),
+    ("hybrid_soft_cv", "Hybrid Soft Boost (CV)"),
 ]
 
 def print_method_table(results: dict[str, pd.DataFrame], annotator: str,
@@ -189,17 +198,18 @@ def print_method_table(results: dict[str, pd.DataFrame], annotator: str,
         else:
             print(*args, **kwargs)
 
+    width = 33 + 24 * len(METHOD_META)
     w(f"\n[{annotator}] All Methods — 200 articles")
-    w("=" * 100)
+    w("=" * width)
     w(f"{'Topic':<33}", end="")
     for _, label in METHOD_META:
-        w(f"  {label[:18]:<18}", end="")
+        w(f"  {label[:20]:<20}  ", end="")
     w()
     w(f"{'':33}", end="")
     for _ in METHOD_META:
         w(f"  {'F1':>5} {'K':>5} {'P':>5} {'R':>5}", end="")
     w()
-    w("-" * 100)
+    w("-" * width)
 
     for key in TOPIC_KEYS:
         label = TOPIC_LABELS[key]
@@ -217,7 +227,7 @@ def print_method_table(results: dict[str, pd.DataFrame], annotator: str,
                 w(f"  {f1:>5.3f} {k:>5.3f} {p:>5.3f} {r:>5.3f}", end="")
         w()
 
-    w("-" * 100)
+    w("-" * width)
     w(f"{'MACRO AVG':<33}", end="")
     for prefix, _ in METHOD_META:
         df = results[prefix]
@@ -226,7 +236,7 @@ def print_method_table(results: dict[str, pd.DataFrame], annotator: str,
     w()
 
 
-def print_soft_thresholds(thresholds: dict[str, float], annotator: str,
+def print_soft_thresholds(thresholds: dict[str, float], title: str,
                           file=None) -> None:
     def w(*args, **kwargs):
         if file:
@@ -234,7 +244,7 @@ def print_soft_thresholds(thresholds: dict[str, float], annotator: str,
         else:
             print(*args, **kwargs)
 
-    w(f"\n[{annotator}] Soft Boost — Optimised semantic thresholds per topic")
+    w(f"\n{title}")
     w("-" * 55)
     for key, t in thresholds.items():
         w(f"  {TOPIC_LABELS[key]:<35}  t = {t:.2f}")
@@ -253,70 +263,87 @@ def run(
     kw_raw  = pd.read_csv(kw_path)
     sem_raw = pd.read_csv(sem_path)
 
-    # Merge: both CSVs are aligned row-for-row within each annotator slice.
-    # Join on annotator + positional index within that slice.
-    all_results: list[pd.DataFrame] = []
+    all_results: list[dict] = []
     all_output_rows: list[pd.DataFrame] = []
-
     report_lines: list[str] = []
 
     def log(msg=""):
         print(msg)
         report_lines.append(msg)
 
-    log("=" * 100)
-    log("HYBRID TAGGER EVALUATION — ALL FIVE METHODS vs HUMAN ANNOTATION")
-    log("=" * 100)
+    log("=" * 120)
+    log("HYBRID TAGGER EVALUATION — ALL METHODS vs HUMAN ANNOTATION")
+    log("=" * 120)
     log()
     log("Methods compared:")
     for i, (_, label) in enumerate(METHOD_META, 1):
         log(f"  {i}. {label}")
     log()
+    log("Soft Boost thresholds are tuned per topic by grid search (0.05–0.45).")
+    log("  'Hybrid Soft Boost'      tunes on the SAME annotator set it is scored on (in-sample upper bound).")
+    log("  'Hybrid Soft Boost (CV)' tunes on the OTHER annotator's set (cross-annotator validation — leak-free).")
+    log()
     log("Columns reported per method:  F1  Kappa  Precision  Recall")
     log()
+
+    # ── Phase 1: build merged frame per annotator, tune thresholds ────
+    merged_by_ann: dict[str, pd.DataFrame] = {}
+    thresholds_by_ann: dict[str, dict[str, float]] = {}
+
+    sem_cols = (
+        [f"semantic_{k}" for k in TOPIC_KEYS] +
+        [f"sem_score_{k}" for k in TOPIC_KEYS]
+    )
 
     for ann in ANNOTATORS:
         kw_ann  = kw_raw[kw_raw["annotator"] == ann].reset_index(drop=True)
         sem_ann = sem_raw[sem_raw["annotator"] == ann].reset_index(drop=True)
 
-        # Merge sem_score and semantic columns into the keyword dataframe
-        sem_cols = (
-            [f"semantic_{k}" for k in TOPIC_KEYS] +
-            [f"sem_score_{k}" for k in TOPIC_KEYS]
-        )
         merged = kw_ann.copy()
         for col in sem_cols:
             if col in sem_ann.columns:
                 merged[col] = sem_ann[col].values
 
-        # Apply hybrid strategies
         merged = apply_or(merged)
         merged = apply_and(merged)
-        thresholds = find_best_soft_threshold(merged)
-        merged = apply_soft_boost(merged, thresholds)
+        merged_by_ann[ann] = merged
+        thresholds_by_ann[ann] = find_best_soft_threshold(merged)
+
+    # ── Phase 2: apply soft boost (in-sample + cross-validated) ───────
+    import io
+    for ann in ANNOTATORS:
+        merged = merged_by_ann[ann]
+        merged = apply_soft_boost(merged, thresholds_by_ann[ann],
+                                  col="hybrid_soft")
+        merged = apply_soft_boost(merged, thresholds_by_ann[OTHER[ann]],
+                                  col="hybrid_soft_cv")
+        merged_by_ann[ann] = merged
 
         # Compute metrics for all methods
         results: dict[str, pd.DataFrame] = {}
         for prefix, _ in METHOD_META:
             results[prefix] = topic_metrics(merged, prefix)
 
-        # Print threshold choices
-        lines: list[str] = []
-        import io
+        # Log thresholds
         buf = io.StringIO()
-        print_soft_thresholds(thresholds, ann, file=buf)
-        threshold_text = buf.getvalue()
-        log(threshold_text.strip())
+        print_soft_thresholds(
+            thresholds_by_ann[ann],
+            f"[{ann}] In-sample thresholds (tuned and scored on {ann} — upper bound)",
+            file=buf)
+        print_soft_thresholds(
+            thresholds_by_ann[OTHER[ann]],
+            f"[{ann}] Cross-validated thresholds (tuned on {OTHER[ann]}, scored on {ann})",
+            file=buf)
+        log(buf.getvalue().strip())
         log()
 
-        # Print comparison table
+        # Log comparison table
         buf2 = io.StringIO()
         print_method_table(results, ann, file=buf2)
-        table_text = buf2.getvalue()
-        log(table_text.strip())
+        log(buf2.getvalue().strip())
         log()
 
-        # Collect output rows for CSV
+        # Collect rows for CSV
         for prefix, label in METHOD_META:
             for _, row in results[prefix].iterrows():
                 all_results.append({
@@ -335,8 +362,8 @@ def run(
 
         all_output_rows.append(merged)
 
-    # Summary: macro F1 and Kappa across all annotators per method
-    log("=" * 100)
+    # ── Summary ───────────────────────────────────────────────────────
+    log("=" * 120)
     log("SUMMARY — Macro-Averaged Scores (both annotator sets pooled)")
     log("-" * 60)
     log(f"  {'Method':<30}  {'Macro F1':>9}  {'Macro Kappa':>12}")
@@ -345,19 +372,20 @@ def run(
     for _, label in METHOD_META:
         subset = results_df[results_df["method"] == label]
         log(f"  {label:<30}  {subset['f1'].mean():>9.4f}  {subset['kappa'].mean():>12.4f}")
-    log("=" * 100)
+    log("=" * 120)
+    log()
+    log("The 'Hybrid Soft Boost (CV)' row is the honest, leak-free estimate to report.")
+    log("The gap between it and the in-sample 'Hybrid Soft Boost' row quantifies the tuning optimism.")
 
-    # Save text report
+    # ── Save ──────────────────────────────────────────────────────────
     os.makedirs(os.path.dirname(out_txt), exist_ok=True)
     with open(out_txt, "w") as f:
         f.write("\n".join(report_lines))
     print(f"\n[hybrid] ✓ Report saved → {out_txt}")
 
-    # Save CSV
     results_df.to_csv(out_csv, index=False)
     print(f"[hybrid] ✓ Results CSV saved → {out_csv}")
 
-    # Save merged per-article predictions for report generation
     combined = pd.concat(all_output_rows, ignore_index=True)
     preds_path = out_csv.replace(".csv", "_predictions.csv")
     combined.to_csv(preds_path, index=False)
