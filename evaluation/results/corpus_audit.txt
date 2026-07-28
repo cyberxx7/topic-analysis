@@ -1,0 +1,21 @@
+MAINSTREAM CORPUS PRESENCE AUDIT
+
+Common Crawl CC-MAIN-2019-18 (April 2019) — the snapshot C4 was built from.
+Capture count = pages of the domain present in the raw crawl. C4's filtering
+(English-only, dedup, blocklists, length heuristics) only removes pages, so
+these counts are an UPPER BOUND on each domain's possible C4 presence.
+
+Domain                 Group          Captures in source crawl
+--------------------------------------------------------------
+thegrio.com            ours                                881
+theroot.com            ours                              1,291
+newsone.com            ours                                203
+capitalbnews.org       ours                                  0
+ebony.com              ours                                911
+essence.com            ours                                407
+blavity.com            ours                              3,774
+afrotech.com           ours                                186
+travelnoire.com        ours                              ERROR
+21ninety.com           ours                                113
+nytimes.com            mainstream                        ERROR
+cnn.com                mainstream                        ERROR

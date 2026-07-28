@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+  body {
+    font-family: "EB Garamond", "Georgia", serif;
+    font-size: 12pt;
+    line-height: 1.7;
+    color: #111;
+    max-width: 680px;
+    margin: 60px auto;
+    padding: 0 40px;
+  }
+
+  h1 {
+    font-size: 15pt;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4px;
+    letter-spacing: 0.02em;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-style: italic;
+    font-size: 11pt;
+    color: #444;
+    margin-bottom: 36px;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 3px;
+  }
+
+  p {
+    margin: 8px 0;
+    text-align: justify;
+  }
+
+  .result {
+    background: #f5f5f5;
+    border-left: 3px solid #555;
+    padding: 8px 14px;
+    margin-top: 10px;
+    font-size: 11pt;
+  }
+
+  footer {
+    margin-top: 60px;
+    font-size: 10pt;
+    color: #777;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Key Methodology — Technical Explainer</h1>
+<div class="subtitle">Black Media Intelligence Pipeline &nbsp;|&nbsp; July 2026</div>
+
+<h2>1. Threshold-Tuning Leak</h2>
+<p>
+The hybrid tagger has a sensitivity dial — a threshold — that controls how
+aggressively it tags articles as belonging to a given topic. In our original
+evaluation, we were tuning this dial on the same 400 articles we used to measure
+performance. This is equivalent to setting the answer key after seeing the test,
+and it inflated our results by approximately 0.07 in F1 score.
+</p>
+<p>
+The fix was a cross-annotator validation protocol: we tune the threshold on
+Annotator 1's 200 articles and test on Annotator 3's 200 articles — and vice
+versa. Because the threshold is never set on the same data it is evaluated
+against, the results are honest and generalise to unseen articles.
+</p>
+<div class="result">
+  <strong>Impact:</strong> Hybrid Soft Boost F1 dropped from 0.336 (inflated) to
+  0.267 (honest) after the fix — confirming the leak was real and significant.
+</div>
+
+<h2>2. Inter-Annotator Agreement (IAA)</h2>
+<p>
+Before trusting our machine results, we needed to establish how hard this task
+is for humans. Adeniyi independently re-labeled all 400 articles and compared
+his labels against each original annotator using Cohen's Kappa — a
+chance-corrected agreement score where 1.0 is perfect agreement and 0.0 is
+no better than random.
+</p>
+<p>
+This gives us a human agreement ceiling: the maximum performance any automated
+system can realistically be expected to achieve, given that even two trained
+human annotators working from the same guidelines do not always agree.
+</p>
+<div class="result">
+  <strong>Result:</strong> Macro Kappa 0.33 (Adeniyi vs Annotator 1) and
+  0.38 (Adeniyi vs Annotator 3). The task is inherently moderately ambiguous —
+  a known property of social-conflict topic labeling.
+</div>
+
+<h2>3. Supervised Classifier</h2>
+<p>
+Instead of hand-crafted rules (keyword matching) or fixed similarity thresholds
+(semantic tagger), the supervised classifier learns directly from the 400 human
+labels. For each of the 12 social-conflict topics, a separate logistic regression
+model is trained using three signals per article: the full article text converted
+into a 384-dimensional numerical representation of meaning (via the
+all-MiniLM-L6-v2 sentence embedding model), the keyword tagger's binary
+prediction for that topic, and the semantic tagger's raw similarity score.
+</p>
+<p>
+The same cross-annotator validation protocol used for the hybrid tagger is
+applied here: train on one annotator's articles, test on the other's. Topics
+with fewer than two positive training examples fall back to the keyword
+prediction, and this is logged transparently in the evaluation report.
+</p>
+<div class="result">
+  <strong>Result:</strong> Pooled Macro F1 0.322, Kappa 0.297 — the best
+  performing method across all six approaches evaluated, reaching 77–91% of
+  the human agreement ceiling. This is the method we recommend adopting as the
+  production tagger.
+</div>
+
+<footer>
+  Black Media Intelligence Pipeline &nbsp;·&nbsp; Adeniyi &amp; Smith et al. &nbsp;·&nbsp; July 2026
+</footer>
+
+</body>
+</html>

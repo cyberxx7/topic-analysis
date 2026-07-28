@@ -1,0 +1,21 @@
+PAIRED BOOTSTRAP: Supervised (CV) vs Hybrid Soft Boost (CV)
+
+5000 resamples per direction, articles resampled with replacement (paired: both methods scored on the identical
+resampled article set each iteration). Positive values favor the supervised classifier.
+
+[annotator_3] point estimate: Supervised F1=0.3261 kappa=0.3012  |  Hybrid Soft Boost (CV) F1=0.2184 kappa=0.1821
+[annotator_1] point estimate: Supervised F1=0.3186 kappa=0.2933  |  Hybrid Soft Boost (CV) F1=0.3159 kappa=0.2665
+
+POOLED (average of both cross-annotator directions)
+============================================================
+Supervised (CV):          Macro F1 0.3224   Macro kappa 0.2972
+Hybrid Soft Boost (CV):   Macro F1 0.2671   Macro kappa 0.2243
+
+Macro F1 gap (Supervised - Hybrid Soft Boost CV): +0.0552
+  95% bootstrap CI: [+0.0049, +0.0986]
+  two-sided bootstrap p-value: 0.0300
+
+Macro kappa gap (Supervised - Hybrid Soft Boost CV): +0.0730
+  95% bootstrap CI: [+0.0210, +0.1180]
+  two-sided bootstrap p-value: 0.0048
+============================================================
