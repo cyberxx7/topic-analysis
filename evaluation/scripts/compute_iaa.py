@@ -1,11 +1,11 @@
 """
 compute_iaa.py — Inter-Annotator Agreement
 
-Compares the expert relabeling (Adeniyi) against each original annotator on the
+Compares the expert relabeling against each original annotator on the
 same articles:
 
-  Set 1: Adeniyi vs Annotator 1  (200 articles)
-  Set 3: Adeniyi vs Annotator 3  (200 articles)
+  Set 1: Expert vs Annotator 1  (200 articles)
+  Set 3: Expert vs Annotator 3  (200 articles)
 
 Reports per-topic Cohen's Kappa, percent agreement, and disagreement counts,
 plus macro and pooled Kappa per set. These figures establish the human
@@ -25,10 +25,10 @@ import numpy as np
 PAIRS = [
     ("set1", "annotator_1",
      "evaluation/annotation/annotated/annotator_1.xlsx",
-     "evaluation/annotation/iaa/adeniyi_set1_LABELED.xlsx"),
+     "evaluation/annotation/iaa/expert_set1_LABELED.xlsx"),
     ("set3", "annotator_3",
      "evaluation/annotation/annotated/annotator_3.xlsx",
-     "evaluation/annotation/iaa/adeniyi_set3_LABELED.xlsx"),
+     "evaluation/annotation/iaa/expert_set3_LABELED.xlsx"),
 ]
 
 LABEL_COLS = [
@@ -81,12 +81,12 @@ def main():
         title_match = (orig.loc[common, "Title"].astype(str).str.strip().values ==
                        expert.loc[common, "Title"].astype(str).str.strip().values).all()
 
-        header = (f"[{set_name}] Adeniyi vs {orig_name} — {len(common)} articles"
+        header = (f"[{set_name}] Expert vs {orig_name} — {len(common)} articles"
                   f"  (titles aligned: {'yes' if title_match else 'NO — CHECK ALIGNMENT'})")
         lines.append(header)
         lines.append("=" * 96)
         hdr = (f"{'Topic':<32} {'Kappa':>7} {'Agree%':>7} "
-               f"{'Both+':>6} {'OnlyOrig':>9} {'OnlyAde':>8} {'Both-':>6}")
+               f"{'Both+':>6} {'OnlyOrig':>9} {'OnlyExp':>8} {'Both-':>6}")
         lines.append(hdr)
         lines.append("-" * 96)
 
@@ -95,7 +95,7 @@ def main():
         for col in LABEL_COLS:
             label = col.replace("\n", " ")
             y1 = orig.loc[common, col].values      # original annotator
-            y2 = expert.loc[common, col].values    # Adeniyi
+            y2 = expert.loc[common, col].values    # expert relabel
             k  = kappa(y1, y2)
             agree = float((y1 == y2).mean())
             n11 = int(((y1 == 1) & (y2 == 1)).sum())
@@ -112,7 +112,7 @@ def main():
                 "topic": label, "kappa": round(k, 4),
                 "percent_agreement": round(agree, 4),
                 "both_positive": n11, "only_original": n10,
-                "only_adeniyi": n01, "both_negative": n00,
+                "only_expert": n01, "both_negative": n00,
             })
 
         pooled = kappa(np.concatenate(y1_all), np.concatenate(y2_all))
@@ -124,13 +124,13 @@ def main():
             "set": set_name, "original_annotator": orig_name,
             "topic": "MACRO AVG", "kappa": round(float(np.mean(kappas)), 4),
             "percent_agreement": None, "both_positive": None,
-            "only_original": None, "only_adeniyi": None, "both_negative": None,
+            "only_original": None, "only_expert": None, "both_negative": None,
         })
         rows_out.append({
             "set": set_name, "original_annotator": orig_name,
             "topic": "POOLED", "kappa": round(pooled, 4),
             "percent_agreement": None, "both_positive": None,
-            "only_original": None, "only_adeniyi": None, "both_negative": None,
+            "only_original": None, "only_expert": None, "both_negative": None,
         })
 
     report = "\n".join(lines)

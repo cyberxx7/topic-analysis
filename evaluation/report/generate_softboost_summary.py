@@ -94,7 +94,7 @@ def page_title_methods(pdf):
              ha="left", fontsize=11, color=FAINT, style="italic")
 
     fig.text(0.09, 0.885,
-             "Black Media Topic Study   ·   Prepared by Ademola Adeniyi   ·   July 13, 2026",
+             "Black Media Topic Study   ·   Prepared by Research Team   ·   July 13, 2026",
              ha="left", fontsize=9, color=FAINT)
     rule(fig, 0.870)
 

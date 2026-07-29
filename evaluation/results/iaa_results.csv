@@ -1,4 +1,4 @@
-set,original_annotator,topic,kappa,percent_agreement,both_positive,only_original,only_adeniyi,both_negative
+set,original_annotator,topic,kappa,percent_agreement,both_positive,only_original,only_expert,both_negative
 set1,annotator_1,Policing/Public Safety,0.5217,0.91,12.0,11.0,7.0,170.0
 set1,annotator_1,Voter Suppression,0.4236,0.95,4.0,9.0,1.0,186.0
 set1,annotator_1,Book Bans/Anti-DEI,-0.0081,0.975,0.0,4.0,1.0,195.0

@@ -2,7 +2,7 @@
 
 **Project:** Black Media Intelligence Pipeline — Topic Tagging Validation
 **Date:** July 13, 2026
-**Prepared by:** Ademola Adeniyi
+**Prepared by:** Research Team
 
 ---
 
