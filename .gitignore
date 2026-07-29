@@ -29,6 +29,9 @@ credentials.json
 token.json
 *.json.backup
 
+# Paper drafts — kept locally, not published as part of the artifact repo
+paper/
+
 # macOS
 .DS_Store
 
