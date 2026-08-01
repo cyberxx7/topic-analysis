@@ -1,0 +1,944 @@
+{
+  "global": [
+    {
+      "keyword": "essence",
+      "score": 28.1134
+    },
+    {
+      "keyword": "wells",
+      "score": 20.4905
+    },
+    {
+      "keyword": "nolan",
+      "score": 20.2906
+    },
+    {
+      "keyword": "trump",
+      "score": 19.3545
+    },
+    {
+      "keyword": "nolan wells",
+      "score": 18.9253
+    },
+    {
+      "keyword": "family",
+      "score": 15.9458
+    },
+    {
+      "keyword": "continue",
+      "score": 13.7064
+    },
+    {
+      "keyword": "women",
+      "score": 13.0865
+    },
+    {
+      "keyword": "old",
+      "score": 12.075
+    },
+    {
+      "keyword": "reading",
+      "score": 11.9344
+    },
+    {
+      "keyword": "death",
+      "score": 11.7459
+    },
+    {
+      "keyword": "world",
+      "score": 11.7098
+    },
+    {
+      "keyword": "2026",
+      "score": 11.4679
+    },
+    {
+      "keyword": "continue reading",
+      "score": 11.2755
+    },
+    {
+      "keyword": "star",
+      "score": 10.5588
+    },
+    {
+      "keyword": "history",
+      "score": 10.1891
+    },
+    {
+      "keyword": "know",
+      "score": 10.1558
+    },
+    {
+      "keyword": "july",
+      "score": 10.0883
+    },
+    {
+      "keyword": "america",
+      "score": 10.0763
+    },
+    {
+      "keyword": "summer",
+      "score": 9.8277
+    },
+    {
+      "keyword": "man",
+      "score": 9.5721
+    },
+    {
+      "keyword": "case",
+      "score": 9.5214
+    },
+    {
+      "keyword": "former",
+      "score": 9.3126
+    },
+    {
+      "keyword": "say",
+      "score": 8.6644
+    },
+    {
+      "keyword": "university",
+      "score": 8.5292
+    },
+    {
+      "keyword": "million",
+      "score": 8.5173
+    },
+    {
+      "keyword": "president",
+      "score": 8.4058
+    },
+    {
+      "keyword": "love",
+      "score": 8.3897
+    },
+    {
+      "keyword": "island",
+      "score": 8.2403
+    },
+    {
+      "keyword": "life",
+      "score": 8.2077
+    },
+    {
+      "keyword": "home",
+      "score": 8.2021
+    },
+    {
+      "keyword": "state",
+      "score": 8.0445
+    },
+    {
+      "keyword": "found",
+      "score": 7.9924
+    },
+    {
+      "keyword": "look",
+      "score": 7.9779
+    },
+    {
+      "keyword": "best",
+      "score": 7.8387
+    },
+    {
+      "keyword": "media",
+      "score": 7.6488
+    },
+    {
+      "keyword": "show",
+      "score": 7.6237
+    },
+    {
+      "keyword": "court",
+      "score": 7.5809
+    },
+    {
+      "keyword": "viral",
+      "score": 7.3118
+    },
+    {
+      "keyword": "woman",
+      "score": 7.2604
+    },
+    {
+      "keyword": "brown",
+      "score": 7.1732
+    },
+    {
+      "keyword": "every",
+      "score": 7.1158
+    },
+    {
+      "keyword": "students",
+      "score": 7.1151
+    },
+    {
+      "keyword": "beauty",
+      "score": 7.0959
+    },
+    {
+      "keyword": "season",
+      "score": 7.0941
+    },
+    {
+      "keyword": "federal",
+      "score": 7.0849
+    },
+    {
+      "keyword": "investigation",
+      "score": 7.0603
+    },
+    {
+      "keyword": "still",
+      "score": 7.0441
+    },
+    {
+      "keyword": "behind",
+      "score": 7.0015
+    },
+    {
+      "keyword": "next",
+      "score": 6.9756
+    }
+  ],
+  "by_source": {
+    "afrotech.com": [
+      {
+        "keyword": "ai",
+        "score": 3.8246
+      },
+      {
+        "keyword": "company",
+        "score": 3.0628
+      },
+      {
+        "keyword": "university",
+        "score": 2.9546
+      },
+      {
+        "keyword": "business",
+        "score": 2.7151
+      },
+      {
+        "keyword": "tech",
+        "score": 2.5482
+      },
+      {
+        "keyword": "afrotech",
+        "score": 2.3379
+      },
+      {
+        "keyword": "million",
+        "score": 1.9125
+      },
+      {
+        "keyword": "reports",
+        "score": 1.8568
+      },
+      {
+        "keyword": "family",
+        "score": 1.8347
+      },
+      {
+        "keyword": "career",
+        "score": 1.8167
+      },
+      {
+        "keyword": "world",
+        "score": 1.8026
+      },
+      {
+        "keyword": "previously",
+        "score": 1.7394
+      },
+      {
+        "keyword": "equity",
+        "score": 1.7392
+      },
+      {
+        "keyword": "founders",
+        "score": 1.6623
+      },
+      {
+        "keyword": "2026",
+        "score": 1.6393
+      },
+      {
+        "keyword": "college",
+        "score": 1.6305
+      },
+      {
+        "keyword": "content",
+        "score": 1.605
+      },
+      {
+        "keyword": "brand",
+        "score": 1.5956
+      },
+      {
+        "keyword": "afrotech previously",
+        "score": 1.5871
+      },
+      {
+        "keyword": "worth",
+        "score": 1.5705
+      }
+    ],
+    "blavity.com": [
+      {
+        "keyword": "continue",
+        "score": 3.874
+      },
+      {
+        "keyword": "continue reading",
+        "score": 3.7059
+      },
+      {
+        "keyword": "reading",
+        "score": 3.7059
+      },
+      {
+        "keyword": "trump",
+        "score": 3.3413
+      },
+      {
+        "keyword": "health",
+        "score": 2.1712
+      },
+      {
+        "keyword": "know",
+        "score": 2.1185
+      },
+      {
+        "keyword": "million",
+        "score": 1.9776
+      },
+      {
+        "keyword": "court",
+        "score": 1.7507
+      },
+      {
+        "keyword": "wells",
+        "score": 1.709
+      },
+      {
+        "keyword": "say",
+        "score": 1.7075
+      },
+      {
+        "keyword": "death",
+        "score": 1.6849
+      },
+      {
+        "keyword": "nolan",
+        "score": 1.6743
+      },
+      {
+        "keyword": "congress",
+        "score": 1.6571
+      },
+      {
+        "keyword": "bill",
+        "score": 1.6499
+      },
+      {
+        "keyword": "nolan wells",
+        "score": 1.6315
+      },
+      {
+        "keyword": "family",
+        "score": 1.6148
+      },
+      {
+        "keyword": "city",
+        "score": 1.6098
+      },
+      {
+        "keyword": "supreme court",
+        "score": 1.5155
+      },
+      {
+        "keyword": "supreme",
+        "score": 1.5155
+      },
+      {
+        "keyword": "disease",
+        "score": 1.4716
+      }
+    ],
+    "capitalbnews.org": [
+      {
+        "keyword": "family",
+        "score": 1.5312
+      },
+      {
+        "keyword": "death",
+        "score": 1.47
+      },
+      {
+        "keyword": "ask",
+        "score": 1.4621
+      },
+      {
+        "keyword": "woman",
+        "score": 1.3573
+      },
+      {
+        "keyword": "local",
+        "score": 1.3517
+      },
+      {
+        "keyword": "next",
+        "score": 1.2966
+      },
+      {
+        "keyword": "land",
+        "score": 1.2946
+      },
+      {
+        "keyword": "health",
+        "score": 1.187
+      },
+      {
+        "keyword": "south",
+        "score": 1.1389
+      },
+      {
+        "keyword": "rural",
+        "score": 1.0985
+      },
+      {
+        "keyword": "administration",
+        "score": 1.0984
+      },
+      {
+        "keyword": "raises",
+        "score": 1.0678
+      },
+      {
+        "keyword": "leaders",
+        "score": 1.0588
+      },
+      {
+        "keyword": "jackson",
+        "score": 1.0037
+      },
+      {
+        "keyword": "million",
+        "score": 0.992
+      },
+      {
+        "keyword": "tragedy",
+        "score": 0.9617
+      },
+      {
+        "keyword": "nearly",
+        "score": 0.9607
+      },
+      {
+        "keyword": "plan",
+        "score": 0.9578
+      },
+      {
+        "keyword": "mississippi",
+        "score": 0.9548
+      },
+      {
+        "keyword": "wells",
+        "score": 0.9403
+      }
+    ],
+    "ebony.com": [
+      {
+        "keyword": "summer",
+        "score": 3.4264
+      },
+      {
+        "keyword": "world",
+        "score": 3.1799
+      },
+      {
+        "keyword": "beauty",
+        "score": 2.8841
+      },
+      {
+        "keyword": "america",
+        "score": 2.7023
+      },
+      {
+        "keyword": "love",
+        "score": 2.6294
+      },
+      {
+        "keyword": "july",
+        "score": 2.5253
+      },
+      {
+        "keyword": "2026",
+        "score": 2.4242
+      },
+      {
+        "keyword": "every",
+        "score": 2.3247
+      },
+      {
+        "keyword": "season",
+        "score": 2.1516
+      },
+      {
+        "keyword": "fashion",
+        "score": 2.0347
+      },
+      {
+        "keyword": "moments",
+        "score": 1.9906
+      },
+      {
+        "keyword": "home",
+        "score": 1.9467
+      },
+      {
+        "keyword": "nolan",
+        "score": 1.9241
+      },
+      {
+        "keyword": "next",
+        "score": 1.9201
+      },
+      {
+        "keyword": "ebony",
+        "score": 1.8657
+      },
+      {
+        "keyword": "women",
+        "score": 1.838
+      },
+      {
+        "keyword": "know",
+        "score": 1.8304
+      },
+      {
+        "keyword": "history",
+        "score": 1.815
+      },
+      {
+        "keyword": "life",
+        "score": 1.8002
+      },
+      {
+        "keyword": "wells",
+        "score": 1.7876
+      }
+    ],
+    "essence.com": [
+      {
+        "keyword": "essence",
+        "score": 22.7597
+      },
+      {
+        "keyword": "beauty",
+        "score": 3.1199
+      },
+      {
+        "keyword": "season",
+        "score": 3.0944
+      },
+      {
+        "keyword": "best",
+        "score": 2.8064
+      },
+      {
+        "keyword": "essence subscribe",
+        "score": 2.6751
+      },
+      {
+        "keyword": "subscribe",
+        "score": 2.6751
+      },
+      {
+        "keyword": "festival",
+        "score": 2.5544
+      },
+      {
+        "keyword": "world",
+        "score": 2.4986
+      },
+      {
+        "keyword": "2026",
+        "score": 2.4472
+      },
+      {
+        "keyword": "women",
+        "score": 2.3439
+      },
+      {
+        "keyword": "essence festival",
+        "score": 2.3414
+      },
+      {
+        "keyword": "style",
+        "score": 2.1715
+      },
+      {
+        "keyword": "summer",
+        "score": 1.9719
+      },
+      {
+        "keyword": "look",
+        "score": 1.9648
+      },
+      {
+        "keyword": "fashion",
+        "score": 1.9271
+      },
+      {
+        "keyword": "orleans",
+        "score": 1.9051
+      },
+      {
+        "keyword": "hair",
+        "score": 1.8937
+      },
+      {
+        "keyword": "star",
+        "score": 1.8913
+      },
+      {
+        "keyword": "family",
+        "score": 1.7717
+      },
+      {
+        "keyword": "returns",
+        "score": 1.7073
+      }
+    ],
+    "newsone.com": [
+      {
+        "keyword": "trump",
+        "score": 7.8143
+      },
+      {
+        "keyword": "nolan",
+        "score": 3.9034
+      },
+      {
+        "keyword": "wells",
+        "score": 3.901
+      },
+      {
+        "keyword": "nolan wells",
+        "score": 3.6101
+      },
+      {
+        "keyword": "ice",
+        "score": 3.526
+      },
+      {
+        "keyword": "federal",
+        "score": 3.0326
+      },
+      {
+        "keyword": "death",
+        "score": 3.0262
+      },
+      {
+        "keyword": "history",
+        "score": 3.006
+      },
+      {
+        "keyword": "wnba",
+        "score": 2.9986
+      },
+      {
+        "keyword": "found",
+        "score": 2.9369
+      },
+      {
+        "keyword": "know",
+        "score": 2.8935
+      },
+      {
+        "keyword": "donald",
+        "score": 2.8924
+      },
+      {
+        "keyword": "donald trump",
+        "score": 2.8924
+      },
+      {
+        "keyword": "president",
+        "score": 2.7351
+      },
+      {
+        "keyword": "july",
+        "score": 2.606
+      },
+      {
+        "keyword": "man",
+        "score": 2.5685
+      },
+      {
+        "keyword": "old",
+        "score": 2.3357
+      },
+      {
+        "keyword": "court",
+        "score": 2.2918
+      },
+      {
+        "keyword": "us",
+        "score": 2.2225
+      },
+      {
+        "keyword": "still",
+        "score": 2.1923
+      }
+    ],
+    "thegrio.com": [
+      {
+        "keyword": "wells",
+        "score": 10.6868
+      },
+      {
+        "keyword": "nolan",
+        "score": 10.5914
+      },
+      {
+        "keyword": "nolan wells",
+        "score": 9.9429
+      },
+      {
+        "keyword": "family",
+        "score": 7.7664
+      },
+      {
+        "keyword": "old",
+        "score": 6.8957
+      },
+      {
+        "keyword": "trump",
+        "score": 6.5197
+      },
+      {
+        "keyword": "death",
+        "score": 5.6885
+      },
+      {
+        "keyword": "former",
+        "score": 5.455
+      },
+      {
+        "keyword": "star",
+        "score": 5.3634
+      },
+      {
+        "keyword": "case",
+        "score": 5.3107
+      },
+      {
+        "keyword": "say",
+        "score": 5.2127
+      },
+      {
+        "keyword": "women",
+        "score": 5.0449
+      },
+      {
+        "keyword": "million",
+        "score": 4.3798
+      },
+      {
+        "keyword": "mother",
+        "score": 4.269
+      },
+      {
+        "keyword": "investigation",
+        "score": 4.2023
+      },
+      {
+        "keyword": "found",
+        "score": 4.1148
+      },
+      {
+        "keyword": "jay",
+        "score": 4.1094
+      },
+      {
+        "keyword": "island",
+        "score": 4.0843
+      },
+      {
+        "keyword": "man",
+        "score": 4.0505
+      },
+      {
+        "keyword": "2026",
+        "score": 3.9617
+      }
+    ],
+    "theroot.com": [
+      {
+        "keyword": "nolan",
+        "score": 5.0091
+      },
+      {
+        "keyword": "wells",
+        "score": 4.9783
+      },
+      {
+        "keyword": "nolan wells",
+        "score": 4.8938
+      },
+      {
+        "keyword": "trump",
+        "score": 4.7183
+      },
+      {
+        "keyword": "women",
+        "score": 4.3536
+      },
+      {
+        "keyword": "know",
+        "score": 4.1914
+      },
+      {
+        "keyword": "let",
+        "score": 4.1636
+      },
+      {
+        "keyword": "family",
+        "score": 3.9278
+      },
+      {
+        "keyword": "look",
+        "score": 3.6621
+      },
+      {
+        "keyword": "america",
+        "score": 3.5598
+      },
+      {
+        "keyword": "man",
+        "score": 3.2597
+      },
+      {
+        "keyword": "inside",
+        "score": 3.0057
+      },
+      {
+        "keyword": "story",
+        "score": 2.9332
+      },
+      {
+        "keyword": "finally",
+        "score": 2.923
+      },
+      {
+        "keyword": "love",
+        "score": 2.8711
+      },
+      {
+        "keyword": "men",
+        "score": 2.837
+      },
+      {
+        "keyword": "life",
+        "score": 2.8265
+      },
+      {
+        "keyword": "million",
+        "score": 2.8137
+      },
+      {
+        "keyword": "students",
+        "score": 2.8088
+      },
+      {
+        "keyword": "2026",
+        "score": 2.8026
+      }
+    ],
+    "travelnoire.com": [
+      {
+        "keyword": "travelers",
+        "score": 4.1853
+      },
+      {
+        "keyword": "travel",
+        "score": 3.5591
+      },
+      {
+        "keyword": "trip",
+        "score": 3.3127
+      },
+      {
+        "keyword": "filming",
+        "score": 2.4174
+      },
+      {
+        "keyword": "without",
+        "score": 2.3857
+      },
+      {
+        "keyword": "hotel",
+        "score": 2.2078
+      },
+      {
+        "keyword": "actually",
+        "score": 2.1133
+      },
+      {
+        "keyword": "destinations",
+        "score": 2.1015
+      },
+      {
+        "keyword": "location",
+        "score": 1.9513
+      },
+      {
+        "keyword": "worth",
+        "score": 1.9421
+      },
+      {
+        "keyword": "2026",
+        "score": 1.9271
+      },
+      {
+        "keyword": "us",
+        "score": 1.911
+      },
+      {
+        "keyword": "itinerary",
+        "score": 1.8442
+      },
+      {
+        "keyword": "real",
+        "score": 1.8402
+      },
+      {
+        "keyword": "vacation",
+        "score": 1.8258
+      },
+      {
+        "keyword": "locations",
+        "score": 1.7851
+      },
+      {
+        "keyword": "destination",
+        "score": 1.7191
+      },
+      {
+        "keyword": "summer",
+        "score": 1.7009
+      },
+      {
+        "keyword": "scams",
+        "score": 1.6734
+      },
+      {
+        "keyword": "every",
+        "score": 1.6413
+      }
+    ]
+  }
+}

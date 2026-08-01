@@ -1,0 +1,1334 @@
+{
+  "topic_counts": {
+    "Policing & Public Safety": 21,
+    "Economic Equity & Wealth Gap": 42,
+    "School Funding": 14,
+    "Book Bans & Anti-DEI": 16,
+    "Voter Suppression": 24,
+    "Reparations": 8,
+    "Criminal Justice Reform": 4,
+    "Housing & Displacement": 5
+  },
+  "source_topic_matrix": {
+    "theroot.com": {
+      "Policing & Public Safety": 3,
+      "Economic Equity & Wealth Gap": 8,
+      "Reparations": 2,
+      "Book Bans & Anti-DEI": 5,
+      "Housing & Displacement": 1,
+      "School Funding": 1,
+      "Voter Suppression": 4
+    },
+    "afrotech.com": {
+      "Economic Equity & Wealth Gap": 8,
+      "School Funding": 9,
+      "Voter Suppression": 1,
+      "Book Bans & Anti-DEI": 3
+    },
+    "ebony.com": {
+      "Economic Equity & Wealth Gap": 5
+    },
+    "newsone.com": {
+      "Book Bans & Anti-DEI": 3,
+      "Economic Equity & Wealth Gap": 1,
+      "Policing & Public Safety": 7,
+      "Criminal Justice Reform": 1,
+      "Voter Suppression": 4,
+      "School Funding": 2
+    },
+    "blavity.com": {
+      "Policing & Public Safety": 5,
+      "School Funding": 1,
+      "Reparations": 3,
+      "Criminal Justice Reform": 3,
+      "Voter Suppression": 3,
+      "Economic Equity & Wealth Gap": 2,
+      "Book Bans & Anti-DEI": 3
+    },
+    "thegrio.com": {
+      "Voter Suppression": 8,
+      "Economic Equity & Wealth Gap": 11,
+      "Reparations": 2,
+      "Policing & Public Safety": 6,
+      "Housing & Displacement": 3,
+      "School Funding": 1,
+      "Book Bans & Anti-DEI": 1
+    },
+    "travelnoire.com": {
+      "Economic Equity & Wealth Gap": 4
+    },
+    "capitalbnews.org": {
+      "Voter Suppression": 1,
+      "Housing & Displacement": 1,
+      "Economic Equity & Wealth Gap": 1
+    },
+    "essence.com": {
+      "Reparations": 1,
+      "Voter Suppression": 3,
+      "Book Bans & Anti-DEI": 1,
+      "Economic Equity & Wealth Gap": 2
+    }
+  },
+  "top_articles_per_topic": {
+    "Policing & Public Safety": [
+      {
+        "title": "Afroman Now Suing Ohio Deputy Who Accused Him of Defamation in Latest Legal Twist",
+        "link": "https://www.theroot.com/afroman-now-suing-ohio-deputy-who-accused-him-of-defama-2000118898",
+        "source": "theroot.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "sheriff"
+        ]
+      },
+      {
+        "title": "Body Camera Footage Clears Black Teen Of Attempted Murder \u2014 Now He\u2019s Suing Indianapolis And An Officer",
+        "link": "https://blavity.com/body-camera-footage-clears-dailen-brewer",
+        "source": "blavity.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "body camera"
+        ]
+      },
+      {
+        "title": "Black Iowa students are arrested at nearly four times the rate of their peers, ACLU report finds",
+        "link": "https://thegrio.com/2026/07/31/iowa-school-police-report-black-students/",
+        "source": "thegrio.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "law enforcement"
+        ]
+      },
+      {
+        "title": "Indianapolis Black Teen Falsely Accused of Attempted Murder in Viral Clip Now Suing Police Officer Over Claims",
+        "link": "https://www.theroot.com/indianapolis-black-teen-falsely-accused-of-attempted-mu-2000118775",
+        "source": "theroot.com",
+        "date": "2026-07-30",
+        "matched_phrases": [
+          "body camera",
+          "police officer"
+        ]
+      },
+      {
+        "title": "DA Responds To Public Outrage Over Racial Profiling With Racism",
+        "link": "https://newsone.com/6867801/tom-marino-racial-profiling-racism-resign/",
+        "source": "newsone.com",
+        "date": "2026-07-30",
+        "matched_phrases": [
+          "racial profiling"
+        ]
+      },
+      {
+        "title": "Fake ICE Agents Are Accomplices To Trump\u2019s Racial Terror Campaign",
+        "link": "https://newsone.com/6867624/fake-ice-agents-trump-racial-terror/",
+        "source": "newsone.com",
+        "date": "2026-07-29",
+        "matched_phrases": [
+          "law enforcement"
+        ]
+      },
+      {
+        "title": "Pennsylvania man faces ethnic intimidation charges over alleged threats to Black sheriff",
+        "link": "https://thegrio.com/2026/07/29/sean-keenan-racist-voicemails-sheriff-siddiq-kamara/",
+        "source": "thegrio.com",
+        "date": "2026-07-29",
+        "matched_phrases": [
+          "sheriff"
+        ]
+      },
+      {
+        "title": "Haitians Prepare For ICE Arrests As TPS Protections End",
+        "link": "https://blavity.com/haitians-prepare-for-ice-arrests-as-tps-protections-end",
+        "source": "blavity.com",
+        "date": "2026-07-28",
+        "matched_phrases": [
+          "immigration enforcement"
+        ]
+      },
+      {
+        "title": "Latest Officer-Involved Shooting Revives Racial Tension for Black Wisconsin Residents",
+        "link": "https://www.theroot.com/latest-officer-involved-shooting-revives-racial-tension-2000117707",
+        "source": "theroot.com",
+        "date": "2026-07-23",
+        "matched_phrases": [
+          "officer involved shooting",
+          "police officer",
+          "killed by police"
+        ]
+      },
+      {
+        "title": "Protests Erupt In Madison, Wisconsin, After Officer Fatally Shoots Man Who Allegedly 'Fled On A Bicycle'",
+        "link": "https://newsone.com/6867127/protests-madison-wisconsin-after-officer-fatally-shoots-man/",
+        "source": "newsone.com",
+        "date": "2026-07-23",
+        "matched_phrases": [
+          "police officer",
+          "cop killed",
+          "shot by police",
+          "killed by police"
+        ]
+      },
+      {
+        "title": "Man crashes through security gate at Beyonc\u00e9 and Jay-Z\u2019s East Hampton home",
+        "link": "https://thegrio.com/2026/07/18/man-crashes-gate-beyonce-jay-z-east-hampton-home/",
+        "source": "thegrio.com",
+        "date": "2026-07-18",
+        "matched_phrases": [
+          "arrested by police"
+        ]
+      },
+      {
+        "title": "ICE Agent In Fatal Maine Shooting Has History Of Violence",
+        "link": "https://newsone.com/6866576/ice-agent-david-brouillette-violent-history/",
+        "source": "newsone.com",
+        "date": "2026-07-17",
+        "matched_phrases": [
+          "ice agent"
+        ]
+      },
+      {
+        "title": "The Joe Lombardo Traffic Stop Video Is The Epitome Of White Privilege",
+        "link": "https://newsone.com/6866189/joe-lombardo-traffic-stop-white-privilege/",
+        "source": "newsone.com",
+        "date": "2026-07-14",
+        "matched_phrases": [
+          "police department"
+        ]
+      },
+      {
+        "title": "Sheriff says investigation into Nolan Wells\u2019 death won\u2019t be rushed, as family awaits answers",
+        "link": "https://thegrio.com/2026/07/14/nolan-wells-sheriff-investigation-update/",
+        "source": "thegrio.com",
+        "date": "2026-07-14",
+        "matched_phrases": [
+          "sheriff"
+        ]
+      },
+      {
+        "title": "Kohen Wiley: Senatobia Police Report On Shooting Has No Information",
+        "link": "https://newsone.com/6866158/kohen-wiley-senatobia-police-report-no-information/",
+        "source": "newsone.com",
+        "date": "2026-07-14",
+        "matched_phrases": [
+          "police officer"
+        ]
+      },
+      {
+        "title": "Another Fatal ICE Shooting, Another 'Weaponized Vehicle'",
+        "link": "https://newsone.com/6866031/ice-shooting-maine-weaponized-vehicle/",
+        "source": "newsone.com",
+        "date": "2026-07-13",
+        "matched_phrases": [
+          "federal agent"
+        ]
+      },
+      {
+        "title": "Deaths Of Two Black Men Prompt NAACP To Call For DOJ Investigation, Suspension Of Task Force Set By Trump",
+        "link": "https://blavity.com/black-men-deaths-prompt-naacp-to-call-to-suspend-task-force-trump",
+        "source": "blavity.com",
+        "date": "2026-07-13",
+        "matched_phrases": [
+          "law enforcement"
+        ]
+      },
+      {
+        "title": "Family of 8-year-old killed by falling tree branch at California camp wins $19 million settlement",
+        "link": "https://thegrio.com/2026/07/09/lamar-mcglothurn-settlement-king-gillette-ranch-calabasas/",
+        "source": "thegrio.com",
+        "date": "2026-07-09",
+        "matched_phrases": [
+          "wrongful death"
+        ]
+      },
+      {
+        "title": "Nolan Wells\u2019 Disappearance And Death: Everything To Know About Mississippi Teen\u2019s Case",
+        "link": "https://blavity.com/nolan-wells-disappearance-and-death-what-to-know-about-case",
+        "source": "blavity.com",
+        "date": "2026-07-08",
+        "matched_phrases": [
+          "sheriff"
+        ]
+      },
+      {
+        "title": "Man killed at Florida Walmart after parking dispute as woman claims self-defense",
+        "link": "https://thegrio.com/2026/07/02/bart-diguglielmo-army-veteran-shot-walmart-parking-lot-north-lauderdale/",
+        "source": "thegrio.com",
+        "date": "2026-07-02",
+        "matched_phrases": [
+          "sheriff"
+        ]
+      },
+      {
+        "title": "New York Residents Were Contacted By Federal Agents After Criticizing ICE",
+        "link": "https://blavity.com/new-york-residents-were-contacted-by-federal-agents-after-criticizing-ice",
+        "source": "blavity.com",
+        "date": "2026-07-01",
+        "matched_phrases": [
+          "officer involved shooting",
+          "immigration enforcement"
+        ]
+      }
+    ],
+    "Economic Equity & Wealth Gap": [
+      {
+        "title": "Black Dynasties: How These Iconic Families Build Generational Wealth",
+        "link": "https://www.theroot.com/black-dynasties-how-these-iconic-families-build-genera-2000118911",
+        "source": "theroot.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "black business",
+          "generational wealth"
+        ]
+      },
+      {
+        "title": "Venture 313 Powered With An Additional $6.4M Grant To Strengthen Support For Detroit Black Tech Founders",
+        "link": "https://afrotech.com/venture-313-6-4m-grant-to-strengthen-support-detroit-black-tech-founders",
+        "source": "afrotech.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "black business"
+        ]
+      },
+      {
+        "title": "The Most Iconic Fictional Black Businesses We Wish Were Real",
+        "link": "https://www.theroot.com/the-most-iconic-fictional-black-businesses-we-wish-were-2000118953",
+        "source": "theroot.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "black business",
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Here\u2019s How You Can Elevate Your At Home Wellness Routine",
+        "link": "https://www.ebony.com/home-wellness-self-care-routine/",
+        "source": "ebony.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Urban League Finds Trump Hinders Black People\u2019s Economic Prospects",
+        "link": "https://newsone.com/6867992/urban-league-trump-hinders-black-economic-progress/",
+        "source": "newsone.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "black business",
+          "black economic"
+        ]
+      },
+      {
+        "title": "Talarico vows to take on corruption, from Ken Paxton to Supreme Court, to protect Black voters",
+        "link": "https://thegrio.com/2026/07/31/talarico-corruption-ken-paxton-supreme-court-black-voters/",
+        "source": "thegrio.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "black economic"
+        ]
+      },
+      {
+        "title": "ESSENCE Ventures invests in REVOLT parent company in major Black media partnership",
+        "link": "https://thegrio.com/2026/07/31/essence-ventures-revolt-partnership-black-owned-media/",
+        "source": "thegrio.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "AFROTECH\u2122 House Returning To Martha\u2019s Vineyard For Second Year",
+        "link": "https://afrotech.com/afrotech-house-returning-to-marthas-vineyard-for-second-year",
+        "source": "afrotech.com",
+        "date": "2026-07-30",
+        "matched_phrases": [
+          "black economic"
+        ]
+      },
+      {
+        "title": "Inside the WNBA\u2019s New Playbook for Generational Wealth",
+        "link": "https://www.ebony.com/inside-the-wnbas-new-playbook-for-generational-wealth/",
+        "source": "ebony.com",
+        "date": "2026-07-30",
+        "matched_phrases": [
+          "generational wealth"
+        ]
+      },
+      {
+        "title": "Black-owned \u2018Just for Teens\u2019 skincare expands to nearly 10,000 Dollar General stores",
+        "link": "https://thegrio.com/2026/07/30/just-for-teens-expansion-dollar-general-stores/",
+        "source": "thegrio.com",
+        "date": "2026-07-30",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Black America Faces Critical Challenges in 2026 Report",
+        "link": "https://www.ebony.com/black-america-national-urban-league-2026-report/",
+        "source": "ebony.com",
+        "date": "2026-07-30",
+        "matched_phrases": [
+          "black wealth"
+        ]
+      },
+      {
+        "title": "As AI Demands Thousands in Skilled Labor, Will Black Workers See Real Wealth?",
+        "link": "https://www.theroot.com/as-ai-demands-thousands-in-skilled-labor-will-black-wo-2000118692",
+        "source": "theroot.com",
+        "date": "2026-07-29",
+        "matched_phrases": [
+          "racial wealth gap",
+          "black wealth",
+          "wealth gap"
+        ]
+      },
+      {
+        "title": "Beyonc\u00e9 joins a growing list of fully Black-owned wine and spirit brands",
+        "link": "https://thegrio.com/2026/07/29/beyonce-joins-a-growing-list-of-fully-black-owned-wine-and-spirit-brands/",
+        "source": "thegrio.com",
+        "date": "2026-07-29",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Two historic Black-owned banks plan merger to create the nation\u2019s largest Black-owned bank",
+        "link": "https://thegrio.com/2026/07/28/largest-black-owned-bank-merger-optus-mf-bank/",
+        "source": "thegrio.com",
+        "date": "2026-07-28",
+        "matched_phrases": [
+          "black business",
+          "black-owned",
+          "black bank"
+        ]
+      },
+      {
+        "title": "This Historic Building In Phoenix That Was Once Listed In The Green Book Will Serve As A Hub To Fuel Growth For Black-Owned Businesses",
+        "link": "https://afrotech.com/phoenix-building-once-listed-in-green-book-is-a-hub-black-owned-businesses",
+        "source": "afrotech.com",
+        "date": "2026-07-28",
+        "matched_phrases": [
+          "black business",
+          "black-owned business",
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Two Black-Owned Banks Plan To Merge To Create $1.27B Institution Expanding Access To Capital In Underserved Communities",
+        "link": "https://afrotech.com/two-black-owned-banks-plan-to-merge-to-create-1-27b-institution",
+        "source": "afrotech.com",
+        "date": "2026-07-28",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "How To Spend A Day In Black-Owned Washington, D.C.",
+        "link": "https://travelnoire.com/black-owned-washington-dc",
+        "source": "travelnoire.com",
+        "date": "2026-07-24",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "What Black Families Can Learn From Celebrity Estate Feuds",
+        "link": "https://www.theroot.com/what-black-families-can-learn-from-celebrity-estate-feu-2000117548",
+        "source": "theroot.com",
+        "date": "2026-07-23",
+        "matched_phrases": [
+          "black wealth"
+        ]
+      },
+      {
+        "title": "Expert: How Trump\u2019s Policies Are Reshaping Economic Security for Black Women",
+        "link": "https://www.theroot.com/expert-how-trump-s-policies-are-reshaping-economic-sec-2000117236",
+        "source": "theroot.com",
+        "date": "2026-07-22",
+        "matched_phrases": [
+          "black economic"
+        ]
+      },
+      {
+        "title": "How Black Women\u2019s Equal Pay Day Underscores A Wage Gap That Continues To Persist",
+        "link": "https://blavity.com/black-womens-equal-pay-day-underscores-a-wage-gap-that-continues-to-persist",
+        "source": "blavity.com",
+        "date": "2026-07-21",
+        "matched_phrases": [
+          "wage gap"
+        ]
+      },
+      {
+        "title": "How Keia Bounds\u2019 Career Journey Led Her To Drive Visibility For Black-Owned Brands On Netflix\u2019s \u2018Survival Of The Thickest\u2019",
+        "link": "https://afrotech.com/keia-bounds-netflix-survival-of-the-thickest-black-owned-brands",
+        "source": "afrotech.com",
+        "date": "2026-07-21",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Sephora is adding braiding hair to its shelves \u2014 here are the Black-owned brands leading the way",
+        "link": "https://thegrio.com/2026/07/20/sephora-is-adding-braiding-hair-to-its-shelves-here-are-the-black-owned-brands-leading-the-way/",
+        "source": "thegrio.com",
+        "date": "2026-07-20",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Independent Animation Studio Martian Blueberry Is Combining Emerging Technology With Hand-Drawn Animation To Build An Empire For Black Creatives",
+        "link": "https://afrotech.com/martian-blueberry-fan-of-hand-drawn-traditional-2d-animation",
+        "source": "afrotech.com",
+        "date": "2026-07-16",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Black-owned ATL brunch spot sparks debate after owner was pictured with conservative politician",
+        "link": "https://thegrio.com/2026/07/16/black-owned-atl-brunch-spot-sparks-debate-after-owner-was-pictured-with-conservative-politician/",
+        "source": "thegrio.com",
+        "date": "2026-07-16",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Sen. Raphael Warnock Just Executed a Masterclass Political Play to Save Black Wealth",
+        "link": "https://www.theroot.com/sen-raphael-warnock-just-executed-a-masterclass-politi-2000116209",
+        "source": "theroot.com",
+        "date": "2026-07-15",
+        "matched_phrases": [
+          "black wealth"
+        ]
+      },
+      {
+        "title": "How Chadwick Boseman\u2019s Brothers Are Redefining Generational Wealth Through New Family Business",
+        "link": "https://afrotech.com/chadwick-boseman-brothers-family-business",
+        "source": "afrotech.com",
+        "date": "2026-07-15",
+        "matched_phrases": [
+          "generational wealth"
+        ]
+      },
+      {
+        "title": "10 Black-Owned Restaurants To Visit In Houston, Texas",
+        "link": "https://travelnoire.com/black-owned-restaurants-houston",
+        "source": "travelnoire.com",
+        "date": "2026-07-15",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "10 Black-owned summer camps helping kids build confidence, culture and community",
+        "link": "https://thegrio.com/2026/07/13/10-black-owned-summer-camps-helping-kids-build-confidence-culture-and-community/",
+        "source": "thegrio.com",
+        "date": "2026-07-13",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "What Is Deed Theft? Here\u2019s Why Black Homeowners Are Often Targeted And How To Stay Protected",
+        "link": "https://blavity.com/what-is-deed-theft-how-to-stay-protected",
+        "source": "blavity.com",
+        "date": "2026-07-13",
+        "matched_phrases": [
+          "generational wealth"
+        ]
+      },
+      {
+        "title": "Letitia James Stops Man from Stealing Harlem Homeowner\u2019s Deeds.",
+        "link": "https://www.theroot.com/letitia-james-stops-man-from-stealing-harlem-homeowners-2000115619",
+        "source": "theroot.com",
+        "date": "2026-07-12",
+        "matched_phrases": [
+          "generational wealth"
+        ]
+      },
+      {
+        "title": "How To Spend A Day In Black-Owned Los Angeles, California",
+        "link": "https://travelnoire.com/black-owned-los-angeles",
+        "source": "travelnoire.com",
+        "date": "2026-07-10",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "5 Black-Owned Vegan Restaurants In Houston, Texas",
+        "link": "https://travelnoire.com/black-owned-vegan-restaurants-houston-texas",
+        "source": "travelnoire.com",
+        "date": "2026-07-09",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Black unemployment remains high as Trump downplays jobs gap",
+        "link": "https://thegrio.com/2026/07/09/black-unemployment-remains-high-as-trump-downplays-jobs-gap/",
+        "source": "thegrio.com",
+        "date": "2026-07-09",
+        "matched_phrases": [
+          "black unemployment"
+        ]
+      },
+      {
+        "title": "22 Black-owned brands to shop this summer",
+        "link": "https://thegrio.com/2026/07/08/22-black-owned-brands-to-shop-this-summer/",
+        "source": "thegrio.com",
+        "date": "2026-07-08",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "While Trump Says the Economy is Booming, the Reality Points to a Black Recession",
+        "link": "https://www.theroot.com/while-trump-says-the-economy-is-booming-the-reality-po-2000114931",
+        "source": "theroot.com",
+        "date": "2026-07-07",
+        "matched_phrases": [
+          "black unemployment"
+        ]
+      },
+      {
+        "title": "Trailblazing Black business mogul George E. Johnson, who built Ultra Sheen and Afro Sheen, dies at 99",
+        "link": "https://thegrio.com/2026/07/06/george-e-johnson-black-hair-care-pioneer-dies-99/",
+        "source": "thegrio.com",
+        "date": "2026-07-06",
+        "matched_phrases": [
+          "black business"
+        ]
+      },
+      {
+        "title": "The Black Suburban Dream is Now Leading to a New Wave of Gentrification",
+        "link": "https://capitalbnews.org/black-gentrification-suburbs/",
+        "source": "capitalbnews.org",
+        "date": "2026-07-06",
+        "matched_phrases": [
+          "wealth gap"
+        ]
+      },
+      {
+        "title": "These 7 Black-Owned Hotels and Resorts Are Worth Your Coins and PTO",
+        "link": "https://www.ebony.com/black-owned-hotels-and-resorts/",
+        "source": "ebony.com",
+        "date": "2026-07-06",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "Despite Holding 9 Degrees Collectively, These 4 Women Show How Volatile The Job Market Truly Is",
+        "link": "https://afrotech.com/black-women-degrees-unemployment-job-market",
+        "source": "afrotech.com",
+        "date": "2026-07-02",
+        "matched_phrases": [
+          "unemployment black"
+        ]
+      },
+      {
+        "title": "6 Black-Owned Swim Brands to Keep In Mind While Planning Your 2026 Tropical Vacations",
+        "link": "https://www.ebony.com/6-black-owned-swim-brands-tropical-vacation/",
+        "source": "ebony.com",
+        "date": "2026-07-01",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "The Best Black-Owned Vacation Dresses To Shop This Summer",
+        "link": "https://www.essence.com/fashion/black-owned-vacation-dresses/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      },
+      {
+        "title": "'Less Is More' Black-Owned Beauty Products To Try - Essence",
+        "link": "https://www.essence.com/video/less-is-more-black-owned-beauty-products-to-try-2025/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "black-owned"
+        ]
+      }
+    ],
+    "School Funding": [
+      {
+        "title": "Relief On The Way For Student Loan Borrowers In US Through Historic $23B Settlement",
+        "link": "https://afrotech.com/relief-for-student-loan-borrowers-in-us-through-historic-23b-settlement",
+        "source": "afrotech.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "student loan",
+          "department of education"
+        ]
+      },
+      {
+        "title": "Interim President Wayne A. I. Frederick Says Howard University Has Begun Readmitting Disenrolled Students",
+        "link": "https://afrotech.com/howard-university-has-readmitted-more-than-200-students",
+        "source": "afrotech.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "historically black college"
+        ]
+      },
+      {
+        "title": "Mississippi HBCU Professor\u2019s AI \u2018Trap\u2019 Catches Nearly Entire Class Submitting Chatbot-Generated Answers Amid Higher Education Concerns",
+        "link": "https://afrotech.com/ai-higher-education-concerns-alcorn-state-hbcu-midterm",
+        "source": "afrotech.com",
+        "date": "2026-07-30",
+        "matched_phrases": [
+          "historically black college"
+        ]
+      },
+      {
+        "title": "Department Of Education Wants To Cut Off Funding For Colleges If Graduates Don\u2019t Earn More Than People Without A Degree",
+        "link": "https://blavity.com/department-education-wants-to-cut-funding-colleges-for-grads-earning-less",
+        "source": "blavity.com",
+        "date": "2026-07-30",
+        "matched_phrases": [
+          "education cut",
+          "department of education"
+        ]
+      },
+      {
+        "title": "Gov. Kathy Hochul Aims To Get Howard University Students Enrolled Into These Institutions For Fall Semester",
+        "link": "https://afrotech.com/gov-kathy-hochul-aims-to-get-howard-university-students-enrolled-into-these-institutions-for-fall-semester",
+        "source": "afrotech.com",
+        "date": "2026-07-29",
+        "matched_phrases": [
+          "historically black college"
+        ]
+      },
+      {
+        "title": "US Department Of Education Enacts Law Threatening Federal Funding For Universities With Low-Earning Graduates",
+        "link": "https://afrotech.com/colleges-will-have-to-prove-grads-earn-more-than-high-school-grads",
+        "source": "afrotech.com",
+        "date": "2026-07-28",
+        "matched_phrases": [
+          "department of education"
+        ]
+      },
+      {
+        "title": "Howard University Responds After Hundreds Of Incoming Freshmen Are Unenrolled Ahead Of Semester Start",
+        "link": "https://afrotech.com/howard-university-responds-after-hundreds-of-incoming-freshmen-are-unenrolled-ahead-of-semester-start",
+        "source": "afrotech.com",
+        "date": "2026-07-27",
+        "matched_phrases": [
+          "historically black college"
+        ]
+      },
+      {
+        "title": "As HBCU Enrollment Grows, Tuskegee Introduces New Rules On Student Dress Code And Cell Phone Use",
+        "link": "https://afrotech.com/tuskegee-university-dress-code-cell-phone-policy-hbcu",
+        "source": "afrotech.com",
+        "date": "2026-07-24",
+        "matched_phrases": [
+          "historically black college"
+        ]
+      },
+      {
+        "title": "Stillman College Awarded $2.2M Grant From National Science Foundation To \u2018Increase Retention Of STEM Majors\u2019",
+        "link": "https://afrotech.com/stillman-college-awarded-2-2m-grant-from-national-science-foundation-to-increase-retention-of-stem-majors",
+        "source": "afrotech.com",
+        "date": "2026-07-23",
+        "matched_phrases": [
+          "historically black college"
+        ]
+      },
+      {
+        "title": "Moving Beyond Survival: How Private Schools Can Support Black and Brown Student Success",
+        "link": "https://www.theroot.com/moving-beyond-survival-how-private-schools-can-support-2000117229",
+        "source": "theroot.com",
+        "date": "2026-07-21",
+        "matched_phrases": [
+          "black student"
+        ]
+      },
+      {
+        "title": "Are Your Student Loans In Default? Here's What's Happening",
+        "link": "https://newsone.com/6866874/are-your-student-loans-in-default-whats-happening/",
+        "source": "newsone.com",
+        "date": "2026-07-21",
+        "matched_phrases": [
+          "student loan"
+        ]
+      },
+      {
+        "title": "FaithActs brings Connecticut governor candidates together to hear directly from Bridgeport voters",
+        "link": "https://thegrio.com/2026/07/16/faithacts-connecticut-governor-forum/",
+        "source": "thegrio.com",
+        "date": "2026-07-16",
+        "matched_phrases": [
+          "school funding"
+        ]
+      },
+      {
+        "title": "Maryland\u2019s First HBCU Bowie State Sees 100% NCLEX Pass Rate For December 2025 Nursing Graduates",
+        "link": "https://afrotech.com/bowie-state-university-hbcu-nursing-program-nclex",
+        "source": "afrotech.com",
+        "date": "2026-07-07",
+        "matched_phrases": [
+          "historically black college"
+        ]
+      },
+      {
+        "title": "Trump\u2019s New Student Loan Rules Could Decide Who Stays In College",
+        "link": "https://newsone.com/6864935/new-student-loan-rules-decide-who-stays-college/",
+        "source": "newsone.com",
+        "date": "2026-07-01",
+        "matched_phrases": [
+          "student loan"
+        ]
+      }
+    ],
+    "Book Bans & Anti-DEI": [
+      {
+        "title": "Urban League Finds Trump Hinders Black People\u2019s Economic Prospects",
+        "link": "https://newsone.com/6867992/urban-league-trump-hinders-black-economic-progress/",
+        "source": "newsone.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "A DEI Expert\u2019s Take: Howard\u2019s Unenrollment Misstep Isn\u2019t Proof White Schools Do It Better",
+        "link": "https://www.theroot.com/a-dei-expert-s-take-howard-s-unenrollment-misstep-isnt-2000118173",
+        "source": "theroot.com",
+        "date": "2026-07-27",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "\u2018Resilient, But Not Invincible\u2019: New Poll Highlights the Economic Realities and Hope of Black Women",
+        "link": "https://www.theroot.com/resilient-but-not-invincible-new-poll-highlights-the-2000117243",
+        "source": "theroot.com",
+        "date": "2026-07-21",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "Black Women Are The Fastest-Growing Group Of Entrepreneurs In The Nation",
+        "link": "https://afrotech.com/black-women-are-the-fastest-growing-group-of-entrepreneurs-in-the-nation",
+        "source": "afrotech.com",
+        "date": "2026-07-20",
+        "matched_phrases": [
+          "diversity equity inclusion",
+          "dei"
+        ]
+      },
+      {
+        "title": "Exclusive: Nikole Hannah-Jones Talks About Her Mission to Put Challenged Books Directly Into the Hands of Children in Iowa",
+        "link": "https://www.theroot.com/exclusive-nikole-hannah-jones-talks-about-her-mission-2000116821",
+        "source": "theroot.com",
+        "date": "2026-07-17",
+        "matched_phrases": [
+          "diversity equity inclusion"
+        ]
+      },
+      {
+        "title": "Darline Graham Nordone Is The \u2018DEI Hire\u2019 Republicans Warned You About",
+        "link": "https://newsone.com/6866312/lindsey-graham-darline-graham-nordone-dei-hire/",
+        "source": "newsone.com",
+        "date": "2026-07-15",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "Student Enrollment At HBCUs, Including NC A&T And Morehouse College, Are On The Rise While Numbers Are Down At Harvard, Princeton, Yale",
+        "link": "https://afrotech.com/black-student-enrollment-at-hbcus-are-on-the-rise",
+        "source": "afrotech.com",
+        "date": "2026-07-14",
+        "matched_phrases": [
+          "diversity equity inclusion"
+        ]
+      },
+      {
+        "title": "Florida\u2019s $5.5 Million Trump Airport Rebrand Comes As Black Advocates Criticize DEI Rollbacks",
+        "link": "https://blavity.com/floridas-trump-airport-rebrand-come-as-dei-rollbacks-criticized",
+        "source": "blavity.com",
+        "date": "2026-07-14",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "Whoopi Goldberg compares \u2018nepo baby\u2019 label to \u2018DEI hire\u2019 label\u2014calls it another way to discredit people",
+        "link": "https://thegrio.com/2026/07/13/whoopi-goldberg-compares-nepo-baby-label-to-dei-hire-label-calls-it-another-way-to-discredit-people/",
+        "source": "thegrio.com",
+        "date": "2026-07-13",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "A Judge Just Ruled In Favor Of Black Farmers, Restoring $127M In Funding. Here\u2019s What It Means",
+        "link": "https://blavity.com/judge-just-ruled-in-favor-of-black-farmers-restoring-127m-in-funding",
+        "source": "blavity.com",
+        "date": "2026-07-12",
+        "matched_phrases": [
+          "diversity equity inclusion"
+        ]
+      },
+      {
+        "title": "This Black Family Is Moving Its $1 Million Scholarship From UNC Wilmington Over Anti-DEI Changes",
+        "link": "https://blavity.com/upperman-family-moving-scholarship-from-uncw",
+        "source": "blavity.com",
+        "date": "2026-07-12",
+        "matched_phrases": [
+          "dei",
+          "anti-dei"
+        ]
+      },
+      {
+        "title": "Texas Tech Sued Over Rule Limiting Teaching Of Race And Gender",
+        "link": "https://newsone.com/6865677/texas-tech-brandon-creighton-race-gender-lawsuit/",
+        "source": "newsone.com",
+        "date": "2026-07-09",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "North Carolina House Of Representatives Override Veto Of Bill That Prohibits DEI In Public Schools, Community Colleges, And Public Universities",
+        "link": "https://afrotech.com/north-carolina-prohibits-dei-in-education",
+        "source": "afrotech.com",
+        "date": "2026-07-07",
+        "matched_phrases": [
+          "diversity equity inclusion",
+          "dei"
+        ]
+      },
+      {
+        "title": "While Trump Says the Economy is Booming, the Reality Points to a Black Recession",
+        "link": "https://www.theroot.com/while-trump-says-the-economy-is-booming-the-reality-po-2000114931",
+        "source": "theroot.com",
+        "date": "2026-07-07",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "More Top Black Students Are Choosing HBCUs Over the Ivies",
+        "link": "https://www.theroot.com/more-top-black-students-are-choosing-hbcus-over-the-ivi-2000114714",
+        "source": "theroot.com",
+        "date": "2026-07-06",
+        "matched_phrases": [
+          "dei"
+        ]
+      },
+      {
+        "title": "\u2018A Lot Of Black People Are Wondering, What Are We Getting For Our Loyalty?\u2019 ESSENCE Black Futures Now Honorees Speak Candidly About The Upcoming Election - Essence",
+        "link": "https://www.essence.com/video/black-history-month-black-futures-now-voter-panel-davis-ferrell-zabala/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "black history month"
+        ]
+      }
+    ],
+    "Voter Suppression": [
+      {
+        "title": "Black voters turning out in greater numbers despite voting restrictions in the South, study finds",
+        "link": "https://thegrio.com/2026/07/31/black-voter-turnout-south-study/",
+        "source": "thegrio.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "redistricting",
+          "black voter"
+        ]
+      },
+      {
+        "title": "This Historic Building In Phoenix That Was Once Listed In The Green Book Will Serve As A Hub To Fuel Growth For Black-Owned Businesses",
+        "link": "https://afrotech.com/phoenix-building-once-listed-in-green-book-is-a-hub-black-owned-businesses",
+        "source": "afrotech.com",
+        "date": "2026-07-28",
+        "matched_phrases": [
+          "jim crow"
+        ]
+      },
+      {
+        "title": "House Passes $1 Trillion Defense Bill, Which Includes 'Department Of War' Name Change And Parts Of SAVE Act",
+        "link": "https://newsone.com/6867155/house-passes-defense-bill-department-of-war-name-change-save-act/",
+        "source": "newsone.com",
+        "date": "2026-07-23",
+        "matched_phrases": [
+          "save act"
+        ]
+      },
+      {
+        "title": "Cleo Fields To Exit Congress After GOP-Backed Redistricting Eliminates His Majority-Black District",
+        "link": "https://blavity.com/cleo-fields-to-exit-congress",
+        "source": "blavity.com",
+        "date": "2026-07-23",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Raphael Warnock calls for probe into redistricting officials",
+        "link": "https://thegrio.com/2026/07/22/raphael-warnock-redistricting-investigation/",
+        "source": "thegrio.com",
+        "date": "2026-07-22",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Louisiana Democrat Cleo Fields reveals political future after SCOTUS approved redistricting",
+        "link": "https://thegrio.com/2026/07/22/cleo-fields-wont-seek-reelection-house-of-representatives/",
+        "source": "thegrio.com",
+        "date": "2026-07-22",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "North Carolina Republicans move to reduce Sunday and campus early voting",
+        "link": "https://thegrio.com/2026/07/18/north-carolina-early-voting-changes-sunday-campus-sites/",
+        "source": "thegrio.com",
+        "date": "2026-07-18",
+        "matched_phrases": [
+          "early voting"
+        ]
+      },
+      {
+        "title": "North Carolina Republicans Want To Limit Early Voting",
+        "link": "https://newsone.com/6866568/republicans-limit-north-carolina-early-voting/",
+        "source": "newsone.com",
+        "date": "2026-07-17",
+        "matched_phrases": [
+          "early voting"
+        ]
+      },
+      {
+        "title": "Why some Southern Black Democrats say redistricting is a \u2018familiar betrayal\u2019",
+        "link": "https://thegrio.com/2026/07/16/southern-black-democrats-betrayal-redistricting-districts/",
+        "source": "thegrio.com",
+        "date": "2026-07-16",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Al Sharpton, Martin Luther King III Announce March On Washington",
+        "link": "https://newsone.com/6866297/al-sharpton-martin-luther-king-iii-march-on-washington/",
+        "source": "newsone.com",
+        "date": "2026-07-15",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Civil rights leaders announce new March on Washington to defend voting rights on anniversary of Dr. King\u2019s \u2018I Have a Dream\u2019 speech",
+        "link": "https://thegrio.com/2026/07/15/march-on-washington-2026-defend-the-vote-august-28/",
+        "source": "thegrio.com",
+        "date": "2026-07-15",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Al Sharpton, The King Family And Civil Rights Orgs Announce March On Washington For Voting Rights",
+        "link": "https://blavity.com/al-sharpton-the-king-family-announce-new-march-on-washington",
+        "source": "blavity.com",
+        "date": "2026-07-15",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Southern Black Democrats Call Out Party Neglect Amidst Redistricting Battles",
+        "link": "https://www.theroot.com/southern-black-democrats-call-out-party-neglect-amidst-2000116110",
+        "source": "theroot.com",
+        "date": "2026-07-14",
+        "matched_phrases": [
+          "redistricting"
+        ]
+      },
+      {
+        "title": "Kamala Harris says Democrats must \u2018grow a backbone\u2019 as she calls for major reforms to protect voting rights",
+        "link": "https://thegrio.com/2026/07/10/kamala-harris-says-democrats-must-grow-a-backbone-voting-rights/",
+        "source": "thegrio.com",
+        "date": "2026-07-10",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "The Fight For Voting Rights: What You Need to Know About Trump\u2019s SAVE America Act",
+        "link": "https://www.theroot.com/the-fight-for-voting-rights-what-you-need-to-know-abou-2000115357",
+        "source": "theroot.com",
+        "date": "2026-07-09",
+        "matched_phrases": [
+          "voting rights",
+          "save america act",
+          "save act"
+        ]
+      },
+      {
+        "title": "NAACP Launches Historic $20M Campaign to Mobilize Black Voters For Midterms",
+        "link": "https://www.theroot.com/naacp-launches-historic-20m-campaign-to-mobilize-black-2000115082",
+        "source": "theroot.com",
+        "date": "2026-07-08",
+        "matched_phrases": [
+          "black voter"
+        ]
+      },
+      {
+        "title": "Why The NAACP Is Making Its Biggest Midterm Elections Investment Ever",
+        "link": "https://blavity.com/why-the-naacp-is-making-its-biggest-midterm-elections-investment-ever",
+        "source": "blavity.com",
+        "date": "2026-07-08",
+        "matched_phrases": [
+          "voting rights",
+          "redistricting"
+        ]
+      },
+      {
+        "title": "NAACP To Spend More On Midterms Than Any Other Election In History",
+        "link": "https://newsone.com/6865407/naacp-spend-more-midterms-than-other-elections/",
+        "source": "newsone.com",
+        "date": "2026-07-07",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Black Organizers Are Preparing for a New Era of Voting Rights Battles",
+        "link": "https://capitalbnews.org/protecting-black-voting-rights/",
+        "source": "capitalbnews.org",
+        "date": "2026-07-07",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "What to Black Americans is USA\u2019s 250th under the presidency of Donald Trump?",
+        "link": "https://thegrio.com/2026/07/04/black-americans-usa-250-donald-trump/",
+        "source": "thegrio.com",
+        "date": "2026-07-04",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "To Save The Planet, We Must Save Democracy First",
+        "link": "https://www.theroot.com/to-save-the-planet-we-must-save-democracy-first-2000113977",
+        "source": "theroot.com",
+        "date": "2026-07-01",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "From Ida B. Wells to Selma: The Ongoing Fight to Protect the Vote",
+        "link": "https://www.essence.com/news/politics/voting-rights-act-supreme-court-south-freedom-summer/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "Rev. Dr. Bernice King Is Calling Us To Action To Protect Black Voting Rights",
+        "link": "https://www.essence.com/news/politics/rev-dr-bernice-king-black-voting-rights/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "voting rights"
+        ]
+      },
+      {
+        "title": "What Is the SAVE Act? Sen. Lisa Blunt Rochester Says It Could Restrict Millions Of Voters - Essence",
+        "link": "https://www.essence.com/news/politics/lisa-blunt-rochester-save-act-voting-rights-2026/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "voting access",
+          "save act",
+          "jim crow"
+        ]
+      }
+    ],
+    "Reparations": [
+      {
+        "title": "Tony Hicks, who found forgiveness alongside the family of the teen he killed, dies at 45",
+        "link": "https://thegrio.com/2026/07/31/tony-hicks-violence-prevention-advocate-dies/",
+        "source": "thegrio.com",
+        "date": "2026-07-31",
+        "matched_phrases": [
+          "restorative justice"
+        ]
+      },
+      {
+        "title": "New York Mayor Zohran Mamdani Doubles Down on Reparations Promise as He Reveals Next Steps for Black Residents",
+        "link": "https://www.theroot.com/new-york-mayor-zohran-mamdani-doubles-down-on-reparatio-2000118650",
+        "source": "theroot.com",
+        "date": "2026-07-29",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "Black Creek Freedmen Sue Muscogee Nation To Enforce Citizenship Ruling",
+        "link": "https://blavity.com/black-creek-freedmen-sue-muscogee-nation-to-enforce-citizenship-ruling",
+        "source": "blavity.com",
+        "date": "2026-07-29",
+        "matched_phrases": [
+          "descendants of enslaved"
+        ]
+      },
+      {
+        "title": "Alameda County, California Approves Policy-Based Reparation Plan",
+        "link": "https://blavity.com/alameda-county-california-approves-policy-based-reparation-plan",
+        "source": "blavity.com",
+        "date": "2026-07-20",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "Jamaica To Petition King Charles For Slavery Reparations From The UK",
+        "link": "https://blavity.com/jamaica-to-petition-king-charles-for-slavery-reparations-from-the-uk",
+        "source": "blavity.com",
+        "date": "2026-07-20",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "Famous Civil Rights Group Push For Reparations in New York",
+        "link": "https://www.theroot.com/famous-civil-rights-group-push-for-reparations-in-new-y-2000116441",
+        "source": "theroot.com",
+        "date": "2026-07-16",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "What to Black Americans is USA\u2019s 250th under the presidency of Donald Trump?",
+        "link": "https://thegrio.com/2026/07/04/black-americans-usa-250-donald-trump/",
+        "source": "thegrio.com",
+        "date": "2026-07-04",
+        "matched_phrases": [
+          "reparations"
+        ]
+      },
+      {
+        "title": "EXCLUSIVE: The Hands That Built The White House: Robin Roberts Explores Historic Family Discovery",
+        "link": "https://www.essence.com/news/exclusive-robin-roberts-white-house-enslaved-builder-descendants/",
+        "source": "essence.com",
+        "date": "nan",
+        "matched_phrases": [
+          "descendants of enslaved"
+        ]
+      }
+    ],
+    "Criminal Justice Reform": [
+      {
+        "title": "Here\u2019s Why Diddy Was Just Placed In Solitary Confinement",
+        "link": "https://blavity.com/heres-why-diddy-was-just-placed-in-solitary-confinement",
+        "source": "blavity.com",
+        "date": "2026-07-24",
+        "matched_phrases": [
+          "solitary confinement"
+        ]
+      },
+      {
+        "title": "Sean 'Diddy' Combs In Solitary Confinement After Alleged Prison Fight In New Jersey",
+        "link": "https://newsone.com/6867289/sean-diddy-combs-solitary-confinement-prison-fight-new-jersey/",
+        "source": "newsone.com",
+        "date": "2026-07-24",
+        "matched_phrases": [
+          "solitary confinement"
+        ]
+      },
+      {
+        "title": "How Chris Young Turned A Life Sentence Into A Mission For Criminal Justice Reform",
+        "link": "https://blavity.com/chris-young-on-book-criminal-justice-reform",
+        "source": "blavity.com",
+        "date": "2026-07-17",
+        "matched_phrases": [
+          "criminal justice reform",
+          "three strikes",
+          "life sentence"
+        ]
+      },
+      {
+        "title": "Ava DuVernay Sets \u201914th\u2019 At Netflix, Exploring The Constitutional Amendment That Continues To Shape America",
+        "link": "https://blavity.com/ava-duvernay-sets-14th-at-netflix",
+        "source": "blavity.com",
+        "date": "2026-07-16",
+        "matched_phrases": [
+          "mass incarceration"
+        ]
+      }
+    ],
+    "Housing & Displacement": [
+      {
+        "title": "11-year-old boy spends 100 hours reading to shelter dogs to help them find forever homes",
+        "link": "https://thegrio.com/2026/07/22/boy-reads-to-animals-shelter-100-hours/",
+        "source": "thegrio.com",
+        "date": "2026-07-22",
+        "matched_phrases": [
+          "shelter"
+        ]
+      },
+      {
+        "title": "He Lived in an East Nashville Park for Years. Then, Tennessee Made His Survival a Crime",
+        "link": "https://www.theroot.com/he-lived-in-an-east-nashville-park-for-years-then-ten-2000117407",
+        "source": "theroot.com",
+        "date": "2026-07-22",
+        "matched_phrases": [
+          "homelessness"
+        ]
+      },
+      {
+        "title": "\u2018Sage the entire building\u2019: The most hilarious reactions to Trump supporters sheltering at the \u2018Blacksonian\u2019 during Freedom 250",
+        "link": "https://thegrio.com/2026/07/06/most-hilarious-reactions-trump-suporters-nmaahc-shelter-freedom-250/",
+        "source": "thegrio.com",
+        "date": "2026-07-06",
+        "matched_phrases": [
+          "shelter"
+        ]
+      },
+      {
+        "title": "The Black Suburban Dream is Now Leading to a New Wave of Gentrification",
+        "link": "https://capitalbnews.org/black-gentrification-suburbs/",
+        "source": "capitalbnews.org",
+        "date": "2026-07-06",
+        "matched_phrases": [
+          "gentrification"
+        ]
+      },
+      {
+        "title": "Trump supporters took shelter in the African American History Museum during the July 4 storm. The internet had thoughts.",
+        "link": "https://thegrio.com/2026/07/05/nmaahc-shelter-july-4-trump-supporters-african-american-museum/",
+        "source": "thegrio.com",
+        "date": "2026-07-05",
+        "matched_phrases": [
+          "shelter"
+        ]
+      }
+    ]
+  },
+  "topic_co_occurrence": {
+    "('Book Bans & Anti-DEI', 'Economic Equity & Wealth Gap')": 2,
+    "('Economic Equity & Wealth Gap', 'Voter Suppression')": 1,
+    "('Economic Equity & Wealth Gap', 'Housing & Displacement')": 1,
+    "('Reparations', 'Voter Suppression')": 1
+  },
+  "total_articles": 1585,
+  "tagged_articles": 129,
+  "coverage_rate": 8.1
+}
