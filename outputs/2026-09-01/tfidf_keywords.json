@@ -1,0 +1,862 @@
+{
+  "global": [
+    {
+      "keyword": "essence",
+      "score": 24.2983
+    },
+    {
+      "keyword": "trump",
+      "score": 18.7528
+    },
+    {
+      "keyword": "family",
+      "score": 12.2627
+    },
+    {
+      "keyword": "reading",
+      "score": 11.266
+    },
+    {
+      "keyword": "continue",
+      "score": 11.2451
+    },
+    {
+      "keyword": "state",
+      "score": 10.8865
+    },
+    {
+      "keyword": "continue reading",
+      "score": 10.0925
+    },
+    {
+      "keyword": "university",
+      "score": 9.9891
+    },
+    {
+      "keyword": "women",
+      "score": 9.7849
+    },
+    {
+      "keyword": "2026",
+      "score": 9.5817
+    },
+    {
+      "keyword": "old",
+      "score": 9.32
+    },
+    {
+      "keyword": "death",
+      "score": 9.2931
+    },
+    {
+      "keyword": "former",
+      "score": 9.2499
+    },
+    {
+      "keyword": "love",
+      "score": 8.8476
+    },
+    {
+      "keyword": "ed",
+      "score": 8.6855
+    },
+    {
+      "keyword": "op",
+      "score": 8.6329
+    },
+    {
+      "keyword": "students",
+      "score": 8.6285
+    },
+    {
+      "keyword": "op ed",
+      "score": 8.5042
+    },
+    {
+      "keyword": "beauty",
+      "score": 8.4849
+    },
+    {
+      "keyword": "history",
+      "score": 8.3327
+    },
+    {
+      "keyword": "life",
+      "score": 8.1811
+    },
+    {
+      "keyword": "show",
+      "score": 8.0752
+    },
+    {
+      "keyword": "school",
+      "score": 8.0171
+    },
+    {
+      "keyword": "still",
+      "score": 7.95
+    },
+    {
+      "keyword": "wells",
+      "score": 7.7654
+    },
+    {
+      "keyword": "opinion",
+      "score": 7.7436
+    },
+    {
+      "keyword": "world",
+      "score": 7.6684
+    },
+    {
+      "keyword": "power",
+      "score": 7.4069
+    },
+    {
+      "keyword": "look",
+      "score": 7.398
+    },
+    {
+      "keyword": "case",
+      "score": 7.3623
+    },
+    {
+      "keyword": "nolan",
+      "score": 7.2641
+    },
+    {
+      "keyword": "us",
+      "score": 7.2296
+    },
+    {
+      "keyword": "voters",
+      "score": 7.0885
+    },
+    {
+      "keyword": "latest",
+      "score": 7.0184
+    },
+    {
+      "keyword": "health",
+      "score": 6.9726
+    },
+    {
+      "keyword": "music",
+      "score": 6.969
+    },
+    {
+      "keyword": "star",
+      "score": 6.9596
+    },
+    {
+      "keyword": "nolan wells",
+      "score": 6.8543
+    },
+    {
+      "keyword": "president",
+      "score": 6.8326
+    },
+    {
+      "keyword": "fans",
+      "score": 6.7634
+    },
+    {
+      "keyword": "found",
+      "score": 6.7616
+    },
+    {
+      "keyword": "season",
+      "score": 6.7501
+    },
+    {
+      "keyword": "say",
+      "score": 6.7437
+    },
+    {
+      "keyword": "august",
+      "score": 6.4761
+    },
+    {
+      "keyword": "primary",
+      "score": 6.4378
+    },
+    {
+      "keyword": "mother",
+      "score": 6.3999
+    },
+    {
+      "keyword": "man",
+      "score": 6.3988
+    },
+    {
+      "keyword": "ai",
+      "score": 6.3561
+    },
+    {
+      "keyword": "million",
+      "score": 6.3467
+    },
+    {
+      "keyword": "democratic",
+      "score": 6.3043
+    }
+  ],
+  "by_source": {
+    "afrotech.com": [
+      {
+        "keyword": "ai",
+        "score": 3.595
+      },
+      {
+        "keyword": "university",
+        "score": 3.4634
+      },
+      {
+        "keyword": "brand",
+        "score": 2.2204
+      },
+      {
+        "keyword": "company",
+        "score": 1.9449
+      },
+      {
+        "keyword": "center",
+        "score": 1.8362
+      },
+      {
+        "keyword": "career",
+        "score": 1.8005
+      },
+      {
+        "keyword": "dr",
+        "score": 1.7119
+      },
+      {
+        "keyword": "previously",
+        "score": 1.6791
+      },
+      {
+        "keyword": "afrotech",
+        "score": 1.6729
+      },
+      {
+        "keyword": "tech",
+        "score": 1.6557
+      },
+      {
+        "keyword": "reports",
+        "score": 1.6417
+      },
+      {
+        "keyword": "world",
+        "score": 1.6349
+      },
+      {
+        "keyword": "business",
+        "score": 1.6096
+      },
+      {
+        "keyword": "students",
+        "score": 1.5539
+      },
+      {
+        "keyword": "health",
+        "score": 1.5512
+      },
+      {
+        "keyword": "launched",
+        "score": 1.5486
+      },
+      {
+        "keyword": "since",
+        "score": 1.5216
+      },
+      {
+        "keyword": "2026",
+        "score": 1.4898
+      },
+      {
+        "keyword": "investment",
+        "score": 1.4797
+      },
+      {
+        "keyword": "used",
+        "score": 1.445
+      }
+    ],
+    "blavity.com": [
+      {
+        "keyword": "trump",
+        "score": 4.1795
+      },
+      {
+        "keyword": "continue",
+        "score": 3.2993
+      },
+      {
+        "keyword": "continue reading",
+        "score": 3.2634
+      },
+      {
+        "keyword": "reading",
+        "score": 3.2634
+      },
+      {
+        "keyword": "democratic",
+        "score": 2.5142
+      },
+      {
+        "keyword": "health",
+        "score": 2.4972
+      },
+      {
+        "keyword": "family",
+        "score": 2.4728
+      },
+      {
+        "keyword": "primary",
+        "score": 2.387
+      },
+      {
+        "keyword": "state",
+        "score": 2.0403
+      },
+      {
+        "keyword": "president",
+        "score": 1.835
+      },
+      {
+        "keyword": "congress",
+        "score": 1.659
+      },
+      {
+        "keyword": "know",
+        "score": 1.5077
+      },
+      {
+        "keyword": "race",
+        "score": 1.4689
+      },
+      {
+        "keyword": "heart",
+        "score": 1.4409
+      },
+      {
+        "keyword": "administration",
+        "score": 1.434
+      },
+      {
+        "keyword": "florida",
+        "score": 1.4325
+      },
+      {
+        "keyword": "university",
+        "score": 1.4257
+      },
+      {
+        "keyword": "arrested",
+        "score": 1.4191
+      },
+      {
+        "keyword": "name",
+        "score": 1.4117
+      },
+      {
+        "keyword": "million",
+        "score": 1.337
+      }
+    ],
+    "capitalbnews.org": [
+      {
+        "keyword": "residents",
+        "score": 1.6619
+      },
+      {
+        "keyword": "case",
+        "score": 1.5681
+      },
+      {
+        "keyword": "students",
+        "score": 1.5681
+      },
+      {
+        "keyword": "power",
+        "score": 1.5308
+      },
+      {
+        "keyword": "see",
+        "score": 1.4142
+      },
+      {
+        "keyword": "college",
+        "score": 1.4016
+      },
+      {
+        "keyword": "fight",
+        "score": 1.3035
+      },
+      {
+        "keyword": "state",
+        "score": 1.2879
+      },
+      {
+        "keyword": "difficult",
+        "score": 1.2357
+      },
+      {
+        "keyword": "woman",
+        "score": 1.2071
+      },
+      {
+        "keyword": "trust",
+        "score": 1.2071
+      },
+      {
+        "keyword": "communities",
+        "score": 1.2041
+      },
+      {
+        "keyword": "enrollment",
+        "score": 1.1446
+      },
+      {
+        "keyword": "seen",
+        "score": 1.1108
+      },
+      {
+        "keyword": "administration",
+        "score": 1.0774
+      },
+      {
+        "keyword": "jobs",
+        "score": 1.0616
+      },
+      {
+        "keyword": "meant",
+        "score": 1.0523
+      },
+      {
+        "keyword": "town",
+        "score": 1.0363
+      },
+      {
+        "keyword": "trump",
+        "score": 1.0333
+      },
+      {
+        "keyword": "university",
+        "score": 0.998
+      }
+    ],
+    "ebony.com": [
+      {
+        "keyword": "beauty",
+        "score": 3.0924
+      },
+      {
+        "keyword": "love",
+        "score": 3.0268
+      },
+      {
+        "keyword": "life",
+        "score": 2.9989
+      },
+      {
+        "keyword": "2026",
+        "score": 2.9805
+      },
+      {
+        "keyword": "us",
+        "score": 2.7949
+      },
+      {
+        "keyword": "august",
+        "score": 2.7737
+      },
+      {
+        "keyword": "world",
+        "score": 2.5812
+      },
+      {
+        "keyword": "summer",
+        "score": 2.5037
+      },
+      {
+        "keyword": "fashion",
+        "score": 2.3382
+      },
+      {
+        "keyword": "business",
+        "score": 2.2763
+      },
+      {
+        "keyword": "way",
+        "score": 2.2034
+      },
+      {
+        "keyword": "best",
+        "score": 2.1628
+      },
+      {
+        "keyword": "know",
+        "score": 2.05
+      },
+      {
+        "keyword": "series",
+        "score": 1.9829
+      },
+      {
+        "keyword": "still",
+        "score": 1.9624
+      },
+      {
+        "keyword": "culture",
+        "score": 1.894
+      },
+      {
+        "keyword": "feel",
+        "score": 1.7737
+      },
+      {
+        "keyword": "show",
+        "score": 1.7335
+      },
+      {
+        "keyword": "season",
+        "score": 1.7134
+      },
+      {
+        "keyword": "social",
+        "score": 1.7005
+      }
+    ],
+    "essence.com": [
+      {
+        "keyword": "essence",
+        "score": 20.4984
+      },
+      {
+        "keyword": "beauty",
+        "score": 4.7162
+      },
+      {
+        "keyword": "essence subscribe",
+        "score": 2.9162
+      },
+      {
+        "keyword": "subscribe",
+        "score": 2.9162
+      },
+      {
+        "keyword": "fall",
+        "score": 2.7528
+      },
+      {
+        "keyword": "women",
+        "score": 2.6635
+      },
+      {
+        "keyword": "style",
+        "score": 2.2101
+      },
+      {
+        "keyword": "family",
+        "score": 2.0981
+      },
+      {
+        "keyword": "see",
+        "score": 2.0351
+      },
+      {
+        "keyword": "looks",
+        "score": 1.7186
+      },
+      {
+        "keyword": "watch",
+        "score": 1.6844
+      },
+      {
+        "keyword": "us",
+        "score": 1.6636
+      },
+      {
+        "keyword": "show",
+        "score": 1.6525
+      },
+      {
+        "keyword": "music",
+        "score": 1.5844
+      },
+      {
+        "keyword": "birthday",
+        "score": 1.5622
+      },
+      {
+        "keyword": "case",
+        "score": 1.5167
+      },
+      {
+        "keyword": "season",
+        "score": 1.4697
+      },
+      {
+        "keyword": "bennett",
+        "score": 1.4603
+      },
+      {
+        "keyword": "anthony",
+        "score": 1.4519
+      },
+      {
+        "keyword": "tyler",
+        "score": 1.4506
+      }
+    ],
+    "newsone.com": [
+      {
+        "keyword": "trump",
+        "score": 7.7394
+      },
+      {
+        "keyword": "op",
+        "score": 6.9368
+      },
+      {
+        "keyword": "op ed",
+        "score": 6.8793
+      },
+      {
+        "keyword": "ed",
+        "score": 6.8793
+      },
+      {
+        "keyword": "opinion",
+        "score": 5.1828
+      },
+      {
+        "keyword": "op ed opinion",
+        "score": 4.0622
+      },
+      {
+        "keyword": "ed opinion",
+        "score": 4.0622
+      },
+      {
+        "keyword": "state",
+        "score": 3.1248
+      },
+      {
+        "keyword": "wnba",
+        "score": 3.1119
+      },
+      {
+        "keyword": "donald",
+        "score": 2.5774
+      },
+      {
+        "keyword": "donald trump",
+        "score": 2.5774
+      },
+      {
+        "keyword": "ice",
+        "score": 2.4675
+      },
+      {
+        "keyword": "man",
+        "score": 2.4276
+      },
+      {
+        "keyword": "august",
+        "score": 2.4201
+      },
+      {
+        "keyword": "found",
+        "score": 2.3535
+      },
+      {
+        "keyword": "race",
+        "score": 2.0995
+      },
+      {
+        "keyword": "students",
+        "score": 2.0913
+      },
+      {
+        "keyword": "women",
+        "score": 2.0846
+      },
+      {
+        "keyword": "administration",
+        "score": 2.0838
+      },
+      {
+        "keyword": "senate",
+        "score": 2.0304
+      }
+    ],
+    "thegrio.com": [
+      {
+        "keyword": "trump",
+        "score": 7.5345
+      },
+      {
+        "keyword": "family",
+        "score": 7.3982
+      },
+      {
+        "keyword": "old",
+        "score": 6.078
+      },
+      {
+        "keyword": "former",
+        "score": 5.9386
+      },
+      {
+        "keyword": "death",
+        "score": 5.0295
+      },
+      {
+        "keyword": "state",
+        "score": 4.7103
+      },
+      {
+        "keyword": "voters",
+        "score": 4.4459
+      },
+      {
+        "keyword": "love",
+        "score": 4.3823
+      },
+      {
+        "keyword": "wells",
+        "score": 4.1486
+      },
+      {
+        "keyword": "mother",
+        "score": 4.1128
+      },
+      {
+        "keyword": "say",
+        "score": 4.0252
+      },
+      {
+        "keyword": "university",
+        "score": 4.0233
+      },
+      {
+        "keyword": "judge",
+        "score": 3.8657
+      },
+      {
+        "keyword": "nolan",
+        "score": 3.8033
+      },
+      {
+        "keyword": "fans",
+        "score": 3.8015
+      },
+      {
+        "keyword": "nolan wells",
+        "score": 3.6618
+      },
+      {
+        "keyword": "show",
+        "score": 3.607
+      },
+      {
+        "keyword": "million",
+        "score": 3.6016
+      },
+      {
+        "keyword": "history",
+        "score": 3.597
+      },
+      {
+        "keyword": "support",
+        "score": 3.4739
+      }
+    ],
+    "theroot.com": [
+      {
+        "keyword": "trump",
+        "score": 3.8377
+      },
+      {
+        "keyword": "look",
+        "score": 3.7622
+      },
+      {
+        "keyword": "women",
+        "score": 3.4824
+      },
+      {
+        "keyword": "latest",
+        "score": 3.3946
+      },
+      {
+        "keyword": "let",
+        "score": 3.3884
+      },
+      {
+        "keyword": "death",
+        "score": 3.3345
+      },
+      {
+        "keyword": "2026",
+        "score": 3.2025
+      },
+      {
+        "keyword": "folks",
+        "score": 3.1674
+      },
+      {
+        "keyword": "voters",
+        "score": 2.8661
+      },
+      {
+        "keyword": "power",
+        "score": 2.8107
+      },
+      {
+        "keyword": "america",
+        "score": 2.7476
+      },
+      {
+        "keyword": "students",
+        "score": 2.7052
+      },
+      {
+        "keyword": "fight",
+        "score": 2.6597
+      },
+      {
+        "keyword": "fans",
+        "score": 2.6287
+      },
+      {
+        "keyword": "questions",
+        "score": 2.6267
+      },
+      {
+        "keyword": "stars",
+        "score": 2.5609
+      },
+      {
+        "keyword": "state",
+        "score": 2.5489
+      },
+      {
+        "keyword": "family",
+        "score": 2.548
+      },
+      {
+        "keyword": "university",
+        "score": 2.4975
+      },
+      {
+        "keyword": "history",
+        "score": 2.4883
+      }
+    ]
+  }
+}
