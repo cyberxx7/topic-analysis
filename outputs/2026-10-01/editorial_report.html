@@ -1,0 +1,4457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editorial Topic Analysis Report — October 01, 2026</title>
+  <link rel="stylesheet" href="file:///home/runner/work/topic-analysis/topic-analysis/report/assets/styles.css" />
+</head>
+<body>
+<div class="report-shell">
+
+  <!-- ══════════════════════════════════════════════════════════
+       COVER
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="cover">
+    <div class="cover-org">Black Media Intelligence Pipeline &nbsp;·&nbsp; Research Brief</div>
+    <h1 class="cover-title">Editorial Topic Analysis:<br>Black Media Coverage of Social Conflict</h1>
+    <p class="cover-subtitle">
+      A systematic analysis of social justice and social conflict topic coverage across
+      seven major Black media publications over a rolling 30-day window, using
+      TF-IDF keyword scoring and seed-phrase topic matching.
+    </p>
+    <div class="cover-meta-row">
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Report Date</div>
+        <div class="cover-meta-value">October 01, 2026</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Analysis Window</div>
+        <div class="cover-meta-value">September 01, 2026 – October 01, 2026</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Total Articles</div>
+        <div class="cover-meta-value">1423</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Publications</div>
+        <div class="cover-meta-value">9</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-label">Topics Tracked</div>
+        <div class="cover-meta-value">12</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       TABLE OF CONTENTS
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="toc no-print">
+    <div class="toc-title">Contents</div>
+    <ul class="toc-list">
+      <li><a href="#s1"><span>01 &nbsp;Executive Summary</span><span class="toc-num">§1</span></a></li>
+      <li><a href="#s2"><span>02 &nbsp;Publication Overview</span><span class="toc-num">§2</span></a></li>
+      <li><a href="#s3"><span>03 &nbsp;Topic Frequency Analysis</span><span class="toc-num">§3</span></a></li>
+      <li><a href="#s4"><span>04 &nbsp;Coverage Matrix</span><span class="toc-num">§4</span></a></li>
+      <li><a href="#s5"><span>05 &nbsp;Publication Timeline</span><span class="toc-num">§5</span></a></li>
+      <li><a href="#s6"><span>06 &nbsp;TF-IDF Keyword Analysis</span><span class="toc-num">§6</span></a></li>
+      <li><a href="#s7"><span>07 &nbsp;Topic Deep Dive &amp; Article Index</span><span class="toc-num">§7</span></a></li>
+      <li><a href="#s8"><span>08 &nbsp;Word Clouds</span><span class="toc-num">§8</span></a></li>
+      <li><a href="#s9"><span>09 &nbsp;Methodology</span><span class="toc-num">§9</span></a></li>
+    </ul>
+  </div>
+
+  <div class="report-body">
+
+    <!-- ══════════════════════════════════════════════════════
+         §1  EXECUTIVE SUMMARY
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s1">
+      <div class="section-label">Section 01</div>
+      <h2 class="section-title">Executive Summary</h2>
+      <p class="section-desc">Key findings from this analysis period.</p>
+      <hr class="section-rule">
+
+      <div class="stat-strip">
+        <div class="stat-cell">
+          <div class="stat-cell-label">Total Articles</div>
+          <div class="stat-cell-value">1423</div>
+          <div class="stat-cell-sub">Across 9 publications</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-cell-label">Articles Tagged</div>
+          <div class="stat-cell-value">112</div>
+          <div class="stat-cell-sub">Matched ≥1 topic</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-cell-label">Coverage Rate</div>
+          <div class="stat-cell-value">7.9%</div>
+          <div class="stat-cell-sub">Of total corpus</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-cell-label">Most Covered Topic</div>
+          <div class="stat-cell-value sans" style="font-size:13pt; padding-top:3px;">Economic Equity & We…</div>
+          <div class="stat-cell-sub">33 articles</div>
+        </div>
+      </div>
+
+      <div class="finding">
+        <strong>Key Finding — </strong>During this period, 7.9% of articles addressed at least one tracked social conflict topic. The three most-covered topics were: Economic Equity & Wealth Gap (33), School Funding (16), Policing & Public Safety (14).
+      </div>
+
+      <div class="chart-grid-2 mt-md">
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/coverage_rate.png" alt="Coverage Rate Gauge" />
+          <p class="chart-caption">Figure 1.1 — Topic coverage rate for this reporting period</p>
+        </div>
+        
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/source_breakdown.png" alt="Source Breakdown" />
+          <p class="chart-caption">Figure 1.2 — Article distribution by publication</p>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §2  PUBLICATION OVERVIEW
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s2">
+      <div class="section-label">Section 02</div>
+      <h2 class="section-title">Publication Overview</h2>
+      <p class="section-desc">
+        Per-publication article counts, topic coverage rates, and dominant topics
+        for this reporting period.
+      </p>
+      <hr class="section-rule">
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Publication</th>
+            <th class="num">Articles</th>
+            <th class="num">Topics Covered</th>
+            <th class="num">Tagged</th>
+            <th>Coverage Rate</th>
+            <th>Dominant Topic</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td><strong>thegrio.com</strong></td>
+            <td class="num">548</td>
+            <td class="num">8</td>
+            <td class="num">29</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:5.3%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">5.3%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">Economic Equity & Wealth Gap</td>
+          </tr>
+          
+          <tr>
+            <td><strong>theroot.com</strong></td>
+            <td class="num">297</td>
+            <td class="num">10</td>
+            <td class="num">30</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:10.1%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">10.1%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">Economic Equity & Wealth Gap</td>
+          </tr>
+          
+          <tr>
+            <td><strong>ebony.com</strong></td>
+            <td class="num">165</td>
+            <td class="num">5</td>
+            <td class="num">6</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:3.6%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">3.6%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">Economic Equity & Wealth Gap</td>
+          </tr>
+          
+          <tr>
+            <td><strong>essence.com</strong></td>
+            <td class="num">114</td>
+            <td class="num">4</td>
+            <td class="num">6</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:5.3%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">5.3%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">Economic Equity & Wealth Gap</td>
+          </tr>
+          
+          <tr>
+            <td><strong>afrotech.com</strong></td>
+            <td class="num">97</td>
+            <td class="num">5</td>
+            <td class="num">12</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:12.4%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">12.4%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">School Funding</td>
+          </tr>
+          
+          <tr>
+            <td><strong>blavity.com</strong></td>
+            <td class="num">83</td>
+            <td class="num">9</td>
+            <td class="num">10</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:12.0%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">12.0%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">Reparations</td>
+          </tr>
+          
+          <tr>
+            <td><strong>travelnoire.com</strong></td>
+            <td class="num">69</td>
+            <td class="num">1</td>
+            <td class="num">6</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:8.7%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">8.7%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">Economic Equity & Wealth Gap</td>
+          </tr>
+          
+          <tr>
+            <td><strong>newsone.com</strong></td>
+            <td class="num">30</td>
+            <td class="num">4</td>
+            <td class="num">9</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:30.0%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">30.0%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">Policing & Public Safety</td>
+          </tr>
+          
+          <tr>
+            <td><strong>capitalbnews.org</strong></td>
+            <td class="num">20</td>
+            <td class="num">3</td>
+            <td class="num">4</td>
+            <td>
+              <span class="bar-wrap"><span class="bar-fill" style="width:20.0%;"></span></span>
+              <span class="sans" style="font-size:8.5pt; color:var(--text-muted);">20.0%</span>
+            </td>
+            <td class="text-accent sans" style="font-size:8.5pt;">Voter Suppression</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §3  TOPIC FREQUENCY ANALYSIS
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s3">
+      <div class="section-label">Section 03</div>
+      <h2 class="section-title">Topic Frequency Analysis</h2>
+      <p class="section-desc">
+        Frequency of each social conflict topic across all publications during this period,
+        ranked by article count.
+      </p>
+      <hr class="section-rule">
+
+      
+      <div class="chart-wrap">
+        <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/topic_frequency.png" alt="Topic Frequency" />
+        <p class="chart-caption">Figure 3.1 — Article count by social conflict topic (all publications)</p>
+      </div>
+      
+
+      
+      <div class="chart-wrap mt-md">
+        <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/multi_topic_distribution.png" alt="Multi-Topic Distribution" />
+        <p class="chart-caption">Figure 3.2 — Number of distinct topics matched per article</p>
+      </div>
+      
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §4  PUBLICATION × TOPIC COVERAGE MATRIX
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s4">
+      <div class="section-label">Section 04</div>
+      <h2 class="section-title">Publication × Topic Coverage Matrix</h2>
+      <p class="section-desc">
+        Cross-tabulation of topic coverage by publication. Cell values represent
+        the number of articles in which each topic was detected.
+      </p>
+      <hr class="section-rule">
+
+      
+      <div class="chart-wrap">
+        <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/source_topic_heatmap.png" alt="Coverage Heatmap" />
+        <p class="chart-caption">Figure 4.1 — Topic coverage heatmap (publications × topics)</p>
+      </div>
+      
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §5  PUBLICATION TIMELINE
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s5">
+      <div class="section-label">Section 05</div>
+      <h2 class="section-title">Publication Timeline</h2>
+      <p class="section-desc">
+        Daily article volume across all publications over the 30-day analysis window,
+        with per-publication breakdowns.
+      </p>
+      <hr class="section-rule">
+
+      
+      <div class="chart-wrap">
+        <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/articles_over_time.png" alt="Articles Over Time" />
+        <p class="chart-caption">Figure 5.1 — Daily article volume by publication (September 01, 2026 – October 01, 2026)</p>
+      </div>
+      
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §6  TF-IDF KEYWORD ANALYSIS
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s6">
+      <div class="section-label">Section 06</div>
+      <h2 class="section-title">TF-IDF Keyword Analysis</h2>
+      <p class="section-desc">
+        Terms and phrases with the highest TF-IDF scores across the full article corpus,
+        representing language that is distinctively prominent in this reporting period.
+      </p>
+      <hr class="section-rule">
+
+      
+      <div class="chart-wrap">
+        <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/top_keywords.png" alt="Top Keywords" />
+        <p class="chart-caption">Figure 6.1 — Top 20 TF-IDF keywords (n-grams 1–3, all publications)</p>
+      </div>
+      
+
+      <div class="kw-grid mt-md">
+        
+        <div class="kw-item">
+          <span class="kw-term">essence</span>
+          <span class="kw-score">20.4186</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">trump</span>
+          <span class="kw-score">18.2139</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">2026</span>
+          <span class="kw-score">12.7464</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">women</span>
+          <span class="kw-score">12.3719</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">family</span>
+          <span class="kw-score">12.2144</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">fashion</span>
+          <span class="kw-score">11.6728</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">continue</span>
+          <span class="kw-score">10.7088</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">world</span>
+          <span class="kw-score">10.6184</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">us</span>
+          <span class="kw-score">10.4988</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">ai</span>
+          <span class="kw-score">10.0942</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">reading</span>
+          <span class="kw-score">10.0680</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">death</span>
+          <span class="kw-score">10.0627</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">continue reading</span>
+          <span class="kw-score">9.7399</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">history</span>
+          <span class="kw-score">9.3260</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">season</span>
+          <span class="kw-score">9.0103</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">life</span>
+          <span class="kw-score">8.9468</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">york</span>
+          <span class="kw-score">8.8865</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">best</span>
+          <span class="kw-score">8.8577</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">media</span>
+          <span class="kw-score">8.6367</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">court</span>
+          <span class="kw-score">8.5589</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">former</span>
+          <span class="kw-score">8.4499</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">star</span>
+          <span class="kw-score">8.3549</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">old</span>
+          <span class="kw-score">8.2390</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">health</span>
+          <span class="kw-score">7.9148</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">know</span>
+          <span class="kw-score">7.8925</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">different</span>
+          <span class="kw-score">7.7901</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">million</span>
+          <span class="kw-score">7.5876</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">administration</span>
+          <span class="kw-score">7.4555</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">public</span>
+          <span class="kw-score">7.1711</span>
+        </div>
+        
+        <div class="kw-item">
+          <span class="kw-term">need</span>
+          <span class="kw-score">7.1468</span>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §7  TOPIC DEEP DIVE & ARTICLE INDEX
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s7">
+      <div class="section-label">Section 07</div>
+      <h2 class="section-title">Topic Deep Dive &amp; Article Index</h2>
+      <p class="section-desc">
+        For each detected social conflict topic: all matched articles with title,
+        publication, date, category, URL, and the specific phrases that triggered the match.
+      </p>
+      <hr class="section-rule">
+
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#B7950B;"></span>
+        <span class="topic-heading-name">Economic Equity & Wealth Gap</span>
+        <span class="topic-heading-count">33 articles</span>
+      </div>
+      <p class="topic-desc-line">Racial wealth gap, Black entrepreneurship, wage discrimination, economic mobility, poverty</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.essence.com/news/angela-alsobrooks-cbc-black-women-washington-midterms/" target="_blank">
+                Sen. Angela Alsobrooks On What Black Women Need From Washington
+              </a>
+              <a class="article-url" href="https://www.essence.com/news/angela-alsobrooks-cbc-black-women-washington-midterms/" target="_blank">
+                https://www.essence.com/news/angela-alsobrooks-cbc-black-women-washington-midterms/
+              </a>
+            </td>
+            <td><span class="source-badge">essence.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Shelby Stewart
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              nan
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">generational wealth</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.essence.com/hair/by-us-beauty-september-2026/" target="_blank">
+                By Us Beauty: The Best Black-Owned Beauty Launches From September 2026
+              </a>
+              <a class="article-url" href="https://www.essence.com/hair/by-us-beauty-september-2026/" target="_blank">
+                https://www.essence.com/hair/by-us-beauty-september-2026/
+              </a>
+            </td>
+            <td><span class="source-badge">essence.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Akili King
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              nan
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Beauty
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.essence.com/video/less-is-more-black-owned-beauty-products-to-try-2025/" target="_blank">
+                'Less Is More' Black-Owned Beauty Products To Try - Essence
+              </a>
+              <a class="article-url" href="https://www.essence.com/video/less-is-more-black-owned-beauty-products-to-try-2025/" target="_blank">
+                https://www.essence.com/video/less-is-more-black-owned-beauty-products-to-try-2025/
+              </a>
+            </td>
+            <td><span class="source-badge">essence.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              https://www.facebook.com/essence
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              nan
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Video
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/30/meet-the-black-family-behind-the-lusters-pink-hair-lotion-you-grew-up-with/" target="_blank">
+                Meet the Black family behind the Luster’s Pink hair lotion you grew up with
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/30/meet-the-black-family-behind-the-lusters-pink-hair-lotion-you-grew-up-with/" target="_blank">
+                https://thegrio.com/2026/09/30/meet-the-black-family-behind-the-lusters-pink-hair-lotion-you-grew-up-with/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Haniyah P.
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Business
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/the-quaker-reparations-that-helped-this-black-philly-fa-2000126454" target="_blank">
+                The Quaker Reparations That Helped This Black Philly Family Build Generational Wealth
+              </a>
+              <a class="article-url" href="https://www.theroot.com/the-quaker-reparations-that-helped-this-black-philly-fa-2000126454" target="_blank">
+                https://www.theroot.com/the-quaker-reparations-that-helped-this-black-philly-fa-2000126454
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-29
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">generational wealth</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/28/trump-federal-funding-cuts-810-million/" target="_blank">
+                Trump administration moves to cut $810 million, including funds for minority-owned businesses
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/28/trump-federal-funding-cuts-810-million/" target="_blank">
+                https://thegrio.com/2026/09/28/trump-federal-funding-cuts-810-million/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Odafe Oghen
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-28
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">minority business</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/28/did-you-spot-these-black-owned-brands-in-netflixs-a-different-world/" target="_blank">
+                Did you spot these Black-Owned brands in Netflix’s ‘A Different World’?
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/28/did-you-spot-these-black-owned-brands-in-netflixs-a-different-world/" target="_blank">
+                https://thegrio.com/2026/09/28/did-you-spot-these-black-owned-brands-in-netflixs-a-different-world/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Haniyah P.
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-28
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Lifestyle
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.ebony.com/tips-for-finding-the-perfect-financial-advisor-to-grow-and-manage-your-money/" target="_blank">
+                Tips for Finding the Perfect Financial Advisor to Grow and Manage Your Money
+              </a>
+              <a class="article-url" href="https://www.ebony.com/tips-for-finding-the-perfect-financial-advisor-to-grow-and-manage-your-money/" target="_blank">
+                https://www.ebony.com/tips-for-finding-the-perfect-financial-advisor-to-grow-and-manage-your-money/
+              </a>
+            </td>
+            <td><span class="source-badge">ebony.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              —
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-24
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Life
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">generational wealth</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/23/what-happened-when-black-women-received-guaranteed-income-new-data-offers-answers/" target="_blank">
+                What happened when Black women received guaranteed income? New data offers answers
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/23/what-happened-when-black-women-received-guaranteed-income-new-data-offers-answers/" target="_blank">
+                https://thegrio.com/2026/09/23/what-happened-when-black-women-received-guaranteed-income-new-data-offers-answers/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Kay Wicker
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-23
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Lifestyle
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black bank</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/mamdani-record-doordash-settlement-for-nyc-delivery-workers" target="_blank">
+                Mamdani Announces Record $131.5 Million DoorDash Settlement For NYC Delivery Workers
+              </a>
+              <a class="article-url" href="https://blavity.com/mamdani-record-doordash-settlement-for-nyc-delivery-workers" target="_blank">
+                https://blavity.com/mamdani-record-doordash-settlement-for-nyc-delivery-workers
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Jahaura Michelle
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-23
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">economic justice</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://travelnoire.com/daisys-black-food-tour-la" target="_blank">
+                In LA? Going On This Black-Owned Food Tour Is A Must
+              </a>
+              <a class="article-url" href="https://travelnoire.com/daisys-black-food-tour-la" target="_blank">
+                https://travelnoire.com/daisys-black-food-tour-la
+              </a>
+            </td>
+            <td><span class="source-badge">travelnoire.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Natasha Decker
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-23
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://travelnoire.com/top-foodie-city-new-orleans" target="_blank">
+                New Orleans Was Just Named America’s Top Foodie City, And This Black-Owned Restaurant Made The List
+              </a>
+              <a class="article-url" href="https://travelnoire.com/top-foodie-city-new-orleans" target="_blank">
+                https://travelnoire.com/top-foodie-city-new-orleans
+              </a>
+            </td>
+            <td><span class="source-badge">travelnoire.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Natasha Decker
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-23
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/13-trailblazing-black-americans-who-helped-shape-the-la-2000124689" target="_blank">
+                13 Trailblazing Black Americans Who Helped Shape the Labor Movement
+              </a>
+              <a class="article-url" href="https://www.theroot.com/13-trailblazing-black-americans-who-helped-shape-the-la-2000124689" target="_blank">
+                https://www.theroot.com/13-trailblazing-black-americans-who-helped-shape-the-la-2000124689
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Asheea Smith
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-21
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              America. In Black.
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">economic justice</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://travelnoire.com/black-owned-bookstore-las-vegas" target="_blank">
+                Will Travel To Read: The First Black-Owned Bookstore On The Las Vegas Strip
+              </a>
+              <a class="article-url" href="https://travelnoire.com/black-owned-bookstore-las-vegas" target="_blank">
+                https://travelnoire.com/black-owned-bookstore-las-vegas
+              </a>
+            </td>
+            <td><span class="source-badge">travelnoire.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Mitti Hicks
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-21
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/mark-zuckerberg-doesnt-think-ai-industry-needs-to-slow-down" target="_blank">
+                Mark Zuckerberg Doesn’t Think The AI Industry Needs To Slow Down
+              </a>
+              <a class="article-url" href="https://afrotech.com/mark-zuckerberg-doesnt-think-ai-industry-needs-to-slow-down" target="_blank">
+                https://afrotech.com/mark-zuckerberg-doesnt-think-ai-industry-needs-to-slow-down
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Samantha Dorisca
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-18
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Technology
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">economic empowerment</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/18/angela-alsobrooks-generational-wealth-black-voters/" target="_blank">
+                Senator Alsobrooks wants Democrats talking generational wealth with Black voters: ‘Wealth is not a dirty word’
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/18/angela-alsobrooks-generational-wealth-black-voters/" target="_blank">
+                https://thegrio.com/2026/09/18/angela-alsobrooks-generational-wealth-black-voters/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Gerren Keith Gaynor
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-18
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">generational wealth</span>
+                
+                <span class="phrase-tag">black wealth</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://travelnoire.com/black-owned-edmonton-alberta-canada" target="_blank">
+                Black Culture Where You (Likely) Least Expect: Exploring Black Businesses in Edmonton, Alberta
+              </a>
+              <a class="article-url" href="https://travelnoire.com/black-owned-edmonton-alberta-canada" target="_blank">
+                https://travelnoire.com/black-owned-edmonton-alberta-canada
+              </a>
+            </td>
+            <td><span class="source-badge">travelnoire.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Mitti Hicks
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-18
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/18/the-gender-wage-gap-improved-in-2025-unless-youre-a-black-woman/" target="_blank">
+                The gender wage gap improved in 2025, unless you’re a Black woman
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/18/the-gender-wage-gap-improved-in-2025-unless-youre-a-black-woman/" target="_blank">
+                https://thegrio.com/2026/09/18/the-gender-wage-gap-improved-in-2025-unless-youre-a-black-woman/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Kay Wicker
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-18
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Lifestyle
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">wage gap</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://travelnoire.com/where-to-eat-afrotech-houston" target="_blank">
+                The AfroTech 2026 Foodie Guide: Black-Owned Spots, Conference Vendors, And Houston’s Best Tables
+              </a>
+              <a class="article-url" href="https://travelnoire.com/where-to-eat-afrotech-houston" target="_blank">
+                https://travelnoire.com/where-to-eat-afrotech-houston
+              </a>
+            </td>
+            <td><span class="source-badge">travelnoire.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Natasha Decker
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-17
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Plan &Amp; Shop
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/flaujae-johnson-purchases-additional-15-acres-of-land-for-a-commercial-property" target="_blank">
+                22-Year-Old WNBA Player Flau’jae Johnson Buys An Additional 15 Acres After Previously Purchasing Property In 2025 — ‘This Land Represents More Than Just An Inve
+              </a>
+              <a class="article-url" href="https://afrotech.com/flaujae-johnson-purchases-additional-15-acres-of-land-for-a-commercial-property" target="_blank">
+                https://afrotech.com/flaujae-johnson-purchases-additional-15-acres-of-land-for-a-commercial-property
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Samantha Dorisca
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-16
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Business
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">generational wealth</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://travelnoire.com/black-owned-cocody-restaurant-houston" target="_blank">
+                One Of Houston’s Most Stunning Restaurants Is Proof You Don’t Have To Dream Small
+              </a>
+              <a class="article-url" href="https://travelnoire.com/black-owned-cocody-restaurant-houston" target="_blank">
+                https://travelnoire.com/black-owned-cocody-restaurant-houston
+              </a>
+            </td>
+            <td><span class="source-badge">travelnoire.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Mitti Hicks
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-16
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/opinion-black-unemployment-is-america-s-labor-warning-2000125748" target="_blank">
+                Opinion: Black Unemployment Is America’s Labor Warning Light
+              </a>
+              <a class="article-url" href="https://www.theroot.com/opinion-black-unemployment-is-america-s-labor-warning-2000125748" target="_blank">
+                https://www.theroot.com/opinion-black-unemployment-is-america-s-labor-warning-2000125748
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Karen Boykin-Towns
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-14
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black unemployment</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/why-black-owned-music-festivals-are-struggling-in-2026-2000125238" target="_blank">
+                Why Black-Owned Music Festivals Are Struggling in 2026 — and What Could Save Them
+              </a>
+              <a class="article-url" href="https://www.theroot.com/why-black-owned-music-festivals-are-struggling-in-2026-2000125238" target="_blank">
+                https://www.theroot.com/why-black-owned-music-festivals-are-struggling-in-2026-2000125238
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Leon Valentine
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-11
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/from-sauce-to-seasoning-the-ultimate-black-owned-bbq-g-2000124179" target="_blank">
+                From Sauce to Seasoning: The Ultimate Black-Owned BBQ Guide
+              </a>
+              <a class="article-url" href="https://www.theroot.com/from-sauce-to-seasoning-the-ultimate-black-owned-bbq-g-2000124179" target="_blank">
+                https://www.theroot.com/from-sauce-to-seasoning-the-ultimate-black-owned-bbq-g-2000124179
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Angela Wilson
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-07
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/ms-rachels-repost-helped-this-black-owned-bakery-make-2000124502" target="_blank">
+                Ms. Rachel’s Repost Helped This Black-Owned Bakery Make Rent
+              </a>
+              <a class="article-url" href="https://www.theroot.com/ms-rachels-repost-helped-this-black-owned-bakery-make-2000124502" target="_blank">
+                https://www.theroot.com/ms-rachels-repost-helped-this-black-owned-bakery-make-2000124502
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Mahalia Otshudy
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-06
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Business
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black business</span>
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/04/bomme-sweets-sales-ms-rachel-black-owned-bakery/" target="_blank">
+                Black-owned LA bakery sees sales surge after viral boost from Ms. Rachel
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/04/bomme-sweets-sales-ms-rachel-black-owned-bakery/" target="_blank">
+                https://thegrio.com/2026/09/04/bomme-sweets-sales-ms-rachel-black-owned-bakery/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Odafe Oghen
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-04
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Featured
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/how-this-black-owned-business-got-its-rent-covered-for-a-month-with-the-help-of-ms-rachel" target="_blank">
+                How This Black-Owned Business Got Its Rent Covered For A Month With The Help Of Ms. Rachel
+              </a>
+              <a class="article-url" href="https://afrotech.com/how-this-black-owned-business-got-its-rent-covered-for-a-month-with-the-help-of-ms-rachel" target="_blank">
+                https://afrotech.com/how-this-black-owned-business-got-its-rent-covered-for-a-month-with-the-help-of-ms-rachel
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Samantha Dorisca
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-03
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Business
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black business</span>
+                
+                <span class="phrase-tag">black-owned business</span>
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/is-nil-money-undermining-the-fight-for-black-political-2000124102" target="_blank">
+                Is NIL Money Undermining the Fight for Black Political Power?
+              </a>
+              <a class="article-url" href="https://www.theroot.com/is-nil-money-undermining-the-fight-for-black-political-2000124102" target="_blank">
+                https://www.theroot.com/is-nil-money-undermining-the-fight-for-black-political-2000124102
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Rashad Grove
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-03
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">generational wealth</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/02/afro-plus-fest-2026-dmv-black-music-culture/" target="_blank">
+                From Afrobeats to hip-hop, Afro Plus Fest is making the DMV a home for Black culture
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/02/afro-plus-fest-2026-dmv-black-music-culture/" target="_blank">
+                https://thegrio.com/2026/09/02/afro-plus-fest-2026-dmv-black-music-culture/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Peter Kerich
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-02
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Entertainment
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/he-built-his-30-million-brand-without-quitting-his-9-t-2000123932" target="_blank">
+                He Built His $30 Million Brand Without Quitting His 9-to-5
+              </a>
+              <a class="article-url" href="https://www.theroot.com/he-built-his-30-million-brand-without-quitting-his-9-t-2000123932" target="_blank">
+                https://www.theroot.com/he-built-his-30-million-brand-without-quitting-his-9-t-2000123932
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              B.Kadijat Towolawi
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-01
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Black Business
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black business</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.ebony.com/the-doux-brings-black-hair-and-salon-culture-to-roblox-with-my-salon-empire/" target="_blank">
+                The Doux Brings Black Hair and Salon Culture to Roblox With ‘My Salon Empire’
+              </a>
+              <a class="article-url" href="https://www.ebony.com/the-doux-brings-black-hair-and-salon-culture-to-roblox-with-my-salon-empire/" target="_blank">
+                https://www.ebony.com/the-doux-brings-black-hair-and-salon-culture-to-roblox-with-my-salon-empire/
+              </a>
+            </td>
+            <td><span class="source-badge">ebony.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              —
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-01
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Beauty
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/from-celebrity-hairstylist-to-fragrance-founder-why-ka-2000123517" target="_blank">
+                From Celebrity Hairstylist to Fragrance Founder, Why Kahh Spence’s Next Act Smells Like a Million Dollars
+              </a>
+              <a class="article-url" href="https://www.theroot.com/from-celebrity-hairstylist-to-fragrance-founder-why-ka-2000123517" target="_blank">
+                https://www.theroot.com/from-celebrity-hairstylist-to-fragrance-founder-why-ka-2000123517
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Ty Cole
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-08-31
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Beauty
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/08/31/6-black-owned-haircare-brands-making-products-for-curls-coils-and-every-texture/" target="_blank">
+                6 Black-owned haircare brands making products for curls, coils, and every texture
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/08/31/6-black-owned-haircare-brands-making-products-for-curls-coils-and-every-texture/" target="_blank">
+                https://thegrio.com/2026/08/31/6-black-owned-haircare-brands-making-products-for-curls-coils-and-every-texture/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Haniyah P.
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-08-31
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Featured
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black-owned</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#1A5276;"></span>
+        <span class="topic-heading-name">School Funding</span>
+        <span class="topic-heading-count">16 articles</span>
+      </div>
+      <p class="topic-desc-line">Education funding disparities, underfunded schools, school closures, Black student outcomes</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/toni-morrisons-the-bluest-eye-abruptly-pulled-from-georgia-school-libraries" target="_blank">
+                Toni Morrison’s ‘The Bluest Eye’ Abruptly Pulled From Georgia School Libraries
+              </a>
+              <a class="article-url" href="https://blavity.com/toni-morrisons-the-bluest-eye-abruptly-pulled-from-georgia-school-libraries" target="_blank">
+                https://blavity.com/toni-morrisons-the-bluest-eye-abruptly-pulled-from-georgia-school-libraries
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Jahaura Michelle
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">school district</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6873077/education-department-strips-title-ix/" target="_blank">
+                Department Of Education Strips Title IX Protections From LGBTQ+ Students
+              </a>
+              <a class="article-url" href="https://newsone.com/6873077/education-department-strips-title-ix/" target="_blank">
+                https://newsone.com/6873077/education-department-strips-title-ix/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Angela M. Bronner
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Civil Rights & Social Justice
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">department of education</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/trump-administration-could-limit-your-access-to-federal-student-loans-if-your-degree-doesnt-earn-enough" target="_blank">
+                Trump Administration Could Limit Your Access To Federal Student Loans, If Your Degree Doesn’t Earn Enough
+              </a>
+              <a class="article-url" href="https://afrotech.com/trump-administration-could-limit-your-access-to-federal-student-loans-if-your-degree-doesnt-earn-enough" target="_blank">
+                https://afrotech.com/trump-administration-could-limit-your-access-to-federal-student-loans-if-your-degree-doesnt-earn-enough
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Samantha Dorisca
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-29
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Education
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">department of education</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/openai-to-pause-development-of-some-of-its-ai-models" target="_blank">
+                OpenAI To Pause Development Of Some AI Models — Here’s Why
+              </a>
+              <a class="article-url" href="https://afrotech.com/openai-to-pause-development-of-some-of-its-ai-models" target="_blank">
+                https://afrotech.com/openai-to-pause-development-of-some-of-its-ai-models
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Samantha Dorisca
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-28
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Technology
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">department of education</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/25/nikole-hannah-jones-daughter-this-american-life/" target="_blank">
+                Nikole Hannah-Jones and her daughter to revisit the school choice debate in upcoming ‘This American Life’ conversation
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/25/nikole-hannah-jones-daughter-this-american-life/" target="_blank">
+                https://thegrio.com/2026/09/25/nikole-hannah-jones-daughter-this-american-life/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Bolarinwa Oladeji
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-25
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">school choice</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/angela-bassett-son-slater-vance-revives-yale-space-black-creatives" target="_blank">
+                Angela Bassett Created A Space For Black Talent At Yale In 1979. Now, Her Son Is Helping Revive It For Gen Z Creatives
+              </a>
+              <a class="article-url" href="https://afrotech.com/angela-bassett-son-slater-vance-revives-yale-space-black-creatives" target="_blank">
+                https://afrotech.com/angela-bassett-son-slater-vance-revives-yale-space-black-creatives
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Trey Mangum
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-24
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Education
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black student</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/21/nikole-hannah-jones-daughter-segregation-schools-reaction/" target="_blank">
+                Nikole Hannah-Jones’ school choice for her daughter sparks a debate over Black parents, education and sacrifice
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/21/nikole-hannah-jones-daughter-segregation-schools-reaction/" target="_blank">
+                https://thegrio.com/2026/09/21/nikole-hannah-jones-daughter-segregation-schools-reaction/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Brandon Caldwell
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-21
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Lifestyle
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">school choice</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/first-hbcu-charter-school-opens-south-carolina-education-technology" target="_blank">
+                The First HBCU-Authorized Public Charter School Is Set To Welcome Students In Columbia, SC
+              </a>
+              <a class="article-url" href="https://afrotech.com/first-hbcu-charter-school-opens-south-carolina-education-technology" target="_blank">
+                https://afrotech.com/first-hbcu-charter-school-opens-south-carolina-education-technology
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              ShaCamree Gowdy
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-21
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Education
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">historically black college</span>
+                
+                <span class="phrase-tag">charter school</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/17/dc-mother-sues-school-aide-autistic-son-hot-sauce/" target="_blank">
+                ‘What type of person would do that?’ D.C. mother sues over hot sauce incident involving autistic son
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/17/dc-mother-sues-school-aide-autistic-son-hot-sauce/" target="_blank">
+                https://thegrio.com/2026/09/17/dc-mother-sues-school-aide-autistic-son-hot-sauce/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Peter Kerich
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-17
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">school district</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/naacp-ceo-derrick-johnson-slams-the-protect-college-spo-2000126325" target="_blank">
+                NAACP CEO Derrick Johnson Slams the Protect College Sports Act
+              </a>
+              <a class="article-url" href="https://www.theroot.com/naacp-ceo-derrick-johnson-slams-the-protect-college-spo-2000126325" target="_blank">
+                https://www.theroot.com/naacp-ceo-derrick-johnson-slams-the-protect-college-spo-2000126325
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Rashad Grove
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-16
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black student</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/11/nauset-bullying-lawsuit-black-student/" target="_blank">
+                Black father sues Massachusetts school district after son’s suicide attempt, alleging years of racist bullying
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/11/nauset-bullying-lawsuit-black-student/" target="_blank">
+                https://thegrio.com/2026/09/11/nauset-bullying-lawsuit-black-student/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Odafe Oghen
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-11
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black student</span>
+                
+                <span class="phrase-tag">school district</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.ebony.com/mamdanis-new-ai-policy-what-do-we-have-to-lose/" target="_blank">
+                Mamdani’s New AI Policy: What Do We Have to Lose?
+              </a>
+              <a class="article-url" href="https://www.ebony.com/mamdanis-new-ai-policy-what-do-we-have-to-lose/" target="_blank">
+                https://www.ebony.com/mamdanis-new-ai-policy-what-do-we-have-to-lose/
+              </a>
+            </td>
+            <td><span class="source-badge">ebony.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              —
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-09
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">achievement gap</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/05/franklin-towne-settlement-black-applicants/" target="_blank">
+                Philadelphia charter school, former CEO agree to pay nearly $4 million over alleged discrimination against Black applicants
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/05/franklin-towne-settlement-black-applicants/" target="_blank">
+                https://thegrio.com/2026/09/05/franklin-towne-settlement-black-applicants/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Odafe Oghen
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-05
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">charter school</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/fayetteville-state-university-opens-69-3m-building-featuring-stem-lab" target="_blank">
+                Fayetteville State University Opens $69.3M Building Featuring STEM Lab To Prepare Teachers For Innovation
+              </a>
+              <a class="article-url" href="https://afrotech.com/fayetteville-state-university-opens-69-3m-building-featuring-stem-lab" target="_blank">
+                https://afrotech.com/fayetteville-state-university-opens-69-3m-building-featuring-stem-lab
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Samantha Dorisca
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-04
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Education
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">historically black college</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/morgan-state-university-awarded-3m-in-scholarships-from-baltimore-ravens-owner" target="_blank">
+                Morgan State University Awarded $3M From Baltimore Ravens Owner To Fund Scholarships
+              </a>
+              <a class="article-url" href="https://afrotech.com/morgan-state-university-awarded-3m-in-scholarships-from-baltimore-ravens-owner" target="_blank">
+                https://afrotech.com/morgan-state-university-awarded-3m-in-scholarships-from-baltimore-ravens-owner
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Samantha Dorisca
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-04
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Education
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">historically black college</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/02/unc-black-students-watch-party-attack-greenlaw/" target="_blank">
+                ‘We did not feel like we were going to make it out’: Black students recount terrifying UNC campus attack
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/02/unc-black-students-watch-party-attack-greenlaw/" target="_blank">
+                https://thegrio.com/2026/09/02/unc-black-students-watch-party-attack-greenlaw/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Bolarinwa Oladeji
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-02
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black student</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#C0392B;"></span>
+        <span class="topic-heading-name">Policing & Public Safety</span>
+        <span class="topic-heading-count">14 articles</span>
+      </div>
+      <p class="topic-desc-line">Police reform, use of force, accountability, community safety, officer-involved shootings, qualified immunity</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6873137/trump-immigration-court-deporting-children/" target="_blank">
+                Trump Immigration Court Deporting Unaccompanied Children As Young As 2
+              </a>
+              <a class="article-url" href="https://newsone.com/6873137/trump-immigration-court-deporting-children/" target="_blank">
+                https://newsone.com/6873137/trump-immigration-court-deporting-children/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Zack Linly
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Civil Rights & Social Justice
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">immigration enforcement</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6873131/oakland-police-department-consent-decree-lifted/" target="_blank">
+                Federal Judge Lifts Oakland Police Department’s Consent Decree
+              </a>
+              <a class="article-url" href="https://newsone.com/6873131/oakland-police-department-consent-decree-lifted/" target="_blank">
+                https://newsone.com/6873131/oakland-police-department-consent-decree-lifted/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Joe Jurado
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Civil Rights & Social Justice
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">excessive force</span>
+                
+                <span class="phrase-tag">police department</span>
+                
+                <span class="phrase-tag">consent decree</span>
+                
+                <span class="phrase-tag">excessive policing</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6873125/dhs-uses-nfl-legend-brian-dawkins-image/" target="_blank">
+                DHS Uses NFL Legend’s Image In Anti-Migrant Propaganda
+              </a>
+              <a class="article-url" href="https://newsone.com/6873125/dhs-uses-nfl-legend-brian-dawkins-image/" target="_blank">
+                https://newsone.com/6873125/dhs-uses-nfl-legend-brian-dawkins-image/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Angela M. Bronner
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Nation
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">homeland security</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/30/oakland-police-oversight-ends-23-years/" target="_blank">
+                After 23 years, Oakland police department exits federal oversight with accountability questions remaining
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/30/oakland-police-oversight-ends-23-years/" target="_blank">
+                https://thegrio.com/2026/09/30/oakland-police-oversight-ends-23-years/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Odafe Oghen
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">police department</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/california-ballot-seizing-ruling-could-impact-nationwide-elections" target="_blank">
+                A Right-Wing Sheriff In California Seized 650,000 Ballots, And The State’s Ruling On It Could Impact Elections Nationwide
+              </a>
+              <a class="article-url" href="https://blavity.com/california-ballot-seizing-ruling-could-impact-nationwide-elections" target="_blank">
+                https://blavity.com/california-ballot-seizing-ruling-could-impact-nationwide-elections
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Tomas Kassahun
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-28
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">sheriff</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6872875/cop-killed-randy-martin-galveston-no-charges/" target="_blank">
+                Galveston Cop Who Fired 8 Shots At Unarmed Man Won’t Face Charges
+              </a>
+              <a class="article-url" href="https://newsone.com/6872875/cop-killed-randy-martin-galveston-no-charges/" target="_blank">
+                https://newsone.com/6872875/cop-killed-randy-martin-galveston-no-charges/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Angela M. Bronner
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-28
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Civil Rights & Social Justice
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">police officer</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6872827/california-sheriff-chad-bianco-ordered-return-ballots/" target="_blank">
+                California Sheriff Ordered To Return Over 600K Ballots
+              </a>
+              <a class="article-url" href="https://newsone.com/6872827/california-sheriff-chad-bianco-ordered-return-ballots/" target="_blank">
+                https://newsone.com/6872827/california-sheriff-chad-bianco-ordered-return-ballots/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Joe Jurado
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-26
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Nation
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">sheriff</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/polls-betrayed-by-trump-latino-voters-are-ready-to-ha-2000127425" target="_blank">
+                Polls: Betrayed by Trump, Latino Voters Are Ready To Hand Republicans the Ultimate Payback
+              </a>
+              <a class="article-url" href="https://www.theroot.com/polls-betrayed-by-trump-latino-voters-are-ready-to-ha-2000127425" target="_blank">
+                https://www.theroot.com/polls-betrayed-by-trump-latino-voters-are-ready-to-ha-2000127425
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-23
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">immigration enforcement</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/jon-ossoffs-obama-swagger-has-tiktok-in-a-chokehold-2000127323" target="_blank">
+                Jon Ossoff’s ‘Obama Swagger’ Has TikTok in a Chokehold
+              </a>
+              <a class="article-url" href="https://www.theroot.com/jon-ossoffs-obama-swagger-has-tiktok-in-a-chokehold-2000127323" target="_blank">
+                https://www.theroot.com/jon-ossoffs-obama-swagger-has-tiktok-in-a-chokehold-2000127323
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Mahalia Otshudy
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-23
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">chokehold</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/23/renee-good-mother-voted-trump-ice-shooting/" target="_blank">
+                Renee Good’s mother says she voted for Trump before daughter was killed by ICE agent
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/23/renee-good-mother-voted-trump-ice-shooting/" target="_blank">
+                https://thegrio.com/2026/09/23/renee-good-mother-voted-trump-ice-shooting/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Peter Kerich
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-23
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Featured
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">ice agent</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/national-black-voter-day-what-black-voters-need-to-kno-2000126584" target="_blank">
+                National Black Voter Day: What Black Voters Need to Know Before the Midterms
+              </a>
+              <a class="article-url" href="https://www.theroot.com/national-black-voter-day-what-black-voters-need-to-kno-2000126584" target="_blank">
+                https://www.theroot.com/national-black-voter-day-what-black-voters-need-to-kno-2000126584
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-18
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">law enforcement</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/09/d4vd-wrongful-death-lawsuit-celeste-rivas/" target="_blank">
+                D4vd hit with wrongful death lawsuit from Celeste Rivas Hernandez’s family
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/09/d4vd-wrongful-death-lawsuit-celeste-rivas/" target="_blank">
+                https://thegrio.com/2026/09/09/d4vd-wrongful-death-lawsuit-celeste-rivas/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Odafe Oghen
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-09
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">wrongful death</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.ebony.com/celeb-love-check-phaedra-parks-ernest-harden-jr-letitia-wright/" target="_blank">
+                Celeb Love Check: Phaedra Parks’ Hard Launch, Ernest Harden Jr.’s Sweet Shoutout, ‘Black Panther’ Alum Weds?
+              </a>
+              <a class="article-url" href="https://www.ebony.com/celeb-love-check-phaedra-parks-ernest-harden-jr-letitia-wright/" target="_blank">
+                https://www.ebony.com/celeb-love-check-phaedra-parks-ernest-harden-jr-letitia-wright/
+              </a>
+            </td>
+            <td><span class="source-badge">ebony.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              —
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-08
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Celebrity
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">chokehold</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/02/rajon-belt-stubblefield-lawsuit-aurora-police/" target="_blank">
+                Family sues Aurora, Co., police officer over fatal shooting of Rajon Belt-Stubblefield
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/02/rajon-belt-stubblefield-lawsuit-aurora-police/" target="_blank">
+                https://thegrio.com/2026/09/02/rajon-belt-stubblefield-lawsuit-aurora-police/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Odafe Oghen
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-02
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">police officer</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#8E44AD;"></span>
+        <span class="topic-heading-name">Voter Suppression</span>
+        <span class="topic-heading-count">14 articles</span>
+      </div>
+      <p class="topic-desc-line">Voting rights, ballot access restrictions, gerrymandering, election interference, disenfranchisement</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.essence.com/news/politics/voting-rights-act-supreme-court-south-freedom-summer/" target="_blank">
+                From Ida B. Wells to Selma: The Ongoing Fight to Protect the Vote
+              </a>
+              <a class="article-url" href="https://www.essence.com/news/politics/voting-rights-act-supreme-court-south-freedom-summer/" target="_blank">
+                https://www.essence.com/news/politics/voting-rights-act-supreme-court-south-freedom-summer/
+              </a>
+            </td>
+            <td><span class="source-badge">essence.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Shelby Stewart
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              nan
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Opinion
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">voting rights</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/30/new-poll-finds-black-women-voters-are-approaching-the-midterms-with-obama-era-enthusiasm-but-a-different-motivation/" target="_blank">
+                New poll finds Black women voters are approaching the midterms with Obama-era enthusiasm, but a different motivation
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/30/new-poll-finds-black-women-voters-are-approaching-the-midterms-with-obama-era-enthusiasm-but-a-different-motivation/" target="_blank">
+                https://thegrio.com/2026/09/30/new-poll-finds-black-women-voters-are-approaching-the-midterms-with-obama-era-enthusiasm-but-a-different-motivation/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Gerren Keith Gaynor
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">voting rights</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://capitalbnews.org/black-women-voters-poll-america-future/" target="_blank">
+                Black Women Are Sounding the Alarm About Voting Rights and America’s Future
+              </a>
+              <a class="article-url" href="https://capitalbnews.org/black-women-voters-poll-america-future/" target="_blank">
+                https://capitalbnews.org/black-women-voters-poll-america-future/
+              </a>
+            </td>
+            <td><span class="source-badge">capitalbnews.org</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Aallyah Wright
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-29
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">voting rights</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/28/james-talarico-black-voters-hbcu-state-fair-classic-prairie-view/" target="_blank">
+                James Talarico gets a warm welcome at HBCU classic as Black voter push enters final stretch
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/28/james-talarico-black-voters-hbcu-state-fair-classic-prairie-view/" target="_blank">
+                https://thegrio.com/2026/09/28/james-talarico-black-voters-hbcu-state-fair-classic-prairie-view/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Gerren Keith Gaynor
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-28
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black voter</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6872924/texas-redistricting-effort-could-backfire-republicans/" target="_blank">
+                Texas Redistricting Effort Could Backfire On Republicans
+              </a>
+              <a class="article-url" href="https://newsone.com/6872924/texas-redistricting-effort-could-backfire-republicans/" target="_blank">
+                https://newsone.com/6872924/texas-redistricting-effort-could-backfire-republicans/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Joe Jurado
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-28
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Nation
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">redistricting</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6872845/trump-doj-drops-school-desegregation-cases/" target="_blank">
+                Trump DOJ Drops Dozens Of School Desegregation Cases, But The Most Segregated Schools Are In The North
+              </a>
+              <a class="article-url" href="https://newsone.com/6872845/trump-doj-drops-school-desegregation-cases/" target="_blank">
+                https://newsone.com/6872845/trump-doj-drops-school-desegregation-cases/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Angela M. Bronner
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-27
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Civil Rights & Social Justice
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">jim crow</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6872827/california-sheriff-chad-bianco-ordered-return-ballots/" target="_blank">
+                California Sheriff Ordered To Return Over 600K Ballots
+              </a>
+              <a class="article-url" href="https://newsone.com/6872827/california-sheriff-chad-bianco-ordered-return-ballots/" target="_blank">
+                https://newsone.com/6872827/california-sheriff-chad-bianco-ordered-return-ballots/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Joe Jurado
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-26
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Nation
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">election security</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://capitalbnews.org/missouri-redistricting-kansas-city-voters/" target="_blank">
+                Black Voters in Kansas City Face Divided District as Federal Court Sides With GOP
+              </a>
+              <a class="article-url" href="https://capitalbnews.org/missouri-redistricting-kansas-city-voters/" target="_blank">
+                https://capitalbnews.org/missouri-redistricting-kansas-city-voters/
+              </a>
+            </td>
+            <td><span class="source-badge">capitalbnews.org</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Calvin Davis, Alecia Taylor
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-22
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">redistricting</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/national-black-voter-day-what-black-voters-need-to-kno-2000126584" target="_blank">
+                National Black Voter Day: What Black Voters Need to Know Before the Midterms
+              </a>
+              <a class="article-url" href="https://www.theroot.com/national-black-voter-day-what-black-voters-need-to-kno-2000126584" target="_blank">
+                https://www.theroot.com/national-black-voter-day-what-black-voters-need-to-kno-2000126584
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-18
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">redistricting</span>
+                
+                <span class="phrase-tag">black voter</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.ebony.com/voter-registration-deadlines-every-us-state/" target="_blank">
+                Here are the Voter Registration Deadlines in Every State
+              </a>
+              <a class="article-url" href="https://www.ebony.com/voter-registration-deadlines-every-us-state/" target="_blank">
+                https://www.ebony.com/voter-registration-deadlines-every-us-state/
+              </a>
+            </td>
+            <td><span class="source-badge">ebony.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              —
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-16
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News &Amp; Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">voter registration</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/15/cbc-institute-black-voter-campaign-democratic-party-failures/" target="_blank">
+                CBC Institute launches multimillion-dollar Black voter campaign as leaders call out Democratic Party failures
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/15/cbc-institute-black-voter-campaign-democratic-party-failures/" target="_blank">
+                https://thegrio.com/2026/09/15/cbc-institute-black-voter-campaign-democratic-party-failures/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Gerren Keith Gaynor
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-15
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black voter</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/15/national-voter-registration-day-black-voters/" target="_blank">
+                National Voter Registration Day: Why Black voters are being urged to check their registration
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/15/national-voter-registration-day-black-voters/" target="_blank">
+                https://thegrio.com/2026/09/15/national-voter-registration-day-black-voters/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Gerren Keith Gaynor
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-15
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">voter registration</span>
+                
+                <span class="phrase-tag">redistricting</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/aclu-expert-warns-south-carolina-voter-purge-is-dispro-2000124448" target="_blank">
+                ACLU Expert Warns: South Carolina Voter Purge is Disproportionately Targeting People of Color
+              </a>
+              <a class="article-url" href="https://www.theroot.com/aclu-expert-warns-south-carolina-voter-purge-is-dispro-2000124448" target="_blank">
+                https://www.theroot.com/aclu-expert-warns-south-carolina-voter-purge-is-dispro-2000124448
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-04
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">voter purge</span>
+                
+                <span class="phrase-tag">voter rolls</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/mlks-granddaughter-yolanda-calls-to-restore-the-dream" target="_blank">
+                MLK’s Granddaughter Yolanda Calls To ‘Restore The Dream’ At New Voting Rights March On Washington
+              </a>
+              <a class="article-url" href="https://blavity.com/mlks-granddaughter-yolanda-calls-to-restore-the-dream" target="_blank">
+                https://blavity.com/mlks-granddaughter-yolanda-calls-to-restore-the-dream
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Christopher Rhodes
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-01
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">voting rights</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#117A65;"></span>
+        <span class="topic-heading-name">Maternal Health</span>
+        <span class="topic-heading-count">10 articles</span>
+      </div>
+      <p class="topic-desc-line">Black maternal mortality, obstetric racism, prenatal care disparities, childbirth outcomes</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/the-latest-twist-in-the-mckenna-west-surrogacy-battle-2000127073" target="_blank">
+                The Latest Twist in the McKenna West Surrogacy Battle: Texas Court Clears Baby for California Transfer
+              </a>
+              <a class="article-url" href="https://www.theroot.com/the-latest-twist-in-the-mckenna-west-surrogacy-battle-2000127073" target="_blank">
+                https://www.theroot.com/the-latest-twist-in-the-mckenna-west-surrogacy-battle-2000127073
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-22
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Black Maternal Healthcare
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black maternal</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/22/kamala-harris-abdul-el-sayed-michigan-black-maternal-health/" target="_blank">
+                Kamala Harris campaigns with Abdul El-Sayed in Michigan, focusing on Black maternal health
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/22/kamala-harris-abdul-el-sayed-michigan-black-maternal-health/" target="_blank">
+                https://thegrio.com/2026/09/22/kamala-harris-abdul-el-sayed-michigan-black-maternal-health/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Peter Kerich
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-22
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Featured
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">maternal health</span>
+                
+                <span class="phrase-tag">black maternal</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/21/keke-palmer-on-being-forever-postpartum-and-the-mom-community-helping-her-navigate-motherhood/" target="_blank">
+                Keke Palmer on being ‘forever postpartum’ and the mom community helping her navigate motherhood
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/21/keke-palmer-on-being-forever-postpartum-and-the-mom-community-helping-her-navigate-motherhood/" target="_blank">
+                https://thegrio.com/2026/09/21/keke-palmer-on-being-forever-postpartum-and-the-mom-community-helping-her-navigate-motherhood/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Haniyah P.
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-21
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Lifestyle
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">postpartum</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/exclusive-planned-parenthoods-ceo-explains-whats-at-st-2000126741" target="_blank">
+                Exclusive: Planned Parenthood’s CEO Explains What’s At Stake For Black Maternal Health in the Midterms
+              </a>
+              <a class="article-url" href="https://www.theroot.com/exclusive-planned-parenthoods-ceo-explains-whats-at-st-2000126741" target="_blank">
+                https://www.theroot.com/exclusive-planned-parenthoods-ceo-explains-whats-at-st-2000126741
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Amber Ferguson
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-19
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Black Maternal Healthcare
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">maternal health</span>
+                
+                <span class="phrase-tag">black maternal</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/family-lawsuit-blames-texas-abortion-restrictions-for-m-2000126415" target="_blank">
+                Family Lawsuit Blames Texas Abortion Restrictions for Mother’s Tragic Death
+              </a>
+              <a class="article-url" href="https://www.theroot.com/family-lawsuit-blames-texas-abortion-restrictions-for-m-2000126415" target="_blank">
+                https://www.theroot.com/family-lawsuit-blames-texas-abortion-restrictions-for-m-2000126415
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-17
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Black Maternal Healthcare
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">maternal health</span>
+                
+                <span class="phrase-tag">black maternal</span>
+                
+                <span class="phrase-tag">pregnancy care</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/mckenna-west-takes-custody-battle-to-the-supreme-court-2000126345" target="_blank">
+                McKenna West Takes Custody Battle to the Supreme Court
+              </a>
+              <a class="article-url" href="https://www.theroot.com/mckenna-west-takes-custody-battle-to-the-supreme-court-2000126345" target="_blank">
+                https://www.theroot.com/mckenna-west-takes-custody-battle-to-the-supreme-court-2000126345
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-16
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Black Maternal Healthcare
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black maternal</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/this-security-guard-turned-doula-is-helping-black-moms-2000126317" target="_blank">
+                This Security Guard-Turned-Doula is Helping Black Moms Feel Safe
+              </a>
+              <a class="article-url" href="https://www.theroot.com/this-security-guard-turned-doula-is-helping-black-moms-2000126317" target="_blank">
+                https://www.theroot.com/this-security-guard-turned-doula-is-helping-black-moms-2000126317
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Shellie M. Scott
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-16
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Health
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">maternal health</span>
+                
+                <span class="phrase-tag">doula</span>
+                
+                <span class="phrase-tag">maternal care</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/after-losing-her-son-monique-rodriguez-is-putting-2-m-2000125186" target="_blank">
+                After Losing Her Son, Monique Rodriguez is Putting $2 Million Behind Better Birth Care for Black Women
+              </a>
+              <a class="article-url" href="https://www.theroot.com/after-losing-her-son-monique-rodriguez-is-putting-2-m-2000125186" target="_blank">
+                https://www.theroot.com/after-losing-her-son-monique-rodriguez-is-putting-2-m-2000125186
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Amber Ferguson
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-10
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Black Maternal Healthcare
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">maternal health</span>
+                
+                <span class="phrase-tag">black maternal</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/as-lindsay-clancy-s-case-ends-in-mistrial-this-black-m-2000124546" target="_blank">
+                As Lindsay Clancy’s Case Ends in Mistrial, this Black Mother Gets a Second Chance
+              </a>
+              <a class="article-url" href="https://www.theroot.com/as-lindsay-clancy-s-case-ends-in-mistrial-this-black-m-2000124546" target="_blank">
+                https://www.theroot.com/as-lindsay-clancy-s-case-ends-in-mistrial-this-black-m-2000124546
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-04
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Black Maternal Healthcare
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black maternal</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/could-this-black-mothers-tragic-case-predict-the-fate-o-2000123827" target="_blank">
+                Could This Black Mother’s Tragic Case Predict the Fate of Lindsay Clancy’s Postpartum Psychosis Defense?
+              </a>
+              <a class="article-url" href="https://www.theroot.com/could-this-black-mothers-tragic-case-predict-the-fate-o-2000123827" target="_blank">
+                https://www.theroot.com/could-this-black-mothers-tragic-case-predict-the-fate-o-2000123827
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-08-31
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Crime
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">postpartum</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#D35400;"></span>
+        <span class="topic-heading-name">Book Bans & Anti-DEI</span>
+        <span class="topic-heading-count">9 articles</span>
+      </div>
+      <p class="topic-desc-line">Censorship of Black literature, DEI rollbacks, critical race theory bans, curriculum restrictions</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.essence.com/video/black-history-month-black-futures-now-voter-panel-davis-ferrell-zabala/" target="_blank">
+                ‘A Lot Of Black People Are Wondering, What Are We Getting For Our Loyalty?’ ESSENCE Black Futures Now Honorees Speak Candidly About The Upcoming Election - Esse
+              </a>
+              <a class="article-url" href="https://www.essence.com/video/black-history-month-black-futures-now-voter-panel-davis-ferrell-zabala/" target="_blank">
+                https://www.essence.com/video/black-history-month-black-futures-now-voter-panel-davis-ferrell-zabala/
+              </a>
+            </td>
+            <td><span class="source-badge">essence.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              https://www.facebook.com/essence
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              nan
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Video
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">black history month</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/28/cornell-brooks-kevin-roberts-debate-dei-project-2025/" target="_blank">
+                Ex-NAACP president Cornell William Brooks challenges ‘Project 2025’ architect in heated debate over DEI
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/28/cornell-brooks-kevin-roberts-debate-dei-project-2025/" target="_blank">
+                https://thegrio.com/2026/09/28/cornell-brooks-kevin-roberts-debate-dei-project-2025/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Brandon Caldwell
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-28
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">dei</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/more-than-50-years-after-its-release-why-school-distri-2000127645" target="_blank">
+                More Than 50 Years After Its Release, Why School Districts Keep Toni Morrison’s ‘The Bluest Eye’ On Their Book Ban Lists
+              </a>
+              <a class="article-url" href="https://www.theroot.com/more-than-50-years-after-its-release-why-school-distri-2000127645" target="_blank">
+                https://www.theroot.com/more-than-50-years-after-its-release-why-school-distri-2000127645
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-24
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">book ban</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/ut-austin-eliminates-african-american-latino-and-gender-studies-majors-trump-pressure" target="_blank">
+                UT Austin Eliminates African American, Latino And Gender Studies Majors After Trump Admin Pressure
+              </a>
+              <a class="article-url" href="https://blavity.com/ut-austin-eliminates-african-american-latino-and-gender-studies-majors-trump-pressure" target="_blank">
+                https://blavity.com/ut-austin-eliminates-african-american-latino-and-gender-studies-majors-trump-pressure
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Tomas Kassahun
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-21
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">ethnic studies</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/accenture-settles-with-justice-department-for-25m-over-dei-allegations" target="_blank">
+                Accenture Settles With Justice Department For $25M Over DEI Allegations
+              </a>
+              <a class="article-url" href="https://afrotech.com/accenture-settles-with-justice-department-for-25m-over-dei-allegations" target="_blank">
+                https://afrotech.com/accenture-settles-with-justice-department-for-25m-over-dei-allegations
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Samantha Dorisca
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-17
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Technology
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">dei</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.ebony.com/emerges-15th-anniversary-show-was-a-celebration-of-black-creativity-from-karl-kani-to-danessa-myricks/" target="_blank">
+                EMERGE!’s 15th Anniversary Show Was a Celebration of Black Creativity, From Karl Kani to Danessa Myricks
+              </a>
+              <a class="article-url" href="https://www.ebony.com/emerges-15th-anniversary-show-was-a-celebration-of-black-creativity-from-karl-kani-to-danessa-myricks/" target="_blank">
+                https://www.ebony.com/emerges-15th-anniversary-show-was-a-celebration-of-black-creativity-from-karl-kani-to-danessa-myricks/
+              </a>
+            </td>
+            <td><span class="source-badge">ebony.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              —
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-17
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Fashion
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">dei</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://capitalbnews.org/black-studies-programs-college-cuts/" target="_blank">
+                The Slow Disappearance of Black Studies on College Campuses
+              </a>
+              <a class="article-url" href="https://capitalbnews.org/black-studies-programs-college-cuts/" target="_blank">
+                https://capitalbnews.org/black-studies-programs-college-cuts/
+              </a>
+            </td>
+            <td><span class="source-badge">capitalbnews.org</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Alecia Taylor
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-15
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">dei</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/how-new-federal-rules-could-impact-private-colleges-dei-2000124463" target="_blank">
+                How New Federal Rules Could Impact Private Colleges’ DEI Programs
+              </a>
+              <a class="article-url" href="https://www.theroot.com/how-new-federal-rules-could-impact-private-colleges-dei-2000124463" target="_blank">
+                https://www.theroot.com/how-new-federal-rules-could-impact-private-colleges-dei-2000124463
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-04
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">dei</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/deloitte-trump-administration-lawsuit-settlement-diversity-equity-inclusion" target="_blank">
+                Deloitte To Pay $21.5M To Settle Lawsuit As Trump Administration Continues Push To Dismantle DEI
+              </a>
+              <a class="article-url" href="https://afrotech.com/deloitte-trump-administration-lawsuit-settlement-diversity-equity-inclusion" target="_blank">
+                https://afrotech.com/deloitte-trump-administration-lawsuit-settlement-diversity-equity-inclusion
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              ShaCamree Gowdy
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-01
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Business
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">dei</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#784212;"></span>
+        <span class="topic-heading-name">Reparations</span>
+        <span class="topic-heading-count">9 articles</span>
+      </div>
+      <p class="topic-desc-line">Reparations for slavery, community investment, wealth redistribution, descendants of enslaved people</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.essence.com/news/a-countrys-unpaid-debt-ss-2026/" target="_blank">
+                A Country's Unpaid Debt
+              </a>
+              <a class="article-url" href="https://www.essence.com/news/a-countrys-unpaid-debt-ss-2026/" target="_blank">
+                https://www.essence.com/news/a-countrys-unpaid-debt-ss-2026/
+              </a>
+            </td>
+            <td><span class="source-badge">essence.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Shelby Stewart
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              nan
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Money & Career
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">reparations</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/quaker-congregation-helps-black-families-purchase-homes" target="_blank">
+                Quaker Congregation Helps Black Families Purchase Homes As Part Of Its Reparations Program
+              </a>
+              <a class="article-url" href="https://blavity.com/quaker-congregation-helps-black-families-purchase-homes" target="_blank">
+                https://blavity.com/quaker-congregation-helps-black-families-purchase-homes
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Christopher Rhodes
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">reparations</span>
+                
+                <span class="phrase-tag">reparations program</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/the-quaker-reparations-that-helped-this-black-philly-fa-2000126454" target="_blank">
+                The Quaker Reparations That Helped This Black Philly Family Build Generational Wealth
+              </a>
+              <a class="article-url" href="https://www.theroot.com/the-quaker-reparations-that-helped-this-black-philly-fa-2000126454" target="_blank">
+                https://www.theroot.com/the-quaker-reparations-that-helped-this-black-philly-fa-2000126454
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-29
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">reparations</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/trump-admin-aims-to-block-city-from-giving-reparations" target="_blank">
+                Trump Admin Aims To Block An Illinois City From Giving Reparations To Black Residents
+              </a>
+              <a class="article-url" href="https://blavity.com/trump-admin-aims-to-block-city-from-giving-reparations" target="_blank">
+                https://blavity.com/trump-admin-aims-to-block-city-from-giving-reparations
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Tomas Kassahun
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-18
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">reparations</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://capitalbnews.org/california-oil-wells-reparations/" target="_blank">
+                In LA, Some Black Residents May Soon Receive Environmental Reparations
+              </a>
+              <a class="article-url" href="https://capitalbnews.org/california-oil-wells-reparations/" target="_blank">
+                https://capitalbnews.org/california-oil-wells-reparations/
+              </a>
+            </td>
+            <td><span class="source-badge">capitalbnews.org</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Adam Mahoney
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-16
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">reparations</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/the-trump-administration-makes-its-case-against-evansto-2000126068" target="_blank">
+                The Trump Administration Makes Its Case Against Evanston’s Reparations Program
+              </a>
+              <a class="article-url" href="https://www.theroot.com/the-trump-administration-makes-its-case-against-evansto-2000126068" target="_blank">
+                https://www.theroot.com/the-trump-administration-makes-its-case-against-evansto-2000126068
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-15
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">reparations</span>
+                
+                <span class="phrase-tag">evanston reparations</span>
+                
+                <span class="phrase-tag">reparations program</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/14/cam-newton-black-women-apology/" target="_blank">
+                In moment of atonement, Cam Newton issues public apology to Black women: ‘Trying to rehabilitate my relationship’
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/14/cam-newton-black-women-apology/" target="_blank">
+                https://thegrio.com/2026/09/14/cam-newton-black-women-apology/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Brandon Caldwell
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-14
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Lifestyle
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">atonement</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/09/jamaica-reparations-petition-king-charles/" target="_blank">
+                Jamaica asks King Charles III to put Britain’s slavery reparations obligations to a legal test
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/09/jamaica-reparations-petition-king-charles/" target="_blank">
+                https://thegrio.com/2026/09/09/jamaica-reparations-petition-king-charles/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Odafe Oghen
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-09
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">reparations</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/jamaica-takes-push-for-reparations-straight-to-king-cha-2000124909" target="_blank">
+                Jamaica Takes Push for Reparations Straight to King Charles III
+              </a>
+              <a class="article-url" href="https://www.theroot.com/jamaica-takes-push-for-reparations-straight-to-king-cha-2000124909" target="_blank">
+                https://www.theroot.com/jamaica-takes-push-for-reparations-straight-to-king-cha-2000124909
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-08
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">reparations</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#1A5276;"></span>
+        <span class="topic-heading-name">Housing & Displacement</span>
+        <span class="topic-heading-count">4 articles</span>
+      </div>
+      <p class="topic-desc-line">Affordable housing, eviction crisis, gentrification, homelessness, housing discrimination</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/mamdani-pothole-repairs-milestone" target="_blank">
+                Mamdani Celebrates Milestone As NYC Hits 200K Pothole Repairs, Sees Drop In Murders And More Affordable Housing
+              </a>
+              <a class="article-url" href="https://blavity.com/mamdani-pothole-repairs-milestone" target="_blank">
+                https://blavity.com/mamdani-pothole-repairs-milestone
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Tomas Kassahun
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-22
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">affordable housing</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/first-hbcu-charter-school-opens-south-carolina-education-technology" target="_blank">
+                The First HBCU-Authorized Public Charter School Is Set To Welcome Students In Columbia, SC
+              </a>
+              <a class="article-url" href="https://afrotech.com/first-hbcu-charter-school-opens-south-carolina-education-technology" target="_blank">
+                https://afrotech.com/first-hbcu-charter-school-opens-south-carolina-education-technology
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              ShaCamree Gowdy
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-21
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Education
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">zoning</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/new-yorks-furniture-queen-is-keeping-tons-of-goods-out-2000126645" target="_blank">
+                New York’s ‘Furniture Queen’ is Keeping Tons of Goods Out of Landfills—and Giving Them to People in Need
+              </a>
+              <a class="article-url" href="https://www.theroot.com/new-yorks-furniture-queen-is-keeping-tons-of-goods-out-2000126645" target="_blank">
+                https://www.theroot.com/new-yorks-furniture-queen-is-keeping-tons-of-goods-out-2000126645
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Angela Wilson
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-18
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">public housing</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/why-thousands-of-affordable-housing-units-sit-vacant-wh-2000124966" target="_blank">
+                Why Thousands of Affordable Housing Units Sit Vacant While Millions Remain Unhoused
+              </a>
+              <a class="article-url" href="https://www.theroot.com/why-thousands-of-affordable-housing-units-sit-vacant-wh-2000124966" target="_blank">
+                https://www.theroot.com/why-thousands-of-affordable-housing-units-sit-vacant-wh-2000124966
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Angela Wilson
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-08
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">affordable housing</span>
+                
+                <span class="phrase-tag">homelessness</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#1E8449;"></span>
+        <span class="topic-heading-name">Environmental Justice</span>
+        <span class="topic-heading-count">4 articles</span>
+      </div>
+      <p class="topic-desc-line">Environmental racism, pollution in Black communities, climate vulnerability, toxic exposure</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/federal-court-rules-clean-water-not-a-constitutional-right-in-jackson-mississippi-case" target="_blank">
+                Federal Court Rules Clean Water Not A Constitutional Right In Jackson, Mississippi Case
+              </a>
+              <a class="article-url" href="https://blavity.com/federal-court-rules-clean-water-not-a-constitutional-right-in-jackson-mississippi-case" target="_blank">
+                https://blavity.com/federal-court-rules-clean-water-not-a-constitutional-right-in-jackson-mississippi-case
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Christopher Rhodes
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-10
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">clean water</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://afrotech.com/aliko-dangote-ipo" target="_blank">
+                Africa’s Richest Man Aliko Dangote Takes His Energy Empire Public With $1.6B IPO
+              </a>
+              <a class="article-url" href="https://afrotech.com/aliko-dangote-ipo" target="_blank">
+                https://afrotech.com/aliko-dangote-ipo
+              </a>
+            </td>
+            <td><span class="source-badge">afrotech.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Tyler-Christian Daniels
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-09
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">refinery</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://thegrio.com/2026/09/09/jackson-clean-drinking-water-isnt-a-constitutional-right/" target="_blank">
+                Court says clean water isn’t a constitutional right. Leaders say majority-Black Jackson, Miss., deserves better
+              </a>
+              <a class="article-url" href="https://thegrio.com/2026/09/09/jackson-clean-drinking-water-isnt-a-constitutional-right/" target="_blank">
+                https://thegrio.com/2026/09/09/jackson-clean-drinking-water-isnt-a-constitutional-right/
+              </a>
+            </td>
+            <td><span class="source-badge">thegrio.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Gerren Keith Gaynor
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-09
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Politics
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">clean water</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/when-clean-water-isn-t-a-constitutional-right-black-co-2000124898" target="_blank">
+                When Clean Water Isn’t a Constitutional Right, Black Communities Pay the Price
+              </a>
+              <a class="article-url" href="https://www.theroot.com/when-clean-water-isn-t-a-constitutional-right-black-co-2000124898" target="_blank">
+                https://www.theroot.com/when-clean-water-isn-t-a-constitutional-right-black-co-2000124898
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-08
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Culture
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">environmental justice</span>
+                
+                <span class="phrase-tag">clean water</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+
+      <div class="topic-heading no-break">
+        <span class="topic-swatch" style="background:#6C3483;"></span>
+        <span class="topic-heading-name">Criminal Justice Reform</span>
+        <span class="topic-heading-count">3 articles</span>
+      </div>
+      <p class="topic-desc-line">Mass incarceration, sentencing disparities, prison conditions, bail reform, reentry programs</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:34%;">Title &amp; URL</th>
+            <th>Publication</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Matched Phrases</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://www.theroot.com/after-41-years-behind-bars-death-row-inmate-finally-ge-2000128437" target="_blank">
+                After 41 Years Behind Bars, Death Row Inmate Finally Gets a Chance at Freedom
+              </a>
+              <a class="article-url" href="https://www.theroot.com/after-41-years-behind-bars-death-row-inmate-finally-ge-2000128437" target="_blank">
+                https://www.theroot.com/after-41-years-behind-bars-death-row-inmate-finally-ge-2000128437
+              </a>
+            </td>
+            <td><span class="source-badge">theroot.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Phenix S Halley
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-30
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Crime
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">death row</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://newsone.com/6873006/douglas-stewart-carter-released-dna-evidence/" target="_blank">
+                Black Man Released From Death Row After Crime Scene DNA Doesn’t Match Him
+              </a>
+              <a class="article-url" href="https://newsone.com/6873006/douglas-stewart-carter-released-dna-evidence/" target="_blank">
+                https://newsone.com/6873006/douglas-stewart-carter-released-dna-evidence/
+              </a>
+            </td>
+            <td><span class="source-badge">newsone.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Joe Jurado
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-29
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Civil Rights & Social Justice
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">death row</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a class="article-title-link" href="https://blavity.com/d4vd-fires-legal-team-switches-to-public-defender" target="_blank">
+                D4vd Fires Legal Team, Switches To Public Defender In Celeste Rivas Hernandez Murder Case
+              </a>
+              <a class="article-url" href="https://blavity.com/d4vd-fires-legal-team-switches-to-public-defender" target="_blank">
+                https://blavity.com/d4vd-fires-legal-team-switches-to-public-defender
+              </a>
+            </td>
+            <td><span class="source-badge">blavity.com</span></td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              Tomas Kassahun
+            </td>
+            <td class="sans" style="font-size:8.5pt; white-space:nowrap; color:var(--text-muted);">
+              2026-09-01
+            </td>
+            <td class="sans" style="font-size:8.5pt; color:var(--text-muted);">
+              News
+            </td>
+            <td>
+              
+              <div class="phrase-list">
+                
+                <span class="phrase-tag">public defender</span>
+                
+              </div>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      
+      
+      
+      
+      
+      
+
+      
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §8  WORD CLOUDS
+    ═══════════════════════════════════════════════════════ -->
+    
+    <div class="section" id="s8">
+      <div class="section-label">Section 08</div>
+      <h2 class="section-title">Topic Word Clouds</h2>
+      <p class="section-desc">
+        Visual frequency maps of headline language in articles matched to each topic.
+        Term size reflects relative frequency across matched article titles.
+      </p>
+      <hr class="section-rule">
+
+      <div class="chart-grid-2">
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_policing.png" alt="Word Cloud: Policing & Public Safety" />
+          <p class="chart-caption">Policing & Public Safety</p>
+        </div>
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_voter_suppression.png" alt="Word Cloud: Voter Suppression" />
+          <p class="chart-caption">Voter Suppression</p>
+        </div>
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_book_bans_dei.png" alt="Word Cloud: Book Bans & Anti-DEI" />
+          <p class="chart-caption">Book Bans & Anti-DEI</p>
+        </div>
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_housing.png" alt="Word Cloud: Housing & Displacement" />
+          <p class="chart-caption">Housing & Displacement</p>
+        </div>
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_maternal_health.png" alt="Word Cloud: Maternal Health" />
+          <p class="chart-caption">Maternal Health</p>
+        </div>
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_reparations.png" alt="Word Cloud: Reparations" />
+          <p class="chart-caption">Reparations</p>
+        </div>
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_school_funding.png" alt="Word Cloud: School Funding" />
+          <p class="chart-caption">School Funding</p>
+        </div>
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_criminal_justice.png" alt="Word Cloud: Criminal Justice Reform" />
+          <p class="chart-caption">Criminal Justice Reform</p>
+        </div>
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_environmental_justice.png" alt="Word Cloud: Environmental Justice" />
+          <p class="chart-caption">Environmental Justice</p>
+        </div>
+        
+        <div class="chart-wrap">
+          <img class="chart-img" src="/home/runner/work/topic-analysis/topic-analysis/outputs/2026-10-01/charts/wordcloud_economic_equity.png" alt="Word Cloud: Economic Equity & Wealth Gap" />
+          <p class="chart-caption">Economic Equity & Wealth Gap</p>
+        </div>
+        
+      </div>
+    </div>
+    
+
+
+    <!-- ══════════════════════════════════════════════════════
+         §9  METHODOLOGY
+    ═══════════════════════════════════════════════════════ -->
+    <div class="section" id="s9">
+      <div class="section-label">Section 09</div>
+      <h2 class="section-title">Methodology</h2>
+      <p class="section-desc">Data collection, analysis approach, and known limitations.</p>
+      <hr class="section-rule">
+
+      <div class="method-block">
+        <strong>Data Collection.</strong> Articles were scraped from 7 Black media
+        publications (The Grio, The Root, NewsOne, Capital B News, Blavity, Essence, Ebony)
+        using RSS feeds as the primary method and HTML scraping as a fallback.
+        Only articles with a publication date within the 30-day window ending
+        <strong>October 01, 2026</strong> were included. Each article record captures:
+        title, snippet/description, publication, date, category, and URL.
+      </div>
+
+      <div class="method-block">
+        <strong>Topic Matching.</strong> Each article's title, description, and category
+        were matched against a curated dictionary of 12 social conflict topics. Each topic
+        contains 20–35 seed phrases. Matching uses whole-word regular expression search
+        (case-insensitive) with optional suffix flexibility (plurals, verb forms).
+        Articles can match multiple topics simultaneously.
+      </div>
+
+      <div class="method-block">
+        <strong>TF-IDF Keyword Extraction.</strong> Term Frequency–Inverse Document
+        Frequency (TF-IDF) scoring was applied to the full corpus using scikit-learn's
+        <code>TfidfVectorizer</code> (n-grams 1–3, min_df=2, max_df=0.85, sublinear
+        TF normalization). Scores represent a term's relative prominence in this
+        period compared to its overall distribution across the corpus.
+      </div>
+
+      <div class="method-block">
+        <strong>Limitations.</strong>
+        (1) Topic matching is constrained by the seed phrase dictionary — articles using
+        different terminology for the same issue may not be captured.
+        (2) RSS feed snippets vary in length and completeness by publication; full article
+        body text is not analyzed.
+        (3) The 30-day rolling window does not capture longer-term trends.
+        (4) Coverage rates reflect the share of articles that explicitly reference
+        tracked topics, not the total editorial attention given to those topics.
+      </div>
+
+      <div class="method-block">
+        <strong>Tracked Topics (12).</strong>
+        Policing &amp; Public Safety · Voter Suppression · Book Bans &amp; Anti-DEI ·
+        Housing &amp; Displacement · Maternal Health · Redlining &amp; Fair Housing ·
+        Anti-Black Surveillance · Reparations · School Funding ·
+        Criminal Justice Reform · Environmental Justice · Economic Equity &amp; Wealth Gap.
+      </div>
+    </div>
+
+  </div><!-- /.report-body -->
+
+  <!-- ── Footer ──────────────────────────────────────────────── -->
+  <div class="report-footer">
+    <span>Black Media Intelligence Pipeline &nbsp;·&nbsp; Editorial Topic Analysis Report</span>
+    <span>October 01, 2026 &nbsp;·&nbsp; 1423 articles analyzed</span>
+  </div>
+
+</div><!-- /.report-shell -->
+</body>
+</html>
