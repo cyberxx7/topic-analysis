@@ -1,0 +1,892 @@
+{
+  "global": [
+    {
+      "keyword": "essence",
+      "score": 23.223
+    },
+    {
+      "keyword": "2026",
+      "score": 13.311
+    },
+    {
+      "keyword": "trump",
+      "score": 13.2127
+    },
+    {
+      "keyword": "women",
+      "score": 11.9057
+    },
+    {
+      "keyword": "season",
+      "score": 10.5088
+    },
+    {
+      "keyword": "old",
+      "score": 9.6809
+    },
+    {
+      "keyword": "history",
+      "score": 9.4112
+    },
+    {
+      "keyword": "family",
+      "score": 9.26
+    },
+    {
+      "keyword": "continue",
+      "score": 9.1963
+    },
+    {
+      "keyword": "know",
+      "score": 9.1954
+    },
+    {
+      "keyword": "fashion",
+      "score": 9.0458
+    },
+    {
+      "keyword": "power",
+      "score": 8.8136
+    },
+    {
+      "keyword": "reading",
+      "score": 8.6509
+    },
+    {
+      "keyword": "continue reading",
+      "score": 8.553
+    },
+    {
+      "keyword": "hbcu",
+      "score": 8.4191
+    },
+    {
+      "keyword": "fall",
+      "score": 8.2807
+    },
+    {
+      "keyword": "health",
+      "score": 8.1543
+    },
+    {
+      "keyword": "voters",
+      "score": 8.1008
+    },
+    {
+      "keyword": "former",
+      "score": 7.9764
+    },
+    {
+      "keyword": "star",
+      "score": 7.9193
+    },
+    {
+      "keyword": "home",
+      "score": 7.8916
+    },
+    {
+      "keyword": "show",
+      "score": 7.5806
+    },
+    {
+      "keyword": "love",
+      "score": 7.5522
+    },
+    {
+      "keyword": "life",
+      "score": 7.522
+    },
+    {
+      "keyword": "look",
+      "score": 7.4229
+    },
+    {
+      "keyword": "york",
+      "score": 7.3629
+    },
+    {
+      "keyword": "university",
+      "score": 7.3093
+    },
+    {
+      "keyword": "best",
+      "score": 7.2867
+    },
+    {
+      "keyword": "us",
+      "score": 7.2861
+    },
+    {
+      "keyword": "ahead",
+      "score": 7.1776
+    },
+    {
+      "keyword": "beauty",
+      "score": 7.0961
+    },
+    {
+      "keyword": "federal",
+      "score": 6.9774
+    },
+    {
+      "keyword": "state",
+      "score": 6.872
+    },
+    {
+      "keyword": "students",
+      "score": 6.6729
+    },
+    {
+      "keyword": "ai",
+      "score": 6.5517
+    },
+    {
+      "keyword": "president",
+      "score": 6.4502
+    },
+    {
+      "keyword": "atlanta",
+      "score": 6.3327
+    },
+    {
+      "keyword": "political",
+      "score": 6.2779
+    },
+    {
+      "keyword": "court",
+      "score": 6.2001
+    },
+    {
+      "keyword": "world",
+      "score": 6.1662
+    },
+    {
+      "keyword": "death",
+      "score": 6.0908
+    },
+    {
+      "keyword": "october",
+      "score": 6.0849
+    },
+    {
+      "keyword": "city",
+      "score": 6.0335
+    },
+    {
+      "keyword": "behind",
+      "score": 5.8905
+    },
+    {
+      "keyword": "case",
+      "score": 5.8899
+    },
+    {
+      "keyword": "midterms",
+      "score": 5.8437
+    },
+    {
+      "keyword": "halloween",
+      "score": 5.8136
+    },
+    {
+      "keyword": "need",
+      "score": 5.7966
+    },
+    {
+      "keyword": "culture",
+      "score": 5.7531
+    },
+    {
+      "keyword": "questions",
+      "score": 5.729
+    }
+  ],
+  "by_source": {
+    "afrotech.com": [
+      {
+        "keyword": "ai",
+        "score": 3.6121
+      },
+      {
+        "keyword": "afrotech",
+        "score": 3.3255
+      },
+      {
+        "keyword": "worth",
+        "score": 2.2114
+      },
+      {
+        "keyword": "business",
+        "score": 2.2009
+      },
+      {
+        "keyword": "net worth",
+        "score": 1.9052
+      },
+      {
+        "keyword": "net",
+        "score": 1.9052
+      },
+      {
+        "keyword": "2026",
+        "score": 1.8388
+      },
+      {
+        "keyword": "university",
+        "score": 1.8026
+      },
+      {
+        "keyword": "career",
+        "score": 1.754
+      },
+      {
+        "keyword": "brand",
+        "score": 1.7195
+      },
+      {
+        "keyword": "reported",
+        "score": 1.6868
+      },
+      {
+        "keyword": "million",
+        "score": 1.6362
+      },
+      {
+        "keyword": "tech",
+        "score": 1.6085
+      },
+      {
+        "keyword": "founder",
+        "score": 1.5441
+      },
+      {
+        "keyword": "college",
+        "score": 1.489
+      },
+      {
+        "keyword": "build",
+        "score": 1.4732
+      },
+      {
+        "keyword": "built",
+        "score": 1.4571
+      },
+      {
+        "keyword": "work",
+        "score": 1.4074
+      },
+      {
+        "keyword": "industry",
+        "score": 1.3872
+      },
+      {
+        "keyword": "music",
+        "score": 1.3375
+      }
+    ],
+    "blavity.com": [
+      {
+        "keyword": "know",
+        "score": 3.1987
+      },
+      {
+        "keyword": "health",
+        "score": 2.9288
+      },
+      {
+        "keyword": "reading",
+        "score": 2.6976
+      },
+      {
+        "keyword": "continue",
+        "score": 2.6976
+      },
+      {
+        "keyword": "continue reading",
+        "score": 2.6976
+      },
+      {
+        "keyword": "trump",
+        "score": 2.4681
+      },
+      {
+        "keyword": "medical",
+        "score": 1.9932
+      },
+      {
+        "keyword": "police",
+        "score": 1.9072
+      },
+      {
+        "keyword": "learn",
+        "score": 1.7721
+      },
+      {
+        "keyword": "symptoms",
+        "score": 1.7544
+      },
+      {
+        "keyword": "risks",
+        "score": 1.6307
+      },
+      {
+        "keyword": "breast",
+        "score": 1.5945
+      },
+      {
+        "keyword": "nearly",
+        "score": 1.5476
+      },
+      {
+        "keyword": "discover",
+        "score": 1.4852
+      },
+      {
+        "keyword": "weight",
+        "score": 1.4567
+      },
+      {
+        "keyword": "research",
+        "score": 1.4138
+      },
+      {
+        "keyword": "state",
+        "score": 1.3729
+      },
+      {
+        "keyword": "case",
+        "score": 1.3293
+      },
+      {
+        "keyword": "million",
+        "score": 1.3123
+      },
+      {
+        "keyword": "administration",
+        "score": 1.3076
+      }
+    ],
+    "capitalbnews.org": [
+      {
+        "keyword": "capital",
+        "score": 1.7783
+      },
+      {
+        "keyword": "neighborhood",
+        "score": 1.7071
+      },
+      {
+        "keyword": "board",
+        "score": 1.6279
+      },
+      {
+        "keyword": "decades",
+        "score": 1.2071
+      },
+      {
+        "keyword": "murder",
+        "score": 1.0774
+      },
+      {
+        "keyword": "man",
+        "score": 1.0774
+      },
+      {
+        "keyword": "children",
+        "score": 1.0774
+      }
+    ],
+    "ebony.com": [
+      {
+        "keyword": "power",
+        "score": 4.2197
+      },
+      {
+        "keyword": "ebony",
+        "score": 4.194
+      },
+      {
+        "keyword": "2026",
+        "score": 3.9413
+      },
+      {
+        "keyword": "us",
+        "score": 3.6614
+      },
+      {
+        "keyword": "women",
+        "score": 3.3302
+      },
+      {
+        "keyword": "fashion",
+        "score": 3.1392
+      },
+      {
+        "keyword": "season",
+        "score": 3.0847
+      },
+      {
+        "keyword": "100",
+        "score": 3.0741
+      },
+      {
+        "keyword": "power 100",
+        "score": 3.0741
+      },
+      {
+        "keyword": "october",
+        "score": 2.8881
+      },
+      {
+        "keyword": "series",
+        "score": 2.7163
+      },
+      {
+        "keyword": "something",
+        "score": 2.5557
+      },
+      {
+        "keyword": "life",
+        "score": 2.5474
+      },
+      {
+        "keyword": "fall",
+        "score": 2.512
+      },
+      {
+        "keyword": "honorees",
+        "score": 2.3685
+      },
+      {
+        "keyword": "love",
+        "score": 2.3372
+      },
+      {
+        "keyword": "york",
+        "score": 2.3302
+      },
+      {
+        "keyword": "old",
+        "score": 2.3281
+      },
+      {
+        "keyword": "home",
+        "score": 2.2595
+      },
+      {
+        "keyword": "media",
+        "score": 2.217
+      }
+    ],
+    "essence.com": [
+      {
+        "keyword": "essence",
+        "score": 19.0542
+      },
+      {
+        "keyword": "beauty",
+        "score": 2.9613
+      },
+      {
+        "keyword": "essence subscribe",
+        "score": 2.8079
+      },
+      {
+        "keyword": "subscribe",
+        "score": 2.8079
+      },
+      {
+        "keyword": "season",
+        "score": 2.4549
+      },
+      {
+        "keyword": "fall",
+        "score": 2.2835
+      },
+      {
+        "keyword": "star",
+        "score": 2.1314
+      },
+      {
+        "keyword": "looks",
+        "score": 2.1115
+      },
+      {
+        "keyword": "fashion",
+        "score": 1.9742
+      },
+      {
+        "keyword": "life",
+        "score": 1.9736
+      },
+      {
+        "keyword": "women",
+        "score": 1.9152
+      },
+      {
+        "keyword": "ahead",
+        "score": 1.8977
+      },
+      {
+        "keyword": "style",
+        "score": 1.8477
+      },
+      {
+        "keyword": "best",
+        "score": 1.8185
+      },
+      {
+        "keyword": "history",
+        "score": 1.7469
+      },
+      {
+        "keyword": "2026",
+        "score": 1.6929
+      },
+      {
+        "keyword": "former",
+        "score": 1.6422
+      },
+      {
+        "keyword": "inside",
+        "score": 1.6225
+      },
+      {
+        "keyword": "artist",
+        "score": 1.6063
+      },
+      {
+        "keyword": "opens",
+        "score": 1.5177
+      }
+    ],
+    "newsone.com": [
+      {
+        "keyword": "trump",
+        "score": 1.8289
+      },
+      {
+        "keyword": "president",
+        "score": 1.5206
+      },
+      {
+        "keyword": "history",
+        "score": 1.293
+      },
+      {
+        "keyword": "ice",
+        "score": 1.2861
+      },
+      {
+        "keyword": "man",
+        "score": 1.2793
+      },
+      {
+        "keyword": "know",
+        "score": 1.1993
+      },
+      {
+        "keyword": "us",
+        "score": 1.085
+      },
+      {
+        "keyword": "every",
+        "score": 1.0028
+      },
+      {
+        "keyword": "immigration",
+        "score": 0.9656
+      },
+      {
+        "keyword": "way",
+        "score": 0.9505
+      },
+      {
+        "keyword": "racist",
+        "score": 0.9318
+      },
+      {
+        "keyword": "real",
+        "score": 0.9318
+      },
+      {
+        "keyword": "family",
+        "score": 0.924
+      },
+      {
+        "keyword": "times",
+        "score": 0.9128
+      },
+      {
+        "keyword": "america",
+        "score": 0.9117
+      },
+      {
+        "keyword": "federal",
+        "score": 0.9037
+      },
+      {
+        "keyword": "administration",
+        "score": 0.8963
+      },
+      {
+        "keyword": "old",
+        "score": 0.8929
+      },
+      {
+        "keyword": "maga",
+        "score": 0.89
+      },
+      {
+        "keyword": "enforcement",
+        "score": 0.8896
+      }
+    ],
+    "thegrio.com": [
+      {
+        "keyword": "trump",
+        "score": 8.3294
+      },
+      {
+        "keyword": "old",
+        "score": 5.7239
+      },
+      {
+        "keyword": "former",
+        "score": 5.2293
+      },
+      {
+        "keyword": "voters",
+        "score": 4.5674
+      },
+      {
+        "keyword": "family",
+        "score": 4.456
+      },
+      {
+        "keyword": "women",
+        "score": 4.4416
+      },
+      {
+        "keyword": "2026",
+        "score": 4.3185
+      },
+      {
+        "keyword": "star",
+        "score": 4.2742
+      },
+      {
+        "keyword": "history",
+        "score": 4.2226
+      },
+      {
+        "keyword": "ahead",
+        "score": 4.0718
+      },
+      {
+        "keyword": "show",
+        "score": 3.9059
+      },
+      {
+        "keyword": "police",
+        "score": 3.8398
+      },
+      {
+        "keyword": "faces",
+        "score": 3.7729
+      },
+      {
+        "keyword": "son",
+        "score": 3.7368
+      },
+      {
+        "keyword": "death",
+        "score": 3.6729
+      },
+      {
+        "keyword": "reveals",
+        "score": 3.5276
+      },
+      {
+        "keyword": "federal",
+        "score": 3.4613
+      },
+      {
+        "keyword": "nfl",
+        "score": 3.442
+      },
+      {
+        "keyword": "president",
+        "score": 3.3865
+      },
+      {
+        "keyword": "season",
+        "score": 3.3634
+      }
+    ],
+    "theroot.com": [
+      {
+        "keyword": "look",
+        "score": 4.6834
+      },
+      {
+        "keyword": "2026",
+        "score": 4.4415
+      },
+      {
+        "keyword": "women",
+        "score": 3.9521
+      },
+      {
+        "keyword": "exclusive",
+        "score": 3.6962
+      },
+      {
+        "keyword": "root",
+        "score": 3.6078
+      },
+      {
+        "keyword": "best",
+        "score": 3.5977
+      },
+      {
+        "keyword": "folks",
+        "score": 3.5336
+      },
+      {
+        "keyword": "viral",
+        "score": 3.5051
+      },
+      {
+        "keyword": "fashion",
+        "score": 3.2036
+      },
+      {
+        "keyword": "opinion",
+        "score": 3.0977
+      },
+      {
+        "keyword": "history",
+        "score": 3.0647
+      },
+      {
+        "keyword": "america",
+        "score": 2.9628
+      },
+      {
+        "keyword": "family",
+        "score": 2.9564
+      },
+      {
+        "keyword": "hbcu",
+        "score": 2.9486
+      },
+      {
+        "keyword": "take",
+        "score": 2.9402
+      },
+      {
+        "keyword": "let",
+        "score": 2.9136
+      },
+      {
+        "keyword": "fall",
+        "score": 2.8535
+      },
+      {
+        "keyword": "questions",
+        "score": 2.8517
+      },
+      {
+        "keyword": "season",
+        "score": 2.8062
+      },
+      {
+        "keyword": "halloween",
+        "score": 2.8038
+      }
+    ],
+    "travelnoire.com": [
+      {
+        "keyword": "travel",
+        "score": 3.4393
+      },
+      {
+        "keyword": "travelers",
+        "score": 2.5847
+      },
+      {
+        "keyword": "know",
+        "score": 2.572
+      },
+      {
+        "keyword": "airlines",
+        "score": 2.4134
+      },
+      {
+        "keyword": "october",
+        "score": 2.0397
+      },
+      {
+        "keyword": "luxury",
+        "score": 1.9641
+      },
+      {
+        "keyword": "flight",
+        "score": 1.9551
+      },
+      {
+        "keyword": "ai",
+        "score": 1.9078
+      },
+      {
+        "keyword": "2026",
+        "score": 1.878
+      },
+      {
+        "keyword": "owned",
+        "score": 1.8777
+      },
+      {
+        "keyword": "season",
+        "score": 1.8651
+      },
+      {
+        "keyword": "2027",
+        "score": 1.8552
+      },
+      {
+        "keyword": "best",
+        "score": 1.8099
+      },
+      {
+        "keyword": "country",
+        "score": 1.7552
+      },
+      {
+        "keyword": "passengers",
+        "score": 1.7364
+      },
+      {
+        "keyword": "cruise",
+        "score": 1.7144
+      },
+      {
+        "keyword": "hotel",
+        "score": 1.5931
+      },
+      {
+        "keyword": "city",
+        "score": 1.5623
+      },
+      {
+        "keyword": "free",
+        "score": 1.549
+      },
+      {
+        "keyword": "explore",
+        "score": 1.5377
+      }
+    ]
+  }
+}
